@@ -142,6 +142,10 @@ body {
 	--link-external-style: none;
 }
 
+.cm-s-obsidian .cm-formatting-hashtag {
+    font-family: var(--fontfam);
+  }
+
 .search-result-file-matched-text {
     color: var(--color-black);
     background-color: var(--text-highlight-bg);
