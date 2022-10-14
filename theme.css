@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
@@ -63,13 +63,18 @@ a theme by @knee#0777*/
 	--fontfam: 'Jost', sans-serif;
 	--fonttitle: 'Rubik', sans-serif;
 	--fontcode: 'Space Mono', monospace;
-	--code-background: transparent;
 	--header-height: 40px;
 	--border-width: 1px;
 
 	--sbs: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 		0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
 		0 12px 33.4px rgba(0, 0, 0, 0.03), 0 20px 80px rgba(0, 0, 0, 0.02);
+	--cbsl: 0px 2px 4px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.01),
+		0px 4px 8px rgba(0, 0, 0, 0.01), 0px 0px 12px rgba(0, 0, 0, 0.01),
+		0px 2px 16px rgba(0, 0, 0, 0.01), 0px 4px 20px rgba(0, 0, 0, 0.01);
+	--cbsd: 0px 2px 4px rgba(0, 0, 0, 0.05), 0px 4px 8px rgba(0, 0, 0, 0.03),
+		0px 4px 8px rgba(0, 0, 0, 0.05), 0px 0px 12px rgba(0, 0, 0, 0.03),
+		0px 2px 16px rgba(0, 0, 0, 0.03), 0px 4px 20px rgba(0, 0, 0, 0.02);
 }
 
 .theme-light {
@@ -84,6 +89,7 @@ a theme by @knee#0777*/
 	--bg-g: linear-gradient(var(--mlcwhite), var(--mlcwhite));
 
 	--code-normal: var(--mcblack);
+	--code-background: rgba(0, 0, 0, 0.03);
 	--text-normal: var(--mblack);
 	--text-error: var(--red-l);
 	--text-on-accent: var(--mwhite);
@@ -99,6 +105,8 @@ a theme by @knee#0777*/
 
 	--titlebar-background-focused: transparent;
 	--titlebar-background: transparent;
+
+	--cbs: var(--cbsl);
 
 	--scrollbar-active-thumb-bg: var(--color-accent);
 	--scrollbar-bg: transparent;
@@ -117,6 +125,7 @@ a theme by @knee#0777*/
 	--bg-g: linear-gradient(var(--mucblack), var(--mucblack));
 
 	--text-code: var(--mcwhite);
+	--code-background: rgba(255, 255, 255, 0.03);
 	--text-normal: var(--mwhite);
 	--text-error: var(--red-d);
 	--text-on-accent: var(--mwhite);
@@ -133,6 +142,12 @@ a theme by @knee#0777*/
 
 	--titlebar-background-focused: transparent;
 	--titlebar-background: transparent;
+
+	--cbs: var(--cbsd);
+
+	--scrollbar-active-thumb-bg: var(--color-accent);
+	--scrollbar-bg: transparent;
+	--scrollbar-thumb-bg: var(--color-gray);
 }
 
 body {
@@ -149,24 +164,39 @@ body {
 }
 
 .cm-hmd-frontmatter {
-	font-size: 0.750rem;
+	font-size: 0.75rem;
 	line-height: 0;
 }
 
+.markdown-source-view.mod-cm6 .cm-scroller {
+	margin-bottom: 12px;
+}
+
 .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
-    color: var(--color-accent);
-    font-size: 0.5em;
+	color: var(--color-accent);
+	font-size: 0.5em;
 }
 
 .cm-s-obsidian .cm-formatting-hashtag {
-    font-family: var(--fontfam);
-  }
+	font-family: var(--fontfam);
+}
 
 .search-result-file-matched-text {
-    color: var(--color-black);
-    background-color: var(--text-highlight-bg);
-    border-radius: 4px;
-    padding: 0.3%;
+	color: var(--color-white);
+	background-color: var(--text-highlight-bg);
+	border-radius: 4px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.cm-s-obsidian span.cm-inline-code {
+	color: var(--code-normal);
+	font-size: var(--code-size);
+	background-color: var(--code-background);
+	vertical-align: baseline;
+	border-radius: 4px;
 }
 
 .markdown-source-view.mod-cm6 ::selection,
@@ -176,7 +206,7 @@ body {
 }
 
 .cm-content {
-	line-height: 1.350rem;
+	line-height: 1.35rem;
 	font-size: 1rem;
 	font-weight: 400;
 }
@@ -188,7 +218,7 @@ body {
 	text-decoration-thickness: 2px;
 	color: var(--text-normal);
 	text-decoration-color: var(--color-accent);
-	font-weight: 600;
+	font-weight: 500;
 }
 
 a,
@@ -196,7 +226,7 @@ a,
 .markdown-rendered .internal-link {
 	text-decoration-line: none;
 	color: var(--color-dark-gray);
-	font-weight: 600;
+	font-weight: 500;
 }
 
 a:hover,
@@ -232,7 +262,7 @@ a:hover,
 .workspace-split.mod-vertical .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split .workspace-leaf-resize-handle {
 	border-left-style: inherit;
-	border-bottom-style: transparent;
+	border-bottom-style: 1px solid var(--mid);
 	border-right-style: inherit;
 }
 
@@ -302,7 +332,27 @@ a:hover,
 }
 
 a.tag {
-	background-color: transparent;
+	border-radius: 4px;
+	padding-left: 2px;
+	padding-right: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.cm-hashtag.cm-hashtag-begin {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	padding-left: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.cm-hashtag.cm-hashtag-end {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding-right: 2px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 }
 
 a.tag:hover {
@@ -355,18 +405,18 @@ a.tag:hover {
 
 strong,
 .cm-strong {
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--text-bold);
 }
 
-mark,
-.cm-highlight {
-	background: var(--red-1);
-}
-.theme-dark mark,
-.theme-dark .cm-line .cm-highlight {
-	background: none;
-	border-bottom: 2px solid var(--red-1);
+.markdown-rendered mark,
+.cm-s-obsidian span.cm-formatting-highlight,
+.cm-s-obsidian span.cm-highlight {
+	background-color: var(--text-highlight-bg);
+	color: var(--background-primary);
+	border-radius: 4px;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 em,
@@ -385,6 +435,7 @@ hr {
 
 body:not(.is-mobile) .markdown-preview-view {
 	padding-inline: 63px;
+	margin-bottom: 12px;
 }
 body:not(.is-mobile) .markdown-source-view .cm-content {
 	padding-inline: 13px;
@@ -512,7 +563,8 @@ h6,
 }
 
 body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-leaf {
-  border-radius: 8px;
+	border-radius: 8px;
+	box-shadow: var(--cbs);
 }
 
 .workspace-split {
@@ -533,19 +585,16 @@ body:not(.is-mobile) .workspace-split.mod-vertical.mod-root .workspace-leaf {
 	background: transparent;
 }
 
-.workspace-tab-container {
-	padding-bottom: 1%;
-}
-
-body:not(.is-mobile) .workspace-leaf {
-	margin-right: 1%;
-	margin-left: 1%;
-	margin-bottom: 0%;
+body:not(.is-mobile) .workspace-tab-container {
+	padding-bottom: 12px;
+	margin-right: 12px;
+	margin-left: 12px;
 	margin-top: 0%;
+	margin-bottom: 2px;
 }
 
 .mod-root .workspace-tab-header-container-inner {
-	padding-left: 5%;
+	padding-left: 40px;
 }
 
 .status-bar {
@@ -554,12 +603,7 @@ body:not(.is-mobile) .workspace-leaf {
 	box-shadow: var(--sbs);
 }
 
-.workspace-tab-header.is-active,
-.is-focused
-	.mod-active
-	.workspace-tab-header.is-active
-	.workspace-tab-header-inner-title {
-	box-shadow: var(--sbs);
+.mod-left-split .workspace-tab-header.is-active {
 	background-color: var(--background-primary);
 }
 
@@ -607,10 +651,6 @@ body:not(.is-grabbing) .nav-folder-title:hover {
 	.workspace-tab-header.is-active
 	.workspace-tab-header-inner-icon {
 	color: var(--color-accent);
-}
-
-.mod-left-split .workspace-tab-header.is-active {
-	background-color: var(--background-secondary);
 }
 
 /* These ordered lists were brought to my attention and created by the wonderful Typomagical theme! */
@@ -790,6 +830,19 @@ input.prompt-input:focus-visible {
 	gap: var(--size-4-3);
 }
 
+kbd.suggestion-hotkey, kbd, .suggestion-item.mod-complex .suggestion-hotkey {
+	color: var(--color-white);
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-left: 10px;
+	border-radius: 4px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: var(--font-monospace);
+	font-size: 0.750rem;
+}
+
 .modal-bg {
 	display: none;
 }
@@ -804,7 +857,7 @@ input.prompt-input:focus-visible {
 }
 
 /*Kanban support*/
-.kanban-plugin__board>div {
+.kanban-plugin__board > div {
 	background: var(--background-primary);
 }
 
@@ -819,4 +872,31 @@ button:not(.clickable-icon) {
 
 .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
 	background-color: var(--color-accent);
+}
+
+/*Reminder Support*/
+.reminder-time.svelte-gzdxib {
+    font-size: 0.7em;
+    font-family: var(--font-monospace);
+    color: var(--color-accent);
+}
+
+.reminder-list-item.svelte-gzdxib {
+    line-height: 1em;
+}
+
+.reminder-list-item.svelte-gzdxib:hover {
+	border-radius: 4px;
+	background-color: var(--background-tertiary) !important;
+}
+
+.reminder-group.svelte-gzdxib {
+    margin-bottom: 1rem;
+    font-size: 13px;
+    color: var(--color-accent);
+}
+
+.reminder-file.svelte-gzdxib {
+	font-family: var(--font-monospace);
+	font-size: 0.750em;
 }
