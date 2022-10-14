@@ -181,10 +181,6 @@ a,
 	text-decoration-line: none;
 	color: var(--color-dark-gray);
 	font-weight: 600;
-	background-color: var(--linkbg);
-	border-radius: 4px;
-	padding-left: 0.75px;
-	padding-right: 0.75px;
 }
 
 a:hover,
