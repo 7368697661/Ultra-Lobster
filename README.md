@@ -1,6 +1,6 @@
 # Ultra Lobster
 
-![preview](https://user-images.githubusercontent.com/87339163/195758768-a7406641-5928-4290-a96e-8524b1d1d787.png)
+![UBp](https://user-images.githubusercontent.com/87339163/195933280-f18b93ba-1b33-4dd2-abad-a03f8189e113.png)
 
 I love the Obsidian UI, but have a few tweaks I use personally. I am an indie front end dev, so this has been a learning oportunity! This isn't a "minimal" theme, per say, although I do remove and reduce many elements; rather, it is a theme that attempts to build up a tactile work enviroment for focus and deep work.
 
