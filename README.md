@@ -5,6 +5,7 @@ It's all about the base UI —Vault extends Obsidian with a collection of tweaks
 
 ## Plugin Support
 - Kanban
+- Influx
 - Better Command Palette
 - Omnisearch
 
