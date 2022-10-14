@@ -19,7 +19,7 @@ I personally use Omnisearch and Better Command Palette (_with Doubleshift!_), so
 - other stuff, im too tired to write it up
 
 # TODO
-- [/] write readme
+- [ ] write readme
 - [ ] upload more photos
 - [ ] figure out style settings
 - [ ] update 'roadmap'
