@@ -7,6 +7,12 @@ It's all about the base UI —Vault extends Obsidian with a collection of tweaks
 ![vaultlight](https://user-images.githubusercontent.com/87339163/195751012-f5be3737-3e2a-4862-a00e-347184c880bd.png)
 ![vaultdark](https://user-images.githubusercontent.com/87339163/195751018-b6cc7649-96c1-402b-b61c-bc0d9a4b12d1.png)
 
+I love the Obsidian UI, but there are a few areas I think it could drawn on some modern apps. This isn't a "minimal" theme, per say, although I do remove and reduce many elements; rather, it is a theme that attempts to build up a tactile work enviroment for focus deep work.
+
+For now, the theme features a fully themed light and dark mode, with a focus on readability and contrast. I have spent weeks researching contrast and color schemes, and have a leaned on my background in design to build a user experiance helps you focus more on what the words that matter.
+
+I personally use Omnisearch and Better Command Palette (_with Doubleshift!_), so I have adapted both (along with the vanilla prompts) to offer a pro palette to increase visibility. Influx and Kanban boards have also have support for color styling.
+
 ## Plugin Support
 - Kanban
 - Influx
@@ -15,7 +21,7 @@ It's all about the base UI —Vault extends Obsidian with a collection of tweaks
 - other stuff, im too tired to write it up
 
 # TODO
-- [ ] write readme
+- [/] write readme
 - [ ] upload more photos
 - [ ] figure out style settings
 - [ ] update 'roadmap'
