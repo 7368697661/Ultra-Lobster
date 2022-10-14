@@ -3,6 +3,11 @@
 # Vault
 It's all about the base UI —Vault extends Obsidian with a collection of tweaks centered on modern designs.
 
+## Plugin Support
+- Kanban
+- Better Command Palette
+- Omnisearch
+
 # TODO
 - [ ] write readme
 - [ ] upload more photos
