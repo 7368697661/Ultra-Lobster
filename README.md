@@ -19,3 +19,7 @@ It's all about the base UI —Vault extends Obsidian with a collection of tweaks
 - [ ] upload more photos
 - [ ] figure out style settings
 - [ ] update 'roadmap'
+
+# Credit
+- Ordered lists by [Typomagical](https://github.com/hungsu/typomagical-obsidian) and [Matthew Butterick](https://practicaltypography.com/concourse-index.html)
+- Smooth live headers by `@Luke242#8485`
