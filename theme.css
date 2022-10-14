@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 /*Vault, lets smoothen up that second brain
 a theme by @knee#0777*/
 
@@ -57,7 +60,9 @@ a theme by @knee#0777*/
 	--button-radius: 3em;
 	--window-radius: 3em;
 
-	--fontfam: 'Raleway';
+	--fontfam: 'Jost', sans-serif;
+	--fonttitle: 'Rubik', sans-serif;
+	--fontcode: 'Space Mono', monospace;
 	--code-background: transparent;
 	--header-height: 40px;
 	--border-width: 1px;
@@ -131,8 +136,9 @@ a theme by @knee#0777*/
 }
 
 body {
-	--inline-title-size: 7em;
+	--inline-title-size: 4em;
 	--font-interface: var(--fontfam);
+	--font-monospace: var(--fontcode);
 	--link-decoration-hover: none;
 	--link-external-decoration: none;
 	--link-external-decoration-hover: underline;
@@ -140,6 +146,16 @@ body {
 	--link-unresolved-decoration: none;
 	--link-style: none;
 	--link-external-style: none;
+}
+
+.cm-hmd-frontmatter {
+	font-size: 0.750rem;
+	line-height: 0;
+}
+
+.cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
+    color: var(--color-accent);
+    font-size: 0.5em;
 }
 
 .cm-s-obsidian .cm-formatting-hashtag {
@@ -160,7 +176,7 @@ body {
 }
 
 .cm-content {
-	line-height: 1.2rem;
+	line-height: 1.350rem;
 	font-size: 1rem;
 	font-weight: 400;
 }
@@ -333,6 +349,8 @@ a.tag:hover {
 .inline-title {
 	color: var(--text-normal);
 	font-weight: 900;
+	font-family: var(--fonttitle);
+	letter-spacing: 1px;
 }
 
 strong,
@@ -730,6 +748,14 @@ body
 	color: var(--color-white);
 	text-decoration-color: var(--color-accent);
 	font-weight: 600;
+}
+
+.better-command-palette .suggestion-item .recent-text {
+	color: var(--mwhite);
+}
+
+.better-command-palette .suggestion-item .suggestion-flair {
+	color: var(--color-accent);
 }
 
 input.prompt-input {
