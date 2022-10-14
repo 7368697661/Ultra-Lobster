@@ -1,6 +1,7 @@
-![vaultpreview1](https://user-images.githubusercontent.com/87339163/195749447-d49356e3-070a-442c-81b9-358d9a8c1c06.png)
-
 # Vault
+
+![preview](https://user-images.githubusercontent.com/87339163/195758768-a7406641-5928-4290-a96e-8524b1d1d787.png)
+
 It's all about the base UI —Vault extends Obsidian with a collection of tweaks centered on modern designs.
 
 ![vaultlight](https://user-images.githubusercontent.com/87339163/195751012-f5be3737-3e2a-4862-a00e-347184c880bd.png)
