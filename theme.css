@@ -467,6 +467,17 @@ body:not(.is-mobile) .markdown-source-view .cm-content {
 	border-radius: 1em;
 }
 
+.alt-co .callout.callout {
+    background: rgba(var(--callout-color), 0.1);
+    border: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 4px;
+    border-radius: var(--radius, var(--co-radius));
+    box-shadow: 1px 1px 0 rgba(var(--callout-color), 0.2);
+}
+
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,
