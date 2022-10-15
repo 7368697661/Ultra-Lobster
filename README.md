@@ -1,12 +1,10 @@
 # Ultra Lobster
 
-![lobsterbase1](https://user-images.githubusercontent.com/87339163/195960098-c72eb123-bb7d-4876-ab52-9c0bb8849faf.png)
-
 _Ultra Lobster_ is my own take on 'rounding out the corners' of Obsidian's default theme. The project started as an attempt to reduce visual clutter, while not simply removing information. I also wanted to take a chance to create an intuitive environment that built upon a 'tactile' canvas... I wanted cards, ok. With rounded corners, especially.
 
 🎨 Colors and fonts were handpicked over the course of months to finally arrive at a combination of values that both enhances vanilla Obsidian, and helps you focus on what matters: the words.
 
-![lobsterbase](https://user-images.githubusercontent.com/87339163/195958047-65521b81-7a66-4d06-a313-5deed4f7c16e.png)
+![lobsterbase1](https://user-images.githubusercontent.com/87339163/195960184-22ee7c6f-a0d9-4457-98e2-92e888405615.png)
 
 Various components have been tweaked and modified to bring in line with this design spec. I chose to keep the prompt dark across modes, to give a clear visual field. While I use replacements for the stock prompts, careful consideration has been taken to ensure a standard experience.
 
