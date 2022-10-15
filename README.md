@@ -55,3 +55,6 @@ I tried to make links more subtle, with an accent line for (un)resolved internal
 - [ ] write better copy
 - [ ] figure out style settings
 - [ ] update/create 'roadmap'
+
+## Other
+- Icons are handled by [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
