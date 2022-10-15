@@ -1,6 +1,6 @@
 # Ultra Lobster
 
-![lmb](https://user-images.githubusercontent.com/87339163/195957464-595953c1-c423-4eef-b112-c13e1f2913a4.png)
+![lobsterbase1](https://user-images.githubusercontent.com/87339163/195960098-c72eb123-bb7d-4876-ab52-9c0bb8849faf.png)
 
 _Ultra Lobster_ is my own take on 'rounding out the corners' of Obsidian's default theme. The project started as an attempt to reduce visual clutter, while not simply removing information. I also wanted to take a chance to create an intuitive environment that built upon a 'tactile' canvas... I wanted cards, ok. With rounded corners, especially.
 
