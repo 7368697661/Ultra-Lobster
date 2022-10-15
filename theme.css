@@ -170,6 +170,7 @@ body {
 
 .markdown-source-view.mod-cm6 .cm-scroller {
 	margin-bottom: 12px;
+	padding-inline: 24px;
 }
 
 .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
@@ -434,7 +435,7 @@ hr {
 }
 
 body:not(.is-mobile) .markdown-preview-view {
-	padding-inline: 63px;
+	padding-inline: 30px;
 	margin-bottom: 12px;
 }
 body:not(.is-mobile) .markdown-source-view .cm-content {
