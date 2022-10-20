@@ -28,14 +28,15 @@ Finally, many other changes have been made, including but not limited to:
 - Code blocks
 - Inline titles
 - Fonts, fonts, fonts
-	- The font for the interface is [Jost by Owen Earl](https://fonts.google.com/specimen/Jost)
-	- The title font is [Rubik by Hubert and Fischer, Meir Sadan, Cyreal](https://fonts.google.com/specimen/Rubik)
+	- The font for the interface is [Rubik by Hubert and Fischer, Meir Sadan, Cyreal](https://fonts.google.com/specimen/Rubik)
+	- The title font is [Zoho Puvi by the Zoho team](https://www.zoho.com/typefaces/puvi/)
 	- The monospaced font is [Space Mono by Colophon](https://fonts.google.com/specimen/Space+Mono?category=Monospace)
 - Lists
 	- Ordered lists by [Typomagical](https://github.com/hungsu/typomagical-obsidian) and [Concourse Index by Matthew Butterick](https://practicaltypography.com/concourse-index.html)
 - Links
 - Headers (_Smooth live headers by_ `@Luke242#8485`)
 - And much, much more
+- Folder theming by `GabeVilela@PspStreet51#6517`
 
 ![lobstershow1](https://user-images.githubusercontent.com/87339163/195958767-ae346752-75e1-4923-9e28-f429daccf88f.png)
 
@@ -44,17 +45,25 @@ I tried to make links more subtle, with an accent line for (un)resolved internal
 ![lobstershow](https://user-images.githubusercontent.com/87339163/195958787-94ca716a-8da4-4bca-a1ad-45de79b8d4e3.png)
 
 ## Plugin Support
-- Kanban
-- Influx
+- Kanban (WIP)
+- [Influx](https://github.com/jensmtg/influx)
+- [Memo](https://github.com/quorafind/obsidian-memos)
 - [Better Command Palette](https://github.com/AlexBieg/obsidian-better-command-palette)
 - [Omnisearch](https://github.com/scambier/obsidian-omnisearch)
 - [Reminder](https://github.com/uphy/obsidian-reminder)
 
 # TODO
 - [ ] make better graphics
+- [ ] upload new photos
 - [ ] write better copy
-- [ ] figure out style settings
+- [x] figure out style settings
 - [ ] update/create 'roadmap'
+- [x] upload content
+- [x] v0.5 stable for public testing
+- [ ] greater plugin support
+- [ ] fix kanbans
+- [ ] finish color schemes
+- [ ] set up style settings to allow people to fully build/tweak their Obsidian interface based off of the Ultra Lobster UI changes
 
 ## Other
 - Icons are handled by [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
