@@ -4,7 +4,7 @@ _Ultra Lobster_ is my own take on 'rounding out the corners' of Obsidian's defau
 
 🎨 Colors and fonts were handpicked over the course of months to finally arrive at a combination of values that both enhances vanilla Obsidian, and helps you focus on what matters: the words.
 
-![lobsterbase (1)](https://user-images.githubusercontent.com/87339163/195960218-397220cf-4805-4353-9845-fb9ef5d71de2.png)
+![image](https://user-images.githubusercontent.com/87339163/196863668-6a71562f-8fe7-4e73-9bc1-e7ba2e447aa3.png)
 
 Various components have been tweaked and modified to bring in line with this design spec. I chose to keep the prompt dark across modes, to give a clear visual field. While I use replacements for the stock prompts, careful consideration has been taken to ensure a standard experience.
 
@@ -55,7 +55,9 @@ I tried to make links more subtle, with an accent line for (un)resolved internal
 # TODO
 - [ ] make better graphics
 - [ ] upload new photos
-- [ ] write better copy
+- [ ] rewrite copy to match new design spec
+- [ ] write up thoughts on changes over base
+- [ ] wrestle with the nihilistic realization that writing any published thoughts is just adding senseless noise into the great internet ether
 - [x] figure out style settings
 - [ ] update/create 'roadmap'
 - [x] upload content
