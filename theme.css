@@ -29,9 +29,6 @@ settings:
         - 
             label: 🚧WIP🚧 Lobster Time
             value: ul-lobstertime
-        - 
-            label: 🚧WIP🚧 Blossom
-            value: ul-blossom
 		
   - 
     id: ul-theme-dark
@@ -80,14 +77,14 @@ settings:
 
 .theme-light,
 .theme-light.ul-obplus {
-  --ul-pink: 236, 131, 208;
-  --ul-red: 210, 15, 57;
-  --ul-peach: 254, 100, 11;
-  --ul-yellow: 228, 147, 32;
-  --ul-green: 64, 160, 43;
-  --ul-sky: 4, 165, 229;
-  --ul-blue: 42, 110, 245;
-  --ul-lavender: 114, 135, 253;
+	--ul-pink: 239, 212, 191;
+	--ul-red: 230, 57, 70;
+	--ul-peach: 255, 205, 178;
+	--ul-yellow: 242, 204, 143;
+	--ul-green: 96, 153, 62;
+	--ul-sky: 114, 161, 229;
+	--ul-blue: 82, 178, 207;
+	--ul-lavender: 144, 151, 192;
   --ul-text: 60, 60, 62;
   --ul-subtext0: 142, 142, 147;
   --ul-overlay2: 58, 58, 60;
@@ -97,19 +94,19 @@ settings:
   --ul-surface1: 0, 0, 0, 0.035;
   --ul-surface0: 192, 192, 195;
   --ul-base: 242, 242, 242;
-  --ul-mantle: 230, 230, 231;
-  --ul-crust: 155, 155, 159;
+  --ul-shell: 230, 230, 231;
+  --ul-stalk: 155, 155, 159;
 }
 
-.theme-light.ul-blossom {
-  --ul-pink: 236, 131, 208;
-  --ul-red: 210, 15, 57;
-  --ul-peach: 254, 100, 11;
-  --ul-yellow: 228, 147, 32;
-  --ul-green: 64, 160, 43;
-  --ul-sky: 4, 165, 229;
-  --ul-blue: 42, 110, 245;
-  --ul-lavender: 114, 135, 253;
+.theme-light.ul-lobstertime {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
   --ul-text: 61, 64, 91;
   --ul-subtext0: 224, 122, 95;
   --ul-overlay2: 143, 93, 93;
@@ -119,42 +116,20 @@ settings:
   --ul-surface1: 0, 0, 0, 0.035;
   --ul-surface0: 242, 204, 143;
   --ul-base: 244, 241, 222;
-  --ul-mantle: 242, 227, 207;
-  --ul-crust: 224, 122, 95;
-}
-
-.theme-light.ul-lobstertime {
-  --ul-pink: 236, 131, 208;
-  --ul-red: 210, 15, 57;
-  --ul-peach: 254, 100, 11;
-  --ul-yellow: 228, 147, 32;
-  --ul-green: 64, 160, 43;
-  --ul-sky: 4, 165, 229;
-  --ul-blue: 42, 110, 245;
-  --ul-lavender: 114, 135, 253;
-  --ul-text: 244, 241, 222;
-  --ul-subtext0: 143, 93, 93;
-  --ul-overlay2: 102, 79, 92;
-  --ul-overlay1: 242, 227, 207;
-  --ul-overlay0: 102, 79, 92;
-  --ul-surface2: 143, 93, 93;
-  --ul-surface1: 0, 0, 0, 0.035;
-  --ul-surface0: 224, 122, 95;
-  --ul-base: 224, 122, 95;
-  --ul-mantle: 234, 182, 159;
-  --ul-crust: 143, 93, 93;
+  --ul-shell: 242, 227, 207;
+  --ul-stalk: 224, 122, 95;
 }
 
 .theme-dark.obplus,
 .theme-dark {
-  --ul-pink: 236, 131, 208;
-  --ul-red: 210, 15, 57;
-  --ul-peach: 254, 100, 11;
-  --ul-yellow: 228, 147, 32;
-  --ul-green: 64, 160, 43;
-  --ul-sky: 4, 165, 229;
-  --ul-blue: 42, 110, 245;
-  --ul-lavender: 114, 135, 253;
+	--ul-pink: 239, 212, 191;
+	--ul-red: 230, 57, 70;
+	--ul-peach: 255, 205, 178;
+	--ul-yellow: 242, 204, 143;
+	--ul-green: 96, 153, 62;
+	--ul-sky: 114, 161, 229;
+	--ul-blue: 82, 178, 207;
+	--ul-lavender: 144, 151, 192;
   --ul-text: 230, 230, 231;
   --ul-subtext0: 142, 142, 147;
   --ul-overlay2: 114, 114, 118;
@@ -164,19 +139,19 @@ settings:
   --ul-surface1: 0, 0, 0, 0.035;
   --ul-surface0: 100, 100, 104;
   --ul-base: 28, 28, 30;
-  --ul-mantle: 57, 57, 60;
-  --ul-crust: 71, 71, 75;
+  --ul-shell: 57, 57, 60;
+  --ul-stalk: 71, 71, 75;
 }
 
 .theme-dark.ul-lobstertime {
-  --ul-pink: 236, 131, 208;
-  --ul-red: 210, 15, 57;
-  --ul-peach: 254, 100, 11;
-  --ul-yellow: 228, 147, 32;
-  --ul-green: 64, 160, 43;
-  --ul-sky: 4, 165, 229;
-  --ul-blue: 42, 110, 245;
-  --ul-lavender: 114, 135, 253;
+	--ul-pink: 239, 212, 191;
+	--ul-red: 230, 57, 70;
+	--ul-peach: 255, 205, 178;
+	--ul-yellow: 242, 204, 143;
+	--ul-green: 96, 153, 62;
+	--ul-sky: 114, 161, 229;
+	--ul-blue: 82, 178, 207;
+	--ul-lavender: 144, 151, 192;
   --ul-text: 244, 241, 222;
   --ul-subtext0: 224, 122, 95;
   --ul-overlay2: 233, 175, 151;
@@ -186,13 +161,13 @@ settings:
   --ul-surface1: 0, 0, 0, 0.035;
   --ul-surface0: 82, 72, 92;
   --ul-base: 143, 93, 93;
-  --ul-mantle: 92, 75, 92;
-  --ul-crust: 224, 122, 95;
+  --ul-shell: 92, 75, 92;
+  --ul-stalk: 224, 122, 95;
 }
 
 .theme-dark,
 .theme-light {
-  --mono-rgb-0: var(--ul-crust);
+  --mono-rgb-0: var(--ul-stalk);
   --mono-rgb-100: var(--ul-text);
   --color-red-rgb: var(--ul-red);
   --color-red: rgb(var(--ul-red));
@@ -204,8 +179,8 @@ settings:
   --color-blue: rgb(var(--ul-blue));
   --color-purple: rgb(var(--ul-lavender));
   --color-pink: rgb(var(--ul-pink));
-  --color-base-00: rgb(var(--ul-crust));
-  --color-base-10: rgb(var(--ul-mantle));
+  --color-base-00: rgb(var(--ul-stalk));
+  --color-base-10: rgb(var(--ul-shell));
   --color-base-20: rgb(var(--ul-base));
   --color-base-25: rgb(var(--ul-surface0));
   --color-base-30: rgb(var(--ul-surface1));
@@ -218,36 +193,36 @@ settings:
   --text-highlight-bg: rgba(var(--ul-yellow), 0.2);
   --text-highlight-bg-active: rgba(var(--ul-yellow), 0.4);
   --input-shadow: inset 0 0.5px 0.5px 0.5px rgba(var(--ul-text), 0.09),
-    0 2px 4px 0 rgba(var(--ul-crust), 0.15),
-    0 1px 1.5px 0 rgba(var(--ul-crust), 0.1),
-    0 1px 2px 0 rgba(var(--ul-crust), 0.2), 0 0 0 0 transparent;
+    0 2px 4px 0 rgba(var(--ul-stalk), 0.15),
+    0 1px 1.5px 0 rgba(var(--ul-stalk), 0.1),
+    0 1px 2px 0 rgba(var(--ul-stalk), 0.2), 0 0 0 0 transparent;
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(var(--ul-text), 0.16),
-    0 2px 3px 0 rgba(var(--ul-crust), 0.3),
-    0 1px 1.5px 0 rgba(var(--ul-crust), 0.2),
-    0 1px 2px 0 rgba(var(--ul-crust), 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 1px 2px rgba(var(--ul-crust), 0.121),
-    0px 3.4px 6.7px rgba(var(--ul-crust), 0.179),
-    0px 15px 30px rgba(var(--ul-crust), 0.3);
-  --shadow-l: 0px 1.8px 7.3px rgba(var(--ul-crust), 0.071),
-    0px 6.3px 24.7px rgba(var(--ul-crust), 0.112),
-    0px 30px 90px rgba(var(--ul-crust), 0.2);
+    0 2px 3px 0 rgba(var(--ul-stalk), 0.3),
+    0 1px 1.5px 0 rgba(var(--ul-stalk), 0.2),
+    0 1px 2px 0 rgba(var(--ul-stalk), 0.4), 0 0 0 0 transparent;
+  --shadow-s: 0px 1px 2px rgba(var(--ul-stalk), 0.121),
+    0px 3.4px 6.7px rgba(var(--ul-stalk), 0.179),
+    0px 15px 30px rgba(var(--ul-stalk), 0.3);
+  --shadow-l: 0px 1.8px 7.3px rgba(var(--ul-stalk), 0.071),
+    0px 6.3px 24.7px rgba(var(--ul-stalk), 0.112),
+    0px 30px 90px rgba(var(--ul-stalk), 0.2);
   --background-primary: rgb(var(--ul-base));
-  --background-primary-alt: rgb(var(--ul-mantle));
-  --background-secondary: rgb(var(--ul-mantle));
-  --background-secondary-alt: rgb(var(--ul-crust));
+  --background-primary-alt: rgb(var(--ul-shell));
+  --background-secondary: rgb(var(--ul-shell));
+  --background-secondary-alt: rgb(var(--ul-stalk));
   --background-modifier-hover: rgba(var(--ul-text), 0.075);
   --background-modifier-border: rgb(var(--ul-surface0));
   --background-modifier-border-hover: rgb(var(--ul-surface1));
   --background-modifier-border-focus: rgb(var(--ul-surface2));
-  --background-modifier-form-field: rgba(var(--ul-crust), 0.3);
+  --background-modifier-form-field: rgba(var(--ul-stalk), 0.3);
   --background-modifier-success: rgba(var(--ul-green), 1);
   --background-modifier-success-hover: rgba(var(--ul-green), 0.9);
   --background-modifier-success-rgb: var(--ul-green);
   --background-modifier-error: rgba(var(--ul-red), 1);
   --background-modifier-error-rgb: var(--ul-red);
   --background-modifier-error-hover: rgba(var(--ul-red), 0.9);
-  --background-modifier-cover: rgba(var(--ul-mantle), 0.4);
-  --background-modifier-message: rgba(var(--ul-crust), 0.9);
+  --background-modifier-cover: rgba(var(--ul-shell), 0.4);
+  --background-modifier-message: rgba(var(--ul-stalk), 0.9);
   --modal-border-color: rgb(var(--ul-surface0));
   --text-normal: rgb(var(--ul-text));
   --text-muted: rgb(var(--ul-overlay2));
@@ -263,14 +238,14 @@ settings:
   --scrollbar-active-thumb-bg: rgba(var(--ul-text), 0.2);
   --scrollbar-bg: rgba(var(--ul-text), 0.05);
   --scrollbar-thumb-bg: rgba(var(--ul-text), 0.1);
-  --workspace-background-translucent: rgba(var(--ul-crust), 0.6);
-  --blockquote-background-color: rgba(var(--ul-crust), 0.5);
+  --workspace-background-translucent: rgba(var(--ul-stalk), 0.6);
+  --blockquote-background-color: rgba(var(--ul-stalk), 0.5);
   --width-image-gallery: 200px;
   --min-width-image: 50%;
   --max-width-image: 90%;
   --drag-ghost-background: rgb(var(--ul-text));
-  --drag-ghost-text-color: rgb(var(--ul-crust));
-  --nav-indentation-guide-color: rgba(var(--ul-crust), 0.4);
+  --drag-ghost-text-color: rgb(var(--ul-stalk));
+  --nav-indentation-guide-color: rgba(var(--ul-stalk), 0.4);
   --titlebar-text-color-focused: var(--color-accent);
 }
 
@@ -347,9 +322,9 @@ select:focus,
   line-height: 0;
 }
 
-.markdown-source-view.mod-cm6 .cm-scroller {
+.markdown-reading-view {
   margin-bottom: 12px;
-  padding-inline: 24px;
+  padding-inline: 12px;
 }
 
 .cm-hmd-frontmatter.cm-hmd-frontmatter.cm-def {
@@ -383,11 +358,16 @@ select:focus,
   background-color: var(--color-accent);
 }
 
+.menu, .popover {
+    box-shadow: var(--cbs);
+}
+
 .cm-content {
   line-height: 1.35rem;
   font-size: 1rem;
   font-weight: 400;
 }
+
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline,
 .markdown-source-view.mod-cm6 .cm-underline.is-unresolved,
@@ -415,6 +395,7 @@ a:hover,
   text-decoration-color: var(--color-accent);
   text-decoration-thickness: 2px;
 }
+
 
 .markdown-source-view.mod-cm6 .is-unresolved .cm-underline:hover,
 .markdown-source-view.mod-cm6 .cm-underline.is-unresolved:hover,
@@ -603,7 +584,6 @@ strong,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
   background-color: var(--text-highlight-bg);
-  color: var(--background-primary);
   border-radius: 4px;
   padding-left: 2px;
   padding-right: 2px;
@@ -623,10 +603,7 @@ hr {
   height: 2px;
 }
 
-body:not(.is-mobile) .markdown-preview-view {
-  padding-inline: 30px;
-  margin-bottom: 12px;
-}
+
 body:not(.is-mobile) .markdown-source-view .cm-content {
   padding-inline: 13px;
 }
@@ -1022,6 +999,10 @@ kbd,
 /*Kanban support*/
 .kanban-plugin__board > div {
   background: var(--background-primary);
+}
+
+.kanban-plugin {
+    background-color: transparent;
 }
 
 .kanban-plugin__lane {
