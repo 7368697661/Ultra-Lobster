@@ -1,5 +1,9 @@
 # Ultra Lobster 🦞
-This project began as a way for me to learn CSS, more or less. Believe it or not (or look at my code and believe it) I knew next to no CSS before beginning this! It's been a great chance to learn and practice, and I've already been able to take some of the skills I've learned over the last few weeks of work and apply them to web projects! I've been having an absolute blast putting this theme together, and I hope you enjoy it 🥰
+This project began as a way for me to learn CSS, more or less. Because as my best friend said:
+
+![image](https://user-images.githubusercontent.com/87339163/197320589-e1a4b86e-d17f-4ab4-9a18-0869a3ae0f65.png)
+
+Believe it or not (or look at my code and believe it) I knew next to no CSS before beginning this! It's been a great chance to learn and practice, and I've already been able to take some of the skills I've learned over the last few weeks of work and apply them to web projects! I've been having an absolute blast putting this theme together, and I hope you enjoy it 🥰
 
 ![lob](https://user-images.githubusercontent.com/87339163/197312680-a81ab036-c0cd-4b75-8602-8886b153f471.png)
 
