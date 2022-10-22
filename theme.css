@@ -646,6 +646,10 @@ body:not(.is-mobile) .markdown-source-view .cm-content {
 	background-color: rgba(0, 0, 0, 0.034);
 }
 
+.markdown-rendered code {
+    background-color: transparent;
+}
+
 .markdown-rendered pre {
 	border-radius: 1em;
 	background-color: rgba(0, 0, 0, 0.034);
@@ -1079,10 +1083,6 @@ button:not(.clickable-icon) {
 .nav-folder-title-content {
 	white-space: normal;
 	text-overflow: unset;
-}
-
-.nav-folder-children > div[style*='height: 0.1px;'] {
-	height: 0px !important;
 }
 
 .nav-folder:not(.is-collapsed) > .nav-folder-title {
