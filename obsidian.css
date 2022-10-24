@@ -5,6 +5,8 @@ a theme by @kneecaps#0777*/
 
 /* ===+=== */
 
+
+/* Style Settings fixed by damiankorcz <3 */
 /* @settings
 name: Ultra Lobster
 id: ul-theme-settings
@@ -21,14 +23,14 @@ settings:
     description: Select your preferred light mode scheme
     type: class-select
     allowEmpty: false
-    default: ul-obplus
+    default: ul-obplus-lt
     options:
         - 
             label: Obsidian+
-            value: ul-obplus
+            value: ul-obplus-lt
         - 
             label: 🚧WIP🚧 Lobster Time
-            value: ul-lobstertime
+            value: ul-lobstertime-lt
 		
   - 
     id: ul-theme-dark
@@ -36,17 +38,17 @@ settings:
     description: Select your preferred dark mode scheme
     type: class-select
     allowEmpty: false
-    default: ul-obplus
+    default: ul-obplus-dt
     options:
         - 
             label: Obsidian+
-            value: ul-obplus
+            value: ul-obplus-dt
         - 
             label: 🚧WIP🚧 Lobster Time
-            value: ul-lobstertime
+            value: ul-lobstertime-dt
         - 
             label: Amoled Black
-            value: ul-amoled
+            value: ul-amoled-dt
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap');
@@ -78,7 +80,7 @@ settings:
 }
 
 .theme-light,
-.theme-light.ul-obplus {
+.theme-light.ul-obplus-lt {
 	--ul-pink: 239, 212, 191;
 	--ul-red: 230, 57, 70;
 	--ul-peach: 255, 205, 178;
@@ -100,7 +102,7 @@ settings:
 	--ul-stalk: 155, 155, 159;
 }
 
-.theme-light.ul-lobstertime {
+.theme-light.ul-lobstertime-lt {
 	--ul-pink: 239, 212, 191;
 	--ul-red: 230, 57, 70;
 	--ul-peach: 255, 205, 178;
@@ -122,7 +124,7 @@ settings:
 	--ul-stalk: 224, 122, 95;
 }
 
-.theme-dark.obplus,
+.theme-dark.obplus-dt,
 .theme-dark {
 	--ul-pink: 239, 212, 191;
 	--ul-red: 230, 57, 70;
@@ -145,7 +147,7 @@ settings:
 	--ul-stalk: 71, 71, 75;
 }
 
-.theme-dark.ul-lobstertime {
+.theme-dark.ul-lobstertime-dt {
 	--ul-pink: 239, 212, 191;
 	--ul-red: 230, 57, 70;
 	--ul-peach: 255, 205, 178;
@@ -167,7 +169,7 @@ settings:
 	--ul-stalk: 224, 122, 95;
 }
 
-.theme-dark.ul-amoled {
+.theme-dark.ul-amoled-dt {
 	--ul-pink: 239, 212, 191;
 	--ul-red: 230, 57, 70;
 	--ul-peach: 255, 205, 178;
@@ -1042,6 +1044,11 @@ button:not(.clickable-icon) {
 
 .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
 	background-color: var(--color-accent);
+}
+
+button.kanban-plugin__new-item-button {
+    background-color: transparent;
+    color: var(--text-muted);
 }
 
 /*Reminder Support*/
