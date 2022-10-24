@@ -79,6 +79,8 @@ Finally, many other changes have been made, including but not limited to:
 Open a ticket! I can't promise I will always be the fastest, but I'll try to add support and push fixes as quickly as I can.
 
 # TODO
+- [ ] make theme less bad on the code side
+- [ ] figure out font fallback for other languages
 - [ ] make better graphics
 - [x] upload new photos
 - [x] rewrite copy to match new design spec
@@ -91,8 +93,7 @@ Open a ticket! I can't promise I will always be the fastest, but I'll try to add
 - [ ] greater plugin support
 - [x] fix kanbans
 - [ ] finish color schemes
-- [ ] set up style settings to allow people to fully build/tweak their Obsidian interface based off of the Ultra Lobster UI changes
+- [ ] set up style settings...
 
 ## Other
 - Icons are handled by [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
-- Find me in OMG: `kneecaps#3653`
