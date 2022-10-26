@@ -1,6 +1,8 @@
 # Ultra Lobster 🦞
 ## A theme for the css playground [Obsidian](https://obsidian.md/)
 
+![unknown](https://user-images.githubusercontent.com/87339163/198155892-1a49dcb1-4a40-4492-8a52-39a704c76010.png)
+
 This project began as a way for me to learn CSS, more or less. Because as my best friend said:
 
 ![image](https://user-images.githubusercontent.com/87339163/197320589-e1a4b86e-d17f-4ab4-9a18-0869a3ae0f65.png)
