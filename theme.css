@@ -491,16 +491,16 @@ a:hover,
 	}
 }
 
-.cm-widgetBuffer + .cm-header {
+.is-live-preview .cm-widgetBuffer + .cm-header {
 	animation: outdent 250ms ease-out;
 	display: inline-block;
 }
 
-.cm-widgetBuffer + .cm-header.cm-formatting {
+.is-live-preview .cm-widgetBuffer + .cm-header.cm-formatting {
 	animation: opac 250ms ease-in;
 }
 
-.cm-active .cm-header + .cm-header {
+.is-live-preview .cm-active .cm-header + .cm-header {
 	animation: indent 250ms ease-out;
 	display: inline-block;
 }
