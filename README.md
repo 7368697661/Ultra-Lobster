@@ -22,15 +22,36 @@ Or, if you wanna boogie you can hop to the (currently _technically 'experimental
 ![lob1 1](https://user-images.githubusercontent.com/87339163/197315662-50dc5141-a0fd-415f-9615-cec1acddb0d7.png)
 
 # Font ✒️
-I am a font addict. I'll admit it. I probably download at least 25 fonts a day and I'll never stop. The fonts for Ultra Lobster were handpicked over the course of longer than I care to admit to finally arrive at a combination of values that both enhances vanilla Obsidian, and helps you focus on what matters: the words. I opted for Google Fonts when I could, to try and lean on lightweight modern fonts to not bog down the editor too badly (unfortunately, Zoho Puvi had to be embedded). I also tried to only import as many weights as needed, to keep file-size low. As such, I finally landed on [Rubik by Hubert and Fischer, Meir Sadan, Cyreal](https://fonts.google.com/specimen/Rubik) for the interface.
+I am a font addict. I'll admit it. I probably download at least 25 fonts a day and I'll never stop. The fonts for Ultra Lobster were handpicked over the course of longer than I care to admit to finally arrive at a combination of values that both enhances vanilla Obsidian, and helps you focus on what matters: the words. I opted for Google Fonts, because I like community typefaces (and they're free). Google Fonts are also pretty light, and with my most recent font pass I was able to take theme file size from 214kb to 48, and that was with a 10x increase in type options. I don't want to bog down the electron client too badly, so I am opting not to embed (even though I wish I could). With Style Settings, users can switch between a fairly decent range of font options for inline title, interface, and monospaced typefaces --all of which have been carefuly chosen to work as pairings and long-form body content. I don't know about you, but sometimes my eyes glaze over on long paragraphs with badly balanced line-hight; that's why such a massive portion of the theme revolves around creating a beutiful type enviroment.
+
+Here are the typefaces currently included:
+- [Archivo Narrow](https://fonts.google.com/specimen/Archivo+Narrow)
+- [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
+- [DM Mono](https://fonts.google.com/specimen/DM+Mono?category=Monospace)
+- [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
+- [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono?category=Monospace)
+- [Inter](https://fonts.google.com/specimen/Inter)
+- [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono?category=Monospace)
+- [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- [Overpass Mono](https://fonts.google.com/specimen/Overpass+Mono?category=Monospace)
+- [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono?category=Monospace)
+- [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
+- [Poppins](https://fonts.google.com/specimen/Poppins)
+- [Proza Libre](https://fonts.google.com/specimen/Proza+Libre)
+- [PT Mono](https://fonts.google.com/specimen/PT+Mono?category=Monospace)
+- [Raleway](https://fonts.google.com/specimen/Raleway)
+- [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
+- [Rosario](https://fonts.google.com/specimen/Rosario)
+- [Rubik](https://fonts.google.com/specimen/Rubik)
+- [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
+- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+- [Space Mono](https://fonts.google.com/specimen/Space+Mono?category=Monospace)
+- [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono?category=Monospace)
+- [Work Sans](https://fonts.google.com/specimen/Work+Sans)
 
 ![image](https://user-images.githubusercontent.com/87339163/197315907-f775cf5b-418e-44bb-9c11-c7b1b8508032.png)
-_I love a good rounded, thicc font –and this one is just light enough to not make my eye glaze over on long paragraphs (so far)._
-
-## Headers
-The header font is [Zoho Puvi by the Zoho team](https://www.zoho.com/typefaces/puvi/), because I love fonts with stories or interesting facts to them. Did you know that they designed the angle of the letters to match the Earth's axial tilt (23.5°)? Maybe that's why I was hooked on it at the first sight of how the S lines up ❤️‍🔥
-
-![image](https://user-images.githubusercontent.com/87339163/197315850-0d0c76a5-8bf0-4f5e-bbc8-7e5ecebbbc08.png)
+_I love a good rounded, thicc font –and this one is just light enough to not strain my eyes too badly over long text (so far)._
 
 ## Monospace & Blockquotes
 Finally, the monospaced font is [Space Mono by Colophon](https://fonts.google.com/specimen/Space+Mono?category=Monospace), because as far as I can tell its basically IBM plex but I like it more 🤷‍♀️
@@ -63,7 +84,7 @@ Finally, many other changes have been made, including but not limited to:
 - Lists
 	- Ordered lists by [Typomagical](https://github.com/hungsu/typomagical-obsidian) and [Concourse Index by Matthew Butterick](https://practicaltypography.com/concourse-index.html)
 - Links
-- Headers (_Smooth live headers by_ `@Luke242#8485`)
+- Headers (_Smooth live headers [also fixed for source] by_ `@Luke242#8485`)
 - Folder theming by `GabeVilela@PspStreet51#6517`
 - Plugin support
 - And much, much more
