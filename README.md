@@ -3,6 +3,8 @@
 
 This project began as a way for me to learn CSS, more or less. Because as my best friend said:
 
+![omegalob](https://user-images.githubusercontent.com/87339163/197934983-d6b34eb8-cd48-432e-9894-6eb91cbdf4e7.png)
+
 ![image](https://user-images.githubusercontent.com/87339163/197320589-e1a4b86e-d17f-4ab4-9a18-0869a3ae0f65.png)
 
 Believe it or not (or look at my code and believe it) I knew next to no CSS before beginning this! It's been a great chance to learn and practice, and I've already been able to take some of the skills I've learned over the last few weeks of work and apply them to web projects! I've been having an absolute blast putting this theme together, and I hope you enjoy it 🥰
