@@ -457,7 +457,6 @@ select:focus,
   text-decoration-thickness: 2px;
   color: var(--text-normal);
   text-decoration-color: var(--color-accent);
-  text-decoration-skip-ink: none;
   font-weight: 600;
 }
 
@@ -605,7 +604,7 @@ a.tag {
 }
 
 a.tag:hover {
-  background-color: var(--background-secondary-alt);
+  background-color: transparent;
 }
 
 ul > li::marker {
