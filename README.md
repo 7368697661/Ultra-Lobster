@@ -7,9 +7,7 @@ This project began as a way for me to learn CSS, more or less. Because as my bes
 
 ![image](https://user-images.githubusercontent.com/87339163/197320589-e1a4b86e-d17f-4ab4-9a18-0869a3ae0f65.png)
 
-Believe it or not (or look at my code and believe it) I knew next to no CSS before beginning this! It's been a great chance to learn and practice, and I've already been able to take some of the skills I've learned over the last few weeks of work and apply them to web projects! I've been having an absolute blast putting this theme together, and I hope you enjoy it 🥰
-
-![lob](https://user-images.githubusercontent.com/87339163/197312680-a81ab036-c0cd-4b75-8602-8886b153f471.png)
+> Believe it or not (or look at my code and believe it) I knew next to no CSS before beginning this! It's been a great chance to learn and practice, and I've already been able to take some of the skills I've learned over the last few weeks of work and apply them to web projects! I've been having an absolute blast putting this theme together, and I hope you enjoy it 🥰
 
 _Ultra Lobster_ is my own take on 'buffing up the corners' of Obsidian without straying too far from default colors. The project started as an attempt to reduce visual clutter, while not simply removing information. I also wanted to take a chance to create an intuitive environment that built upon a 'tactile' canvas... I wanted cards, ok. With rounded corners, especially.
 
@@ -21,7 +19,7 @@ Colors were carefully chosen using a mixture of <https://coolors.co> and a backg
 ![lob1](https://user-images.githubusercontent.com/87339163/197315601-10d3d4eb-d786-48c1-8913-65ed4f29f2bf.png)
 
 ## LOBSTER TIME
-Or, if you wanna boogie you can hop to the (currently _technically 'experimental'_ [Lobster Time](https://coolors.co/f4f1de-efd4bf-eab69f-e07a5f-3d405b-0b7a75)) for a coppery crustacean POP offering night friendly red-based hues to help with eye strain:
+Or, if you wanna boogie you can hop over to [Lobster Time](https://coolors.co/f4f1de-efd4bf-eab69f-e07a5f-3d405b-0b7a75) for a coppery crustacean POP offering night friendly red-based hues to help with eye strain:
 
 ![lob1 1](https://user-images.githubusercontent.com/87339163/197315662-50dc5141-a0fd-415f-9615-cec1acddb0d7.png)
 
