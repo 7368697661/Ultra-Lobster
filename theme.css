@@ -30,6 +30,12 @@ settings:
         - 
             label: 🦞 Lobster Time
             value: ul-lobstertime-lt
+        - 
+            label: 🌑 Timberwolf
+            value: ul-timberwolf-lt
+        - 
+            label: 🚧 Fire Lily 🚧
+            value: ul-firelily-lt
 		
   - 
     id: ul-theme-dark
@@ -48,6 +54,12 @@ settings:
         - 
             label: 🖤 Amoled Black
             value: ul-amoled-dt
+        - 
+            label: 🌑 Timberwolf
+            value: ul-timberwolf-dt
+        - 
+            label: 🚧 Fire Lily 🚧
+            value: ul-firelily-dt
   - 
     id: ul-type-section-header
     title: Type settings
@@ -172,6 +184,50 @@ settings:
   --ul-stalk: 224, 122, 95;
 }
 
+.theme-light.ul-timberwolf-lt {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
+  --ul-text: 47, 62, 70;
+  --ul-subtext0: 50, 70, 68;
+  --ul-overlay2: 47, 62, 70;
+  --ul-overlay1: 50, 70, 68;
+  --ul-overlay0: 50, 70, 68;
+  --ul-surface2: 52, 78, 65;
+  --ul-surface1: 0, 0, 0, 0.035;
+  --ul-surface0: 52, 78, 65;
+  --ul-base: 218, 215, 205;
+  --ul-shell: 198, 198, 188;
+  --ul-stalk: 52, 78, 65;
+}
+
+.theme-light.ul-firelily-lt {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
+  --ul-text: 0, 48, 73;
+  --ul-subtext0: 107, 44, 57;
+  --ul-overlay2: 0, 48, 73;
+  --ul-overlay1: 107, 44, 57;
+  --ul-overlay0: 107, 44, 57;
+  --ul-surface2: 247, 127, 0;
+  --ul-surface1: 0, 0, 0, 0.035;
+  --ul-surface0: 247, 127, 0;
+  --ul-base: 234, 226, 183;
+  --ul-shell: 243, 209, 128;
+  --ul-stalk: 252, 191, 73;
+}
+
 .theme-dark.obplus-dt,
 .theme-dark {
   --ul-pink: 239, 212, 191;
@@ -237,6 +293,50 @@ settings:
   --ul-base: 28, 28, 30;
   --ul-shell: 0, 0, 0;
   --ul-stalk: 57, 57, 60;
+}
+
+.theme-dark.ul-timberwolf-dt {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
+  --ul-text: 218, 215, 205;
+  --ul-subtext0: 135, 147, 135;
+  --ul-overlay2: 183, 183, 186;
+  --ul-overlay1: 57, 57, 60;
+  --ul-overlay0: 57, 57, 60;
+  --ul-surface2: 57, 57, 60;
+  --ul-surface1: 0, 0, 0, 0.035;
+  --ul-surface0: 71, 71, 75;
+  --ul-base: 47, 62, 70;
+  --ul-shell: 53, 79, 82;
+  --ul-stalk: 57, 57, 60;
+}
+
+.theme-dark.ul-firelily-dt {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
+  --ul-text: 234, 226, 183;
+  --ul-subtext0: 252, 191, 73;
+  --ul-overlay2: 247, 127, 0;
+  --ul-overlay1: 214, 40, 40;
+  --ul-overlay0: 214, 40, 40;
+  --ul-surface2: 214, 40, 40;
+  --ul-surface1: 0, 0, 0, 0.035;
+  --ul-surface0: 134, 43, 53;
+  --ul-base: 107, 44, 57;
+  --ul-shell: 0, 48, 73;
+  --ul-stalk: 134, 43, 53;
 }
 
 .theme-dark,
@@ -320,7 +420,6 @@ settings:
   --drag-ghost-background: rgb(var(--ul-text));
   --drag-ghost-text-color: rgb(var(--ul-stalk));
   --nav-indentation-guide-color: rgba(var(--ul-stalk), 0.4);
-  --titlebar-text-color-focused: var(--color-accent);
 }
 
 .theme-dark {
@@ -1258,4 +1357,25 @@ button.kanban-plugin__new-item-button {
   > .create-query-btn-container
   > .btn {
   color: var(--color-white);
+}
+
+.is-hidden-frameless:not(.is-fullscreen).is-focused .titlebar-button-container.mod-right, .is-hidden-frameless:not(.is-fullscreen) .titlebar-button-container.mod-right {
+  background-color: var(--background-primary);
+  border-bottom-left-radius: 8px;
+  box-shadow: var(--cbs);
+}
+
+.mod-linux .titlebar-button-container, .mod-windows .titlebar-button-container {
+  height: 75%;
+  width: 100px;
+}
+
+.titlebar-button:hover {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: var(--color-accent);
+}
+
+.frontmatter-container .frontmatter-container-header {
+  display: none;
 }
