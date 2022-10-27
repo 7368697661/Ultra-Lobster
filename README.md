@@ -16,6 +16,8 @@ Colors were carefully chosen using a mixture of <https://coolors.co> and a backg
 
 ![omegalob](https://user-images.githubusercontent.com/87339163/197934983-d6b34eb8-cd48-432e-9894-6eb91cbdf4e7.png)
 
+![timberwolf](https://user-images.githubusercontent.com/87339163/198393910-252dea33-f2b1-486e-b34c-e89015261ae7.png)
+
 ![lob1](https://user-images.githubusercontent.com/87339163/197315601-10d3d4eb-d786-48c1-8913-65ed4f29f2bf.png)
 
 ## LOBSTER TIME
