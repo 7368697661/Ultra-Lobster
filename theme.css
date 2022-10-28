@@ -1459,3 +1459,31 @@ button.kanban-plugin__new-item-button {
 .nav-folder.mod-root>.nav-folder-title{
 	display:none;
 }
+
+/* Support for Strange New Worlds by TFThacker */
+.snw-ref-title-popover {
+  border: transparent;
+  background-color: var(--background-primary-alt);
+  border-radius: 8px;
+}
+
+.search-result-file-matches, .search-result-file-matche {
+  border-radius: 4px;
+  border: var(--border-width) dashed var(--modal-border-color);
+  box-shadow: var(--cbs);
+}
+
+.snw-popover-container {
+  border-radius: 8px;
+  box-shadow: var(--cbs);
+}
+
+.tree-item-self.is-clickable:hover {
+  background-color: var(--background-secondary-alt);
+  border-radius: 8px;
+}
+
+.search-result-file-match:hover {
+  background-color: var(--background-secondary-alt);
+  border-radius: 4px;
+}
