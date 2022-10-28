@@ -36,6 +36,9 @@ settings:
         - 
             label: 🚧 Fire Lily 🚧
             value: ul-firelily-lt
+        - 
+            label: 🥚 𐌕𐌓𐌀𐌚
+            value: ul-traf-lt
 		
   - 
     id: ul-theme-dark
@@ -60,6 +63,9 @@ settings:
         - 
             label: 🚧 Fire Lily 🚧
             value: ul-firelily-dt
+        - 
+            label: 🥚 𐌕𐌓𐌀𐌚
+            value: ul-traf-dt
   - 
     id: ul-type-section-header
     title: Type settings
@@ -228,6 +234,28 @@ settings:
   --ul-stalk: 252, 191, 73;
 }
 
+.theme-light.ul-traf-lt {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
+  --ul-text: 22, 49, 60;
+  --ul-subtext0: 79, 90, 93;
+  --ul-overlay2: 136, 131, 126;
+  --ul-overlay1: 0,255,0;
+  --ul-overlay0: 0,0,255;
+  --ul-surface2: 193, 172, 159;
+  --ul-surface1: 0, 0, 0, 0.035;
+  --ul-surface0: 255, 181, 167;
+  --ul-base: 237, 237, 233;
+  --ul-shell: 216, 230, 233;
+  --ul-stalk: 249, 212, 191;
+}
+
 .theme-dark.obplus-dt,
 .theme-dark {
   --ul-pink: 239, 212, 191;
@@ -337,6 +365,28 @@ settings:
   --ul-base: 107, 44, 57;
   --ul-shell: 0, 48, 73;
   --ul-stalk: 134, 43, 53;
+}
+
+.theme-dark.ul-traf-dt {
+  --ul-pink: 239, 212, 191;
+  --ul-red: 230, 57, 70;
+  --ul-peach: 255, 205, 178;
+  --ul-yellow: 242, 204, 143;
+  --ul-green: 96, 153, 62;
+  --ul-sky: 114, 161, 229;
+  --ul-blue: 82, 178, 207;
+  --ul-lavender: 144, 151, 192;
+  --ul-text: 237, 237, 233;
+  --ul-subtext0: 79, 90, 93;
+  --ul-overlay2: 249, 213, 191;
+  --ul-overlay1: 0,255,0;
+  --ul-overlay0: 0,0,255;
+  --ul-surface2: 255, 181, 167;
+  --ul-surface1: 0, 0, 0, 0.035;
+  --ul-surface0: 22, 49, 60;
+  --ul-base: 11, 11, 9;
+  --ul-shell: 37, 60, 65;
+  --ul-stalk: 45, 72, 78;
 }
 
 .theme-dark,
@@ -1365,7 +1415,7 @@ button.kanban-plugin__new-item-button {
   box-shadow: var(--cbs);
 }
 
-.mod-linux .titlebar-button-container, .mod-windows .titlebar-button-container {
+.mod-linux .titlebar-button-container.mod-right, .mod-windows .titlebar-button-container.mod-right {
   height: 75%;
   width: 100px;
 }
@@ -1378,4 +1428,34 @@ button.kanban-plugin__new-item-button {
 
 .frontmatter-container .frontmatter-container-header {
   display: none;
+}
+.markdown-rendered thead tr {
+  background-color: var(--background-primary-alt);
+}
+
+.markdown-rendered th {
+  border-radius: 4px;
+}
+
+.markdown-rendered td, .markdown-rendered th {
+  border: var(--table-border-width) dashed var(--table-border-color);
+  border-radius: 4px;
+}
+
+.markdown-rendered table {
+  border-spacing: 6px 2px;
+  border-collapse: separate;
+}
+
+/* WIP focus mode  
+.workspace-tab-header-container{
+	opacity:0;
+	transition:opacity 0.3s;
+}
+.workspace-tab-header-container:hover{
+	opacity:1;
+}*/
+
+.nav-folder.mod-root>.nav-folder-title{
+	display:none;
 }
