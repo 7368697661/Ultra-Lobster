@@ -1,7 +1,7 @@
 # Ultra Lobster 🦞
 ## A theme for the css playground [Obsidian](https://obsidian.md/)
 
-![unknown](https://user-images.githubusercontent.com/87339163/198155892-1a49dcb1-4a40-4492-8a52-39a704c76010.png)
+![image](https://user-images.githubusercontent.com/87339163/198754387-416d6149-a536-4a8f-adfb-0cf27c12702f.png)
 
 This project began as a way for me to learn CSS, more or less. Because as my best friend said:
 
@@ -16,7 +16,9 @@ Colors were carefully chosen using a mixture of <https://coolors.co> and a backg
 
 ![omegalob](https://user-images.githubusercontent.com/87339163/197934983-d6b34eb8-cd48-432e-9894-6eb91cbdf4e7.png)
 
-![timberwolf](https://user-images.githubusercontent.com/87339163/198393910-252dea33-f2b1-486e-b34c-e89015261ae7.png)
+![image](https://user-images.githubusercontent.com/87339163/198754336-433b6fbe-d533-4d77-acae-d9ac8c38cc97.png)
+
+![timberwolf](https://user-images.githubusercontent.com/87339163/198393910-252dea33-f2b1-486e-b34c-e89015261ae7.png)![unknown](https://user-images.githubusercontent.com/87339163/198155892-1a49dcb1-4a40-4492-8a52-39a704c76010.png)
 
 ![lob1](https://user-images.githubusercontent.com/87339163/197315601-10d3d4eb-d786-48c1-8913-65ed4f29f2bf.png)
 
