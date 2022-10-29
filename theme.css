@@ -77,7 +77,7 @@ settings:
     title: Title
     description: Typeface used for inline titles
     type: variable-select
-    default: Raleway
+    default: Poppins
     options:
            - Libre Franklin
            - Raleway
@@ -96,7 +96,7 @@ settings:
     title: Interface
     description: This type is used for the entire interface
     type: variable-select
-    default: Rubik
+    default: Space Grotesk
     options:
            - Rubik
            - Libre Franklin
@@ -118,7 +118,7 @@ settings:
     title: Monospace
     description: Typeface for monospaced text
     type: variable-select
-    default: Space Mono
+    default: JetBrains Mono
     options:
            - Space Mono
            - IBM Plex Mono
