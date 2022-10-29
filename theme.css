@@ -1458,15 +1458,6 @@ button.kanban-plugin__new-item-button {
   border-collapse: separate;
 }
 
-/* WIP focus mode  
-.workspace-tab-header-container{
-	opacity:0;
-	transition:opacity 0.3s;
-}
-.workspace-tab-header-container:hover{
-	opacity:1;
-}*/
-
 .focus .clickable-icon, .focus  .workspace-tab-header {
   opacity: 0;
 }
