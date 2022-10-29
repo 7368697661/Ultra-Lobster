@@ -129,6 +129,17 @@ settings:
            - Oxygen Mono
            - DM Mono
            - monospace
+  - 
+    id: ul-ui-section-header
+    title: UI settings
+    type: heading
+    level: 1
+    collapsed: true
+  - 
+            id: focus
+            title: Focus Mode
+            description: Converts most icons to transparant-until-hovered
+            type: class-toggle
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;1,400;1,600&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:ital@0;1&family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;600;900&family=JetBrains+Mono:ital,wght@0,400;0,600;1,400;1,600&family=Libre+Franklin:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Overpass+Mono:wght@400;600&family=Oxygen+Mono&family=PT+Mono&family=Playfair+Display:wght@900&family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Proza+Libre:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&family=Raleway:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Roboto+Slab:wght@900&family=Rosario:ital,wght@0,400;0,600;1,400;1,600&family=Rubik:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,400;1,600&family=Space+Grotesk:wght@400;600&family=Space+Mono&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap');
@@ -1455,6 +1466,15 @@ button.kanban-plugin__new-item-button {
 .workspace-tab-header-container:hover{
 	opacity:1;
 }*/
+
+.focus .clickable-icon, .focus  .workspace-tab-header {
+  opacity: 0;
+}
+  
+.focus .clickable-icon:hover, .focus  .workspace-tab-header:hover {
+    opacity: 1;
+}
+
 
 .nav-folder.mod-root>.nav-folder-title{
 	display:none;
