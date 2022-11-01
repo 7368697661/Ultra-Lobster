@@ -124,7 +124,7 @@ settings:
     title: Title
     description: Typeface used for inline titles
     type: variable-select
-    default: Raleway
+    default: MuseoModerno
     options:
              - Alegreya
              - Anybody
@@ -212,7 +212,7 @@ settings:
     title: Interface
     description: This type is used for the entire interface
     type: variable-select
-    default: Inter
+    default: Podkova
     options:
              - Alegreya
              - Anybody
@@ -300,7 +300,7 @@ settings:
     title: Editor
     description: This type is used for the editor
     type: variable-select
-    default: Inter
+    default: M PLUS 1
     options:
              - Alegreya
              - Anybody
@@ -378,7 +378,7 @@ settings:
     title: Monospace
     description: Typeface for monospaced text
     type: variable-select
-    default: monospace
+    default: M PLUS 1 Code
     options:
              - Azeret Mono
              - Fira Code
