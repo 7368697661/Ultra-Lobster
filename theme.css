@@ -1463,11 +1463,11 @@ body {
     --inline-title-size: var(--ul-title-size);
     --font-default-theme: var(--ul-font-int);
     --font-interface-theme: var(--ul-font-int);
-    --font-interface: 'Syne';
+    --font-interface: var(--ul-font-int);
     --font-text-theme: var(--ul-font-tex);
-    --font-text: 'Lexend Deca';
+    --font-text: var(--ul-font-tex);
     --font-monospace-theme: var(--ul-font-code);
-    --font-monospace: 'Recursive';
+    --font-monospace: var(--ul-font-code);
     --font-title: var(--ul-font-title);
     --link-decoration-hover: none;
     --link-external-decoration: none;
