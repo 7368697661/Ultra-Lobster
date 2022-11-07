@@ -34,17 +34,8 @@ settings:
             label: 🌑 Timberwolf
             value: ul-timberwolf-lt
         - 
-            label: ❤️‍🔥 Fire Lily 🚧
-            value: ul-firelily-lt
-        - 
-            label: 🥚 𐌕𐌓𐌀𐌚 🚧
-            value: ul-traf-lt
-        - 
-            label: 🧠 LYT Mode 🚧
-            value: ul-lyt-lt
-        - 
-            label: 🦇 Dracula 🚧
-            value: ul-drac-lt
+            label: 🦈 🥰
+            value: ul-shark-lt
         - 
             label: 🧊 Nord
             value: ul-nord-lt
@@ -52,17 +43,11 @@ settings:
             label: 📦 Gruvbox
             value: ul-gruv-lt
         - 
-            label: 🖥️ Github
-            value: ul-git-dt
-        - 
             label: 🍎 Fruit Company
             value: ul-fruit-dt
         - 
-            label: 🩸 Nightstalker
-            value: ul-edgy-lt
-        - 
-            label: ⚫ Abaddon
-            value: ul-abaddon-lt
+            label: ⚫ Ultra
+            value: ul-ultra-lt
   - 
     id: ul-theme-dark
     title: Dark theme
@@ -84,17 +69,8 @@ settings:
             label: 🌑 Timberwolf
             value: ul-timberwolf-dt
         - 
-            label: ❤️‍🔥 Fire Lily 🚧
-            value: ul-firelily-dt
-        - 
-            label: 🦈 🥰
-            value: ul-shark-dt
-        - 
             label: 🧠 LYT Mode
             value: ul-lyt-dt
-        - 
-            label: 🦇 Dracula 🚧
-            value: ul-drac-dt
         - 
             label: 🧊 Nord
             value: ul-nord-dt
@@ -102,14 +78,75 @@ settings:
             label: 📦 Gruvbox
             value: ul-gruv-dt
         - 
+            label: 🍎 Fruit Company
+            value: ul-fruit-dt
+        - 
+            label: ⚪ Ultra
+            value: ul-ultra-dt
+  - 
+    id: ul-exp-colors-section-header
+    title: Experimental Color Palettes
+    type: heading
+    level: 1
+    collapsed: true
+  - 
+    id: ul-theme-light
+    title: Light theme
+    description: Select your preferred light mode scheme
+    type: class-select
+    allowEmpty: tue
+    default: ''
+    options:
+        - 
+            label: ❤️‍🔥 Fire Lily 🚧
+            value: ul-firelily-lt
+        - 
+            label: 🧠 LYT Mode 🚧
+            value: ul-lyt-lt
+        - 
+            label: 🦇 Dracula 🚧
+            value: ul-drac-lt
+        - 
+            label: 🖥️ Github
+            value: ul-git-dt
+        - 
+            label: 🩸 Nightstalker
+            value: ul-edgy-lt
+        - 
+            label: 🦴 Abaddon
+            value: ul-abaddon-lt
+        - 
+            label: ⚔️ Pendragon
+            value: ul-pendragon-lt
+        - 
+            label: 🔮 Magic
+            value: ul-magic-lt
+        - 
+            label: 🌊 Condor
+            value: ul-seabird-lt
+  - 
+    id: ul-theme-dark
+    title: Experimental Dark theme
+    description: Select your preferred dark mode scheme
+    type: class-select
+    allowEmpty: true
+    default: ''
+    options:
+        - 
+            label: ❤️‍🔥 Fire Lily 🚧
+            value: ul-firelily-dt
+        - 
+            label: 🦈 🥰
+            value: ul-shark-dt
+        - 
+            label: 🦇 Dracula 🚧
+            value: ul-drac-dt
+        - 
             label: 🖥️ Github
             value: ul-git-dt
         - 
             label: 🎮 Discord
             value: ul-discord-dt
-        - 
-            label: 🍎 Fruit Company
-            value: ul-fruit-dt
         - 
             label: ⚛️ One Dark 🚧
             value: ul-a1-dt
@@ -117,8 +154,14 @@ settings:
             label: 🩸 Nightstalker
             value: ul-edgy-dt
         - 
-            label: ⚫ Abaddon
+            label: 🦴 Abaddon
             value: ul-abaddon-dt
+        - 
+            label: ⚔️ Pendragon
+            value: ul-pendragon-dt
+        - 
+            label: 🔮 Magic
+            value: ul-magic-dt
   - 
     id: ul-type-section-header
     title: Type Palettes
@@ -130,7 +173,7 @@ settings:
     title: Title
     description: Typeface used for inline titles
     type: variable-select
-    default: Cairo Play
+    default: 'EB Garamond'
     options:
              - Alegreya
              - Anybody
@@ -218,7 +261,7 @@ settings:
     title: Interface
     description: This type is used for the entire interface
     type: variable-select
-    default: Podkova
+    default: 'Syne'
     options:
              - Alegreya
              - Anybody
@@ -306,7 +349,85 @@ settings:
     title: Editor
     description: This type is used for the editor
     type: variable-select
-    default: Readex Pro
+    default: 'Figtree'
+    options:
+             - Alegreya
+             - Anybody
+             - Archivo
+             - Archivo Narrow
+             - Asap
+             - Assistant
+             - Azeret Mono
+             - Baloo 2
+             - Besley
+             - Bitter
+             - Bodoni Moda
+             - Cabin
+             - Cairo
+             - Cairo Play
+             - Catamaran
+             - Cinzel
+             - Comfortaa
+             - Crimson Pro
+             - Domine
+             - Dosis
+             - EB Garamond
+             - Encode Sans
+             - Epilogue
+             - Exo 2
+             - Figtree
+             - Finlandica
+             - Heebo
+             - Inconsolata
+             - Inter
+             - Josefin Sans
+             - Jost
+             - Jura
+             - Karla
+             - Lexend
+             - Lexend Deca
+             - Lexend Exa
+             - Libre Franklin
+             - Lora
+             - M PLUS 1
+             - Manrope
+             - Maven Pro
+             - Merriweather Sans
+             - Montserrat
+             - Mulish
+             - MuseoModerno
+             - Noto Sans Display
+             - Nunito
+             - Open Sans
+             - Oswald
+             - Outfit
+             - Overpass
+             - Podkova
+             - Public Sans
+             - Quicksand
+             - Raleway
+             - Readex Pro
+             - Recursive
+             - Red Hat Display
+             - Red Hat Text
+             - Red Rose
+             - Rosario
+             - Rubik
+             - STIX Two Text
+             - Saira
+             - Signika
+             - Signika Negative
+             - Space Grotesk
+             - Syne
+             - Vollkorn
+             - Work Sans
+             - Yanone Kaffeesatz
+  - 
+    id: ul-font-header
+    title: Header
+    description: This type is used for the headers
+    type: variable-select
+    default: 'MuseoModerno'
     options:
              - Alegreya
              - Anybody
@@ -384,7 +505,7 @@ settings:
     title: Monospace
     description: Typeface for monospaced text
     type: variable-select
-    default: M PLUS 1 Code
+    default: 'Recursive'
     options:
              - Azeret Mono
              - Fira Code
@@ -455,6 +576,15 @@ settings:
         description: Set the weight for editor type, not all fonts support full weight-range
         type: variable-number-slider
         default: 300
+        min: 100
+        max: 1000
+        step: 100
+  - 
+        id: ul-header-weight
+        title: Header Weight
+        description: Set the weight for header type, not all fonts support full weight-range
+        type: variable-number-slider
+        default: 900
         min: 100
         max: 1000
         step: 100
@@ -631,16 +761,16 @@ settings:
 }
 
 .theme-light.ul-shark-lt {
-    --ul-text: 22, 49, 60;
-    --ul-subtext0: 79, 90, 93;
-    --ul-overlay2: 136, 131, 126;
+    --ul-text: 57, 45, 49;
+    --ul-subtext0: 228, 228, 228;
+    --ul-overlay2: 33, 28, 30;
     --ul-overlay1: 0, 255, 0;
     --ul-overlay0: 0, 0, 255;
     --ul-surface2: 193, 172, 159;
     --ul-surface1: 0, 0, 0, 0.035;
-    --ul-surface0: 255, 181, 167;
-    --ul-base: 237, 237, 233;
-    --ul-shell: 216, 230, 233;
+    --ul-surface0: 183, 166, 172;
+    --ul-base: 251, 251, 251;
+    --ul-shell: 172, 186, 199;
     --ul-stalk: 249, 212, 191;
 }
 
@@ -783,6 +913,36 @@ settings:
 }
 
 .theme-light.ul-abaddon-lt {
+    --ul-text: 36, 36, 36;
+    --ul-subtext0: 51, 51, 51;
+    --ul-overlay2: 245, 245, 245;
+    --ul-overlay1: 107, 112, 92;
+    --ul-overlay0: 107, 112, 92;
+    --ul-surface2: 107, 112, 92;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 112, 98, 92;
+    --ul-base: 184, 187, 191;
+    --ul-shell: 112, 112, 112;
+    --ul-stalk: 112, 98, 92;
+    --h1-color: rgb(107, 112, 92);
+    --h2-color: rgb(112, 98, 92);
+}
+
+.theme-light.ul-pendragon-lt {
+    --ul-text: 35, 28, 22;
+    --ul-subtext0: 46, 37, 29;
+    --ul-overlay2: 253, 247, 237;
+    --ul-overlay1: 107, 112, 92;
+    --ul-overlay0: 107, 112, 92;
+    --ul-surface2: 107, 112, 92;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 248, 185, 138;
+    --ul-base: 255, 217, 188;
+    --ul-shell: 248, 185, 138;
+    --ul-stalk: 194, 131, 84;
+}
+
+.theme-light.ul-ultra-lt {
     --ul-text: 0, 0, 0;
     --ul-subtext0: 18, 20, 23;
     --ul-overlay2: 36, 41, 46;
@@ -794,8 +954,42 @@ settings:
     --ul-base: 255, 255, 255;
     --ul-shell: 253, 254, 254;
     --ul-stalk: 253, 254, 254;
-    --h1-color: rgb(98, 106, 113);
-    --h2-color: rgb(98, 106, 113);
+}
+
+.theme-light.ul-magic-lt {
+    --ul-text: 47, 72, 88;
+    --ul-subtext0: 244, 225, 227;
+    --ul-overlay2: 47, 72, 88;
+    --ul-overlay1: 144, 85, 162;
+    --ul-overlay0: 144, 85, 162;
+    --ul-surface2: 144, 85, 162;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 221, 166, 171;
+    --ul-base: 241, 239, 228;
+    --ul-shell: 246, 174, 45;
+    --ul-stalk: 244, 225, 227;
+    --h1-color: rgb(134, 187, 216);
+    --h2-color: rgb(246, 174, 45);
+    --h3-color: rgb(242, 100, 25);
+    --h4-color: rgb(112, 98, 92);
+}
+
+.theme-light.ul-seabird-lt {
+    --ul-text: 47, 72, 88;
+    --ul-subtext0: 244, 225, 227;
+    --ul-overlay2: 47, 72, 88;
+    --ul-overlay1: 144, 85, 162;
+    --ul-overlay0: 144, 85, 162;
+    --ul-surface2: 144, 85, 162;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 221, 166, 171;
+    --ul-base: 241, 239, 228;
+    --ul-shell: 134, 187, 216;
+    --ul-stalk: 239, 123, 69;
+    --h1-color: rgb(134, 187, 216);
+    --h2-color: rgb(246, 174, 45);
+    --h3-color: rgb(242, 100, 25);
+    --h4-color: rgb(112, 98, 92);
 }
 
 .theme-dark.obplus-dt,
@@ -886,17 +1080,17 @@ settings:
 }
 
 .theme-dark.ul-shark-dt {
-    --ul-text: 246, 246, 244;
+    --ul-text: 251, 251, 251;
     --ul-subtext0: 203, 221, 225;
-    --ul-overlay2: 255, 181, 167;
+    --ul-overlay2: 183, 166, 172;
     --ul-overlay1: 255, 181, 167;
     --ul-overlay0: 203, 221, 225;
     --ul-surface2: 203, 221, 225;
     --ul-surface1: 0, 0, 0, 0.035;
-    --ul-surface0: 11, 11, 9;
-    --ul-base: 11, 11, 9;
-    --ul-shell: 0, 0, 0;
-    --ul-stalk: 45, 72, 78;
+    --ul-surface0: 172, 186, 199;
+    --ul-base: 57, 45, 49;
+    --ul-shell: 33, 28, 30;
+    --ul-stalk: 183, 166, 172;
 }
 
 /* LYT by the wonderful @lukemt for @nickmilo 🥰 */
@@ -1098,6 +1292,36 @@ settings:
 }
 
 .theme-dark.ul-abaddon-dt {
+    --ul-text: 184, 187, 191;
+    --ul-subtext0: 112, 112, 112;
+    --ul-overlay2: 107, 112, 92;
+    --ul-overlay1: 107, 112, 92;
+    --ul-overlay0: 107, 112, 92;
+    --ul-surface2: 107, 112, 92;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 112, 98, 92;
+    --ul-base: 61, 61, 61;
+    --ul-shell: 82, 82, 82;
+    --ul-stalk: 112, 98, 92;
+    --h1-color: rgb(107, 112, 92);
+    --h2-color: rgb(112, 98, 92);
+}
+
+.theme-dark.ul-pendragon-dt {
+    --ul-text: 255, 217, 188;
+    --ul-subtext0: 194, 131, 84;
+    --ul-overlay2: 248, 185, 138;
+    --ul-overlay1: 248, 185, 138;
+    --ul-overlay0: 248, 185, 138;
+    --ul-surface2: 248, 185, 138;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 159, 96, 49;
+    --ul-base: 35, 28, 22;
+    --ul-shell: 26, 20, 16;
+    --ul-stalk: 46, 37, 29;
+}
+
+.theme-dark.ul-ultra-dt {
     --ul-text: 255, 255, 255;
     --ul-subtext0: 149, 157, 165;
     --ul-overlay2: 201, 206, 210;
@@ -1109,8 +1333,24 @@ settings:
     --ul-base: 0, 0, 0;
     --ul-shell: 6, 7, 8;
     --ul-stalk: 18, 20, 23;
-    --h1-color: rgb(149, 157, 165);
-    --h2-color: rgb(149, 157, 165);
+}
+
+.theme-dark.ul-magic-dt {
+    --ul-text: 232, 193, 197;
+    --ul-subtext0: 144, 85, 162;
+    --ul-overlay2: 212, 153, 185;
+    --ul-overlay1: 144, 85, 162;
+    --ul-overlay0: 144, 85, 162;
+    --ul-surface2: 144, 85, 162;
+    --ul-surface1: 0, 0, 0, 0.035;
+    --ul-surface0: 55, 49, 94;
+    --ul-base: 46, 41, 78;
+    --ul-shell: 1, 22, 56;
+    --ul-stalk: 95, 63, 120;
+    --h1-color: rgb(134, 187, 216);
+    --h2-color: rgb(246, 174, 45);
+    --h3-color: rgb(242, 100, 25);
+    --h4-color: rgb(112, 98, 92);
 }
 
 .theme-dark,
@@ -1190,6 +1430,7 @@ settings:
     --drag-ghost-background: rgb(var(--ul-text));
     --drag-ghost-text-color: rgb(var(--ul-stalk));
     --nav-indentation-guide-color: rgba(var(--ul-stalk), 0.4);
+    --modal-border-color: rgba(0, 0, 0, 0.088);
 }
 
 .theme-dark {
@@ -1220,10 +1461,13 @@ settings:
 
 body {
     --inline-title-size: var(--ul-title-size);
-    --font-default: var(--ul-font-int);
-    --font-interface: var(--ul-font-int);
-    --font-text: var(--ul-font-tex);
-    --font-monospace: var(--ul-font-code);
+    --font-default-theme: var(--ul-font-int);
+    --font-interface-theme: var(--ul-font-int);
+    --font-interface: 'Syne';
+    --font-text-theme: var(--ul-font-tex);
+    --font-text: 'Lexend Deca';
+    --font-monospace-theme: var(--ul-font-code);
+    --font-monospace: 'Recursive';
     --font-title: var(--ul-font-title);
     --link-decoration-hover: none;
     --link-external-decoration: none;
@@ -1636,6 +1880,7 @@ h6,
 .HyperMD-header-6,
 .HyperMD-list-line .cm-header-6 {
     margin-top: 33px;
+    font-family: var(--ul-font-header);
 }
 
 /* blockqoute
