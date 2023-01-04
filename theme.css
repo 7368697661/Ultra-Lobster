@@ -1225,6 +1225,8 @@ settings:
     --titlebar-background-focused: transparent;
     --titlebar-background: transparent;
 
+    --bg-lowOp: rgba(255, 255, 255, 0.03);
+    --border-lowOp: 1px solid rgba(255, 255, 255, 0.05);
     --scrollbar-active-thumb-bg: var(--color-accent);
     --scrollbar-bg: transparent;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.199);
@@ -1238,6 +1240,8 @@ settings:
     --titlebar-background-focused: transparent;
     --titlebar-background: transparent;
 
+    --bg-lowOp: rgba(0, 0, 0, 0.03);
+    --border-lowOp: 1px solid rgba(0, 0, 0, 0.05);
     --scrollbar-active-thumb-bg: var(--color-accent);
     --scrollbar-bg: transparent;
     --scrollbar-thumb-bg: rgba(0, 0, 0, 0.035);
@@ -2093,63 +2097,261 @@ kbd,
 /*Kanban support*/
 .kanban-plugin__board > div {
     background: var(--background-primary);
-}
-
-.kanban-plugin {
+  }
+  
+  .kanban-plugin {
     background-color: transparent;
-}
-
-.kanban-plugin__lane {
-    background: var(--background-secondary);
-}
-
-button:not(.clickable-icon) {
-    box-shadow: var(--cbs);
-    background: var(--color-accent);
-}
-
-.kanban-plugin__lane button.kanban-plugin__lane-settings-button {
+  }
+  
+  .kanban-plugin__lane {
+    background: var(--background-primary);
+  }
+  
+  .kanban-plugin__lane button.kanban-plugin__lane-settings-button {
     background-color: var(--color-accent);
-}
-
-button.kanban-plugin__new-item-button {
+  }
+  
+  .kanban-plugin__item {
+    font-size: 0.875rem;
+    border: var(--border-lowOp);
+    border-radius: 8px;
+  }
+  
+  .kanban-plugin__item-title-wrapper {
+    background: transparent;
+    display: flex;
+    padding: 2px 8px;
+    align-items: center;
+  }
+  
+  button.kanban-plugin__new-item-button {
     background-color: transparent;
-    color: var(--text-muted);
-}
+    color: var(--text-accent);
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  button.kanban-plugin__new-item-button:hover {
+    background-color: var(--color-accent);
+    color: var(--text-on-accent);
+    border: var(--border-lowOp);
+    box-shadow: var(--sbs);
+    border-radius: 8px;
+  }
+  
+  .kanban-plugin__item-form .kanban-plugin__item-input-wrapper {
+    border: var(--border-lowOp);
+    background-color: var(--background-primary);
+    border-radius: 8px;
+  }
+  
+  .kanban-plugin__lane {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-lowOp);
+    border-radius: 16px;
+    border: var(--border-lowOp);
+  }
+  
+  .kanban-plugin__item-button-wrapper {
+    border-top: 0px dashed var(--background-primary-alt);
+  }
+  
+  .kanban-plugin__lane-header-wrapper {
+    border-bottom: 2px dashed var(--background-primary-alt);
+  }
+  
+  .kanban-plugin__lane-wrapper {
+    margin-bottom: 3%;
+  }
+  
+  div.kanban-plugin__markdown-preview-view > div > * {
+    font-family: var(--font-interface) !important;
+  }
+  
+  .kanban-plugin__board > div {
+    flex-wrap: wrap;
+    overflow-y: scroll;
+  }
 
-/*Reminder Support*/
-.reminder-time.svelte-gzdxib {
+/*influx*/
+.root-0-2-1 h3 {
+    color: var(--text-normal) !important;
+  }
+  
+  .inlinkedMetaDiv-d28-0-2-35 {
+    border-right: dotted var(--background-secondary) !important;
+  }
+  
+  /*Reminder Support*/
+  .reminder-time.svelte-gzdxib {
     font-size: 0.7em;
     font-family: var(--font-monospace);
     color: var(--color-accent);
-}
-
-.reminder-list-item.svelte-gzdxib {
+  }
+  
+  .reminder-list-item.svelte-gzdxib {
     line-height: 1em;
-}
-
-.reminder-list-item.svelte-gzdxib:hover {
+  }
+  
+  .reminder-list-item.svelte-gzdxib:hover {
     border-radius: 4px;
-    background-color: var(--background-tertiary) !important;
-}
-
-.reminder-group.svelte-gzdxib {
+    background-color: var(--background-secondary-alt) !important;
+  }
+  
+  .reminder-group.svelte-gzdxib {
     margin-bottom: 1rem;
     font-size: 13px;
     color: var(--color-accent);
-}
-
-.reminder-file.svelte-gzdxib {
+  }
+  
+  .reminder-file.svelte-gzdxib {
     font-family: var(--font-monospace);
     font-size: 0.75em;
+  }
+  
+  /* Memo Support */
+  
+  .theme-dark div[data-type='memos_view'] .memo-editor-wrapper,
+  .theme-light div[data-type='memos_view'] .memo-editor-wrapper {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    border: var(--border-lowOp);
+    box-shadow: var(--sbs);
+  }
+  
+  .theme-dark
+    div[data-type='memos_view'].mobile-view
+    .search-bar-container
+    > .search-bar-inputer,
+  .theme-dark div[data-type='memos_view'] .memo-editor-wrapper > .memo-editor,
+  .theme-light
+    div[data-type='memos_view'].mobile-view
+    .search-bar-container
+    > .search-bar-inputer,
+  .theme-light div[data-type='memos_view'] .memo-editor-wrapper > .memo-editor {
+    background: var(--background-secondary);
+    border-radius: 8px;
+  }
+  
+  .theme-dark
+    div[data-type='memos_view']
+    .common-editor-wrapper
+    > .common-tools-wrapper
+    > .btns-container
+    > .confirm-btn,
+  .theme-light
+    div[data-type='memos_view']
+    .common-editor-wrapper
+    > .common-tools-wrapper
+    > .btns-container
+    > .confirm-btn {
+    background: var(--color-accent);
+    border-radius: 4px;
+    box-shadow: none;
+  }
+  
+  .theme-dark .mobile-view .memos-sidebar-wrapper,
+  .theme-light .mobile-view .memos-sidebar-wrapper {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+  }
+  
+  .mobile-show-sidebar .mobile-view #page-wrapper > .memos-sidebar-wrapper {
+    box-shadow: var(--sbs);
+    border-radius: 8px;
+  }
+  
+  .theme-dark div[data-type='memos_view'].mobile-view .tags-wrapper,
+  .theme-dark
+    div[data-type='memos_view'].mobile-view
+    .tags-wrapper-mobile-emulate,
+  .theme-light div[data-type='memos_view'].mobile-view .tags-wrapper,
+  .theme-light
+    div[data-type='memos_view'].mobile-view
+    .tags-wrapper-mobile-emulate {
+    background-color: var(--background-secondary);
+  }
+  
+  .theme-dark
+    [data-type='memos_view']
+    .queries-wrapper
+    > .create-query-btn-container
+    > .btn,
+  .theme-light
+    [data-type='memos_view']
+    .queries-wrapper
+    > .create-query-btn-container
+    > .btn {
+    color: var(--color-white);
+  }
+
+/* mixture of Anubis's wonderful Rainbow Folders https://github.com/AnubisNekhet/AnuPpuccin <3 and my own css from Origami */
+
+/* Folders and files */
+.nav-folder:not(.is-collapsed) .nav-folder-collapse-indicator {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224H544c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480H32c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    background-color: var(--color-accent);
+    width: 18px;
+    height: 18px;
+    margin-top: -2px;
+    margin-right: 8px;
+    margin-left: -2px;
+  }
+  .nav-folder.is-collapsed .nav-folder-collapse-indicator {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z'/%3E%3C/svg%3E");
+    -webkit-mask-repeat: no-repeat;
+    background-color: var(--color-accent);
+    width: 16px;
+    height: 16px;
+    margin-top: -2px;
+    margin-right: 8px;
+    margin-left: -2px;
+  }
+  
+  .collapse-icon svg.svg-icon {
+    color: var(--color-accent) !important;
+  }
+  /*------------RAINBOW FOLDERS-------------*/
+  /* Rainbow colors */
+  .nav-folder-children > .nav-folder:nth-child(11n + 2) {
+    --rainbow-folder-color: var(--color-accent);
+  }
+  
+  .nav-folder.mod-root .nav-folder .nav-folder {
+    --rainbow-folder-color: inherit;
+  }
+  .nav-folder-title {
+    padding: var(--nav-item-parent-padding);
+    color: var(--color-accent-1) !important;
+  }
+  .nav-file-title {
+    padding: var(--nav-item-padding);
+  }
+  .nav-file-title,
+  .nav-folder-title {
+    margin-bottom: var(--size-2-1);
+    display: flex;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+    color: var(--text-muted);
+    font-size: var(--nav-item-size);
+    font-weight: var(--nav-item-weight);
+    line-height: var(--line-height-tight);
 }
 
-/* files tweaks by @PspStreet51#6517 */
+/*
+/ files tweaks by @PspStreet51#6517 /
 .nav-folder-title,
 .nav-file-title {
-    min-height: 34px;
+    min-height: 0px;
     height: fit-content;
     align-items: center;
+    margin-bottom: 0px;
+    font-size: 12px;
 }
 
 .nav-file-title-content,
@@ -2192,81 +2394,7 @@ button.kanban-plugin__new-item-button {
     margin: 0 0 0 20px;
 }
 
-/* Memo Support */
-
-.theme-dark div[data-type='memos_view'] .memo-editor-wrapper,
-.theme-light div[data-type='memos_view'] .memo-editor-wrapper {
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-    border: none;
-    box-shadow: var(--cbs);
-}
-
-.theme-dark
-    div[data-type='memos_view'].mobile-view
-    .search-bar-container
-    > .search-bar-inputer,
-.theme-dark div[data-type='memos_view'] .memo-editor-wrapper > .memo-editor,
-.theme-light
-    div[data-type='memos_view'].mobile-view
-    .search-bar-container
-    > .search-bar-inputer,
-.theme-light div[data-type='memos_view'] .memo-editor-wrapper > .memo-editor {
-    background: var(--background-secondary);
-    border-radius: 8px;
-}
-
-.theme-dark
-    div[data-type='memos_view']
-    .common-editor-wrapper
-    > .common-tools-wrapper
-    > .btns-container
-    > .confirm-btn,
-.theme-light
-    div[data-type='memos_view']
-    .common-editor-wrapper
-    > .common-tools-wrapper
-    > .btns-container
-    > .confirm-btn {
-    background: var(--color-accent);
-    border-radius: 4px;
-    box-shadow: none;
-}
-
-.theme-dark .mobile-view .memos-sidebar-wrapper,
-.theme-light .mobile-view .memos-sidebar-wrapper {
-    background-color: var(--background-secondary);
-    border-radius: 8px;
-}
-
-.mobile-show-sidebar .mobile-view #page-wrapper > .memos-sidebar-wrapper {
-    box-shadow: var(--cbs);
-    border-radius: 8px;
-}
-
-.theme-dark div[data-type='memos_view'].mobile-view .tags-wrapper,
-.theme-dark
-    div[data-type='memos_view'].mobile-view
-    .tags-wrapper-mobile-emulate,
-.theme-light div[data-type='memos_view'].mobile-view .tags-wrapper,
-.theme-light
-    div[data-type='memos_view'].mobile-view
-    .tags-wrapper-mobile-emulate {
-    background-color: var(--background-secondary);
-}
-
-.theme-dark
-    [data-type='memos_view']
-    .queries-wrapper
-    > .create-query-btn-container
-    > .btn,
-.theme-light
-    [data-type='memos_view']
-    .queries-wrapper
-    > .create-query-btn-container
-    > .btn {
-    color: var(--color-white);
-}
+*/
 
 .is-hidden-frameless:not(.is-fullscreen).is-focused
     .titlebar-button-container.mod-right,
@@ -2334,39 +2462,47 @@ button.kanban-plugin__new-item-button {
 
 /* Support for Strange New Worlds by TFThacker */
 .snw-ref-title-popover {
-    border: transparent;
-    background-color: var(--background-primary-alt);
+    border: var(--border-lowOp);
+    color: var(--text-on-accent);
+    background-color: var(--color-accent);
     border-radius: 8px;
-}
-
-.search-result-file-matches,
-.search-result-file-matche {
-    border-radius: 4px;
-    border: var(--border-width) dashed var(--modal-border-color);
-    box-shadow: var(--cbs);
-}
-
-.snw-popover-container {
+  }
+  
+  .search-result-file-matches,
+  .search-result-file-matche {
     border-radius: 8px;
-    box-shadow: var(--cbs);
-}
-
-.tree-item-self.is-clickable:hover {
+    border: var(--border-lowOp);
+    box-shadow: none;
+  }
+  
+  .snw-reference {
+    border: var(--border-lowOp);
+    font-size: 8px;
+    box-shadow: none;
+  }
+  
+  .snw-popover-container {
+    border-radius: 8px;
+    box-shadow: var(--sbs);
+    border: var(--border-lowOp);
+  }
+  
+  .tree-item-self.is-clickable:hover {
     background-color: var(--background-secondary-alt);
     border-radius: 8px;
-}
-
-.search-result-file-match:hover {
+  }
+  
+  .search-result-file-match:hover {
     background-color: var(--background-secondary-alt);
     border-radius: 4px;
-}
-
-.markdown-rendered.show-indentation-guide li > ul::before,
-.markdown-rendered.show-indentation-guide li > ol::before,
-.markdown-source-view.mod-cm6 .cm-indent::before {
-    border-right: var(--indentation-guide-width) dotted
-        var(--indentation-guide-color);
-}
+  }
+  
+  .markdown-rendered.show-indentation-guide li > ul::before,
+  .markdown-rendered.show-indentation-guide li > ol::before,
+  .markdown-source-view.mod-cm6 .cm-indent::before {
+    border-right: var(--border-lowOp);
+    padding-left: 2px;
+  }
 
 /* Sanctum asides */
 
@@ -2470,3 +2606,170 @@ body {
     font-size: 80%;
     font-weight: bold;
 }  
+
+/* Make.md support */
+
+.mk-tree-wrapper button {
+    background: none;
+    border: 0px solid var(--background-primary) !important;
+    box-shadow: none !important;
+    /*
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    */
+    background: transparent !important;
+    /* color: var(--color-accent) !important; */
+  }
+  
+  .mk-flowspace-title {
+    border-top: none;
+  }
+  
+  .mk-flowspace-title:hover {
+    border-top: none;
+    background-color: transparent;
+    color: var(--text-accent);
+  }
+  
+  .mk-flowspace-editor .mk-floweditor {
+    border-top: none;
+  }
+  
+  .mk-flowspace-title button.mk-open {
+    background: var(--color-accent);
+  }
+  
+  .mk-flowspace-title button {
+    padding: 8px;
+    margin-left: 0px;
+    width: unset;
+    border: none;
+  }
+  
+  .mk-flowspace-title svg {
+    width: 16px;
+    height: 16px;
+    color: var(--color-pink);
+  }
+  
+  .mk-flowspace-title svg:hover {
+    color: var(--color-pink);
+  }
+  
+  .mk-tree-wrapper {
+    color: var(--text-muted);
+  }
+  
+  .mk-is-active:not(.clone) {
+    background: transparent;
+  }
+  
+  .mk-tree-wrapper button.mk-collapse svg {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 576 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224H544c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480H32c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z'/%3E%3C/svg%3E") !important;
+    -webkit-mask-repeat: no-repeat;
+    background-color: var(--color-pink);
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    margin-right: 0px;
+    margin-left: 2px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .mk-tree-wrapper button.mk-collapse.mk-collapsed svg {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --%3E%3Cpath d='M64 480H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H298.5c-17 0-33.3-6.7-45.3-18.7L226.7 50.7c-12-12-28.3-18.7-45.3-18.7H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64z'/%3E%3C/svg%3E") !important;
+    -webkit-mask-repeat: no-repeat;
+    background-color: var(--color-pink);
+    width: 16px;
+    height: 16px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .mk-tree-wrapper button.mk-collapse:hover {
+    transform: none;
+  }
+  
+  .mk-collapse svg {
+    transform: none;
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+  }
+  
+  .mk-tree-item svg {
+    color: var(--color-pink) !important;
+  }
+  
+  /*------------RAINBOW FOLDERS-------------*/
+  /* Rainbow colors */
+  .mk-tree-wrapper-children > .mk-tree-wrapper:nth-child(11n + 2) {
+    --rainbow-folder-color: var(--color-pink);
+  }
+  
+  .mk-tree-wrapper.mod-root .mk-tree-wrapper .mk-tree-wrapper {
+    --rainbow-folder-color: inherit;
+  }
+  .mk-tree-wrapper {
+    padding: var(--nav-item-parent-padding);
+    color: var(--color-blue) !important;
+  }
+  .nav-file-title {
+    padding: var(--nav-item-padding);
+  }
+  .nav-file-title,
+  .nav-folder-title {
+    margin-bottom: var(--size-2-1);
+    display: flex;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+    color: var(--text-muted);
+    font-size: var(--nav-item-size);
+    font-weight: var(--nav-item-weight);
+    line-height: var(--line-height-tight);
+  }
+  
+  /* end Make.md support */
+
+/* Surfer Support */
+.wb-page-search-bar-input-container,
+.wb-page-search-bar-input {
+  border-radius: 16px !important;
+  background: var(--bg-lowOp) !important;
+}
+
+.clickable-icon {
+  border: none;
+}
+
+/* cite styling originally from the wonderful palatinate by eleanor konik */
+cite {
+  background: transparent;
+  border-radius: 8px;
+  color: var(--text-accent);
+  text-align: right;
+  width: auto;
+  display: block;
+}
+
+cite a:link {
+  color: var(--color-pink);
+}
+
+.HyperMD-list-line {
+  padding-bottom: 8px;
+}
+
+div.HyperMD-list-line.HyperMD-list-line-1.cm-line {
+  margin-top: 2px !important;
+  background-color: var(--background-primary);
+  padding-right: 8px;
+  border: var(--border-lowOp);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
