@@ -1,101 +1,38 @@
-# Ultra Lobster 🦞
-## A theme for the css playground [Obsidian](https://obsidian.md/)
+# 🦞 Ultra Lobster
+A theme for [Obsidian](https://obsidian.md/).
 
-![image](https://user-images.githubusercontent.com/87339163/198754387-416d6149-a536-4a8f-adfb-0cf27c12702f.png)
+![UltraLobster](https://user-images.githubusercontent.com/87339163/211223767-62ad037a-b837-41e2-a553-5b450544fbfe.png)
 
-This project began as a way for me to learn CSS, more or less. Because as my best friend said:
+> Ultra Lobster is a living interface theme for Obsidian, with a modern and colorful design that emphasizes readability and ease of use. It features rounded UI elements and a soft aesthetic, and is designed to be easily extended and customized in the future.
 
-![image](https://user-images.githubusercontent.com/87339163/197320589-e1a4b86e-d17f-4ab4-9a18-0869a3ae0f65.png)
+Ultra Lobster is a living interface theme for Obsidian, heavily inspired by modern design and focused on color and type. It offers a visually pleasing and comfortable experience, with an emphasis on rounded UI elements and soft design choices. While Ultra Lobster currently does not offer many customization options, they are planned for future updates. In the meantime, Ultra Lobster serves as a codebase for easily extending and creating new themes. It also supports many popular community plugins.
 
-> Believe it or not (or look at my code and believe it) I knew next to no CSS before beginning this! It's been a great chance to learn and practice, and I've already been able to take some of the skills I've learned over the last few weeks of work and apply them to web projects! I've been having an absolute blast putting this theme together, and I hope you enjoy it 🥰
+## 🎨 Color Choices 
+![Screenshots](https://user-images.githubusercontent.com/87339163/211225385-7b0b4b32-945c-4957-9095-cf396451c686.png)
+Ultra Lobster boasts a carefully crafted color palette that balances aesthetics with readability. The light mode is reminiscent of manilla envelopes, while the dark mode breaks from the common red and blue hues of many dark UI themes, instead opting for a green accent and coloring. Both modes offer high contrast for easy reading, while still maintaining an aesthetically pleasing look.
 
-_Ultra Lobster_ is my own take on 'buffing up the corners' of Obsidian without straying too far from default colors. The project started as an attempt to reduce visual clutter, while not simply removing information. I also wanted to take a chance to create an intuitive environment that built upon a 'tactile' canvas... I wanted cards, ok. With rounded corners, especially.
+## ⌨️ Type Choices 
+![canvas](https://user-images.githubusercontent.com/87339163/211224408-5890432a-ae00-486f-bc56-9a9cf666dcca.png)
+Ultra Lobster places a strong emphasis on typography, with a focus on increasing readability and reducing strain on the eyes. To achieve this, I spent hours researching and fine-tuning font pairs and CSS settings based on factors such as contrast, legibility, and spacing. I chose to use a serif font for titles and a sans serif font for UI and text elements, as this follows centuries of design tradition and has been shown to have benefits for readability in older populations. 
 
-# Color 🎨
-Colors were carefully chosen using a mixture of <https://coolors.co> and a background in visual design. I attempted to keep the default color schema, but adapt the colors slightly for contrast, tone, and other small edits to give the interface a softer feeling. Links have also been carefully minimized in both live edit and preview, with color accent, selective underline, and font weights to help differentiate without overwhelming.
+![handgloves](https://user-images.githubusercontent.com/87339163/211224406-d3d75abb-29b6-4420-8c4a-8aeccee127cc.png)
+The specific fonts used are DT Nightingale for titles, Syne for header 2, Aspekta for UI and editor text, and Heming for monospace. In order to save on file size, I primarily used variable fonts and only included as many as were necessary.
 
-![omegalob](https://user-images.githubusercontent.com/87339163/197934983-d6b34eb8-cd48-432e-9894-6eb91cbdf4e7.png)
+## ⬇️ Installation
 
-![image](https://user-images.githubusercontent.com/87339163/198754336-433b6fbe-d533-4d77-acae-d9ac8c38cc97.png)
+Ultra Lobster can be found within the Obsidian community theme hub! Navigate to: 
 
-![timberwolf](https://user-images.githubusercontent.com/87339163/198393910-252dea33-f2b1-486e-b34c-e89015261ae7.png)![unknown](https://user-images.githubusercontent.com/87339163/198155892-1a49dcb1-4a40-4492-8a52-39a704c76010.png)
+Settings ⇨ Appearance ⇨ Themes and click “**Manage**” and search for `Ultra Lobster`
 
-![lob1](https://user-images.githubusercontent.com/87339163/197315601-10d3d4eb-d786-48c1-8913-65ed4f29f2bf.png)
+## ⚙️ Configuration
 
-## LOBSTER TIME
-Or, if you wanna boogie you can hop over to [Lobster Time](https://coolors.co/f4f1de-efd4bf-eab69f-e07a5f-3d405b-0b7a75) for a coppery crustacean POP offering night friendly red-based hues to help with eye strain:
+Ultra Lobster is designed to be an extensible theme, and I plan to offer a variety of customization options in the future. Currently, the Style Settings menu allows users to choose from a range of color accents that will be applied to various elements throughout the theme, such as canvas cards. Users can also enable a WIP border around the first item in lists to help visually distinguish blocks of text while bullet journaling. These options have been carefully chosen to enhance the aesthetics of both light and dark modes. 
 
-![lob1 1](https://user-images.githubusercontent.com/87339163/197315662-50dc5141-a0fd-415f-9615-cec1acddb0d7.png)
+In addition to these current options, I plan to expose variables for customization in the Style Settings menu, such as text settings, various colors, and other optional features. This will allow users to further personalize the appearance and functionality of Ultra Lobster to their preferences. 
 
-# Font ✒️
-I am a font addict. I'll admit it. I probably download at least 25 fonts a day and I'll never stop. The fonts for Ultra Lobster were handpicked over the course of longer than I care to admit to finally arrive at a combination of values that both enhances vanilla Obsidian, and helps you focus on what matters: the words. I opted for Google Fonts, because I like community typefaces (and they're free). Google Fonts are also pretty light, and with my most recent font pass I was able to take theme file size from 214kb to 48, and that was with a 10x increase in type options. I don't want to bog down the electron client too badly, so I am opting not to embed (even though I wish I could). With Style Settings, users can switch between a fairly decent range of font options for inline title, interface, and monospaced typefaces --all of which have been carefuly chosen to work as pairings and long-form body content. I don't know about you, but sometimes my eyes glaze over on long paragraphs with badly balanced line-hight; that's why such a massive portion of the theme revolves around creating a beutiful type enviroment.
+One upcoming feature will be "type palettes" in the Style Settings menu. These palettes will allow users to choose from pre-selected font combinations that have been carefully designed to enhance the aesthetic and usability of the theme. With these options, users will be able to personalize the appearance of Ultra Lobster to their own preferences and style.
 
-Here are the typefaces currently included:
-- [Archivo Narrow](https://fonts.google.com/specimen/Archivo+Narrow)
-- [Crimson Text](https://fonts.google.com/specimen/Crimson+Text)
-- [DM Mono](https://fonts.google.com/specimen/DM+Mono?category=Monospace)
-- [DM Sans](https://fonts.google.com/specimen/DM+Sans)
-- [Fira Sans](https://fonts.google.com/specimen/Fira+Sans)
-- [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono?category=Monospace)
-- [Inter](https://fonts.google.com/specimen/Inter)
-- [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono?category=Monospace)
-- [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
-- [Overpass Mono](https://fonts.google.com/specimen/Overpass+Mono?category=Monospace)
-- [Oxygen Mono](https://fonts.google.com/specimen/Oxygen+Mono?category=Monospace)
-- [Playfair Display](https://fonts.google.com/specimen/Playfair+Display)
-- [Poppins](https://fonts.google.com/specimen/Poppins)
-- [Proza Libre](https://fonts.google.com/specimen/Proza+Libre)
-- [PT Mono](https://fonts.google.com/specimen/PT+Mono?category=Monospace)
-- [Raleway](https://fonts.google.com/specimen/Raleway)
-- [Roboto Slab](https://fonts.google.com/specimen/Roboto+Slab)
-- [Rosario](https://fonts.google.com/specimen/Rosario)
-- [Rubik](https://fonts.google.com/specimen/Rubik)
-- [Source Sans Pro](https://fonts.google.com/specimen/Source+Sans+Pro)
-- [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-- [Space Mono](https://fonts.google.com/specimen/Space+Mono?category=Monospace)
-- [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono?category=Monospace)
-- [Work Sans](https://fonts.google.com/specimen/Work+Sans)
-
-![image](https://user-images.githubusercontent.com/87339163/197315907-f775cf5b-418e-44bb-9c11-c7b1b8508032.png)
-_I love a good rounded, thicc font –and this one is just light enough to not strain my eyes too badly over long text (so far)._
-
-## Monospace & Blockquotes
-Finally, the monospaced font is [Space Mono by Colophon](https://fonts.google.com/specimen/Space+Mono?category=Monospace), because as far as I can tell its basically IBM plex but I like it more 🤷‍♀️
-
-![image](https://user-images.githubusercontent.com/87339163/197315754-bae5e216-c907-4d21-b768-53412dcc999e.png)
-_A special Amoled mode can be toggled with Style Setting, and card blockquotes._
-
-# General Themery 💪
-Various components have been tweaked and modified to bring in line with this design spec. The entire workspace has been given a design pass, bringing card-like design to your notes. I find it helps me to see my notes in such a more visual manner (like cards on a desk), though it comes at a cost; necessary margins for shading means that the theme contains heavy amounts of whitespace.
-
-![image](https://user-images.githubusercontent.com/87339163/197316274-6fbeaeb2-6cfd-42e0-b5fc-c9db927cb7f2.png)
-
-## Prompts ⌨️
-While I use replacements for the stock prompts, careful consideration has been taken to ensure a standard experience.
-
-👩‍💻 Command obsessed like me? [Better Command Palette](https://github.com/AlexBieg/obsidian-better-command-palette)...
-![lobcommand](https://user-images.githubusercontent.com/87339163/197312966-bb9990d7-9b3b-42e0-9e01-22d91c43ed88.png)
-![lobsearch1](https://user-images.githubusercontent.com/87339163/197316860-73bd4980-6c07-4432-a7fe-d309b4da6c79.png)
-...and [Omnisearch](https://github.com/scambier/obsidian-omnisearch) have also been themed to match the base prompts, and truncated of extra information like prompt titles.
-
-Finally, many other changes have been made, including but not limited to:
-- Blockquotes
-- Callouts
-- Code blocks
-- Inline titles
-- Fonts, fonts, fonts
-	- Interface: [Rubik by Hubert and Fischer, Meir Sadan, Cyreal](https://fonts.google.com/specimen/Rubik)
-	- Title: [Zoho Puvi by the Zoho team](https://www.zoho.com/typefaces/puvi/)
-	- Monospace [Space Mono by Colophon](https://fonts.google.com/specimen/Space+Mono?category=Monospace)
-- Lists
-	- Ordered lists by [Typomagical](https://github.com/hungsu/typomagical-obsidian) and [Concourse Index by Matthew Butterick](https://practicaltypography.com/concourse-index.html)
-- Links
-- Headers (_Smooth live headers [also fixed for source] by_ `@Luke242#8485`)
-- Folder theming by `GabeVilela@PspStreet51#6517`
-- Plugin support
-- And much, much more
-
-## Plugin Support
+### 🔌 Plugin Support
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 - [Influx](https://github.com/jensmtg/influx)
 - [Memo](https://github.com/quorafind/obsidian-memos)
@@ -104,25 +41,59 @@ Finally, many other changes have been made, including but not limited to:
 - [Reminder](https://github.com/uphy/obsidian-reminder)
 - [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) (🚧HEAVY WIP🚧)
 
-## Is this theme missing something?
+#### ❔ Is this theme missing something?
 Open a ticket! I can't promise I will always be the fastest, but I'll try to add support and push fixes as quickly as I can.
 
-# TODO
-- [ ] make theme less bad on the code side
-- [ ] figure out font fallback for other languages
-- [ ] make better graphics
-- [x] upload new photos
-- [x] rewrite copy to match new design spec
-- [x] write up thoughts on changes over base
-- [ ] wrestle with the nihilistic realization that writing any published thoughts is just adding senseless noise into the great internet ether
-- [x] figure out style settings
-- [ ] update/create 'roadmap'
-- [x] upload content
-- [x] v0.5 stable for public testing
-- [ ] greater plugin support
-- [x] fix kanbans
-- [ ] finish color schemes
-- [ ] set up style settings...
+## 🏗️ TODO
+- [ ] Refactor codebase:
+	- [ ] Finish commenting the `wasteland` sections of the theme
+	- [ ] Add back Style Settings options
+- [ ] Add Style Settings for:
+	- [ ] Typography 
+		- [ ] Type Palettes
+			1. Serif Dominant
+				- Title: DT Nightingale (*actually no clue where this font came from… Pixel Surplus?*)
+				- Headers: Syne (_Google Fonts_)
+				- UI, Text: [Aspekta](https://github.com/ivodolenc/aspekta?ref=uncut.wtf)
+				- Monospace: [Heming](https://www.behance.net/gallery/142001915/Heming-Free-Variable-Font?locale=en_US)
+			2. Sans-Serif Dominant 
+				- Title: TBD (*Aspekta*?)
+				- Headers: TBD
+				- UI, Text: TBD
+				- Monospace: TBD
+			3. Support for loading font packs? idk.
+		- [ ] Type Settings
+			- [ ] Size, maybe; might be redundant since you can change size in settings and I am using clamp values for responsive type
+	- [ ] Color
+		- [ ] Additional Sub-themes
+		- [ ] (*small design trick that goes a long way*) Add chosen color accent to:
+			- [ ] `background-primary`
+			- [ ] `background-secondary`
+			- [ ] Add to shadows
+		- [ ] Potentially switch current color scheme to "Ultra Lobster" sub-theme, and use a neutral base theme palette
+	- [ ] UI
+		- [ ] Finish Callout theming
+		- [ ] Finish plugin support
+		- [ ] Clean up card UI code
+		- [ ] Codeblocks
+		- [ ] Embeds
+		- [ ] Asides? (_maybe footers would be nice_)
 
-## Other
-- Icons are handled by [Icon Folder](https://github.com/FlorianWoelki/obsidian-icon-folder)
+## 💖 Credits
+
+-  🖥️ **Lukemt** for their smooth live headers and continued help!
+-  🐕**Anubis** for their rainbow folders
+-  💎 **Obsidian**, for the amazing program to theme
+-  ⌨️ The amazing **plugin** developers, for their time
+-  🎨 The gifted **theme** community, for their inspiration
+-  📌 **Pinterest** for offering far too many designs to look at
+-  👯 Countless members of **the community**, for helping me test things
+-  😈 Myself, for writing all of this
+-  🎡 John Wheeler, for still having a really cool name
+-  💖 **You**, for reading this & trying my theme
+
+## ⚖️ Licensing
+
+Ultra Lobster is licensed under the [MIT License](https://opensource.org/licenses/MIT), which means that it is free to use, modify, and distribute for personal or commercial use. I encourage users to customize and edit the theme to create their own unique versions. Please keep in mind that any modifications or distributions of the theme must retain the original MIT License and credit to the original author (*me*) and anyone else who’s code is used in those snippets :)
+
+I hope that this theme serves as a helpful and flexible starting point for your own customization and development. If you have any questions or need further information, please don't hesitate to ask.
