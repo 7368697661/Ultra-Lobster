@@ -3,8 +3,6 @@ A theme for [Obsidian](https://obsidian.md/).
 
 ![UltraLobster](https://user-images.githubusercontent.com/87339163/211223767-62ad037a-b837-41e2-a553-5b450544fbfe.png)
 
-> Ultra Lobster is a living interface theme for Obsidian, with a modern and colorful design that emphasizes readability and ease of use. It features rounded UI elements and a soft aesthetic, and is designed to be easily extended and customized in the future.
-
 Ultra Lobster is a living interface theme for Obsidian, heavily inspired by modern design and focused on color and type. It offers a visually pleasing and comfortable experience, with an emphasis on rounded UI elements and soft design choices. While Ultra Lobster currently does not offer many customization options, they are planned for future updates. In the meantime, Ultra Lobster serves as a codebase for easily extending and creating new themes. It also supports many popular community plugins.
 
 ## 🎨 Color Choices 
