@@ -1,3 +1,17 @@
+/*
+:: ULTRA LOBSTER
+lets smoothen up that second brain
+a theme by @kneecaps
+*/
+
+/* ===+=== */
+
+/* 
+Style Settings fixed by damiankorcz <3 
+Color palette Style Settings originally inspired by Anubis <3
+*/
+
+
 /* @settings
 name: Ultra Lobster
 id: ul-theme-settings
@@ -596,14 +610,13 @@ body {
   --interactive-accent: var(--color-accent-1);
   --interactive-accent-hover: var(--color-accent-2);
 }
-.theme-light {
-  color-scheme: light;
+
+/* themes */
+
+.theme-light.ul-lobstertime-lt {
   --accent-h: 13;
   --accent-s: 68%;
   --accent-l: 63%;
-  --highlight-mix-blend-mode: darken;
-  --mono-rgb-0: 255, 255, 255;
-  --mono-rgb-100: 0, 0, 0;
   --color-red-rgb: 233, 49, 71;
   --color-red: #ea5e41;
   --color-red-rgb: 234, 94, 65;
@@ -632,6 +645,62 @@ body {
   --color-base-60: #51546a;
   --color-base-70: #3d405b;
   --color-base-100: #343446;
+  --shadow-s: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+  rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+--shadow-l: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+  rgba(239, 238, 230, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+--shadow-lm-only: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+  rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+--cbs: 24px 24px 64px -4px rgba(0, 0, 0, 0.01),
+  0px 16px 32px 6px rgba(0, 0, 0, 0.03);
+--sbs: 24px 24px 84px -4px rgba(0, 0, 0, 0.05),
+  0px 16px 64px 6px rgba(0, 0, 0, 0.007);
+--lbs: rgba(0, 5, 0, 0.03) 0px 20px 30px;
+--border-lowOp: 1px solid rgba(0, 0, 0, 0.1);
+--border-midOp: 1px solid rgba(0, 0, 0, 0.3);
+--lowOp: rgba(0, 0, 0, 0.1);
+--border-conOp: 1px solid rgba(0, 0, 0, 0.3);
+--conOp: rgba(0, 0, 0, 0.3);
+}
+
+.theme-light.ul-obplus-lt,
+.theme-light {
+  color-scheme: light;
+  --accent-h: 13;
+  --accent-s: 68%;
+  --accent-l: 63%;
+  --highlight-mix-blend-mode: darken;
+  --mono-rgb-0: 255, 255, 255;
+  --mono-rgb-100: 0, 0, 0;
+  --color-red-rgb: 240, 62, 62;
+  --color-red: #f03e3e;
+  --color-red-rgb: 234, 94, 65;
+  --color-green: #51cf66;
+  --color-green-rgb: 81, 207, 102;
+  --color-orange: #ffa94d;
+  --color-orange-rgb: 255, 169, 77;
+  --color-yellow: #ffd43b;
+  --color-yellow-rgb: 255, 212, 59;
+  --color-cyan: #99e9f2;
+  --color-cyan-rgb: 153, 233, 242;
+  --color-blue: #339af0;
+  --color-blue-rgb: 51, 154, 240;
+  --color-purple: #b197fc;
+  --color-purple-rgb: 177, 151, 252;
+  --color-pink: #faa2c1;
+  --color-base-00: #f8f9fa;
+  --color-base-05: #f4f1de;
+  --color-base-10: #e9ecef;
+  --color-base-20: #f1f3f5;
+  --color-base-25: #e9ecef;
+  --color-base-30: #dee2e6;
+  --color-base-35: #ced4da;
+  --color-base-40: #b3b8bd;
+  --color-base-50: #666778;
+  --color-base-60: #495057;
+  --color-base-70: #343a40;
+  --color-base-100: #212529;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -666,21 +735,18 @@ body {
     0px 16px 32px 6px rgba(0, 0, 0, 0.03);
   --sbs: 24px 24px 84px -4px rgba(0, 0, 0, 0.05),
     0px 16px 64px 6px rgba(0, 0, 0, 0.007);
-  --lbs: 20px 20px 40px rgba(0, 5, 0, 0.03) 0px 20px 30px;
+  --lbs: rgba(0, 5, 0, 0.03) 0px 20px 30px;
   --border-lowOp: 1px solid rgba(0, 0, 0, 0.1);
   --border-midOp: 1px solid rgba(0, 0, 0, 0.3);
   --lowOp: rgba(0, 0, 0, 0.1);
   --border-conOp: 1px solid rgba(0, 0, 0, 0.3);
   --conOp: rgba(0, 0, 0, 0.3);
 }
-.theme-dark {
-  color-scheme: dark;
+
+.theme-dark.ul-lobstertime-dt {
   --accent-h: 75;
   --accent-s: 21%;
   --accent-l: 57%;
-  --highlight-mix-blend-mode: lighten;
-  --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 255, 255;
   --color-red: #ea5e41;
   --color-red-rgb: 234, 94, 65;
   --color-green: #5fb26b;
@@ -707,6 +773,56 @@ body {
   --color-base-60: #aaabaa;
   --color-base-70: #c2c2c2;
   --color-base-100: #d9d9d9;
+  --shadow-s: 0px 6.7px 5.3px rgba(0, 13, 0, 0.019),
+  0px 22.3px 17.9px rgba(0, 13, 0, 0.029), 0px 100px 80px rgba(0, 13, 0, 0.05);
+--shadow-l: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+--shadow-lm-only: none;
+--sbs: 24px 24px 84px -4px rgba(0, 13, 0, 0.05),
+  0px 16px 64px 6px rgba(0, 13, 0, 0.007);
+--lbs: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+--border-lowOp: 1px solid rgba(255, 255, 255, 0.1);
+--border-midOp: 1px solid rgba(255, 255, 255, 0.3);
+--lowOp: rgba(255, 255, 255, 0.1);
+--midOp: rgba(255, 255, 255, 0.3);
+--border-conOp: 1px solid rgba(255, 255, 255, 0.1);
+--conOp: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark.obplus-dt,
+.theme-dark {
+  color-scheme: dark;
+  --accent-h: 75;
+  --accent-s: 21%;
+  --accent-l: 57%;
+  --highlight-mix-blend-mode: lighten;
+  --mono-rgb-0: 0, 0, 0;
+  --mono-rgb-100: 255, 107, 107;
+  --color-red: #ff6b6b;
+  --color-red-rgb: 234, 94, 65;
+  --color-green: #69db7c;
+  --color-green-rgb: 105, 219, 124;
+  --color-orange: #ffc078;
+  --color-orange-rgb: 255, 192, 120;
+  --color-yellow: #ffe066;
+  --color-yellow-rgb: 255, 224, 102;
+  --color-cyan: #e3fafc;
+  --color-cyan-rgb: 227, 250, 252;
+  --color-blue: #74c0fc;
+  --color-blue-rgb: 116, 192, 252;
+  --color-purple: #e5dbff;
+  --color-purple-rgb: 229, 219, 255;
+  --color-pink: #ffdeeb;
+  --color-base-00: #343a40; /* note bg | background-primary */
+  --color-base-10: #353633;
+  --color-base-20: #212529; /*main background | background-secondary */
+  --color-base-25: #495057;
+  --color-base-30: #868e96;
+  --color-base-35: #70716e;
+  --color-base-40: #727276;
+  --color-base-50: #adb5bd;
+  --color-base-60: #f1f3f5;
+  --color-base-70: #f8f9fa;
+  --color-base-100: #f8f9fa;
   --color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: hsl(
@@ -734,13 +850,13 @@ body {
   --input-shadow-hover: inset 0 0.5px 1px 0.5px rgba(255, 255, 255, 0.16),
     0 2px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 1.5px 0 rgba(0, 0, 0, 0.2),
     0 1px 2px 0 rgba(0, 0, 0, 0.4), 0 0 0 0 transparent;
-  --shadow-s: 0px 6.7px 5.3px rgba(0, 13, 0, 0.019),
-    0px 22.3px 17.9px rgba(0, 13, 0, 0.029), 0px 100px 80px rgba(0, 13, 0, 0.05);
-  --shadow-l: rgba(0, 13, 0, 0.2) 0px 20px 30px;
+  --shadow-s: 0px 6.7px 5.3px rgba(0, 0, 13, 0.019),
+    0px 22.3px 17.9px rgba(0, 0, 13, 0.029), 0px 100px 80px rgba(0, 0, 13, 0.05);
+  --shadow-l: rgba(0, 0, 5, 0.15) 0px 20px 30px;
   --shadow-lm-only: none;
-  --sbs: 24px 24px 84px -4px rgba(0, 13, 0, 0.05),
+  --sbs: 24px 24px 84px -4px rgba(0, 0, 13, 0.05),
     0px 16px 64px 6px rgba(0, 13, 0, 0.007);
-  --lbs: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+  --lbs: rgba(0, 0, 5, 0.15) 0px 20px 30px;
   --border-lowOp: 1px solid rgba(255, 255, 255, 0.1);
   --border-midOp: 1px solid rgba(255, 255, 255, 0.3);
   --lowOp: rgba(255, 255, 255, 0.1);
