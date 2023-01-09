@@ -786,6 +786,31 @@ body {
   box-shadow: var(--shadow-s);
 }
 
+.view-header {
+  height: var(--header-height);
+  /* display: inline-block !important; */
+  border-bottom: var(--border-conOp);
+  /* border-right: var(--border-conOp); */
+  /* border-top: var(--border-conOp); */
+  /* border-left: var(--border-conOp); */
+  background-color: var(--background-primary);
+  z-index: 3;
+  position: fixed;
+  left: auto;
+  /* margin-left: 10%; */
+  /* margin-right: 30%; */
+  /* overflow-wrap: normal; */
+  /* overflow: hidden; */
+  gap: var(--size-4-2);
+  border-radius: 0px 0px 8px 0px;
+  box-shadow: var(--shadow-s);
+  padding: 0 var(--size-4-3);
+}
+
+.workspace-leaf .inline-title {
+  margin-top: 32px;
+}
+
 /* Buttons 
 */
 button:not(
