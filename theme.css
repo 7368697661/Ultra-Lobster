@@ -1,8 +1,7 @@
 /*
 :: ULTRA LOBSTER
 lets smoothen up that second brain
-a theme by @kneecaps
-*/
+a theme by @kneecaps#0777*/
 
 /* ===+=== */
 
@@ -51,6 +50,39 @@ settings:
     title: Top Level Lists
     description: Enable list header demarking
     type: class-toggle
+  - 
+    id: ul-kanban-wrap
+    title: Wrap Kanban lanes
+    description: Enable kanbane vertical wrapping
+    type: class-toggle
+  - 
+    id: ul-theme-light
+    title: Light theme
+    description: Select your preferred light mode scheme
+    type: class-select
+    allowEmpty: false
+    default: ul-obplus-lt
+    options:
+        - 
+            label: 💎 Obsidian+
+            value: ul-obplus-lt
+        - 
+            label: 🦞 Lobster Time
+            value: ul-lobstertime-lt
+  - 
+    id: ul-theme-dark
+    title: Dark theme
+    description: Select your preferred dark mode scheme
+    type: class-select
+    allowEmpty: false
+    default: ul-obplus-dt
+    options:
+        - 
+            label: 💎 Obsidian+
+            value: ul-obplus-dt
+        - 
+            label: 🦞 Lobster Time
+            value: ul-lobstertime-dt
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap');
@@ -902,7 +934,7 @@ body {
   box-shadow: var(--shadow-s);
 }
 
-.view-header {
+.workspace-leaf-content:is([data-type="canvas"]) .view-header {
   height: var(--header-height);
   /* display: inline-block !important; */
   border-bottom: none;
@@ -1800,14 +1832,17 @@ kbd,
  box-shadow: 0px 7px 20px rgba(43, 8, 37, 0.2);
 }*/
 
-.kanban-plugin__lane {
+.ul-kanban-wrap .kanban-plugin__lane {
   width: 100%;
   height: 100%;
+  overflow: visible;
+}
+
+.kanban-plugin__lane {
   border-radius: 8px;
   background: var(--background-primary);
   border: var(--border-lowOp);
   transition: 0.5s ease-out;
-  overflow: visible;
 }
 
 .kanban-plugin__lane:hover {
@@ -1864,7 +1899,7 @@ div.kanban-plugin__markdown-preview-view > div > * {
   font-family: var(--font-interface) !important;
 }
 
-.kanban-plugin__board > div {
+.ul-kanban-wrap .kanban-plugin__board > div {
   flex-wrap: wrap;
   overflow-y: scroll;
 }
