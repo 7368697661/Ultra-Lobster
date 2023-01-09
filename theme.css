@@ -954,7 +954,7 @@ select,
 
 /* note border color and shadow 
 */
-.workspace .mod-root .workspace-leaf-content {
+.workspace .mod-root .workspace-leaf-content:not(.mk-flowspace-editor .workspace-leaf-content) {
   box-shadow: var(--shadow-s);
   border: var(--border-conOp);
 }
