@@ -666,7 +666,7 @@ body {
     0px 16px 32px 6px rgba(0, 0, 0, 0.03);
   --sbs: 24px 24px 84px -4px rgba(0, 0, 0, 0.05),
     0px 16px 64px 6px rgba(0, 0, 0, 0.007);
-  --lbs: 20px 20px 40px #bebebe14, -20px -20px 40px #ffffff14;
+  --lbs: 20px 20px 40px rgba(0, 5, 0, 0.03) 0px 20px 30px;
   --border-lowOp: 1px solid rgba(0, 0, 0, 0.1);
   --border-midOp: 1px solid rgba(0, 0, 0, 0.3);
   --lowOp: rgba(0, 0, 0, 0.1);
@@ -740,7 +740,7 @@ body {
   --shadow-lm-only: none;
   --sbs: 24px 24px 84px -4px rgba(0, 13, 0, 0.05),
     0px 16px 64px 6px rgba(0, 13, 0, 0.007);
-  --lbs: 20px 20px 40px #090b090b, -20px -20px 40px #1114110b;
+  --lbs: rgba(0, 5, 0, 0.15) 0px 20px 30px;
   --border-lowOp: 1px solid rgba(255, 255, 255, 0.1);
   --border-midOp: 1px solid rgba(255, 255, 255, 0.3);
   --lowOp: rgba(255, 255, 255, 0.1);
@@ -789,7 +789,7 @@ body {
 .view-header {
   height: var(--header-height);
   /* display: inline-block !important; */
-  border-bottom: var(--border-conOp);
+  border-bottom: none;
   /* border-right: var(--border-conOp); */
   /* border-top: var(--border-conOp); */
   /* border-left: var(--border-conOp); */
@@ -802,8 +802,8 @@ body {
   /* overflow-wrap: normal; */
   /* overflow: hidden; */
   gap: var(--size-4-2);
-  border-radius: 0px 0px 8px 0px;
-  box-shadow: var(--shadow-s);
+  border-radius: 8px 0px 8px 0px;
+  box-shadow: var(--lbs);
   padding: 0 var(--size-4-3);
 }
 
