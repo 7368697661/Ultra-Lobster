@@ -56,6 +56,12 @@ settings:
     description: Enable tag bg in preview 
     type: class-toggle
   - 
+    id: ul-minimal-status
+    title: Minimal Status Bar
+    description: Remove status bar bg
+    type: class-toggle
+  - 
+  - 
     id: ul-kanban-wrap
     title: Wrap Kanban lanes
     description: Enable kanbane vertical wrapping
@@ -764,9 +770,7 @@ body {
     0 1px 2px 0 rgba(0, 0, 0, 0.04), 0 0 0 0 transparent;
   --shadow-s: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
-  --shadow-l: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
-    rgba(239, 238, 230, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  --shadow-l: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --shadow-lm-only: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
     rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   --cbs: 24px 24px 64px -4px rgba(0, 0, 0, 0.01),
@@ -937,6 +941,13 @@ body {
   background: transparent;
 }
 
+.ul-minimal-status .status-bar {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
 .status-bar {
   border: var(--border-lowOp);
   background-color: var(--background-primary);
@@ -964,9 +975,6 @@ body {
   padding: 0 var(--size-4-3);
 }
 
-.workspace-leaf .inline-title {
-  margin-top: 32px;
-}
 
 /* Buttons 
 */
@@ -983,7 +991,7 @@ button:not(
   z-index: 1;
   background: var(--background-secondary);
   position: relative;
-  font-weight: 900;
+  font-weight: 500;
   font-size: var(--font-small);
   box-shadow: var(--shadow-lm-only);
   transition: all 0.1s ease-in-out;
@@ -1032,6 +1040,7 @@ select,
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
+  border: var(--border-lowOp)
 }
 
 .titlebar-button {
@@ -1084,9 +1093,12 @@ select,
 
 /* card note radius and color 
 */
-.workspace-leaf-content {
+.workspace-leaf-content:not(.is-mobile) {
   border-radius: var(--radius-m);
-  background-color: var(--background-primary);
+}
+
+.workspace .mod-root .workspace-tab-header {
+  box-shadow: none;
 }
 
 .workspace-tab-header.is-active {
@@ -1101,7 +1113,7 @@ select,
 .workspace-split.mod-root .workspace-tab-header.is-active::after,
 .workspace-split.mod-root .workspace-tab-header.is-active::before,
 .workspace-split.mod-root .workspace-tab-header.is-active::after {
-  box-shadow: inset 0 0 0 var(--tab-outline-width) var(--conOp),
+  box-shadow: inset 0 0 0 var(--tab-outline-width) var(--background-secondary),
     0 0 0 calc(var(--tab-curve) * 4) var(--tab-background-active);
 }
 
@@ -1111,9 +1123,10 @@ select,
 
 /* note border color and shadow 
 */
-.workspace .mod-root .workspace-leaf-content:not(.mk-flowspace-editor .workspace-leaf-content) {
-  box-shadow: var(--shadow-s);
-  border: var(--border-conOp);
+.workspace .mod-root .workspace-leaf-content:not(.mk-flowspace-editor .workspace-leaf-content, .is-mobile) {
+  box-shadow: var(--shadow-l);
+  border-top: 1px solid var(--background-secondary) !important;
+  border: 0px solid var(--background-secondary);
 }
 
 .mod-vertical .workspace-tab-header-container-inner {
@@ -1124,26 +1137,37 @@ select,
   background-color: transparent;
 }
 
+
 /* fixes card on mobile, kinda 
 */
+
+/*
 body:not(.is-mobile) .workspace-leaf {
-  padding: 0px 8px 8px 8px;
+  padding: 0px 12px 38px 32px;
 }
+*/
 
 .mod-root .workspace-tabs .workspace-leaf {
+  padding: 0px 28px 38px 28px;
   background-color: transparent;
 }
 
 .workspace-tabs.mod-stacked.mod-active.mod-top .workspace-tab-container {
-  padding: 0px 0px 0px 8px;
+  padding: 0px 0px 0px 12px;
 }
 
 /* adds distance to first tab so it doesn't fly off of the card 
 */
 .workspace-split.mod-vertical .workspace-tab-header-container {
   border-bottom: transparent;
-  padding-left: 18px !important;
+  padding: 4px 28px 0;
 }
+
+/*
+.mod-root .workspace-tab-header-container-inner {
+  padding: 8px 28px 0;
+}
+*/
 
 /* stacked tabs 
 */
