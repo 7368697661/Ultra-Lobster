@@ -51,6 +51,11 @@ settings:
     description: Enable list header demarking
     type: class-toggle
   - 
+    id: ul-tag-bg
+    title: Preview tag BG
+    description: Enable tag bg in preview 
+    type: class-toggle
+  - 
     id: ul-kanban-wrap
     title: Wrap Kanban lanes
     description: Enable kanbane vertical wrapping
@@ -85,7 +90,7 @@ settings:
             value: ul-lobstertime-dt
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Syne:wght@700;800&display=swap');
 
 /* Aspekta */
 @font-face {
@@ -694,6 +699,7 @@ body {
 --lowOp: rgba(0, 0, 0, 0.1);
 --border-conOp: 1px solid rgba(0, 0, 0, 0.3);
 --conOp: rgba(0, 0, 0, 0.3);
+--text-on-button: var(--text-faint);
 }
 
 .theme-light.ul-obplus-lt,
@@ -773,6 +779,7 @@ body {
   --lowOp: rgba(0, 0, 0, 0.1);
   --border-conOp: 1px solid rgba(0, 0, 0, 0.3);
   --conOp: rgba(0, 0, 0, 0.3);
+  --text-on-button: var(--text-normal);
 }
 
 .theme-dark.ul-lobstertime-dt {
@@ -818,6 +825,7 @@ body {
 --midOp: rgba(255, 255, 255, 0.3);
 --border-conOp: 1px solid rgba(255, 255, 255, 0.1);
 --conOp: rgba(255, 255, 255, 0.1);
+--text-on-button: var(--text-on-accent);
 }
 
 .theme-dark.obplus-dt,
@@ -895,6 +903,7 @@ body {
   --midOp: rgba(255, 255, 255, 0.3);
   --border-conOp: 1px solid rgba(255, 255, 255, 0.1);
   --conOp: rgba(255, 255, 255, 0.1);
+  --text-on-button: var(--text-on-accent);
 }
 
 body {
@@ -941,7 +950,7 @@ body {
   /* border-right: var(--border-conOp); */
   /* border-top: var(--border-conOp); */
   /* border-left: var(--border-conOp); */
-  background-color: var(--background-primary);
+  background: var(--background-primary);
   z-index: 3;
   position: fixed;
   left: auto;
@@ -970,14 +979,14 @@ button:not(
   ) {
   border: unset;
   border-radius: var(--radius-m);
-  color: var(--text-on-accent);
+  color: var(--text-on-button);
   z-index: 1;
   background: var(--background-secondary);
   position: relative;
   font-weight: 900;
   font-size: var(--font-small);
   box-shadow: var(--shadow-lm-only);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
   overflow: hidden;
 }
 
@@ -992,11 +1001,11 @@ button::before {
   background-color: var(--color-accent);
   z-index: -1;
   box-shadow: var(--shadow-s);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 button:hover {
-  color: var(--text-on-accent);
+  color: var(--text-on-accent) !important;
 }
 
 button:not(
@@ -1196,7 +1205,7 @@ body:not(.is-mobile) .workspace-leaf {
 .workspace-split.mod-vertical.mod-root
   .workspace-tabs:not(.mod-stacked)
   .view-content {
-  animation: 0.3s fade cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: 0.3s fade cubic-bezier(0.345, 0.0495, 0.2695, 1);
 }
 
 @keyframes fade {
@@ -1315,11 +1324,17 @@ div[aria-label='Help']:hover {
 }
 
 .empty-state-action:hover {
-  cursor: var(--cursor);
-  line-height: 36px;
   color: var(--color-accent);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
+
+.empty-state-action {
+  cursor: var(--cursor);
+  line-height: 32px;
+  color: var(--text-muted);
+  transition: all 0.2s ease-in-out;
+}
+
 
 /*----Settings----*/
 /*All Popup Windows: Settings*/
@@ -1398,8 +1413,7 @@ div[aria-label='Help']:hover {
 /* Typography */
 
 p,
-.cm-content,
-li {
+.cm-content {
   font-size: clamp(1em, .4167vw + .8875em, 1.125em);
   font-family: var(--font-text);
   font-variation-settings: 'wght' 400;
@@ -1465,18 +1479,39 @@ cm-s-obsidian .HyperMD-codeblock,
   font-weight: 400;
 }
 
-a.tag {
-  border-radius: 4px;
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-family: var(--font-text-theme);
-  font-variation-settings: 'wght' 600;
-  font-weight: 800;
+.ul-tag-bg a.tag {
   background-color: transparent;
+  border: none;
+  color: var(--tag-color);
 }
 
+.ul-tag-bg a.tag:hover {
+  background-color: transparent;
+  border: none;
+  color: var(--text-muted);
+}
+
+a.tag, .editor .cm-hashtag {
+  border-radius: 4px !important;
+  padding: inherit;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: var(--font-text-theme);
+  font-variation-settings: 'wght' 600;
+  background-color: var(--tag-background);
+  line-height: 1;
+  border: var(--border-lowOp);
+  border-radius: var(--tag-radius);
+  /* padding: var(--tag-padding-y) var(--tag-padding-x); */
+}
+
+a.tag:hover {
+  background-color: transparent;
+  color: var(--text-faint);
+  border: 1px solid rgba(0, 0, 0, 0.0)
+}
+
+/*
 .cm-hashtag.cm-hashtag-begin {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -1492,11 +1527,7 @@ a.tag {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
-a.tag:hover {
-  background-color: transparent;
-  color: var(--text-faint);
-}
+*/
 
 .cm-s-obsidian span.cm-inline-code {
   color: var(--code-normal);
@@ -1724,7 +1755,7 @@ hr {
 .canvas-menu > * {
   border: none;
   border-radius: 4px !important;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .canvas-menu > *:hover {
@@ -1842,7 +1873,7 @@ kbd,
   border-radius: 8px;
   background: var(--background-primary);
   border: var(--border-lowOp);
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .kanban-plugin__lane:hover {
