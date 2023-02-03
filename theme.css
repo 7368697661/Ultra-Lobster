@@ -1386,7 +1386,7 @@ body:not(.is-mobile) .workspace-leaf {
   border-radius: var(--radius-m);
 }
 
-.is-hidden-frameless:not(.is-fullscreen) .workspace-tabs.mod-top-left-space .workspace-tab-header-container {
+.workspace-tabs.mod-top-left-space .workspace-tab-header-container {
   margin-top: 14px;
 }
 
