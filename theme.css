@@ -219,7 +219,7 @@ body {
   --callout-blend-mode: none;
   --callout-title-color: var(--h1-color);
   --callout-title-padding: 0 0 14px 0;
-  --callout-title-size: clamp(1rem, 8vw - 1.3rem, 1.5rem);
+  --callout-title-size: clamp(0.750em, 8vw - .8875em, 1.125em);
   --callout-content-padding: 0.1em;
   --callout-content-background: transparent;
   --callout-bug: var(--color-red-rgb);
@@ -1414,8 +1414,8 @@ body:not(.is-mobile) .workspace-leaf {
   background-color: transparent;
   border-right-color: transparent;
   border: none;
+  box-shadow: none;
   border-radius: 0px 8px 8px 0px;
-  box-shadow: var(--shadow-lm-only);
   /*width: 48px;*/
   opacity: 1;
 }
@@ -2594,6 +2594,11 @@ input[type='search']:active, input[type='email']:active, input[type='password']:
   box-shadow: none;
 }
 
+.callout-title h1,
+.callout-title h2 {
+  font-size: clamp(1.1em, 8vw - 1.1em, 1.5em);
+}
+
 .callout:hover {
   transform: translateY(4px);
 }
@@ -2678,6 +2683,11 @@ input[type='search']:active, input[type='email']:active, input[type='password']:
 }
 
 /* Plugin Support */
+
+/* floating TOC */
+body {
+  --floating-toc-header-background-color: var(--background-secondary);
+}
 
 /* tag navigator */
 .align-center.align-center {
