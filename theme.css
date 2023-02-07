@@ -11,78 +11,73 @@ Color palette Style Settings originally inspired by Anubis <3
 */
 
 
-/* @settings
+/*
+/* 
+Style Settings fixed by damiankorcz <3 
+Color palette Style Settings originally inspired by Anubis <3
+*/
+
+/*
+@settings
 name: Ultra Lobster
 id: ul-theme-settings
 settings:
+
   - 
-    id: color-accent
-    title: Accent picker
-    description: Select from hand-picked accent colors
-    type: variable-select
+    id: theme-info
+    title: 🦞 Info
+    description: |
+      See an issue? Missing your favorite color scheme? Wanna say hi? Let me know [on Github!](https://github.com/7368697661/Ultra-Lobster)
+
+      This theme was made with 💖 by kneecaps.
+    markdown: true
+    type: info-text
+    level: 0
+
+  -
+    id: ul-sub-themes
+    title: 🎨 Sub Themes
+    description: A curation of custom & classic color palettes. Don't see your favorite scheme? Open a feature request on Github!
+    type: heading
+    level: 1
+    collapsed: true
+
+  - 
+    id: ul-color-accent
+    title: Custom Accent
+    description: Select from hand-picked & theme-adjusted accent colors
+    type: class-select
     allowEmpty: false
-    default: 'var(--color-red)'
+    default: 'o-blue'
     options:
         - 
             label: ❤️ Red
-            value: var(--color-red)
+            value: o-red
         - 
             label: 💚 Green
-            value: var(--color-green)
+            value: o-green
         - 
             label: 🧡 Orange
-            value: var(--color-orange)
+            value: o-orange
         - 
             label: 💛 Yellow
-            value: var(--color-yellow)
+            value: o-yellow
         - 
             label: 🤍 Cyan
-            value: var(--color-cyan)
+            value: o-cyan
         - 
             label: 💙 Blue
-            value: var(--color-blue)
+            value: o-blue
         - 
             label: 💜 Purple
-            value: var(--color-purple)
+            value: o-purple
         - 
             label: 💖 Pink
-            value: var(--color-pink)
-  - 
-    id: ul-list-distinct
-    title: Top Level Lists
-    description: Enable list header demarking 🚨 does not work in reading mode
-    type: class-toggle
-  - 
-    id: ul-tag-bg
-    title: Preview tag BG
-    description: Enable tag bg in preview 
-    type: class-toggle
-  - 
-    id: focus-bar
-    title: Minimal Status Bar
-    description: Hover to reveal the status bar
-    type: class-toggle
-  - 
-    id: grad
-    title: Halo Gradient
-    description: Enable a WIP background animation inspired by aura gradients and angel numbers
-    type: class-toggle
-  - 
-    id: ul-kanban-wrap
-    title: Wrap Kanban lanes
-    description: Enable kanbane vertical wrapping
-    type: class-toggle
-  - 
-    id: responsive-text
-    title: Text Size
-    description: 🚨 MUST BE A WHOLE / DECIMAL NUMBER such as 1 or 1.1
-    type: variable-number
-    default: 1
-    format: em
+            value: o-pink
+
   - 
     id: ul-theme-light
     title: Light theme
-    description: Select your preferred light mode scheme
     type: class-select
     allowEmpty: false
     default: ul-obplus-lt
@@ -94,12 +89,18 @@ settings:
             label: 🦞 Lobster Time
             value: ul-lobstertime-lt
         - 
+            label: 🏳️‍⚧️ Shark Time
+            value: ul-shark-lt
+        - 
             label: 📦 Gruvbox
             value: ul-gruvbox-lt
+        - 
+            label: ☀️ Solarized
+            value: ul-solar-lt
+
   - 
     id: ul-theme-dark
     title: Dark theme
-    description: Select your preferred dark mode scheme
     type: class-select
     allowEmpty: false
     default: ul-obplus-dt
@@ -111,14 +112,35 @@ settings:
             label: 🦞 Lobster Time
             value: ul-lobstertime-dt
         - 
+            label: 🏳️‍⚧️ Shark Time
+            value: ul-shark-dt
+        - 
             label: 📦 Gruvbox
             value: ul-gruvbox-dt
         - 
             label: 💭 Linking Your Thinking
             value: ul-lyt-dt
+        - 
+            label: ☀️ Solarized
+            value: ul-solar-dt
+        - 
+            label: 🦇 Dracula
+            value: ul-dracula-dt
+        - 
+            label: 🔪 Murder
+            value: ul-amoled-dt
+
+  -
+    id: ul-typography
+    title: 📑 Typography
+    description: Type options, including two selectors and adjuster. Type Palettes coming soon 📅
+    type: heading
+    level: 1
+    collapsed: true
+
   - 
     id: font-text-theme
-    title: Text type
+    title: Editor Type
     description: Select from a serif or sans-serif typface
     type: variable-select
     allowEmpty: false
@@ -128,7 +150,7 @@ settings:
         - 'Aspekta'
   - 
     id: font-title
-    title: Title type
+    title: Title Type
     description: Select from a elegant serif font or grotesk sans-serif
     type: variable-select
     allowEmpty: false
@@ -136,6 +158,48 @@ settings:
     options:
         - 'Getai'
         - 'Nightingale'
+
+  - 
+    id: responsive-text
+    title: Text Adjuster
+    description: 🚨 MUST BE A WHOLE / DECIMAL NUMBER such as 1 or 1.1. Further scale can be changed via slider in appearance
+    type: variable-number
+    default: 1
+    format: em
+
+  -
+    id: ul-special-features
+    title: 🧪 Special Features
+    description: Option toggles, experimental features, WIP testbed
+    type: heading
+    level: 1
+    collapsed: true
+
+  - 
+    id: ul-list-distinct
+    title: Top Level Lists
+    description: Enable list header demarking 🚨 does not work in reading mode
+    type: class-toggle
+  - 
+    id: ul-tag-bg
+    title: Preview tag BG
+    description: Disable tag bg in preview mode
+    type: class-toggle
+  - 
+    id: focus-bar
+    title: Minimal Status Bar
+    description: Hover to reveal the status bar
+    type: class-toggle
+  - 
+    id: grad
+    title: Halo Gradient
+    description: Enable a WIP background animation inspired by soft grainy gradients and angel numbers
+    type: class-toggle
+  - 
+    id: ul-kanban-wrap
+    title: Wrap Kanban lanes
+    description: Enable kanban vertical wrapping
+    type: class-toggle
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Syne:wght@700;800&display=swap');
@@ -833,6 +897,82 @@ body {
 --text-on-button: var(--text-faint);
 }
 
+.theme-light.ul-solar-lt {
+  --accent-h: 175.5;
+  --accent-s: 58.6%;
+  --accent-l: 39.8%;
+  --color-red: #dc322f;
+  --color-red-hsl: 1, 71.2%, 52.4%;
+  --color-red-rgb: 220, 50, 47;
+  --color-green: #859900;
+  --color-green-hsl: 67.8, 100%, 30%;
+  --color-green-rgb: 133, 153, 0;
+  --color-orange: #cb4b16;
+  --color-orange-hsl: 17.6, 80.4%, 44.1%;
+  --color-orange-rgb: 203, 75, 22;
+  --color-yellow: #b58900;
+  --color-yellow-hsl: 45.4, 100%, 35.5%;
+  --color-yellow-rgb: 203, 75, 22;
+  --color-cyan: #2aa198;
+  --color-cyan-hsl: 175.5, 58.6%, 39.8%;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-blue: #268bd2;
+  --color-blue-hsl: 204.8, 69.4%, 48.6%;
+  --color-blue-rgb: 38, 139, 210;
+  --color-purple: #6c71c4;
+  --color-purple-hsl: 236.6, 42.7%, 59.6%;
+  --color-purple-rgb: 38, 139, 210;
+  --color-pink: #d33682;
+  --color-pink-hsl: 331, 64.1%, 52%;
+  --color-pink-rgb: 211, 54, 130;
+  --color-base-00: #fdf6e3;
+  --color-base-05: #fffaee;
+  --color-base-10: #fffaeb;
+  --color-base-20: #eee8d5;
+  --color-base-25: #b7b6b2;
+  --color-base-30: #586e75;
+  --color-base-35: #eee8d5;
+  --color-base-40: #586e75;
+  --color-base-50: #93a1a1;
+  --color-base-60: #586e75;
+  --color-base-70: #657b83;
+  --color-base-100: #586e75;
+  --shadow-s: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+  rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+--shadow-l: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+  rgba(239, 238, 230, 0.25) 0px 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+--shadow-lm-only: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+  rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+--cbs: 24px 24px 64px -4px rgba(0, 0, 0, 0.01),
+  0px 16px 32px 6px rgba(0, 0, 0, 0.03);
+--sbs: 24px 24px 84px -4px rgba(0, 0, 0, 0.05),
+  0px 16px 64px 6px rgba(0, 0, 0, 0.007);
+--lbs: rgba(0, 5, 0, 0.03) 0px 20px 30px;
+--border-lowOp: 1px solid rgba(0, 0, 0, 0.1);
+--border-midOp: 1px solid rgba(0, 0, 0, 0.3);
+--lowOp: rgba(0, 0, 0, 0.1);
+--border-conOp: 1px solid rgba(0, 0, 0, 0.3);
+--conOp: rgba(0, 0, 0, 0.3);
+--text-on-button: var(--text-faint);
+}
+
+.theme-light.ul-shark-lt {
+  --color-base-00: #ffffff;
+  --color-base-10: #EDFCFA;
+  --color-base-20: #EDFCFA;
+  --color-base-25: #EDFCFA;
+  --color-base-30: #FBECE6;
+  --color-base-35: #EDFCFA;
+  --color-base-40: #FBECE6;
+  --color-base-50: #636e6e;
+  --color-base-60: #505858;
+  --color-base-70: #373d3d;
+  --color-base-100: #F9B5AC;
+  --color-accent: hsl(7, 86.5%, 82.5%) !important;
+  --color-accent-1: hsl(172, 71.4%, 95.9%) !important;
+}
+
 .theme-light.ul-obplus-lt,
 .theme-light {
   color-scheme: light;
@@ -1086,6 +1226,146 @@ body {
 --h6-color: hsl(223, 18%, 68%);
 }
 
+.theme-dark.ul-solar-dt {
+  --accent-h: 1;
+  --accent-s: 71.2%;
+  --accent-l: 52.4%;
+  --color-red: #dc322f;
+  --color-red-hsl: 1, 71.2%, 52.4%;
+  --color-red-rgb: 220, 50, 47;
+  --color-green: #859900;
+  --color-green-hsl: 67.8, 100%, 30%;
+  --color-green-rgb: 133, 153, 0;
+  --color-orange: #cb4b16;
+  --color-orange-hsl: 17.6, 80.4%, 44.1%;
+  --color-orange-rgb: 203, 75, 22;
+  --color-yellow: #b58900;
+  --color-yellow-hsl: 45.4, 100%, 35.5%;
+  --color-yellow-rgb: 203, 75, 22;
+  --color-cyan: #2aa198;
+  --color-cyan-hsl: 175.5, 58.6%, 39.8%;
+  --color-cyan-rgb: 42, 161, 152;
+  --color-blue: #268bd2;
+  --color-blue-hsl: 204.8, 69.4%, 48.6%;
+  --color-blue-rgb: 38, 139, 210;
+  --color-purple: #6c71c4;
+  --color-purple-hsl: 236.6, 42.7%, 59.6%;
+  --color-purple-rgb: 38, 139, 210;
+  --color-pink: #d33682;
+  --color-pink-hsl: 331, 64.1%, 52%;
+  --color-pink-rgb: 211, 54, 130;
+  --color-base-00: #073642;
+  --color-base-10: #08404e;
+  --color-base-20: #002b36;
+  --color-base-25: #023845;
+  --color-base-30: #586e75;
+  --color-base-35: #637c84;
+  --color-base-40: #002b36;
+  --color-base-50: #586e75;
+  --color-base-60: #93a1a1;
+  --color-base-70: #839496;
+  --color-base-100: #93a1a1;
+  --shadow-s: 0px 6.7px 5.3px rgba(0, 13, 0, 0.019),
+  0px 22.3px 17.9px rgba(0, 13, 0, 0.029), 0px 100px 80px rgba(0, 13, 0, 0.05);
+--shadow-l: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+--shadow-lm-only: none;
+--sbs: 24px 24px 84px -4px rgba(0, 13, 0, 0.05),
+  0px 16px 64px 6px rgba(0, 13, 0, 0.007);
+--lbs: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+--border-lowOp: 1px solid rgba(255, 255, 255, 0.1);
+--border-midOp: 1px solid rgba(255, 255, 255, 0.3);
+--lowOp: rgba(255, 255, 255, 0.1);
+--midOp: rgba(255, 255, 255, 0.3);
+--border-conOp: 1px solid rgba(255, 255, 255, 0.1);
+--conOp: rgba(255, 255, 255, 0.1);
+--text-on-button: var(--text-on-accent);
+}
+
+.theme-dark.ul-dracula-dt {
+  --accent-h: 1;
+  --accent-s: 71.2%;
+  --accent-l: 52.4%;
+  --color-red: #ff5555;
+  --color-red-hsl: 0, 100%, 66.7%;
+  --color-red-rgb: 255, 85, 85;
+  --color-green: #50fa7b;
+  --color-green-hsl: 135.2, 94.4%, 64.7%;
+  --color-green-rgb: 80, 250, 123;
+  --color-orange: #ffb86c;
+  --color-orange-hsl: 31, 100%, 71.2%;
+  --color-orange-rgb: 255, 184, 108;
+  --color-yellow: #f1fa8c;
+  --color-yellow-hsl: 64.9, 91.7%, 76.5%;
+  --color-yellow-rgb: 241, 250, 140;
+  --color-cyan: #8be9fd;
+  --color-cyan-hsl: 190.5, 96.6%, 76.9%;
+  --color-cyan-rgb: 139, 233, 253;
+  --color-blue: #8bc6fd;
+  --color-blue-hsl: 208.9, 96.6%, 76.9%;
+  --color-blue-rgb: 139, 198, 253;
+  --color-purple: #bd93f9;
+  --color-purple-hsl: 264.7, 89.5%, 77.6%;
+  --color-purple-rgb: 189, 147, 249;
+  --color-pink: #ff79c6;
+  --color-pink-hsl: 325.5, 100%, 73.7%;
+  --color-pink-rgb: 255, 121, 198;
+  --color-base-00: #282a36;
+  --color-base-10: #44475a;
+  --color-base-20: #1a1e24;
+  --color-base-25: #282a36;
+  --color-base-30: #44475a;
+  --color-base-35: #4f5269;
+  --color-base-40: #282a36;
+  --color-base-50: #6272a4;
+  --color-base-60: #6272a4;
+  --color-base-70: #f8f8f2;
+  --color-base-100: #fefefa;
+  --shadow-s: 0px 6.7px 5.3px rgba(0, 13, 0, 0.019),
+  0px 22.3px 17.9px rgba(0, 13, 0, 0.029), 0px 100px 80px rgba(0, 13, 0, 0.05);
+--shadow-l: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+--shadow-lm-only: none;
+--sbs: 24px 24px 84px -4px rgba(0, 13, 0, 0.05),
+  0px 16px 64px 6px rgba(0, 13, 0, 0.007);
+--lbs: rgba(0, 5, 0, 0.15) 0px 20px 30px;
+--border-lowOp: 1px solid rgba(255, 255, 255, 0.1);
+--border-midOp: 1px solid rgba(255, 255, 255, 0.3);
+--lowOp: rgba(255, 255, 255, 0.1);
+--midOp: rgba(255, 255, 255, 0.3);
+--border-conOp: 1px solid rgba(255, 255, 255, 0.1);
+--conOp: rgba(255, 255, 255, 0.1);
+--text-on-button: var(--text-on-accent);
+}
+
+.theme-dark.ul-amoled-dt {
+  --color-base-00: #0b0b0b;
+  --color-base-10: #2e2e2e;
+  --color-base-20: #000000;
+  --color-base-25: #333333;
+  --color-base-30: #3d3d3d;
+  --color-base-35: #515151;
+  --color-base-40: #6b6b6b;
+  --color-base-50: #949494;
+  --color-base-60: #a6a6a6;
+  --color-base-70: #cdcdcd;
+  --color-base-100: #ffffff;
+}
+
+.theme-dark.ul-shark-dt {
+  --color-base-00: #172032;
+  --color-base-10: #5C80BC;
+  --color-base-20: #000004;
+  --color-base-25: #EE7674;
+  --color-base-30: #172032;
+  --color-base-35: #6d91ce;
+  --color-base-40: #5C80BC;
+  --color-base-50: #9e9eab;
+  --color-base-60: #c8c8da;
+  --color-base-70: #EBEBFF;
+  --color-base-100: #EE7674;
+  --color-accent: hsl(1, 78.2%, 69.4%) !important;
+  --color-accent-1: hsl(217.5, 41.7%, 54.9%) !important;
+}
+
 .theme-dark.obplus-dt,
 .theme-dark {
   color-scheme: dark;
@@ -1094,12 +1374,12 @@ body {
   --accent-l: 57%;
   --highlight-mix-blend-mode: lighten;
   --mono-rgb-0: 0, 0, 0;
-  --mono-rgb-100: 255, 107, 107;
+  --mono-rgb-100: 255, 255, 255;
   --color-red: #ff6b6b;
-  --color-red-hsl: hsl(0, 100%, 71%;
+  --color-red-hsl: 0, 100%, 71%;
   --color-red-rgb: 234, 94, 65;
   --color-green: #69db7c;
-  --color-green-hsl: 130, 61.3%, 63.5);
+  --color-green-hsl: 130, 61.3%, 63.5%;
   --color-green-rgb: 105, 219, 124;
   --color-orange: #ffc078;
   --color-orange-hsl: 32, 100%, 73.5%;
@@ -1858,7 +2138,7 @@ select,
 
 .mod-right-split .workspace-leaf-content,
 .mod-left-split .workspace-tabs .workspace-leaf {
-    animation: 3.3s fade cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation: 1.3s fade cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 .modal,
@@ -1875,7 +2155,20 @@ select,
 .modal,
 .menu,
 .prompt {
-  animation: slide-fwd-top 0.45s cubic-bezier(0.075, 0.820, 0.165, 1.000) alternate both;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.075, 0.820, 0.165, 1.000) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes slide-fwd-top {
