@@ -74,7 +74,7 @@ settings:
     default: ul-light
     options:
         -
-            label: 💎 Obsidian
+            label: 🟣 Obsidian
             value: ul-light
         -
             label: 🪙 Obsidian+
@@ -100,7 +100,7 @@ settings:
     default: ul-dark
     options:
         -
-            label: 💎 Obsidian
+            label: 🟣 Obsidian
             value: ul-dark
         -
             label: 🪙 Obsidian+
@@ -769,7 +769,7 @@ settings:
 	--color-base-100: #212529;
 }
 
-.ul-light,
+.ul-light.theme-light,
 .theme-light {
 	color-scheme: light;
 	--highlight-mix-blend-mode: darken;
@@ -1125,7 +1125,7 @@ settings:
 	--color-base-100: #F8F9FA;
 }
 
-.ul-dark,
+.ul-dark.theme-dark,
 .theme-dark {
 	color-scheme: dark;
 	--highlight-mix-blend-mode: lighten;
