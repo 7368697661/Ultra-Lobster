@@ -1,7 +1,7 @@
 # 🦞 Ultra Lobster
 A theme for [Obsidian](https://obsidian.md/).
 
-![UltraLobster](https://user-images.githubusercontent.com/87339163/218859194-f572490d-a047-445f-b47d-e793ec4052ab.png)
+![UltraLobster](https://user-images.githubusercontent.com/87339163/218864466-22c65c09-f474-4bd4-a86c-20cd0f49217a.png)
 
 Ultra Lobster is a living interface theme for Obsidian, heavily inspired by modern design and focused on color and type. At its core, it is a series of soft resets to bring the base inline with trendy modern applications like Notion, the G-Suite, Discord, and minimal editors such as Bear.
 
@@ -23,7 +23,7 @@ The specific fonts used are:
 
 In order to save on file size, I primarily used variable fonts and only included as many as were necessary. Update 3 of Ultra Lobster is planned to expand typeface options, and offer an option snippet of font imports.
 
-![image](https://user-images.githubusercontent.com/87339163/218862714-3cff6d67-d82c-4c8a-abb6-a93262bc1673.png)
+![image (11)](https://user-images.githubusercontent.com/87339163/218864511-d4313165-9176-4bb8-ba2f-d879f5169575.png)
 _Optional darkmode and Canvas settings offered via Style Settings_
 
 ## ⬇️ Installation
@@ -40,7 +40,7 @@ For now, there are numerous optional toggles and experimental features offered v
 
 In a future pass I hope to both further expand the offerings, and streamline their presentation.
 
-![noodletime](https://user-images.githubusercontent.com/87339163/218863059-3831fc36-833a-45b8-9cbe-4b93cd177a69.png)
+![noodletimeR](https://user-images.githubusercontent.com/87339163/218864539-8a35550d-29e6-4aa8-954d-48ccbce81107.png)
 _Special Canvas styling, per color_
 
 ## 🔌 Plugin Support
