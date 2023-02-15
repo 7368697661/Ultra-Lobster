@@ -1658,7 +1658,9 @@ body:not(.is-mobile) .workspace-leaf {
 
 /* note border color and shadow
 */
-.workspace .mod-root .workspace-leaf-content:not(.mk-flowspace-editor .workspace-leaf-content, .is-mobile) {
+.workspace .mod-root .workspace-leaf-content:not(
+.mk-flowspace-editor .workspace-leaf-content,
+.is-mobile .workspace .mod-root .workspace-leaf-content) {
 	border: none;
 	border-top: 1px solid var(--background-secondary);
 	border-radius: var(--ul-radius);
@@ -1714,7 +1716,7 @@ div[aria-label="Help"] {
 .community-plugin {
 	background:
 		linear-gradient(
-			to bottom,
+			to top,
 			var(--background-primary),
 			var(--background-secondary)
 		);
@@ -3765,7 +3767,7 @@ div.kanban-plugin__markdown-preview-view > div > * {
 .ul-prompt-grad .prompt {
 	background:
 		linear-gradient(
-			to bottom,
+			to top,
 			var(--background-primary),
 			var(--background-secondary)
 		);
