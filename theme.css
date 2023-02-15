@@ -2873,7 +2873,9 @@ div.kanban-plugin__markdown-preview-view > div > * {
 	border-color: var(--background-modifier-border);
 }
 
-.ul-work-border .workspace .mod-root .workspace-leaf-content:not(.mk-flowspace-editor .workspace-leaf-content, .is-mobile) {
+.ul-work-border .workspace .mod-root .workspace-leaf-content:not(
+.mk-flowspace-editor .workspace-leaf-content,
+.is-mobile .mod-root .workspace-leaf-content) {
 	border: 1px solid var(--background-modifier-border);
 }
 
