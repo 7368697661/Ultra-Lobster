@@ -3709,7 +3709,7 @@ div.kanban-plugin__markdown-preview-view > div > * {
 	background: var(--background-primary);
 	border: none;
 	border-radius: 0 0 8px;
-	transistion: var(--transition-05);
+	transition: var(--transition-05);
 }
 
 .is-collapsed.workspace-ribbon .sidebar-toggle-button {
