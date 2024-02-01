@@ -100,9 +100,6 @@ settings:
             label: ⭕ accent tinted, low contrast
             value: ulu-accent-bg-lowcon-l
         -
-            label: 🏗️ architect
-            value: ulu-arch-l
-        -
             label: ❤️ sorcery
             value: ulu-red-l
         -
@@ -114,9 +111,6 @@ settings:
         -
             label: 💜 umbra
             value: ulu-purple-l
-        -
-            label: 0️⃣ minimum
-            value: ulu-min-l
         -
             label: 🧥 soft
             value: ulu-soft-l
@@ -133,20 +127,8 @@ settings:
             label: 📦 gruvbox
             value: ulu-gruvbox-lt
         -
-            label: 🦇 Dracula
-            value: ul-dracula-dt
-        -
-            label: 💭 Linking Your Thinking
-            value: ul-lyt-dt
-        -
-            label: 🪙 obsidian +
+            label: 🦞 lobster-time
             value: ulu-obplus-lt
-        -
-            label: 🚦 spotlight
-            value: ulu-spotlight-l
-        -
-            label: 🦞 Lobster Time
-            value: ul-lobstertime-dt
 
 
   -
@@ -169,10 +151,7 @@ settings:
             label: ⭕ accent tinted, low contrast
             value: ulu-accent-bg-lowcon-d
         -
-            label: 🏗️ architect
-            value: ulu-arch-d
-        -
-            label:  ❤️sorcery
+            label: ❤️ sorcery
             value: ulu-red-d
         -
             label: 💚 eidolon
@@ -190,14 +169,11 @@ settings:
             label: 🚨 CONTROL
             value: ulu-control-d
         -
-            label: 📘 blueprint
+            label: 🚧 blueprint [wip]
             value: ulu-blueprint-d
         -
             label: 🏳️‍⚧️ blahaj
             value: ulu-shark-d
-        -
-            label: 0️⃣ minimum
-            value: ulu-min-d
         -
             label: ☀️ solarized
             value: ulu-solar-dt
@@ -205,7 +181,7 @@ settings:
             label: 📦 gruvbox
             value: ulu-gruvbox-dt
         -
-            label: 🪙 obsidian +
+            label: 🦞 lobster-time
             value: ulu-obplus-dt
         -
             label: 🦇 dracula
@@ -214,13 +190,13 @@ settings:
             label: 💭 linking Your Thinking
             value: ulu-lyt-dt
         -
-            label: 🎨 gradient
+            label: 🚧 gradient [wip]
             value: ulu-gradient-d
         -
             label: 👑 lord
             value: ulu-lord-d
         -
-            label: 🌑 abaddon
+            label: 🚧 abaddon [wip]
             value: ulu-end-d
         -
             label: 🚦 spotlight
@@ -281,6 +257,9 @@ settings:
         -
             label: working edits mk3
             value: ulu-we3-callout
+        -
+            label: line
+            value: ulu-line-callouts
 
   -
     id: ulu-codeblocks
@@ -295,12 +274,6 @@ settings:
         -
             label: notosx
             value: ulu-ntosx-codeblock
-        -
-            label: working edits mk1
-            value: ulu-we1-codeblock
-        -
-            label: working edits mk3
-            value: ulu-we3-codeblock
 
   -
     id: ulu-border
@@ -1574,6 +1547,7 @@ body {
     --text-success: var(--color-green);
     --text-selection: hsla(var(--color-accent-hsl), 0.2);
     --color-accent: var(--color-accent);
+    --text-accent: var(--color-accent) !important;
     --color-accent-hover: var(--color-accent-2);
     --interactive-normal: var(--color-base-00);
     --interactive-hover: var(--color-base-10);
@@ -1659,6 +1633,9 @@ body {
 	--border-conOp: 1px solid rgb(0 0 0 / 30%);
 	--conOp: rgb(0 0 0 / 30%);
 	--text-on-button: var(--text-normal);
+	--gradient-bg-primary: linear-gradient(135deg, #fff 1.62%, #F5F5F5 50.72%) !important;
+	--gradient-bg-secondary: linear-gradient(135deg, #F3F3F3 1.62%, #E6E6E6 50.72%) !important;
+	--background-modifier-border-alt: #fff !important;
 }
 
 .theme-dark {
@@ -1695,14 +1672,13 @@ body {
     --color-base-10: #242424;
     --color-base-20: #262626;
     --color-base-25: #2a2a2a;
-    --color-base-30: #363636;
+    --color-base-30: #282828;
     --color-base-35: #3F3F3F;
     --color-base-40: #555;
     --color-base-50: #666;
     --color-base-60: #999;
     --color-base-70: #bababa;
     --color-base-100: #dadada;
-
 	--color-accent-hsl: var(--accent-h), var(--accent-s), var(--accent-l);
 	--color-accent: hsl(var(--accent-h) var(--accent-s) var(--accent-l));
 	--color-accent-1:
@@ -1754,87 +1730,9 @@ body {
 			hsl(45 100% 50%) 89%,
 			hsl(55 100% 50%) 100%
 		);
-}
-
-.ulu-spotlight-l.theme-light {
-    color-scheme: light;
-    --highlight-mix-blend-mode: darken;
-    --mono-rgb-0: 255, 255, 255;
-    --mono-rgb-100: 0, 0, 0;
-    --color-red-rgb: 233, 49, 71;
-    --color-red: #E93147;
-    --color-red-hsl: 353, 81%, 55%;
-    --color-green-rgb: 8, 185, 78;
-    --color-green: #08B94E;
-    --color-green-hsl: 144, 92%, 38%;
-    --color-orange-rgb: 236, 117, 0;
-    --color-orange: #EC7500;
-    --color-orange-hsl: 30, 100%, 46%;
-    --color-yellow-rgb: 224, 172, 0;
-    --color-yellow: #E0AC00;
-    --color-yellow-hsl: 46, 100%, 44%;
-    --color-cyan-rgb: 0, 191, 188;
-    --color-cyan: #00BFBC;
-    --color-cyan-hsl: 179, 100%, 37%;
-    --color-blue-rgb: 8, 109, 221;
-    --color-blue: #086DDD;
-    --color-blue-hsl: 212, 93%, 45%;
-    --color-purple-rgb: 120, 82, 238;
-    --color-purple: #7852EE;
-    --color-purple-hsl: 255, 82%, 63%;
-    --color-pink-rgb: 213, 57, 132;
-    --color-pink: #D53984;
-    --color-pink-hsl: 331, 65%, 53%;
-    --color-base-00: #FFF;
-    /* background-primary */
-    --color-base-05: #FCFCFC;
-    /* background-secondary-alt in light mode, for some reason */
-    --color-base-10: #FAFAFA;
-    /* background-primary-alt */
-    --color-base-20: #F3F3F3;
-    /* background-secondary */
-    --color-base-25: #E3E3E3;
-    /* idk lol */
-    --color-base-30: #E0E0E0;
-    /* background-modifier-border */
-    --color-base-35: #D4D4D4;
-    /* background-modifier-border-hover */
-    --color-base-40: #BDBDBD;
-    /* background-modifier-border-focus */
-    --color-base-50: #ABABAB;
-    /* text-faint */
-    --color-base-60: #707070;
-    /* also no clue */
-    --color-base-70: #5A5A5A;
-    /* text-muted */
-    --color-base-100: #222;
-    /* text-normal */
-    --color-accent-hsl: var(--accent-h),
-        var(--accent-s),
-        var(--accent-l);
-    --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
-    --color-accent-1: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 2.5%));
-    --color-accent-2: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 5%));
-    --background-secondary-alt: var(--color-base-05);
-    --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-    --background-modifier-cover: rgba(220, 220, 220, 0.4);
-    --text-highlight-bg: rgba(255, 208, 0, 0.4);
-    --text-highlight-bg-active: rgba(255, 128, 0, 0.4);
-    --input-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.12),
-        0 2px 3px 0 rgba(0, 0, 0, .05),
-        0 1px 1.5px 0 rgba(0, 0, 0, .03),
-        0 1px 2px 0 rgba(0, 0, 0, .04),
-        0 0 0 0 transparent;
-    --input-shadow-hover: inset 0 0 0 1px rgba(0, 0, 0, 0.17),
-        0 2px 3px 0 rgba(0, 0, 0, .1),
-        0 1px 1.5px 0 rgba(0, 0, 0, .03),
-        0 1px 2px 0 rgba(0, 0, 0, .04),
-        0 0 0 0 transparent;
-    --shadow-s: rgb(0 0 0 / 10%) 0px 10px 15px -3px, rgb(0 0 0 / 5%) 0px 4px 6px -2px;
-    --shadow-l: rgb(149 157 165 / 20%) 0px 8px 24px;
-    --colorPrimary--complement: hsl(calc(var(--accent-h) + 180), var(--accent-s), var(--accent-l));
-    --colorPrimary--complement-120: hsl(calc(var(--accent-h) + 120), var(--accent-s), var(--accent-l));
-    --colorPrimary--complement-240: hsl(calc(var(--accent-h) + 240), var(--accent-s), var(--accent-l));
+	--gradient-bg-primary: linear-gradient(135deg, #262626 1.62%, #1e1e1e 50.72%);
+	--gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 1.62%, #262626 50.72%);
+	--background-modifier-border-alt: #303030;
 }
 
 .ulu-spotlight-d.theme-dark {
@@ -1912,10 +1810,10 @@ body {
     --shadow-l: 0px 1.8px 7.3px rgba(0, 0, 0, 0.071),
         0px 6.3px 24.7px rgba(0, 0, 0, 0.112),
         0px 30px 90px rgba(0, 0, 0, 0.2);
+	--gradient-bg-primary: linear-gradient(135deg, #262D3B 1.62%, #212733 50.72%);
+	--gradient-bg-secondary: linear-gradient(135deg, #1E242E 1.62%, #1A1F28 50.72%);
+	--background-modifier-border-alt: #161F2C;
 }
-
-/* color schemes
-*/
 
 /* soft theme
 */
@@ -1961,6 +1859,10 @@ body {
 	--color-base-60: #A39180; /* also no clue */
 	--color-base-70: #62574D; /* text-muted */
 	--color-base-100: #433C34; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #FAF7F5 1.62%, #F6F2EE 50.72%);
+	--gradient-bg-secondary: linear-gradient(135deg, #E6DCD0 1.62%, #E1D4C6 50.72%);
+	--gradient-bg-tertiary: linear-gradient(135deg, #E4F1F7 30.62%, #D0E6F1 90.72%);
+	--background-modifier-border-alt: #fff;
 }
 
 .ulu-soft-d.theme-dark {
@@ -2004,6 +1906,9 @@ body {
 	--color-base-60: #9F968D; /* also no clue */
 	--color-base-70: #C6BBB1; /* text-muted */
 	--color-base-100: #ECE8E5; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #3B3835 1.62%, #33302E 50.72%);
+	--gradient-bg-secondary: linear-gradient(135deg, #413D3A 1.62%, #393633 50.72%);
+	--background-modifier-border-alt: #54504A;
 }
 
 /* architect theme
@@ -2053,6 +1958,9 @@ body {
 	--color-accent: #E1564C !important;
 	--color-accent-rgb: 225, 86, 76 !important;
 	--color-accent-hsl: 4, 71%, 59% !important;
+	--gradient-bg-primary: linear-gradient(135deg, #F0F4FA 1.62%, #E4EBF6 50.72%);
+	--gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 1.62%, #272727 50.72%);
+	--background-modifier-border-alt: #475276;
 }
 
 .ulu-arch-d.theme-dark {
@@ -2130,24 +2038,27 @@ body {
 	--color-pink: #FF6EB9;
 	--color-pink-hsl: 329, 100%, 72%;
 	--canvas-color: 51, 51, 49;
-	--color-base-00: #FFF; /* background-primary */
-	--color-base-05: #FCFCFC; /* background-secondary-alt in light mode, for some reason */
+	--color-base-00: #fefefe; /* background-primary */
+	--color-base-05: #FCFCFC; /* background-secondary-alt in light mode */
 	--color-base-10: #FAFAFA; /* background-primary-alt */
-	--color-base-20: #ECECEC; /* background-secondary */
+	--color-base-20: #f4e5f8; /* background-secondary */
 	--color-base-25: #E3E3E3; /* idk lol */
-	--color-base-30: #B3B3B3; /* background-modifier-border */
-	--color-base-35: #BEBEBE; /* background-modifier-border-hover */
-	--color-base-40: #B3B3B3; /* background-modifier-border-focus */
-	--color-base-50: #e5989b; /* text-faint */
-	--color-base-60: #333331; /* also no clue */
-	--color-base-70: #333331; /* text-muted */
-	--color-base-100: #3D3D3D; /* text-normal */
-	--color-accent: #70B4F9 !important;
+	--color-base-30: #ffffff; /* background-modifier-border */
+	--color-base-35: #3f3a45; /* background-modifier-border-hover */
+	--color-base-40: #3f3a45; /* background-modifier-border-focus */
+	--color-base-50: #47414E; /* text-faint */
+	--color-base-60: #38333d; /* also no clue */
+	--color-base-70: #38333d; /* text-muted */
+	--color-base-100: #252228; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #fff 1.62%, #F5F5F5 50.72%);
+	--gradient-bg-secondary: linear-gradient(135deg, #F9EFFB 1.62%, #F3E4F7 50.72%) !important;
+	--gradient-bg-tertiary: linear-gradient(135deg, #E4F1F7 30.62%, #D0E6F1 90.72%);
+	--background-modifier-border-alt: #fff;
+	/* --color-accent: #70B4F9 !important;
 	--color-accent-rgb: 112, 180, 249 !important;
 	--color-accent-hsl: 210, 92%, 71% !important;
 	--h1-color: #70B4F9;
-	--h2-color: #e5989b;
-	--background-secondary: rgba(var(--color-blue-rgb), 0.1);
+	--h2-color: #e5989b; */
 }
 
 .ulu-shark-d.theme-dark {
@@ -2155,49 +2066,73 @@ body {
     --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: 0, 0, 0;
     --mono-rgb-100: 255, 255, 255;
-    --color-red-rgb: 104, 52, 43;
-    --color-red: #FF5000;
-    --color-red-hsl: 9, 41%, 29%;
-    --color-orange-rgb: 225, 162, 97;
-    --color-orange: #ED7614;
-    --color-orange-hsl: 30, 68%, 63%;
-    --color-yellow-rgb: 137, 116, 74;
-    --color-yellow: #EDAB50;
-    --color-yellow-hsl: 40, 30%, 41%;
-    --color-green-rgb: 70, 80, 55;
-    --color-green: #99E65F;
-    --color-green-hsl: 84, 19%, 26%;
-    --color-cyan-rgb: 135, 178, 184;
-    --color-cyan: #94FDFF;
-    --color-cyan-hsl: 187, 26%, 63%;
-    --color-blue-rgb: 31, 43, 56;
-    --color-blue: #0C0293;
-    --color-blue-hsl: 211, 29%, 17%;
-    --color-purple-rgb: 77, 65, 89;
-    --color-purple-hsl: 270, 16%, 30%;
-    --color-purple: #93388F;
-    --color-pink-rgb: 125, 76, 74;
-    --color-pink: #F68187;
-    --color-pink-hsl: 2, 26%, 39%;
-    --canvas-color: 245, 245, 245;
-    --color-base-00: #181818;
-    --color-base-10: #03193F;
-    --color-base-20: #101010;
-    --color-base-25: #040303;
-    --color-base-30: #5D5D5D;
-    --color-base-35: #919191;
-    --color-base-40: #5D5D5D;
-    --color-base-50: #ffc8dd;
-    --color-base-60: #919191;
-    --color-base-70: #ECECEC;
-    --color-base-100: #FFF;
-    --color-accent: #70B4F9 !important;
-    --color-accent-rgb: 112, 180, 249 !important;
-    --color-accent-hsl: 210, 92%, 71% !important;
-    --h1-color: #70B4F9;
-    --background-secondary: rgba(var(--color-pink-rgb), 0.1);
-    --h2-color: #ffc8dd;
+    --color-red-rgb: 247, 69, 69;
+    --color-red: #F74545;
+    --color-red-hsl: 0, 92%, 62%;
+    --color-orange-rgb: 247, 138, 69;
+    --color-orange: #F78A45;
+    --color-orange-hsl: 23, 92%, 62%;
+    --color-yellow-rgb: 247, 204, 68;
+    --color-yellow: #F7CC44;
+    --color-yellow-hsl: 46, 92%, 62%;
+    --color-green-rgb: 69, 247, 123;
+    --color-green: #45F77B;
+    --color-green-hsl: 138, 92%, 62%;
+    --color-cyan-rgb: 69, 206, 247;
+    --color-cyan: #45CEF7;
+    --color-cyan-hsl: 194, 92%, 62%;
+    --color-blue-rgb: 90, 100, 248;
+    --color-blue: #5a64f8;
+    --color-blue-hsl: 236, 92%, 66%;
+    --color-purple-rgb: 170, 69, 247;
+    --color-purple-hsl: 274, 92%, 62%;
+    --color-purple: #AA45F7;
+    --color-pink-rgb: 247, 69, 191;
+    --color-pink: #F745BF;
+    --color-pink-hsl: 319, 92%, 62%;
+    --canvas-color: 246, 129, 135;
+    --color-base-00: #38333d;
+    --color-base-10: #47414E;
+    --color-base-20: #252228;
+    --color-base-25: #332F37;
+    --color-base-30: #3f3a45;
+    --color-base-35: #8e718e;
+    --color-base-40: #8e718e;
+    --color-base-50: #d8ccd8;
+    --color-base-60: #d3c9d3;
+    --color-base-70: #d3c9d3;
+    --color-base-100: #fefefe;
+    --gradient-bg-primary: linear-gradient(135deg, #38333d 1.62%, #332E38 50.72%);
+    --gradient-bg-secondary: linear-gradient(135deg, #332F37 1.62%, #252228 50.72%) !important;
+	--gradient-bg-tertiary: linear-gradient(135deg, #8e718e 30.62%, #836383 90.72%);
+    --background-modifier-border-alt: #9c7b9c;
+    /* --accent-h: 194 !important;
+    --accent-s: 92% !important;
+    --accent-l: 62% !important;
+	--color-accent-hsl: var(--accent-h),
+	var(--accent-s),
+	var(--accent-l);
+	--color-accent: #45CEF7 !important;
+    --color-accent-rgb: 69, 81, 247 !important;
+    --h1-color: #45CEF7;
+    --h2-color: #F745BF; */
 }
+
+.ulu-shark-d.theme-dark .mod-root .workspace-tabs .workspace-leaf:not(.is-mobile),
+.ulu-shark-d.theme-dark .modal:not(.is-mobile) {
+	border: 1px solid #3f3a45 !important;
+}
+
+.ulu-shark-d.theme-dark.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container,
+.ulu-shark-l.theme-light.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container {
+    display: var(--metadata-display-editing);
+    border: 1px solid var(--background-modifier-border-alt);
+    background: var(--gradient-bg-tertiary);
+    margin-bottom: 3em;
+    border-radius: 8px;
+    padding: 8px;
+}
+
 
 /* minimum
 */
@@ -2243,6 +2178,9 @@ body {
     --color-base-60: #707070;
     --color-base-70: #5a5a5a;
     --color-base-100: #222222;
+	--gradient-bg-primary: linear-gradient(135deg, #ffffff 1.62%, #ffffff 50.72%);
+    --gradient-bg-secondary: linear-gradient(135deg, #f6f6f6 1.62%, #f6f6f6 50.72%);
+    --background-modifier-border-alt: #fff;
 }
 
 .ulu-min-d.theme-dark {
@@ -2324,6 +2262,9 @@ body {
 	--color-base-60: #B9B6AA; /* also no clue */
 	--color-base-70: #3E3D39; /* text-muted */
 	--color-base-100: #433C34; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #FEFEFE 1.62%, #FDFBF1 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F6F3EA 1.62%, #F1EDDE 50.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 /* solarized
@@ -2369,6 +2310,9 @@ body {
 	--color-base-60: #586E75;
 	--color-base-70: #657B83;
 	--color-base-100: #586E75;
+	--gradient-bg-primary: linear-gradient(135deg, #FEFAF1 1.62%, #FDF6E3 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F0EBDB 1.62%, #EEE8D5 50.72%) !important;
+    --background-modifier-border-alt: #E2E1DF !important;
 }
 
 .theme-dark.ulu-solar-dt {
@@ -2410,6 +2354,9 @@ body {
 	--color-base-60: #93A1A1;
 	--color-base-70: #839496;
 	--color-base-100: #93A1A1;
+	--gradient-bg-primary: linear-gradient(135deg, #08404E 1.62%, #073642 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #003947 1.62%, #002B36 50.72%) !important;
+    --background-modifier-border-alt: #375662 !important;
 }
 
 /* red
@@ -2453,6 +2400,9 @@ body {
 	--color-base-60: #4e3434; /* also no clue */
 	--color-base-70: #231a1a; /* text-muted */
 	--color-base-100: #0b0909; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #E5DCDC 1.62%, #dacdcd 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #DACDCD 1.62%, #cebdbd 50.72%) !important;
+    --background-modifier-border-alt: #F7DEDE !important;
 }
 
 .ulu-red-d.theme-dark {
@@ -2493,6 +2443,9 @@ body {
 	--color-base-60: #b18a8a; /* also no clue */
 	--color-base-70: #cebdbd; /* text-muted */
 	--color-base-100: #dacdcd; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #221B1B 1.62%, #171212 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #191515 1.62%, #110e0e 50.72%) !important;
+    --background-modifier-border-alt: #4e3434 !important;
 }
 
 /* green theme
@@ -2539,6 +2492,9 @@ body {
 	--color-base-60: #344E41; /* also no clue */
 	--color-base-70: #1A231F; /* text-muted */
 	--color-base-100: #090B0A; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #E5E3DC 1.62%, #dad7cd 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #D9DACD 1.62%, #CDCEBD 50.72%) !important;
+    --background-modifier-border-alt: #a3b18a !important;
 }
 
 .ulu-green-d.theme-dark {
@@ -2582,6 +2538,9 @@ body {
 	--color-base-60: #A3B18A; /* also no clue */
 	--color-base-70: #CDCEBD; /* text-muted */
 	--color-base-100: #dad7cd; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #1D2522 1.62%, #121715 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #151918 1.62%, #0E1110 50.72%) !important;
+    --background-modifier-border-alt: #344E41 !important;
 }
 
 
@@ -2592,36 +2551,12 @@ body {
 	--highlight-mix-blend-mode: darken;
 	--mono-rgb-0: 255, 255, 255;
 	--mono-rgb-100: 0, 0, 0;
-	--color-red-rgb: 154, 69, 60;
-	--color-red: #9A453C;
-	--color-red-hsl: 6, 44%, 42%;
-	--color-green-rgb: 139, 164, 129;
-	--color-green: #8BA481;
-	--color-green-hsl: 103, 16%, 57%;
-	--color-orange-rgb: 241, 187, 138;
-	--color-orange: #F1BB8A;
-	--color-orange-hsl: 29, 79%, 74%;
-	--color-yellow-rgb: 228, 188, 127;
-	--color-yellow: #E4BC7F;
-	--color-yellow-hsl: 36, 65%, 70%;
-	--color-cyan-rgb: 155, 199, 189;
-	--color-cyan: #9BC7BD;
-	--color-cyan-hsl: 166, 28%, 69%;
-	--color-blue-rgb: 23, 92, 89;
-	--color-blue: #175C59;
-	--color-blue-hsl: 177, 60%, 23%;
-	--color-purple-rgb: 166, 154, 181;
-	--color-purple: #A69AB5;
-	--color-purple-hsl: 267, 15%, 66%;
-	--color-pink-rgb: 239, 121, 106;
-	--color-pink: #EF796A;
-	--color-pink-hsl: 7, 81%, 68%;
 	--canvas-color: 10, 10, 10;
-	--color-base-00: #cdd5da; /* background-primary */
+	--color-base-00: #B7CDDC; /* background-primary */
 	--color-base-05: #fefefe; /* background-secondary-alt in light mode, for some reason */
-	--color-base-10: #8aa3b1; /* background-primary-alt */
-	--color-base-20: #bdc6ce; /* background-secondary */
-	--color-base-25: #8aa1b1; /* idk lol */
+	--color-base-10: #C0D8E8; /* background-primary-alt */
+	--color-base-20: #B3C6D6; /* background-secondary */
+	--color-base-25: #C7D5E1; /* idk lol */
 	--color-base-30: #8aa3b1; /* background-modifier-border */
 	--color-base-35: #3a4c5a; /* background-modifier-border-hover */
 	--color-base-40: var(--color-base-30); /* background-modifier-border-focus */
@@ -2629,6 +2564,9 @@ body {
 	--color-base-60: #34414e; /* also no clue */
 	--color-base-70: #1a1f23; /* text-muted */
 	--color-base-100: #090a0b; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #C0D8E8 1.62%, #B7CDDC 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #C7D5E1 1.62%, #B3C6D6 50.72%) !important;
+    --background-modifier-border-alt: #A6D6F2 !important;
 }
 
 .ulu-blue-d.theme-dark {
@@ -2636,31 +2574,6 @@ body {
 	--highlight-mix-blend-mode: lighten;
 	--mono-rgb-0: 0, 0, 0;
 	--mono-rgb-100: 255, 255, 255;
-	--color-red-rgb: 154, 69, 60;
-	--color-red: #9A453C;
-	--color-red-hsl: 6, 44%, 42%;
-	--color-green-rgb: 139, 164, 129;
-	--color-green: #8BA481;
-	--color-green-hsl: 103, 16%, 57%;
-	--color-orange-rgb: 241, 187, 138;
-	--color-orange: #F1BB8A;
-	--color-orange-hsl: 29, 79%, 74%;
-	--color-yellow-rgb: 228, 188, 127;
-	--color-yellow: #E4BC7F;
-	--color-yellow-hsl: 36, 65%, 70%;
-	--color-cyan-rgb: 155, 199, 189;
-	--color-cyan: #9BC7BD;
-	--color-cyan-hsl: 166, 28%, 69%;
-	--color-blue-rgb: 23, 92, 89;
-	--color-blue: #175C59;
-	--color-blue-hsl: 177, 60%, 23%;
-	--color-purple-rgb: 166, 154, 181;
-	--color-purple: #A69AB5;
-	--color-purple-hsl: 267, 15%, 66%;
-	--color-pink-rgb: 239, 121, 106;
-	--color-pink: #EF796A;
-	--color-pink-hsl: 7, 81%, 68%;
-	--canvas-color: 245, 245, 245;
 	--color-base-00: #121517; /* background-primary */
 	--color-base-10: #1a1d23; /* background-primary-alt */
 	--color-base-20: #0e1011; /* background-secondary */
@@ -2672,6 +2585,9 @@ body {
 	--color-base-60: #8a99b1; /* also no clue */
 	--color-base-70: #bdc4ce; /* text-muted */
 	--color-base-100: #cdd0da; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #17242C 1.62%, #121517 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #0B1114 1.62%, #0e1011 50.72%) !important;
+    --background-modifier-border-alt: #34464e !important;
 }
 
 /* magic theme
@@ -2681,31 +2597,6 @@ body {
 	--highlight-mix-blend-mode: darken;
 	--mono-rgb-0: 255, 255, 255;
 	--mono-rgb-100: 0, 0, 0;
-	--color-red-rgb: 154, 69, 60;
-	--color-red: #9A453C;
-	--color-red-hsl: 6, 44%, 42%;
-	--color-green-rgb: 139, 164, 129;
-	--color-green: #8BA481;
-	--color-green-hsl: 103, 16%, 57%;
-	--color-orange-rgb: 241, 187, 138;
-	--color-orange: #F1BB8A;
-	--color-orange-hsl: 29, 79%, 74%;
-	--color-yellow-rgb: 228, 188, 127;
-	--color-yellow: #E4BC7F;
-	--color-yellow-hsl: 36, 65%, 70%;
-	--color-cyan-rgb: 155, 199, 189;
-	--color-cyan: #9BC7BD;
-	--color-cyan-hsl: 166, 28%, 69%;
-	--color-blue-rgb: 23, 92, 89;
-	--color-blue: #175C59;
-	--color-blue-hsl: 177, 60%, 23%;
-	--color-purple-rgb: 166, 154, 181;
-	--color-purple: #A69AB5;
-	--color-purple-hsl: 267, 15%, 66%;
-	--color-pink-rgb: 239, 121, 106;
-	--color-pink: #EF796A;
-	--color-pink-hsl: 7, 81%, 68%;
-	--canvas-color: 10, 10, 10;
 	--color-base-00: #dacdda; /* background-primary */
 	--color-base-05: #fefefe; /* background-secondary-alt in light mode, for some reason */
 	--color-base-10: #b18aae; /* background-primary-alt */
@@ -2718,6 +2609,9 @@ body {
 	--color-base-60: #4e3448; /* also no clue */
 	--color-base-70: #231a21; /* text-muted */
 	--color-base-100: #0b090a; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #E0D3E0 1.62%, #dacdda 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #DACDDA 1.62%, #cebdce 50.72%) !important;
+    --background-modifier-border-alt: #b18aae !important;
 }
 
 .ulu-purple-d.theme-dark {
@@ -2725,31 +2619,6 @@ body {
 	--highlight-mix-blend-mode: lighten;
 	--mono-rgb-0: 0, 0, 0;
 	--mono-rgb-100: 255, 255, 255;
-	--color-red-rgb: 154, 69, 60;
-	--color-red: #9A453C;
-	--color-red-hsl: 6, 44%, 42%;
-	--color-green-rgb: 139, 164, 129;
-	--color-green: #8BA481;
-	--color-green-hsl: 103, 16%, 57%;
-	--color-orange-rgb: 241, 187, 138;
-	--color-orange: #F1BB8A;
-	--color-orange-hsl: 29, 79%, 74%;
-	--color-yellow-rgb: 228, 188, 127;
-	--color-yellow: #E4BC7F;
-	--color-yellow-hsl: 36, 65%, 70%;
-	--color-cyan-rgb: 155, 199, 189;
-	--color-cyan: #9BC7BD;
-	--color-cyan-hsl: 166, 28%, 69%;
-	--color-blue-rgb: 23, 92, 89;
-	--color-blue: #175C59;
-	--color-blue-hsl: 177, 60%, 23%;
-	--color-purple-rgb: 166, 154, 181;
-	--color-purple: #A69AB5;
-	--color-purple-hsl: 267, 15%, 66%;
-	--color-pink-rgb: 239, 121, 106;
-	--color-pink: #EF796A;
-	--color-pink-hsl: 7, 81%, 68%;
-	--canvas-color: 245, 245, 245;
 	--color-base-00: #141217; /* background-primary */
 	--color-base-10: #211a23; /* background-primary-alt */
 	--color-base-20: #100e11; /* background-secondary */
@@ -2761,8 +2630,10 @@ body {
 	--color-base-60: rgb(163, 138, 177); /* also no clue */
 	--color-base-70: #c6bdce; /* text-muted */
 	--color-base-100: #d5cdda; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #201D25 1.62%, #141217 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #221E24 1.62%, #100e11 50.72%) !important;
+    --background-modifier-border-alt: #44344e !important;
 }
-
 
 /* gruvbox
 */
@@ -2805,6 +2676,9 @@ body {
 	--color-base-60: #504945;
 	--color-base-70: #3C3836;
 	--color-base-100: #282828;
+	--gradient-bg-primary: linear-gradient(135deg, #FDF6DE 1.62%, #FBF1C7 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F2E8CE 1.62%, #EBDBB2 50.72%) !important;
+    --background-modifier-border-alt: #FCF9ED !important;
 }
 
 .theme-dark.ulu-gruvbox-dt {
@@ -2845,6 +2719,9 @@ body {
 	--color-base-60: #D5C4A1;
 	--color-base-70: #EBDBB2;
 	--color-base-100: #FBF1C7;
+	--gradient-bg-primary: linear-gradient(135deg, #313131 1.62%, #282828 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #3C3A39 1.62%, #32302F 50.72%) !important;
+    --background-modifier-border-alt: #504945 !important;
 }
 
 /* lobstertime
@@ -2888,6 +2765,9 @@ body {
 	--color-base-60: #34414e; /* also no clue */
 	--color-base-70: #1a1f23; /* text-muted */
 	--color-base-100: #090a0b; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #DCE1E5 1.62%, #cdd5da 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #CAD2D8 1.62%, #bdc6ce 50.72%) !important;
+    --background-modifier-border-alt: #504945 !important;
 }
 
 .theme-dark.ulu-lobstertime-dt {
@@ -2976,6 +2856,9 @@ body {
 	--color-base-60: #495057;
 	--color-base-70: #343A40;
 	--color-base-100: #212529;
+	--gradient-bg-primary: linear-gradient(135deg, #FFFFFF 1.62%, #F8F9FA 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F6F7F9 1.62%, #F1F3F5 50.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .theme-dark.ulu-obplus-dt {
@@ -3021,6 +2904,9 @@ body {
 	--color-base-60: #5F5F5F; /* also no clue */
 	--color-base-70: #bdbdbd; /* text-muted */
 	--color-base-100: #C6C6C6; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #121212 1.62%, #050505 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #0F0F0F 1.62%, #000000 50.72%) !important;
+    --background-modifier-border-alt: #1F1F1F !important;
 }
 
 /* dark mode only themes
@@ -3062,13 +2948,16 @@ body {
 	--color-base-10: #03193F; /* background-primary-alt */
 	--color-base-20: #00396D; /* background-secondary */
 	--color-base-25: #040303; /* idk lol */
-	--color-base-30: #C7CFDD; /* background-modifier-border */
-	--color-base-35: #3D3D3D; /* background-modifier-border-hover */
-	--color-base-40: #5D5D5D; /* background-modifier-border-focus */
+	--color-base-30: #fff; /* background-modifier-border */
+	--color-base-35: #fff; /* background-modifier-border-hover */
+	--color-base-40: #fff; /* background-modifier-border-focus */
 	--color-base-50: #92A1B9; /* text-faint */
 	--color-base-60: #92A1B9; /* also no clue */
 	--color-base-70: #C7CFDD; /* text-muted */
 	--color-base-100: #FFF; /* text-normal */
+	--gradient-bg-primary: linear-gradient(135deg, #0074BD 1.62%, #0069AA 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #003F7A 1.62%, #00396D 50.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 /* control, based off of nebula oni cerberus for vscode
@@ -3118,6 +3007,9 @@ body {
 	--color-accent-hsl: 50, 100%, 55% !important;
 	--color-accent-rgb: 255, 217, 25 !important;
 	--text-on-accent: var(--color-base-00);
+	--gradient-bg-primary: linear-gradient(135deg, #2F343C 1.62%, #262A30 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #262A31 1.62%, #1E2126 50.72%) !important;
+    --background-modifier-border-alt: #353841 !important;
 }
 
 /* abaddon
@@ -3127,43 +3019,22 @@ body {
 	--highlight-mix-blend-mode: lighten;
 	--mono-rgb-0: 0, 0, 0;
 	--mono-rgb-100: 255, 255, 255;
-	--color-red-rgb: 231, 111, 81;
-	--color-red: #E76F51;
-	--color-red-hsl: 12, 76%, 61%;
-	--color-orange-rgb: 244, 162, 97;
-	--color-orange: #F4A261;
-	--color-orange-hsl: 27, 87%, 67%;
-	--color-yellow-rgb: 233, 196, 106;
-	--color-yellow: #E9C46A;
-	--color-yellow-hsl: 43, 74%, 66%;
-	--color-green-rgb: 181, 228, 140;
-	--color-green: #B5E48C;
-	--color-green-hsl: 92, 62%, 72%;
-	--color-cyan-rgb: 100, 223, 223;
-	--color-cyan: #64DFDF;
-	--color-cyan-hsl: 180, 66%, 63%;
-	--color-blue-rgb: 0, 166, 251;
-	--color-blue: #00A6FB;
-	--color-blue-hsl: 200, 100%, 49%;
-	--color-purple-rgb: 160, 108, 213;
-	--color-purple-hsl: 270, 56%, 63%;
-	--color-purple: #A06CD5;
-	--color-pink-rgb: 229, 152, 155;
-	--color-pink: #E5989B;
-	--color-pink-hsl: 358, 60%, 75%;
 	--canvas-color: 114, 114, 114;
-	--color-base-00: #1F1F1F; /* background-primary */
+	--color-base-00: #0d0d0d; /* background-primary */
 	--color-base-10: #1F1F1F; /* background-primary-alt */
 	--color-base-20: #1A1A1A; /* background-secondary */
 	--color-base-25: #1F1F1F; /* idk lol */
-	--color-base-30: #3C3C3C; /* background-modifier-border */
+	--color-base-30: #121212; /* background-modifier-border */
 	--color-base-35: #383838; /* background-modifier-border-hover */
 	--color-base-40: #3C3C3C; /* background-modifier-border-focus */
-	--color-base-50: #7F7B66; /* text-faint */
-	--color-base-60: #5F5F5F; /* also no clue */
-	--color-base-70: #BCAC8F; /* text-muted */
-	--color-base-100: #C6C6C6; /* text-normal */
+	--color-base-50: #9f9789; /* text-faint */
+	--color-base-60: #b2ada3; /* also no clue */
+	--color-base-70: #d9d2c4; /* text-muted */
+	--color-base-100: #ffffff; /* text-normal */
 	--text-on-accent: var(--color-base-00);
+	--gradient-bg-primary: linear-gradient(135deg, #0d0d0d 1.62%, #0a0a0a 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #141414 1.62%, #080808 50.72%) !important;
+    --background-modifier-border-alt: #1a1a1a !important;
 }
 
 .theme-dark.ulu-dracula-dt {
@@ -3205,6 +3076,9 @@ body {
 	--color-base-60: #6272A4;
 	--color-base-70: #F8F8F2;
 	--color-base-100: #FEFEFA;
+	--gradient-bg-primary: linear-gradient(135deg, #2E303E 1.62%, #282A36 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #20252C 1.62%, #1A1E24 50.72%) !important;
+    --background-modifier-border-alt: #44475A !important;
 }
 
 .theme-dark.ulu-lyt-dt {
@@ -3245,6 +3119,9 @@ body {
 	--color-base-60: #DBE2F5;
 	--color-base-70: #72C3D5;
 	--color-base-100: #E8ECF5;
+	--gradient-bg-primary: linear-gradient(135deg, #2A2B32 1.62%, #23242A 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #363A45 1.62%, #2D3039 50.72%) !important;
+    --background-modifier-border-alt: #6C7184 !important;
 }
 
 /* lord, based off of the eidol
@@ -3294,6 +3171,9 @@ body {
 	--color-accent-hsl: 75, 100%, 60% !important;
 	--color-accent-rgb: 204, 255, 51 !important;
 	--text-on-accent: var(--color-base-00);
+	--gradient-bg-primary: linear-gradient(135deg, #0B281E 1.62%, #081c15 50.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #1F4D39 1.62%, #1b4332 50.72%) !important;
+    --background-modifier-border-alt: #40916c !important;
 }
 
 .ulu-gradient-d.theme-dark {
@@ -3322,176 +3202,13 @@ body {
 		hsl(233deg 39% 12%) 50%,
 		hsl(230deg 40% 14%) 100%
 	  );
-	--background-secondary: radial-gradient(100% 50% at 0% 50%, rgba(32, 36, 40, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+	--gradient-bg-primary: linear-gradient(135deg, rgba(9,9,9,0.5) 20.62%, rgba(0,0,0,0.5)  90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #1E5E6C 20.62%, #601E6C 90.72%) !important;
+    --background-modifier-border-alt: #40916c !important;
 }
 
-/* lobster time
-*/
-.theme-light.ulu-lobstertime-lt {
-	--accent-h: 13;
-	--accent-s: 68%;
-	--accent-l: 63%;
-	--color-red: #EA5E41;
-	--color-red-hsl: 10.3, 80.1%, 58.6%;
-	--color-red-rgb: 234, 94, 65;
-	--color-green: #A9D37E;
-	--color-green-hsl: 89.6, 49.1%, 66.1%;
-	--color-green-rgb: 169, 211, 126;
-	--color-orange: #ED874C;
-	--color-orange-hsl: 22, 81.7%, 61.4%;
-	--color-orange-rgb: 237, 135, 76;
-	--color-yellow: #E9BA4A;
-	--color-yellow-hsl: 42.3, 78.3%, 60.2%;
-	--color-yellow-rgb: 233, 186, 74;
-	--color-cyan: #5AB7ED;
-	--color-cyan-hsl: 202, 80.3%, 64.1%;
-	--color-cyan-rgb: 90, 183, 237;
-	--color-blue: #339AF0;
-	--color-blue-hsl: 207.3, 86.3%, 57.1%;
-	--color-blue-rgb: 122, 184, 225;
-	--color-purple: #7865E6;
-	--color-purple-hsl: 248.8, 72.1%, 64.9%;
-	--color-purple-rgb: 120, 101, 230;
-	--color-pink: #F6B7D8;
-	--color-pink-hsl: 328.6, 77.8%, 84.1%;
-	--color-base-00: #EFEEE6;
-	--color-base-05: #F4F1DE;
-	--color-base-10: #E0DDCF;
-	--color-base-20: #CBCAC1;
-	--color-base-25: #B7B6B2;
-	--color-base-30: #A3A2A4;
-	--color-base-35: #8E8F95;
-	--color-base-40: #7A7B87;
-	--color-base-50: #666778;
-	--color-base-60: #51546A;
-	--color-base-70: #3D405B;
-	--color-base-100: #343446;
-}
-
-.theme-dark.ulu-lobstertime-dt {
-	--accent-h: 75;
-	--accent-s: 21%;
-	--accent-l: 57%;
-	--color-red: #EA5E41;
-	--color-red-hsl: 10.3, 80.1%, 58.6%;
-	--color-red-rgb: 234, 94, 65;
-	--color-green: #5FB26B;
-	--color-green-hsl: 128.7, 35%, 53.5%;
-	--color-green-rgb: 95, 178, 107;
-	--color-orange: #ED874C;
-	--color-orange-hsl: 22, 81.7%, 61.4%;
-	--color-orange-rgb: 237, 135, 76;
-	--color-yellow: #E9BF55;
-	--color-yellow-hsl: 43, 77.1%, 62.4%;
-	--color-yellow-rgb: 233, 191, 85;
-	--color-cyan: #47AFEB;
-	--color-cyan-hsl: 202, 80.4%, 60%;
-	--color-cyan-rgb: 71, 175, 235;
-	--color-blue: #2E8CCC;
-	--color-blue-hsl: 204.3, 63.2%, 49%;
-	--color-blue-rgb: 46, 140, 204;
-	--color-purple: #4B53D1;
-	--color-purple-hsl: 236.4, 59.3%, 55.7%;
-	--color-purple-rgb: 75, 83, 209;
-	--color-pink: #EB6FAF;
-	--color-pink-hsl: 329, 75.6%, 67.8%;
-	--color-base-00: #1D1E1A;
-	--color-base-10: #353633;
-	--color-base-20: #131410;
-	--color-base-25: #4C4E4B;
-	--color-base-30: #646562;
-	--color-base-35: #70716E;
-	--color-base-40: #7B7C7A;
-	--color-base-50: #8D8E8C;
-	--color-base-60: #AAABAA;
-	--color-base-70: #C2C2C2;
-	--color-base-100: #D9D9D9;
-}
-
-/* the amazing linking your thinking color scheme 🥰
-*/
-.theme-dark.ulu-lyt-dt {
-	--accent-h: 191 !important;
-	--accent-s: 54% !important;
-	--accent-l: 64% !important;
-	--color-red: #E63946;
-	--color-red-hsl: 355.5, 77.6%, 56.3%;
-	--color-red-rgb: 230, 57, 70;
-	--color-green: #60993E;
-	--color-green-hsl: 97.6, 42.3%, 42.2%;
-	--color-green-rgb: 96, 153, 62;
-	--color-orange: #FFCDB2;
-	--color-orange-hsl: 21, 100%, 84.9%;
-	--color-orange-rgb: 255, 205, 178;
-	--color-yellow: #F2CC8F;
-	--color-yellow-hsl: 37, 79.2%, 75.5%;
-	--color-yellow-rgb: 242, 204, 143;
-	--color-cyan: #72A1E5;
-	--color-cyan-hsl: 215.5, 68.9%, 67.3%;
-	--color-cyan-rgb: 114, 161, 229;
-	--color-blue: #52B2CF;
-	--color-blue-hsl: 193.9, 56.6%, 56.7%;
-	--color-blue-rgb: 82, 178, 207;
-	--color-purple: #9097C0;
-	--color-purple-hsl: 231.3, 27.6%, 65.9%;
-	--color-purple-rgb: 144, 151, 192;
-	--color-pink: #EFD4BF;
-	--color-pink-hsl: 26.3, 60%, 84.3%;
-	--color-base-00: #23242A;
-	--color-base-10: #1E1F24;
-	--color-base-20: #2D3039;
-	--color-base-25: #343A4B;
-	--color-base-30: #6C7184;
-	--color-base-35: #7C849C;
-	--color-base-40: #A0A7BB;
-	--color-base-50: #B9C3DF;
-	--color-base-60: #DBE2F5;
-	--color-base-70: #72C3D5;
-	--color-base-100: #E8ECF5;
-}
-
-/* dracula
-*/
-
-.theme-dark.ulu-dracula-dt {
-	--accent-h: 1;
-	--accent-s: 71.2%;
-	--accent-l: 52.4%;
-	--color-red: #F55;
-	--color-red-hsl: 0, 100%, 66.7%;
-	--color-red-rgb: 255, 85, 85;
-	--color-green: #50FA7B;
-	--color-green-hsl: 135.2, 94.4%, 64.7%;
-	--color-green-rgb: 80, 250, 123;
-	--color-orange: #FFB86C;
-	--color-orange-hsl: 31, 100%, 71.2%;
-	--color-orange-rgb: 255, 184, 108;
-	--color-yellow: #F1FA8C;
-	--color-yellow-hsl: 64.9, 91.7%, 76.5%;
-	--color-yellow-rgb: 241, 250, 140;
-	--color-cyan: #8BE9FD;
-	--color-cyan-hsl: 190.5, 96.6%, 76.9%;
-	--color-cyan-rgb: 139, 233, 253;
-	--color-blue: #8BC6FD;
-	--color-blue-hsl: 208.9, 96.6%, 76.9%;
-	--color-blue-rgb: 139, 198, 253;
-	--color-purple: #BD93F9;
-	--color-purple-hsl: 264.7, 89.5%, 77.6%;
-	--color-purple-rgb: 189, 147, 249;
-	--color-pink: #FF79C6;
-	--color-pink-hsl: 325.5, 100%, 73.7%;
-	--color-pink-rgb: 255, 121, 198;
-	--color-base-00: #282A36;
-	--color-base-10: #44475A;
-	--color-base-20: #1A1E24;
-	--color-base-25: #282A36;
-	--color-base-30: #44475A;
-	--color-base-35: #4F5269;
-	--color-base-40: #282A36;
-	--color-base-50: #6272A4;
-	--color-base-60: #6272A4;
-	--color-base-70: #F8F8F2;
-	--color-base-100: #FEFEFA;
+.ulu-gradient-d.theme-dark .modal:not(.is-mobile) {
+	background: var(--gradient-bg-secondary) !important;
 }
 
 /* amoled
@@ -3509,6 +3226,9 @@ body {
 	--color-base-60: #A6A6A6;
 	--color-base-70: #CDCDCD;
 	--color-base-100: #FFF;
+	--gradient-bg-primary: linear-gradient(135deg, #060606 20.62%, #000 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #030303 20.62%, #000 90.72%) !important;
+    --background-modifier-border-alt: #131313 !important;
 }
 
 /* Accent settings
@@ -3519,6 +3239,7 @@ body {
 	--color-accent-hsl: var(--color-red-hsl);
 	--color-accent-1: var(--color-blue);
 	--color-accent-1-rgb: var(--color-blue-rgb);
+    --pill-border: 
 }
 
 .theme-light.ulu-red {
@@ -3644,81 +3365,121 @@ body {
 .ulu-accent-bg-d.theme-dark.ulu-red {
 	--color-base-00: #050404;
 	--color-base-20: #130F0F;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #050404 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #130F0F 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-red {
 	--color-base-00: #FDFBFB;
 	--color-base-20: #F5F2F2;
+	--gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FDFBFB 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F5F2F2 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-green {
 	--color-base-00: #050505;
 	--color-base-20: #101110;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #050505 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #101110 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-green {
 	--color-base-00: #FCFCFC;
 	--color-base-20: #F0F5F0;
+	--gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FCFCFC 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F0F5F0 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-orange {
 	--color-base-00: #050404;
 	--color-base-20: #110F0D;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #050404 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #110F0D 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-orange {
 	--color-base-00: #FCFCFA;
 	--color-base-20: #F6F3ED;
+    --gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FCFCFA 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F6F3ED 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-yellow {
 	--color-base-00: #050404;
 	--color-base-20: #13110F;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #050404 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #13110F 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-yellow {
 	--color-base-00: #FCFCF8;
 	--color-base-20: #F5F4E6;
+    --gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FCFCF8 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F5F4E6 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-cyan {
 	--color-base-00: #060606;
 	--color-base-20: #0F1111;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #060606 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #0F1111 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-cyan {
 	--color-base-00: #F9FCFC;
 	--color-base-20: #ECF6F6;
+    --gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #F9FCFC 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #ECF6F6 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-blue {
 	--color-base-00: #040508;
 	--color-base-20: #0C0F18;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #040508 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #0C0F18 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-blue {
 	--color-base-00: #FBFCFC;
 	--color-base-20: #F1F5F5;
+    --gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FBFCFC 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F1F5F5 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-purple {
 	--color-base-00: #050505;
 	--color-base-20: #111112;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #050505 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #111112 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-purple {
 	--color-base-00: #FCFCFB;
 	--color-base-20: #F5F3F2;
+    --gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FCFCFB 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F5F3F2 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-d.theme-dark.ulu-pink {
 	--color-base-00: #060505;
 	--color-base-20: #130E0F;
+    --gradient-bg-primary: linear-gradient(135deg, #262626 20.62%, #060505 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #2B2B2B 20.62%, #130E0F 90.72%) !important;
 }
 
 .ulu-accent-bg-l.theme-light.ulu-pink {
 	--color-base-00: #FCFCFB;
 	--color-base-20: #F5F3F1;
+    --gradient-bg-primary: linear-gradient(135deg, #fff 20.62%, #FCFCFB 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F8F6F6 20.62%, #F5F3F1 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 /* contrast
@@ -3726,21 +3487,31 @@ body {
 .ulu-con-d.theme-dark {
 	--color-base-00: #171717;
 	--color-base-20: #171717;
+    --gradient-bg-primary: linear-gradient(135deg, #171717 20.62%, #171717 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #171717 20.62%, #171717 90.72%) !important;
 }
 
 .ulu-con-l.theme-light {
 	--color-base-00: #F3F3F3;
 	--color-base-20: #F3F3F3;
+    --gradient-bg-primary: linear-gradient(135deg, #F3F3F3 20.62%, #F3F3F3 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F3F3F3 20.62%, #F3F3F3 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-super-con-d.theme-dark {
 	--color-base-00: #000;
 	--color-base-20: #000;
+    --gradient-bg-primary: linear-gradient(135deg, #000 20.62%, #000 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #000 20.62%, #000 90.72%) !important;
 }
 
 .ulu-super-con-l.theme-light {
 	--color-base-00: #FFF;
 	--color-base-20: #FFF;
+    --gradient-bg-primary: linear-gradient(135deg, #FFF 20.62%, #FFF 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #FFF 20.62%, #FFF 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-custom-d.theme-dark {
@@ -3756,89 +3527,121 @@ body {
 .ulu-accent-bg-lowcon-d.theme-dark.ulu-red {
 	--color-base-00: #130F0F;
 	--color-base-20: #130F0F;
+    --gradient-bg-primary: linear-gradient(135deg, #130F0F 20.62%, #130F0F 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #130F0F 20.62%, #130F0F 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-red {
 	--color-base-00: #F5F2F2;
 	--color-base-20: #F5F2F2;
+    --gradient-bg-primary: linear-gradient(135deg, #F5F2F2 20.62%, #F5F2F2 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F5F2F2 20.62%, #F5F2F2 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-lowcon-d.theme-dark.ulu-green {
 	--color-base-00: #101110;
 	--color-base-20: #101110;
+    --gradient-bg-primary: linear-gradient(135deg, #101110 20.62%, #101110 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #101110 20.62%, #101110 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-green {
 	--color-base-00: #F0F5F0;
 	--color-base-20: #F0F5F0;
+    --gradient-bg-primary: linear-gradient(135deg, #F0F5F0 20.62%, #F0F5F0 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F0F5F0 20.62%, #F0F5F0 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-d.theme-dark.ulu-orange {
 	--color-base-00: #110F0D;
 	--color-base-20: #110F0D;
+    --gradient-bg-primary: linear-gradient(135deg, #110F0D 20.62%, #110F0D 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #110F0D 20.62%, #110F0D 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-orange {
 	--color-base-00: #F6F3ED;
 	--color-base-20: #F6F3ED;
+    --gradient-bg-primary: linear-gradient(135deg, #F6F3ED 20.62%, #F6F3ED 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F6F3ED 20.62%, #F6F3ED 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-lowcon-d.theme-dark.ulu-yellow {
 	--color-base-00: #13110F;
 	--color-base-20: #13110F;
+    --gradient-bg-primary: linear-gradient(135deg, #13110F 20.62%, #13110F 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #13110F 20.62%, #13110F 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-yellow {
 	--color-base-00: #F5F4E6;
 	--color-base-20: #F5F4E6;
+    --gradient-bg-primary: linear-gradient(135deg, #F5F4E6 20.62%, #F5F4E6 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F5F4E6 20.62%, #F5F4E6 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-lowcon-d.theme-dark.ulu-cyan {
 	--color-base-00: #0F1111;
 	--color-base-20: #0F1111;
+    --gradient-bg-primary: linear-gradient(135deg, #0F1111 20.62%, #0F1111 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #0F1111 20.62%, #0F1111 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-cyan {
 	--color-base-00: #ECF6F6;
 	--color-base-20: #ECF6F6;
+    --gradient-bg-primary: linear-gradient(135deg, #ECF6F6 20.62%, #ECF6F6 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #ECF6F6 20.62%, #ECF6F6 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-cono-accent-bg-d.theme-dark.ulu-blue {
 	--color-base-00: #0C0F18;
 	--color-base-20: #0C0F18;
+    --gradient-bg-primary: linear-gradient(135deg, #0C0F18 20.62%, #0C0F18 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #0C0F18 20.62%, #0C0F18 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-blue {
 	--color-base-00: #F1F5F5;
 	--color-base-20: #F1F5F5;
+    --gradient-bg-primary: linear-gradient(135deg, #F1F5F5 20.62%, #F1F5F5 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F1F5F5 20.62%, #F1F5F5 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ulu-accent-bg-lowcon-d.theme-dark.ulu-purple {
 	--color-base-00: #111112;
 	--color-base-20: #111112;
+    --gradient-bg-primary: linear-gradient(135deg, #111112 20.62%, #111112 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #111112 20.62%, #111112 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-purple {
 	--color-base-00: #F5F3F2;
 	--color-base-20: #F5F3F2;
+    --gradient-bg-primary: linear-gradient(135deg, #F5F3F2 20.62%, #F5F3F2 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F5F3F2 20.62%, #F5F3F2 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
 
 .ul.ulu-con-accent-bg-d.theme-dark.ulu-pink {
 	--color-base-00: #130E0F;
 	--color-base-20: #130E0F;
+    --gradient-bg-primary: linear-gradient(135deg, #130E0F 20.62%, #130E0F 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #130E0F 20.62%, #130E0F 90.72%) !important;
 }
 
 .ulu-accent-bg-lowcon-l.theme-light.ulu-pink {
 	--color-base-00: #F5F3F1;
 	--color-base-20: #F5F3F1;
+    --gradient-bg-primary: linear-gradient(135deg, #F5F3F1 20.62%, #F5F3F1 90.72%) !important;
+    --gradient-bg-secondary: linear-gradient(135deg, #F5F3F1 20.62%, #F5F3F1 90.72%) !important;
+    --background-modifier-border-alt: #fff !important;
 }
-
-
-
-
-
-
-
 
 /* Usually, I delete the following and then write my own CSS here.
 	However, if this is helpful, feel free to leave it and edit it!
@@ -4004,7 +3807,7 @@ input[type="number"]:focus-visible {
 	border-color: var(--background-modifier-border);
 }
 
-.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+/* .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
 	border-right: var(--o-border);
 	border-right-width: var(--divider-width);
@@ -4013,7 +3816,7 @@ input[type="number"]:focus-visible {
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
 	border-left: var(--o-border);
 	border-left-width: var(--divider-width);
-}
+} */
 
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
 	height: var(--divider-width-hover);
@@ -4022,7 +3825,7 @@ input[type="number"]:focus-visible {
 	bottom: 0;
 	left: 0;
 
-	border-bottom: var(--o-border);
+	border-bottom: none;
 	border-bottom-width: var(--divider-width);
 
 	cursor: row-resize;
@@ -4141,9 +3944,10 @@ input[type="number"]:focus-visible {
 
 .horizontal-tab-content,
 .vertical-tab-content {
-    background: var(--background-primary);
+    background: transparent;
 }
 
+/* 
 .vertical-tab-content {
     overflow-y: auto;
     height: 100%;
@@ -4151,7 +3955,7 @@ input[type="number"]:focus-visible {
     padding-top: var(--size-4-8);
     padding-bottom: var(--size-4-16);
     border-top-left-radius: 8px;
-}
+} */
 
 .vertical-tab-header {
     background: transparent;
@@ -4192,19 +3996,19 @@ hr {
 }
 
 .tooltip .tooltip-arrow {
-    border-bottom: 6px solid var(--color-accent);
+    border-bottom: 6px solid var(--background-modifier-border-alt);
 }
 
 .tooltip.mod-right .tooltip-arrow {
-    border-right: 6px solid var(--color-accent);
+    border-right: 6px solid var(--background-modifier-border-alt);
 }
 
 .tooltip.mod-left .tooltip-arrow {
-    border-left: 6px solid var(--color-accent);
+    border-left: 6px solid var(--background-modifier-border-alt);
 }
 
 .tooltip.mod-top .tooltip-arrow {
-    border-top: 6px solid var(--color-accent);
+    border-top: 6px solid var(--background-modifier-border-alt);
 }
 
 .notice {
@@ -4272,7 +4076,7 @@ kbd,
     font-family: var(--font-monospace);
     font-size: 0.75rem;
 
-    color: var(--text-on-accent);
+    color: var(--color-accent);
     background: rgb(var(--color-accent-rgb) 0.7);
 
     padding-top: 0;
@@ -4293,10 +4097,17 @@ kbd,
 
 .clickable-icon[aria-label="New note"]::before {
     content: "New Note";
+	font-variation-settings: "wght"700;
 }
 
 .clickable-icon[aria-label="New note"] .svg-icon {
     display: none;
+}
+
+.clickable-icon[aria-label="New note"]:hover {
+    background-color: var(--color-accent);
+    color: #fff;
+    box-shadow: 0 0 0 5px hsl(var(--color-accent-hsl), 0.1) !important;
 }
 
 /* Smooth Live Headers by Luke242#8485
@@ -4393,8 +4204,8 @@ a.tag,
     font-weight: 550;
     line-height: 1;
 
-    color: var(--text-muted);
-    background: var(--background-secondary);
+    color: var(--text-on-accent);
+    background: var(--color-accent);
     box-shadow: none;
 
     padding: inherit;
@@ -4425,16 +4236,16 @@ a.tag:hover,
 
 .metadata-property[data-property-key="tags"] {
     --pill-color: var(--text-on-accent);
-    --pill-color-hover: var(--text-on-accent);
-    --pill-color-remove: var(--tag-color);
+    --pill-color-hover: var(--color-accent);
+    --pill-color-remove: var(--color-accent);
     --pill-color-remove-hover: var(--tag-color-hover);
     --pill-decoration: var(--tag-decoration);
     --pill-decoration-hover: var(--tag-decoration-hover);
-    --pill-background: var(--background-modifier-border);
-    --pill-background-hover: var(--color-accent);
-    --pill-border-color: var(--tag-border-color);
-    --pill-border-color-hover: var(--tag-border-color-hover);
-    --pill-border-width: var(--tag-border-width);
+    --pill-background: var(--color-accent);
+    --pill-background-hover: var(--gradient-bg-primary);
+    --pill-border-color: hsla(var(--color-accent-hsl), 0.5);
+    --pill-border-color-hover: var(--background-modifier-border-alt);
+    --pill-border-width: 1px;
     --pill-padding-x: 8px;
     --pill-padding-y: 4px;
     --pill-radius: var(--radius-s);
@@ -4443,13 +4254,48 @@ a.tag:hover,
     --pill-focus-left-adjust: 0;
 }
 
-.multi-select-pill-remove-button {
+.multi-select-pill {
+    --icon-size: var(--icon-xs);
+    --icon-stroke: var(--icon-xs-stroke-width);
+    display: flex;
+    align-items: center;
+    background-color: var(--pill-background);
+    border: none;
+    border-radius: var(--pill-radius) !important;
+    box-shadow: 0 0 0 4px hsl(var(--color-accent-hsl), 0.1) !important;
+    color: var(--pill-color);
+    cursor: var(--cursor);
+    font-weight: 600;
+    padding: var(--pill-padding-y) 0;
+    line-height: 1;
+    max-width: 100%;
+    gap: 4px;
+    margin: 4px;
+    position: relative;
+}
+
+.multi-select-pill:hover {
+    --icon-size: var(--icon-xs);
+    --icon-stroke: var(--icon-xs-stroke-width);
+    display: flex;
+    align-items: center;
+    background-color: var(--background-primary);
+    border: none;
+    border-radius: var(--pill-radius) !important;
+    box-shadow: 0 0 0 4px hsl(var(--color-accent-hsl), 0.05) !important;
+}
+
+/* .multi-select-pill-remove-button {
     color: var(--text-on-accent);
     padding-top: 2px;
+} */
+
+.multi-select-pill-remove-button {
+    color: var(--text-on-accent);
 }
 
 .multi-select-pill-remove-button:hover {
-    color: var(--text-on-accent);
+    color: var(--color-accent);
 }
 
 .multi-select-pill:hover {
@@ -4485,7 +4331,7 @@ a.tag:hover,
     --icon-stroke: var(--icon-m-stroke-width);
     align-items: center;
     background: rgba(0, 0, 0, 0.1);
-    border-radius: var(--radius-s);
+    border-radius: var(--ulu-radius);
 }
 
 .workspace-split.mod-vertical .workspace-tab-header-container {
@@ -4512,7 +4358,7 @@ a.tag:hover,
 
 .workspace-tab-header {
     background: rgba(0, 0, 0, 0.1);
-    border-radius: var(--radius-s);
+    border-radius: var(--ulu-radius);
     transition: 700ms;
 }
 
@@ -4543,10 +4389,18 @@ a.tag:hover,
     padding: 0;
     /* margin: 1.5px 0 3.5px; */
 
-    border-radius: var(--radius-s);
+    border-radius: var(--ulu-radius);
 
     text-decoration-line: none;
 }
+
+.mod-root .workspace-tab-header-container-inner {
+    padding: 1px 8px 0;
+}
+
+/* .workspace .mod-root .workspace-tab-header {
+    border: 1px solid var(--background-modifier-border-alt) !important;
+} */
 
 .workspace-split.mod-root .workspace-tabs:not(.mod-top)>.workspace-tab-header-container .workspace-tab-header-inner-title,
 .workspace-split.mod-root .workspace-tabs:not(.mod-top)>.workspace-tab-header-container .workspace-tab-header-new-tab .clickable-icon,
@@ -4628,17 +4482,29 @@ a.tag:hover,
 	font-variation-settings: "wght" 600;
 }
 
+.tree-item-self.fn-is-active {
+    color: var(--nav-item-color-active);
+    background-color: var(--nav-item-background-active);
+    border-radius: var(--radius-s);
+    font-weight: var(--nav-item-weight-active);
+}
+
 .nav-file-title.is-active {
     background: transparent !important;
     border-radius: var(--radius-s);
     animation: 0.3s pop cubic-bezier(0.17, 0.89, 0.32, 1.27);
 }
 
+.nav-file-title-content,
+.nav-folder-title-content {
+    padding: 2px 4px;
+	margin: -2px 0px;
+}
+
 .is-active .nav-file-title-content {
     color: var(--text-on-accent) !important;
     background: var(--color-accent) !important;
     border-radius: var(--radius-s);
-    padding: 2px 4px;
 }
 
 .nav-file-title:hover,
@@ -4799,7 +4665,8 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 */
 .status-bar {
     box-shadow: var(--shadow-s);
-    border: 1px solid var(--background-modifier-border);
+    border-top: 1px solid var(--background-modifier-border);
+    border-left: 1px solid var(--background-modifier-border);
 }
 
 /* Buttons
@@ -4814,7 +4681,7 @@ button:not(.clickable-icon,
     background-color: var(--background-primary);
     color: var(--color-accent);
     border: var(--o-border);
-    border-radius: 8px;
+    border-radius: var(--ulu-radius) !important;
     transition: .3s;
     box-shadow: none;
 }
@@ -5134,7 +5001,6 @@ a,
 .markdown-rendered .internal-link {
     color: var(--text-normal);
     text-decoration-line: none;
-    text-shadow: 0px 0px 8px rgba(var(--color-accent-rgb), 0.5);
 }
 
 a,
@@ -5303,7 +5169,12 @@ ol li::before {
 	font-size: small;
 }
 
-.list-bullet.list-bullet.list-bullet:after {
+li.is-collapsed .list-bullet:after, .is-collapsed ~ .cm-formatting-list .list-bullet:after {
+    background-color: var(--list-marker-color-collapsed);
+    box-shadow: 0 0 4px 4px var(--background-modifier-active-hover);
+}
+
+.ulu-pin .list-bullet.list-bullet.list-bullet:after {
 	content: '📍';
 	height: unset;
 	font-size: x-small;
@@ -5312,10 +5183,10 @@ ol li::before {
 	background: transparent;
 }
 
-.outliner-plugin-better-bullets
+.ulu-pin .outliner-plugin-better-bullets
 	.cm-s-obsidian:not(.is-live-preview)
 	.cm-formatting-list-ul:before,
-.outliner-plugin-better-bullets
+.ulu-pin .outliner-plugin-better-bullets
 	.cm-s-obsidian.is-live-preview
 	.list-bullet:before {
 	content: '📍';
@@ -5324,18 +5195,18 @@ ol li::before {
 	color: var(--color-accent);
 	width: unset;
 	background: transparent;
-}
+} 
 
-.is-collapsed ~ .cm-formatting-list .list-bullet:after,
-.cm-fold-indicator:hover.is-collapsed ~ .cm-formatting-list .list-bullet:after {
+.ulu-pin .is-collapsed ~ .cm-formatting-list .list-bullet:after,
+.ulu-pin .cm-fold-indicator:hover.is-collapsed ~ .cm-formatting-list .list-bullet:after {
 	background-color: transparent;
 	box-shadow: none;
 }
 
-.list-collapse-indicator:hover ~ .list-bullet:after,
-.cm-fold-indicator:hover ~ .list-bullet:after,
-.list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after,
-.cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
+.ulu-pin .list-collapse-indicator:hover ~ .list-bullet:after,
+.ulu-pin .cm-fold-indicator:hover ~ .list-bullet:after,
+.ulu-pin .list-collapse-indicator:hover ~ .cm-formatting-list .list-bullet:after,
+.ulu-pin .cm-fold-indicator:hover ~ .cm-formatting-list .list-bullet:after {
 	background-color: transparent;
 	box-shadow: none;
 }
@@ -5546,6 +5417,21 @@ ol li::before {
 /* Plugin support
 */
 
+#cMenuToolbarModalBar.top {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+	border-bottom: 1px solid var(--background-modifier-border);
+}
+
+#cMenuToolbarModalBar .cMenuToolbarCommandItem,
+#cMenuToolbarModalBar.top :is(.cMenuToolbarCommandItem, button[class^=cMenuToolbarCommandsubItem]):not(.cMenuToolbar-Divider-Line),
+:is(#cMenuToolbarModalBar, #cMenuToolbarPopoverBar) button[class^=cMenuToolbarCommandsubItem]>.subitem svg {
+	color: var(--text-on-accent) !important;
+}
+
+
+
 /* calendar
 */
 .workspace-split.mod-left-split .workspace-leaf-content .view-content {
@@ -5586,15 +5472,40 @@ th.svelte-pcimu8 {
 }
 
 .loom-node-inner {
+    color: var(--text-normal);
+	background: red !important;
+}
 
-    color: var(--text-normal)
+.loom__editor-node-hover {
+    background: rgba(0,0,0,0.1) !important;
+	color: var(--color-accent) !important;
+}
+
+.loom__node-children {
+    margin-left: 0.85em;
+    padding-left: 0.6em;
+    border-left: 1px solid var(--background-modifier-border);
+}
+
+.loom__node-unread-indicator {
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 8px 4px hsla(var(--color-accent-hsl),0.3);
+    margin-left: 0.6em;
+    flex-shrink: 0;
+}
+
+.loom__node-unread {
+    color: var(--font-normal);
+    font-weight: 500 !important;
 }
 
 /* editor toolbar
 */
 #cMenuToolbarModalBar.top {
     background: transparent;
-    border: none;
     border-radius: 0;
 }
 
@@ -5809,11 +5720,6 @@ div[aria-label="Help"]:hover {
     border-top: 1px solid var(--background-modifier-border);
 }
 
-.workspace-leaf:not(.is-mobile) {
-	box-shadow: var(--shadow-s);
-	border-radius: var(--ulu-radius);
-}
-
 .mod-left-split .workspace-tabs .workspace-leaf,
 .mod-right-split .workspace-tabs .workspace-leaf {
 	box-shadow: none;
@@ -5822,23 +5728,15 @@ div[aria-label="Help"]:hover {
 
 /* note border color and shadow
 */
-.workspace .mod-root .workspace-leaf-content:not(
-.mk-flowspace-editor .workspace-leaf-content,
-.is-mobile .workspace .mod-root .workspace-leaf-content) {
-	border: 1px solid var(--background-modifier-border);
-	border-radius: var(--ulu-radius);
-}
 
-.ulu-cards-border .workspace .mod-root .workspace-leaf-content:not(
+.ulu-cards-border .workspace .mod-root .workspace-tabs .workspace-leaf:not(
 .ulu-cards-border.ulu-cards-border .ulu-cards-border .mk-flowspace-editor .workspace-leaf-content,
 .ulu-cards-border .is-mobile .workspace .mod-root .workspace-leaf-content) {
     border: none;
-    border-radius: var(--ul-radius);
 }
 
-.ulu-cards-shadow .workspace-leaf:not(.is-mobile) {
+.ulu-cards-shadow .mod-root .workspace-tabs .workspace-leaf:not(.is-mobile) {
     box-shadow: none;
-    border-radius: var(--ulu-radius);
 }
 
 /* canvas
@@ -6522,10 +6420,20 @@ div[aria-label="Help"]:hover {
 .ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container {
     display: var(--metadata-display-editing);
     border: 1px solid var(--background-modifier-border);
-    background: var(--background-secondary);
+    background: var(--background-primary);
     margin-bottom: 3em;
     border-radius: 8px;
     padding: 8px;
+}
+
+.mod-right-split .workspace-tabs .workspace-leaf {
+    padding-top: 8px;
+    padding-right: 8px;
+}
+
+.mod-right-split .workspace-leaf-content[data-type="graph"] {
+    border: 1px solid var(--background-modifier-border);
+    border-radius: var(--ulu-radius);
 }
 
 .metadata-property:focus-within {
@@ -6630,6 +6538,70 @@ div[aria-label="Help"]:hover {
     overflow: hidden;
     cursor: text;
 }
+
+.ulu-line-callouts .callout::after {
+    content: '';
+    background: rgba(var(--callout-color),0.3) !important;
+    position: absolute;
+    left: -3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    border-radius: 0px;
+    z-index: -1;
+}
+
+.ulu-line-callouts .callout {
+    /* background: rgba(var(--callout-color), 0.05); */
+    background: transparent;
+    position: relative;
+    /* border: 1px solid rgba(var(--callout-color), 0.1); */
+    /* border-left: 3px solid rgba(var(--callout-color), 0.4); */
+    box-shadow: 0px 0px 0px 0px rgba(var(--callout-color),0.5);
+    border-radius: 0px;
+}
+
+.ulu-line-callouts .callout::before {
+    content: '';
+    background: rgba(var(--callout-color),0.3) !important;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    top: 0px;
+    border-left: 3px solid rgb(var(--callout-color));
+    box-shadow: 0px 0px 34px 16px rgba(var(--callout-color),0.5);
+    border-radius: 0px;
+}
+
+.ulu-line-callouts .callout:hover,
+.ulu-line-callouts .markdown-source-view.mod-cm6 .cm-embed-block:hover
+ {
+    border-radius: 0px;
+}
+
+.ulu-line-callouts .callout-title-inner {
+    font-weight: bold;
+    /* font-family: var(--font-title); */
+    font-variation-settings: 'WGHT'900;
+}
+
+/* .markdown-source-view.mod-cm6 .cm-embed-block::after {
+    content: '';
+    background: rgba(var(--callout-color),0.3) !important;
+    position: absolute;
+    left: -3px;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    border-radius: 0px;
+} */
+
+/*  {
+    box-shadow: var(--embed-block-shadow-hover);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: text;
+} */
 
 
 
@@ -6948,8 +6920,8 @@ background-size: 400% 400%;
 .ulu-noborder .view-header,
 .ulu-noborder .nav-header,
 .ulu-noborder .mod-right-split .workspace-tab-header-container,
-.ulu-noborder .mod-left-split .workspace-tab-header-container 
- {
+.ulu-noborder .mod-left-split .workspace-tab-header-container,
+.ulu-noborder #cMenuToolbarModalBar.top {
 	border-bottom: 0 !important;
 }
 
@@ -6957,6 +6929,7 @@ background-size: 400% 400%;
 .ulu-noborder .tooltip,
 .ulu-noborder .notice,
 .ulu-noborder .menu,
+.ulu-noborder.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container,
 .ulu-noborder .markdown-preview-view blockquote,
 .ulu-noborder .markdown-preview-view blockquote:hover,
 .ulu-noborder .status-bar,
@@ -7015,6 +6988,7 @@ background-size: 400% 400%;
 
 .ulu-dborder .modal,
 .ulu-dborder .tooltip,
+.ulu-dborder.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container,
 .ulu-dborder .notice,
 .ulu-dborder .menu,
 .ulu-dborder .markdown-preview-view blockquote,
@@ -7161,13 +7135,13 @@ background-size: 400% 400%;
 }
 
 .ulu-list-distinct div.HyperMD-list-line.HyperMD-list-line-1.cm-line {
-	background: var(--background-primary);
+	background: var(--gradient-bg-secondary);
 	box-shadow: none;
 
 	padding-right: 8px;
 	margin-top: 2px;
 
-	border: var(--background-modifier-border);
+	border: 1px solid var(--background-modifier-border-alt);
 	border-radius: 4px;
 }
 
@@ -7727,4 +7701,128 @@ cite {
 
 cite a:link {
 	color: var(--text-normal);
+}
+
+.justify.markdown-source-view.mod-cm6 .cm-line,
+.justify.markdown-rendered p {
+    text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+	text-justify: distribute;
+	text-align-last: left;
+}
+
+/* ul 2.0
+*/
+
+
+.workspace-split.mod-root .view-content {
+	background: transparent;
+}
+
+.workspace {
+	background: var(--gradient-bg-secondary);
+}
+
+.mod-root .workspace-tabs .workspace-leaf:not(.is-mobile),
+.modal:not(.is-mobile) {
+	background: var(--gradient-bg-primary);
+	border: 1px solid var(--background-modifier-border-alt);
+	box-shadow: var(--shadow-s);
+	border-radius: var(--ulu-radius);
+}
+
+.ulu-prop-card .markdown-source-view.is-live-preview.show-properties .metadata-container {
+    display: var(--metadata-display-editing);
+    border: 1px solid var(--background-modifier-border-alt) !important;
+    margin-bottom: 3em;
+    border-radius: var(--ulu-radius);
+    padding: 8px;
+}
+
+.theme-dark.ulu-prop-card .text-icon-button,
+.theme-dark.ulu-prop-card .multi-select-input,
+.theme-dark.ulu-prop-card .metadata-input-longtext,
+.theme-dark.ulu-prop-card input.metadata-property-key-input,
+.theme-dark.ulu-prop-card .metadata-container {
+	color: var(--text-normal);
+}
+
+.metadata-property:focus-within {
+    background-color: var(--background-secondary) !important;
+    box-shadow: none;
+}
+
+.metadata-property-key:hover {
+	background: var(--background-primary);
+}
+
+.metadata-property:hover {
+    background-color: var(--background-primary);
+    box-shadow: 0 0 0 1px var(--background-modifier-border-alt);
+}
+
+.workspace-split.mod-right-split > .workspace-leaf-resize-handle,
+.workspace-drawer.mod-right,
+::-webkit-scrollbar,
+.theme-dark.workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle,
+.mod-left-split .workspace-tab-header-container,
+.workspace-split.mod-vertical .workspace-tabs:not(.mod-top) > .workspace-tab-header-container,
+.workspace-split.mod-right-split .workspace-tabs:not(.mod-top) > .workspace-tab-header-container,
+.workspace-split.mod-left-split .workspace-tabs:not(.mod-top) > .workspace-tab-header-container,
+.workspace-split.mod-left-split .workspace-tabs:not(.mod-top) > .workspace-tab-header-container,
+.view-header,
+.nav-header,
+.mod-right-split .workspace-tab-header-container,
+.mod-left-split .workspace-tab-header-container,
+#cMenuToolbarModalBar.top,
+/* .markdown-preview-view blockquote,
+.markdown-preview-view blockquote:hover,
+.status-bar, */
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container::-webkit-scrollbar,
+.workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container::-webkit-scrollbar,
+.workspace-split.mod-vertical > * > .ulu-shark-d .workspace-leaf-resize-handle,
+.workspace-split.mod-left-split > .workspace-leaf-resize-handle,
+.workspace-ribbon,
+.sidebar-toggle-button,
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
+.snw-header-count-wrapper {
+    border: 0 !important;
+}
+
+.snw-popover-container {
+    border-radius: var(--radius-m);
+    border: 1px solid var(--background-modifier-border-alt);
+    box-shadow: var(--shadow-s);
+    background: var(--gradient-bg-primary) !important;
+}
+
+.snw-ref-title-popover {
+    border-bottom: 1px solid var(--background-modifier-border-alt);
+}
+
+.status-bar,
+.theme-light .clickable-icon[aria-label="New note"],
+.prompt,
+.modal,
+.tooltip,
+.notice,
+.menu {
+	background: var(--gradient-bg-primary) !important;
+    border: 1px solid var(--background-modifier-border-alt) !important;
+    color: var(--text-normal);
+}
+
+input.prompt-input {
+    background-color: transparent;
+	box-shadow: var(--shadow-s);
+    border-bottom: 1px solid var(--background-modifier-border-alt) !important;
+}
+
+.is-mobile .mod-root .workspace-tabs .workspace-leaf {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none;
 }
