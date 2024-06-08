@@ -7036,7 +7036,7 @@ background-size: 400% 400%;
 }
 
 .ulu-faintselect {
-	--text-selection: hsl(var(--color-accent-hsl) 0.05);
+	--text-selection: hsl(var(--color-accent-hsl), 0.05);
 }
 
 .ulu-accent-title {
