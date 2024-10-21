@@ -1,3 +1,7 @@
+# due to declining mental health i have been unable to update and support this theme.
+## i am working on a successor with cleaner code (but it will have stylistic differences), but do not have time or mental bandwidth to give this theme the love it deserves
+### i will get around to it eventually, hopefully, but am also open to pull requests if anyone else has time (and the courage) to delve into these cursed depths (the code sucks)
+
 # 📝 intro
 ultra lobster, a~~n intentional~~ writing experience.
 
