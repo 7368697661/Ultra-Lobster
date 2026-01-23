@@ -88,6 +88,9 @@ settings:
     default: ''
     options:
         -
+            label: adaptive theme
+            value: ulu-adaptive
+        -
             label: 👁️ low contrast [❌]
             value: ulu-con-l
         -
@@ -1332,6 +1335,87 @@ body {
 /* custom themes
 */
 
+/* light themes
+*/
+
+/* 
+    ╭── . ݁₊ ✶ ─────────────────────────────────────── ✶ ₊ ݁ . ──╮
+      section: adaptive subtheme (light mode)
+   ╰───────────────────────────────────────────────────────────╯ 
+*/
+
+.theme-light.ulu-adaptive {
+    /* base . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    --mix-base-dark: #18181b; 
+    
+    /* change base light from pure #ffffff to a soft tinted off-white */
+    --mix-base-light: color-mix(in srgb, var(--color-accent) 5%, #fafafa);
+    
+    /* proxies (backgrounds) . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    /* INCREASED SATURATION: bumped from 2-5% to 8-12% */
+    --proxy-00: color-mix(in srgb, var(--color-accent) 8%, var(--mix-base-light));  /* Main View */
+    --proxy-10: color-mix(in srgb, var(--color-accent) 15%, var(--mix-base-light)); /* Headers/Cards */
+    --proxy-20: color-mix(in srgb, var(--color-accent) 12%, var(--mix-base-light)); /* Sidebar */
+
+    /* bgs . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    --color-base-00: var(--proxy-00);
+    --color-base-10: var(--proxy-10);
+    --color-base-20: var(--proxy-20);
+    
+    /* ui stuff . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    /* inputs need to be darker/more saturated to pop against the pastel bg */
+    --color-base-25: color-mix(in srgb, var(--color-accent) 18%, white); 
+    --color-base-30: color-mix(in srgb, var(--color-accent) 25%, white); /* borders */
+    --color-base-35: color-mix(in srgb, var(--color-accent) 22%, white); /* hover */
+    --color-base-40: color-mix(in srgb, var(--color-accent) 30%, white); /* active */
+    
+    --background-modifier-border-alt: color-mix(in srgb, var(--color-accent) 35%, white);
+
+    /* mono rgb . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    /* 100 = Highlights (White) | 0 = Shadows (Dark Accent) */
+    --mono-rgb-100: #ffffff;
+    --mono-rgb-0:   color-mix(in srgb, var(--color-accent) 60%, #000000);
+    
+    /* text+highlights . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    /* text is now a very dark version of your accent, not just black */
+    --color-base-100: var(--mono-rgb-0);
+    --color-base-70:  color-mix(in srgb, var(--color-base-100) 70%, transparent);
+    --color-base-50:  color-mix(in srgb, var(--color-base-100) 70%, transparent);
+    
+    /* gradients . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    /* creates a "Saturated Corner" effect */
+    --gradient-bg-primary: linear-gradient(
+        135deg, 
+        color-mix(in srgb, var(--proxy-00), var(--color-accent) 10%) 0%, 
+        var(--proxy-00) 100%
+    ) !important;
+    
+    --gradient-bg-secondary: linear-gradient(
+        135deg, 
+        color-mix(in srgb, var(--proxy-20), var(--color-accent) 15%) 0%, 
+        var(--proxy-20) 100%
+    ) !important;
+
+    /* form fields & gap fills . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    /* --color-base-50: color-mix(in srgb, var(--color-accent) 40%, white); */
+    --color-base-60: color-mix(in srgb, var(--color-accent) 50%, white);
+    
+    --background-modifier-form-field: var(--color-base-25);
+    --background-modifier-form-field-highlighted: var(--color-base-35);
+    --background-modifier-box-shadow: rgba(var(--mono-rgb-0), 0.1); 
+    --background-modifier-cover: rgba(var(--mono-rgb-0), 0.2);
+
+    --text-on-accent: #ffffff;
+    --text-on-accent-inverted: #000000;
+
+    --icon-color: var(--text-muted);
+    --icon-color-hover: var(--text-normal);
+    --icon-color-active: var(--color-accent);
+}
+
+/* dark themes
+*/
+
 .ulu-red-d.theme-dark {
 	--accent-h: 75;
 	--accent-s: 21%;
@@ -1947,147 +2031,265 @@ body:not(.is-mobile) .side-dock-actions {
       section: workspace tabs
    ╰───────────────────────────────────────────────────────────╯ 
 */
-
-/* .𖥔 ݁ ˖  reset default theme styles ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖  reset defaults ⊹ ࣪ ˖ 
 */
 .workspace-tab-header::before,
 .workspace-tab-header::after,
-.workspace .mod-root .workspace-tab-header-inner::before,
-.workspace .mod-root .workspace-tab-header-inner::after,
-.workspace-split.mod-root .workspace-tab-header.is-active::before,
-.workspace-split.mod-root .workspace-tab-header.is-active::after {
+.workspace-tab-header-inner::before,
+.workspace-tab-header-inner::after,
+.workspace-tab-header.is-active::before,
+.workspace-tab-header.is-active::after {
     display: none !important;
     box-shadow: none !important;
+    background: none !important;
 }
 
-this is what it sounds like this is what the typing sounds like
-
-/* remove container background on active tab . ݁₊ ✶. ݁ ˖ˎˊ˗ */
-.workspace-tab-header-container .workspace-tab-header.is-active {
-    background-color: transparent;
-    box-shadow: none !important;
-}
-
-/* .𖥔 ݁ ˖  inactive tab styling ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖  the dock container ⊹ ࣪ ˖ 
 */
-.workspace .mod-root .workspace-tab-header:not(.is-active) .workspace-tab-header-inner {
-    background: transparent !important;
-    border: 1px solid transparent !important;
-    box-shadow: none !important;
-    border-radius: var(--radius-m) !important;
+.workspace-tab-header-container-inner {
+    display: flex;
+    flex: 0 1 auto !important;
+    width: auto !important;
+    max-width: fit-content !important;
     
-    color: var(--text-muted) !important;
-    opacity: 0.6;
+    margin: 6px 0 0 10px !important;
+    padding: 4px !important;
+    border-radius: 16px !important;
+    gap: 4px !important;
+    
+    background-color: rgba(var(--mono-rgb-100), 0.04) !important;
+    border: 1px solid rgba(var(--mono-rgb-100), 0.05);
+    
+    scrollbar-width: none;
+}
+
+.workspace-tab-header-container-inner::-webkit-scrollbar {
+    display: none;
+}
+
+/* .𖥔 ݁ ˖  tab base styling ⊹ ࣪ ˖ 
+   styles applied to the OUTER header element
+*/
+.workspace-tab-header {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 50px !important;
+    flex: 0 1 auto !important;
     transition: all 0.2s ease;
 }
 
-/* inactive hover state . ݁₊ ✶. ݁ ˖ˎˊ˗ */
-.workspace .mod-root .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-    background-color: rgba(var(--mono-rgb-100), 0.03) !important;
-    color: var(--text-normal) !important;
-    border-radius: var(--radius-m) !important;
-    opacity: 1;
+/* reset the inner element so it doesn't double-up styles . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+.workspace-tab-header-inner {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 4px 12px !important;
+    
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.9em;
 }
 
-/* .𖥔 ݁ ˖  active tab styling ⊹ ࣪ ˖ 
+.workspace-tab-header-container .workspace-tab-header {
+    border-radius: 50px !important;
+}
+
+/* .𖥔 ݁ ˖  active tab (focused window) ⊹ ࣪ ˖ 
+   bright, crisp glass when obsidian is focused
 */
-.workspace-split.mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
-    height: 100% !important;
-    width: 100%;
-    margin: 0 !important;
-
-    border-radius: var(--radius-m) !important; 
-
+body.theme-dark.is-focused .workspace-tab-header-container .workspace-tab-header.is-active {
+    /* dark mode style */
     background: linear-gradient(
         180deg, 
-        rgba(var(--color-accent-rgb), 0.12) 0%, 
-        rgba(var(--color-accent-rgb), 0.04) 100%
+        rgba(255, 255, 255, 0.04) 0%, 
+        rgba(255, 255, 255, 0.02) 100%
     ) !important;
 
-    box-shadow: inset 0 1px 0 0 rgba(var(--color-accent-rgb), 0.5) !important;
+    box-shadow: 
+        inset 0 1px 0 0 rgba(255, 255, 255, 0.2), 
+        0 2px 8px rgba(0, 0, 0, 0.3);
 
-    border: 1px solid transparent !important;
-    border-top: none !important;
+    border: none !important;
+    border-bottom: none !important;
+}
 
+/* light mode override for focused state */
+body.theme-light.is-focused .workspace-tab-header-container .workspace-tab-header.is-active {
+    background: linear-gradient(
+        180deg, 
+        rgba(255, 255, 255, 0.4) 0%, 
+        rgba(255, 255, 255, 0.2) 100%
+    );
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.8), 
+        0 2px 8px rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* .𖥔 ݁ ˖  active tab (unfocused window) ⊹ ࣪ ˖ 
+   dimmed state when you click away to another app
+*/
+.workspace-tab-header-container .workspace-tab-header.is-active {
+    background: rgba(var(--mono-rgb-100), 0.08);
+    border: 1px solid rgba(var(--mono-rgb-100), 0.05);
+    box-shadow: none;
+}
+
+/* ensure text remains readable in both states . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+.workspace-tab-header.is-active .workspace-tab-header-inner {
     color: var(--text-normal) !important;
     font-weight: 600;
-    text-shadow: 0 0 10px rgba(var(--color-accent-rgb), 0.4);
-    
-    transition: all 0.2s ease;
 }
 
-/* .𖥔 ݁ ˖  active hover state (ignition) ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖  hover state (inactive tabs) ⊹ ࣪ ˖ 
 */
-.workspace-split.mod-root .workspace-tab-header.is-active:hover .workspace-tab-header-inner {
-    background: linear-gradient(
-        180deg, 
-        rgba(var(--color-accent-rgb), 0.18) 0%, 
-        rgba(var(--color-accent-rgb), 0.08) 100%
-    ) !important;
-
-    box-shadow: inset 0 1px 0 0 rgba(var(--color-accent-rgb), 0.8) !important;
+.workspace-tab-header:not(.is-active):hover {
+    background-color: rgba(var(--mono-rgb-100), 0.05);
 }
 
-/* .𖥔 ݁ ˖  tab icons & buttons ⊹ ࣪ ˖ 
+.workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+    color: var(--text-normal);
+}
+
+.workspace-tab-header-container-inner {
+    padding: 0px !important;
+    border-radius: 50px !important;
+    gap: 4px !important;
+}
+
+/* .𖥔 ݁ ˖  new tab button cleanup ⊹ ࣪ ˖ 
 */
-.theme-light .workspace-tab-header,
-.theme-dark .workspace-tab-header,
-.workspace-tab-header-inner .workspace-tab-header-inner-icon,
-.is-focused .titlebar-inner,
-.titlebar-inner,
-.mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
-    color: var(--text-faint);
+.workspace-tab-header-new-tab {
+    background: transparent !important;
+    margin-left: 4px !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.workspace-tab-header-new-tab .clickable-icon {
+    opacity: 0.6;
+}
+.workspace-tab-header-new-tab .clickable-icon:hover {
+    opacity: 1;
+}
+
+.workspace .mod-root .workspace-tab-header-spacer {
+    display: none !important;
+}
+
+/* 
+    ╭── . ݁₊ ✶ ─────────────────────────────────────── ✶ ₊ ݁ . ──╮
+      section: control island (top-right pill)
+   ╰───────────────────────────────────────────────────────────╯ 
+*/
+
+/* .𖥔 ݁ ˖  shared base styling ⊹ ࣪ ˖ 
+   applies to tab-list, new-tab, and sidebar-toggle
+*/
+.mod-root .workspace-tab-header-tab-list,
+.mod-root .workspace-tab-header-new-tab,
+.mod-root .sidebar-toggle-button:not(.mod-left) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px !important; /* fixed height for the pill */
+    width: 36px !important;  /* consistent width */
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-top: 6.3px !important;
+    background-color: rgba(var(--mono-rgb-100), 0.04) !important;
+    border-radius: 0; 
+    box-shadow: none !important;
+}
+
+/* .𖥔 ݁ ˖  icon styling ⊹ ࣪ ˖ 
+*/
+.mod-root .workspace-tab-header-tab-list .clickable-icon,
+.mod-root .workspace-tab-header-new-tab .clickable-icon,
+.mod-root .sidebar-toggle-button:not(.mod-left) .clickable-icon {
+    color: var(--text-muted);
     opacity: 0.7;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-icon {
+/* .𖥔 ݁ ˖  hover interaction (light up individual segment) ⊹ ࣪ ˖ 
+*/
+.mod-root .workspace-tab-header-tab-list:hover,
+.mod-root .workspace-tab-header-new-tab:hover,
+.mod-root .sidebar-toggle-button:not(.mod-left):hover {
+    background-color: rgba(var(--mono-rgb-100), 0.05) !important;
+}
+
+.mod-root .workspace-tab-header-tab-list:hover .clickable-icon,
+.mod-root .workspace-tab-header-new-tab:hover .clickable-icon,
+.mod-root .sidebar-toggle-button:not(.mod-left):hover .clickable-icon {
     color: var(--text-normal);
     opacity: 1;
 }
 
-/* .𖥔 ݁ ˖  active text color ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖  shape sculpting (creating the pill) ⊹ ࣪ ˖ 
 */
-.is-active .workspace-tab-header-inner-title,
-.is-focused .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
-.workspace-tab-header.is-active {
-    color: var(--text-normal);
-    transition: color 0.2s !important;
+.mod-root .workspace-tab-header-tab-list {
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    border: 1px solid rgba(var(--mono-rgb-100), 0.05) !important;
+    
+    /* separator line on the right */
+    /* box-shadow: inset -1px 0 0 rgba(var(--mono-rgb-100), 0.1) !important; */
 }
 
-/* .𖥔 ݁ ˖  pinned tabs ⊹ ࣪ ˖ 
+.mod-root .workspace-tab-header-new-tab {
+    border: 1px solid rgba(var(--mono-rgb-100), 0.05) !important;
+    border-right: none !important;
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    /* separator line on the right */
+    /* box-shadow: inset -1px 0 0 rgba(var(--mono-rgb-100), 0.1) !important; */
+}
+
+.mod-root .sidebar-toggle-button:not(.mod-left) {
+    border-radius: 50px !important;
+    border: 1px solid rgba(var(--mono-rgb-100), 0.05) !important;
+    
+    /* positioning fix: pull it left to touch the others */
+    position: relative;
+    /* margin-left: -1px !important; uncomment if there is a 1px gap */
+}
+
+/* .𖥔 ݁ ˖  positioning fix ⊹ ࣪ ˖ 
 */
-.workspace-tab-header:has(.mod-pinned) {
-    --tab-max-width: 35px;
+.mod-root .workspace-split.mod-root .workspace-tab-header-container {
+    padding-right: 0 !important; /* remove padding between tabs and toggle */
 }
 
-.mod-root .workspace-tab-header-inner:has(.mod-pinned) {
-    padding-left: 2px;
+.mod-root .workspace-tab-header-new-tab {
+    margin-left: 6px !important;
 }
 
-/* .𖥔 ݁ ˖  radius fix for splits ⊹ ࣪ ˖ 
-*/
-.mod-left-split .workspace-tab-header.is-active,
-.mod-right-split .workspace-tab-header.is-active {
-    border-radius: var(--radius-m);
+.mod-root .workspace-tab-header-new-tab:hover,
+.mod-root .workspace-tab-header-tab-list:hover,
+.mod-root .sidebar-toggle-button:not(.mod-left):hover {
+    background-color: rgba(var(--mono-rgb-100), 0.1) !important;
+
+    box-shadow: 
+        inset -1px 0 0 rgba(var(--mono-rgb-100), 0.1), /* keep separator */
+        inset 0 0 10px rgba(var(--mono-rgb-100), 0.1);
+        
+    transition: background-color 0.2s ease;
 }
 
-/* .𖥔 ݁ ˖  legacy angle definitions ⊹ ࣪ ˖ 
-   keeping these property definitions just in case
-*/
-@property --glass-angle-light {
-  syntax: '<angle>';
-  initial-value: 165deg;
-  inherits: false;
-}
-
-@property --glass-angle-dark {
-  syntax: '<angle>';
-  initial-value: 45deg;
-  inherits: false;
-}
-
-.workspace-tab-header.is-active {
-    animation: popup 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+.mod-root .workspace-tab-header-new-tab .clickable-icon:hover,
+.mod-root .workspace-tab-header-new-tab .clickable-icon,
+.mod-root .workspace-tab-header-tab-list .clickable-icon:hover,
+.mod-root .workspace-tab-header-tab-list .clickable-icon,
+.mod-root .sidebar-toggle-button:not(.mod-left) .clickable-icon:hover,
+.mod-root .sidebar-toggle-button:not(.mod-left) .clickable-icon {
+    background: transparent !important;
+    border: none !important;
 }
 
 /* 
@@ -3809,17 +4011,10 @@ body {
     -webkit-backdrop-filter: blur(25px) saturate(130%);
     
  
-    box-shadow: 
-        /* 1. Deep Drop Shadow */
+    box-shadow:
         0 8px 24px -6px rgba(var(--mono-rgb-0), 0.15),
-        
-        /* 2. Top-Left Highlight */
         inset 1px 1px 0 0 rgba(var(--mono-rgb-100), 0.15),
-        
-        /* 3. Bottom-Right Shadow */
         inset -1px -1px 0 0 rgba(var(--callout-color), 0.15),
-        
-        /* 4. Outer Glow Ring */
         0 0 0 1px rgba(var(--callout-color), 0.1) !important;
         
     overflow: hidden; 
@@ -4801,18 +4996,17 @@ input[type="checkbox"][data-task="*"] {
     box-shadow: 0 0 12px rgba(var(--color-orange-rgb), 0.4) !important;
 }
 
-/* 1. FORCE READING MODE TO MATCH LIVE PREVIEW . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+/* hopefully match reading icons . ݁₊ ✶. ݁ ˖ˎˊ˗ */
 .markdown-preview-view .task-list-item-checkbox {
     -webkit-appearance: none !important;
     appearance: none !important;
     cursor: pointer;
-    
-    /* Ensure the icon layer exists in reading mode */
+
     position: relative;
-    top: 2px; /* slight alignment fix for reading text */
+    top: 2px;
 }
 
-/* 2. MAKE ICONS VISIBLE IN READING MODE . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+/* more reading mode icon stuff . ݁₊ ✶. ݁ ˖ˎˊ˗ */
 .markdown-preview-view .task-list-item-checkbox:checked::after,
 .markdown-preview-view .task-list-item-checkbox[data-task]:not([data-task=" "])::after {
     opacity: 1 !important;
@@ -6172,7 +6366,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  patches for adaptive theme ⊹ ࣪ ˖
 */
-.ulu-adaptive .callout {
+.theme-dark.ulu-adaptive .callout {
     box-shadow:
         0 8px 24px -6px rgb(from var(--mono-rgb-0) r g b / 0.15),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b / 0.15),
@@ -6180,7 +6374,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
         0 0 0 1px rgba(var(--callout-color), 0.1) !important;
 }
 
-.ulu-adaptive .search-result-file-matches {
+.theme-dark.ulu-adaptive .search-result-file-matches {
     border: 1px solid transparent !important;
 
     background-image:
@@ -6208,7 +6402,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  fix folder shelf gradients ⊹ ࣪ ˖ 
 */
-.ulu-adaptive .nav-folder-title .nav-folder-title-content {
+.theme-dark.ulu-adaptive .nav-folder-title .nav-folder-title-content {
     background: linear-gradient(
         90deg, 
         rgb(from var(--mono-rgb-100) r g b / 0.04) 0%, 
@@ -6218,7 +6412,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 }
 
 /* hover state fix . ݁₊ ✶. ݁ ˖ˎˊ˗ */
-.ulu-adaptive .nav-folder-title:hover .nav-folder-title-content {
+.theme-dark.ulu-adaptive .nav-folder-title:hover .nav-folder-title-content {
     background: linear-gradient(
         90deg, 
         rgb(from var(--mono-rgb-100) r g b / 0.08) 0%, 
@@ -6231,7 +6425,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 }
 
 /* open state fix . ݁₊ ✶. ݁ ˖ˎˊ˗ */
-.ulu-adaptive .nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content {
+.theme-dark.ulu-adaptive .nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content {
     background: linear-gradient(
         90deg,
         rgb(from var(--mono-rgb-100) r g b / 0.1) 0%, 
@@ -6244,7 +6438,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  fix glass chevrons ⊹ ࣪ ˖ 
 */
-.ulu-adaptive .tree-item-self .tree-item-icon {
+.theme-dark.ulu-adaptive .tree-item-self .tree-item-icon {
     background-color: rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
 
     box-shadow: 
@@ -6253,7 +6447,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
         0 2px 5px rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
 }
 
-.ulu-adaptive .tree-item-self .tree-item-icon:hover {
+.theme-dark.ulu-adaptive .tree-item-self .tree-item-icon:hover {
     background-color: rgb(from var(--mono-rgb-100) r g b / 0.05) !important;
     
     box-shadow: 
@@ -6264,7 +6458,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  fix active file glass tag ⊹ ࣪ ˖ 
 */
-.ulu-adaptive .nav-file-title.is-active .nav-file-title-content {
+.theme-dark.ulu-adaptive .nav-file-title.is-active .nav-file-title-content {
     background: linear-gradient(
         180deg, 
         rgb(from var(--mono-rgb-100) r g b / 0.1) 0%, 
@@ -6283,8 +6477,8 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  turn off icon bg in backlinks ⊹ ࣪ ˖ 
 */
-.ulu-adaptive .backlink-pane .search-result-container .tree-item-self .tree-item-icon,
-.ulu-adaptive .outgoing-link-pane .search-result-container .tree-item-self .tree-item-icon {
+.theme-dark.ulu-adaptive .backlink-pane .search-result-container .tree-item-self .tree-item-icon,
+.theme-dark.ulu-adaptive .outgoing-link-pane .search-result-container .tree-item-self .tree-item-icon {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -6293,7 +6487,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  code reading mode fix ⊹ ࣪ ˖ 
 */
-.ulu-adaptive .markdown-preview-view pre {
+.theme-dark.ulu-adaptive .markdown-preview-view pre {
     background: linear-gradient(
         145deg, 
         rgb(from var(--mono-rgb-100) r g b / 0.04) 0%, 
@@ -6306,19 +6500,18 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 /* .𖥔 ݁ ˖  fix modals (search, palette, settings) ⊹ ࣪ ˖ 
 */
-.ulu-adaptive .modal,
-.ulu-adaptive .prompt,
-.ulu-adaptive .suggestion-container {
+.theme-dark.ulu-adaptive .modal,
+.theme-dark.ulu-adaptive .prompt,
+.theme-dark.ulu-adaptive .suggestion-container {
     border: 1px solid rgb(from var(--mono-rgb-100) r g b / 0.08) !important;
     box-shadow: 
         0 40px 80px -20px rgb(from var(--mono-rgb-0) r g b / 0.6),
         inset 0 1px 0 0 rgb(from var(--mono-rgb-100) r g b / 0.1) !important;
 }
 
-/* .𖥔 ݁ ˖  1. FIX STANDARD BUTTONS ⊹ ࣪ ˖ 
-   buttons were invisible because rgba() failed on color objects
+/* .𖥔 ݁ ˖  fix buttons
 */
-.ulu-adaptive button:not(.clickable-icon, .mod-cta) {
+.theme-dark.ulu-adaptive button:not(.clickable-icon, .mod-cta) {
     background-color: rgb(from var(--mono-rgb-100) r g b / 0.03) !important;
     border: 1px solid rgb(from var(--mono-rgb-100) r g b / 0.08) !important;
     
@@ -6328,7 +6521,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
         0 2px 4px rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
 }
 
-.ulu-adaptive button:not(.clickable-icon, .mod-cta):hover {
+.theme-dark.ulu-adaptive button:not(.clickable-icon, .mod-cta):hover {
     background-color: rgb(from var(--mono-rgb-100) r g b / 0.06) !important;
     border-color: rgb(from var(--color-accent) r g b / 0.3) !important;
     
@@ -6342,8 +6535,7 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 
 
 
-/* .𖥔 ݁ ˖  4. FIX LIVE PREVIEW CODE & LINKS ⊹ ࣪ ˖ 
-   targeting cm6 specific classes
+/* .𖥔 ݁ ˖  code/links
 */
 
 /* live preview code block lines */
@@ -6354,28 +6546,28 @@ body .ulu-duo-tag .cm-s-obsidian span.cm-hashtag:hover {
 }
 
 /* top/bottom code block borders */
-.ulu-adaptive .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
+.theme-dark.ulu-adaptive .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-begin {
     border-top: 1px solid rgb(from var(--mono-rgb-100) r g b / 0.08) !important;
 }
-.ulu-adaptive .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
+.theme-dark.ulu-adaptive .markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock-end {
     border-bottom: 1px solid rgb(from var(--mono-rgb-100) r g b / 0.08) !important;
 }
 
 /* live preview ghost links */
-.ulu-adaptive .markdown-source-view.mod-cm6 .cm-hmd-internal-link:has(.is-unresolved) {
+.theme-dark.ulu-adaptive .markdown-source-view.mod-cm6 .cm-hmd-internal-link:has(.is-unresolved) {
     background-color: rgb(from var(--mono-rgb-100) r g b / 0.03) !important;
     border: 1px solid rgb(from var(--mono-rgb-100) r g b / 0.05) !important;
     border-radius: 6px;
 }
 
-.ulu-adaptive .markdown-source-view.mod-cm6 .cm-hmd-internal-link:has(.is-unresolved):hover {
+.theme-dark.ulu-adaptive .markdown-source-view.mod-cm6 .cm-hmd-internal-link:has(.is-unresolved):hover {
     background-color: rgb(from var(--mono-rgb-100) r g b / 0.08) !important;
     border-color: rgb(from var(--mono-rgb-100) r g b / 0.15) !important;
 }
 
-/* .𖥔 ݁ ˖  5. FIX SETTINGS ACTIVE SLAB ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖  fix settings slab ⊹ ࣪ ˖ 
 */
-body:not(.is-phone).ulu-adaptive .vertical-tab-nav-item.is-active {
+body:not(.is-phone).theme-dark.ulu-adaptive .vertical-tab-nav-item.is-active {
     background: linear-gradient(
         180deg, 
         rgb(from var(--mono-rgb-100) r g b / 0.08) 0%, 
@@ -6389,7 +6581,7 @@ body:not(.is-phone).ulu-adaptive .vertical-tab-nav-item.is-active {
         0 2px 8px rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
 }
 
-body:not(.is-phone).ulu-adaptive .vertical-tab-nav-item.is-active:hover {
+body:not(.is-phone).theme-dark.ulu-adaptive .vertical-tab-nav-item.is-active:hover {
     background: linear-gradient(
         180deg, 
         rgb(from var(--mono-rgb-100) r g b / 0.12) 0%, 
@@ -6401,13 +6593,12 @@ body:not(.is-phone).ulu-adaptive .vertical-tab-nav-item.is-active:hover {
         0 4px 12px rgb(from var(--mono-rgb-0) r g b / 0.25) !important;
 }
 
-/* .𖥔 ݁ ˖  1. FIX INVISIBLE TOOLTIPS ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖ tooltips ⊹ ࣪ ˖ 
    uses rgb(from) syntax to handle color objects
 */
-.ulu-adaptive .tooltip {
+.theme-dark.ulu-adaptive .tooltip {
     background-image: linear-gradient(
-        180deg, 
-        /* uses base-00, converting object to rgb via 'from' */
+        180deg,
         rgb(from var(--color-base-25) r g b / 0.99) 0%, 
         rgb(from var(--color-base-25) r g b / 0.99) 100%
     ) !important;
@@ -6419,18 +6610,13 @@ body:not(.is-phone).ulu-adaptive .vertical-tab-nav-item.is-active:hover {
         inset 0 1px 0 rgb(from var(--mono-rgb-100) r g b / 0.15) !important;
 }
 
-/* .𖥔 ݁ ˖  fix dropdown border/hover ⊹ ࣪ ˖ 
+/* .𖥔 ݁ ˖  reading view ghost links ⊹ ࣪ ˖ 
 */
-
-/* .𖥔 ݁ ˖  reading view ghost links (fixed specificity) ⊹ ࣪ ˖ 
-*/
-body.ulu-adaptive  .markdown-preview-view a.internal-link.is-unresolved {
-    /* override the 'portal' style colors . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+body.theme-dark.ulu-adaptive  .markdown-preview-view a.internal-link.is-unresolved {
     background-color: var(--color-base-30) !important;
     border: 1px solid var(--color-base-35) !important;
     color: var(--text-muted) !important;
-    
-    /* reset glow . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+
     box-shadow: none !important;
     text-shadow: none !important;
     
@@ -6438,24 +6624,274 @@ body.ulu-adaptive  .markdown-preview-view a.internal-link.is-unresolved {
 }
 
 /* hover state . ݁₊ ✶. ݁ ˖ˎˊ˗ */
-body.ulu-adaptive  .markdown-preview-view a.internal-link.is-unresolved:hover {
+body.theme-dark.ulu-adaptive  .markdown-preview-view a.internal-link.is-unresolved:hover {
     background-color: var(--color-base-30) !important;
     border: 1px solid var(--color-base-40) !important;
     opacity: 1;
 }
 
+
+
+
+body.theme-dark.ulu-adaptive .workspace-tab-header-container-inner {
+    /* override the rgba() values with rgb(from...) . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    background-color: rgb(from var(--color-accent) r g b / 0.04) !important;
+    border: 1px solid rgb(from var(--color-accent) r g b / 0.05) !important;
+}
+
+
+/* .𖥔 ݁ ˖  fix workspace tabs (adaptive horizon) ⊹ ࣪ ˖ 
+*/
+body.theme-dark.ulu-adaptive .workspace-split.mod-root .workspace-tab-header.is-active .workspace-tab-header-inner {
+    /* fix gradient interpolation . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    background: linear-gradient(
+        180deg, 
+        rgb(from var(--color-accent) r g b / 0.15) 0%, 
+        rgb(from var(--color-accent) r g b / 0.02) 50%,
+        transparent 100%
+    ) !important;
+
+    /* fix glow shadows . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    box-shadow: 
+        inset 0 1px 0 0 rgb(from var(--color-accent) r g b / 0.5), /* sharp top line */
+        inset 0 0 15px rgb(from var(--color-accent) r g b / 0.1) !important;
+
+    border-radius: 50px;
+        
+}
+
+/* active hover state */
+.theme-dark.ulu-adaptive .workspace-split.mod-root .workspace-tab-header.is-active:hover .workspace-tab-header-inner {
+    background: linear-gradient(
+        180deg, 
+        rgb(from var(--color-accent) r g b / 0.25) 0%, 
+        rgb(from var(--color-accent) r g b / 0.05) 60%,
+        transparent 100%
+    ) !important;
+    
+    box-shadow: 
+        inset 0 1px 0 0 rgb(from var(--color-accent) r g b / 0.8),
+        inset 0 0 20px rgb(from var(--color-accent) r g b / 0.2) !important;
+}
+
+/* .𖥔 ݁ ˖  fix control islands (adaptive glass) ⊹ ࣪ ˖ 
+   tab list, new tab, and sidebar toggle
+*/
+body.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-tab-list,
+body.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-new-tab,
+body.theme-dark.ulu-adaptive .mod-root .sidebar-toggle-button {
+    /* fix base material . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    background-color: rgb(from var(--color-accent) r g b / 0.06) !important;
+    
+    /* fix borders . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    border-top: 1px solid rgb(from var(--color-accent) r g b / 0.1) !important;
+    border-bottom: 1px solid rgb(from var(--color-accent) r g b / 0.1) !important;
+}
+
+/* fix left/right borders for pill shape */
+body.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-tab-list,
+body.theme-dark.ulu-adaptive .mod-root .sidebar-toggle-button {
+    border-left-color: rgb(from var(--mcolor-accent) r g b / 0.15) !important;
+    border-right-color: rgb(from var(--color-accent) r g b / 0.15) !important;
+}
+
+/* fix hover states */
+.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-tab-list:hover,
+.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-new-tab:hover,
+.theme-dark.ulu-adaptive .mod-root .sidebar-toggle-button:hover,
+.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-new-tab:has(.clickable-icon:hover) {
+    background-color: rgb(from var(--color-accent) r g b / 0.15) !important;
+}
+
+/* fix inner separators */
+body.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-tab-list {
+    box-shadow: inset -1px 0 0 rgb(from var(--color-accent) r g b / 0.1) !important;
+}
+body.theme-dark.ulu-adaptive .mod-root .workspace-tab-header-new-tab {
+    box-shadow: inset -1px 0 0 rgb(from var(--color-accent) r g b / 0.1) !important;
+}
+
 /* 
     ╭── . ݁₊ ✶ ─────────────────────────────────────── ✶ ₊ ݁ . ──╮
-      section: reading mode checkbox fix (parent selectors)
+      section: adaptive theme light mode patch
    ╰───────────────────────────────────────────────────────────╯ 
 */
 
+/* .𖥔 ݁ ˖  fix settings slab (light) ⊹ ࣪ ˖ 
+*/
+body:not(.is-phone).theme-light.ulu-adaptive .vertical-tab-nav-item.is-active {
+    background: linear-gradient(
+        180deg, 
+        rgb(from var(--mono-rgb-0) r g b / 0.1) 0%, 
+        rgb(from var(--mono-rgb-0) r g b / 0.05) 100%
+    ) !important;
 
+    border: 1px solid rgb(from var(--mono-rgb-0) r g b / 0.1) !important;
+    
+    box-shadow: 
+        inset 0 1px 0 0 rgb(from var(--mono-rgb-0) r g b / 0.05), 
+        0 2px 8px rgb(from var(--mono-rgb-0) r g b / 0.1) !important;
+}
 
-/* .𖥔 ݁ ˖  force icon display ⊹ ࣪ ˖ 
+body:not(.is-phone).theme-light.ulu-adaptive .vertical-tab-nav-item.is-active:hover {
+    background: linear-gradient(
+        180deg, 
+        rgb(from var(--mono-rgb-0) r g b / 0.15) 0%, 
+        rgb(from var(--mono-rgb-0) r g b / 0.08) 100%
+    ) !important;
+}
+
+/* .𖥔 ݁ ˖ tooltips (light) ⊹ ࣪ ˖ 
+*/
+.theme-light.ulu-adaptive .tooltip {
+    /* light glass material . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    background-image: linear-gradient(
+        180deg,
+        rgb(from var(--color-base-00) r g b / 0.95) 0%, 
+        rgb(from var(--color-base-00) r g b / 0.85) 100%
+    ) !important;
+    
+    /* darker border for contrast on white . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    border: 1px solid rgb(from var(--mono-rgb-0) r g b / 0.1) !important;
+    
+    box-shadow: 
+        0 10px 30px -5px rgb(from var(--mono-rgb-0) r g b / 0.2),
+        inset 0 1px 0 rgb(from var(--mono-rgb-100) r g b / 0.5) !important;
+}
+
+/* .𖥔 ݁ ˖  reading view ghost links (light) ⊹ ࣪ ˖ 
+*/
+body.theme-light.ulu-adaptive .markdown-preview-view a.internal-link.is-unresolved {
+    /* darker bg for visibility . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    background-color: rgb(from var(--mono-rgb-0) r g b / 0.05) !important;
+    border: 1px solid rgb(from var(--mono-rgb-0) r g b / 0.1) !important;
+    color: var(--text-muted) !important;
+    opacity: 0.8;
+}
+
+body.theme-light.ulu-adaptive .markdown-preview-view a.internal-link.is-unresolved:hover {
+    background-color: rgb(from var(--mono-rgb-0) r g b / 0.1) !important;
+    border: 1px solid rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
+    opacity: 1;
+}
+
+/* .𖥔 ݁ ˖  tab dock track (light) ⊹ ࣪ ˖ 
+*/
+body.theme-light.ulu-adaptive .workspace-tab-header-container-inner {
+    background-color: rgb(from var(--color-accent) r g b / 0.08) !important;
+    border: 1px solid rgb(from var(--color-accent) r g b / 0.15) !important;
+}
+
+/* .𖥔 ݁ ˖  active workspace tab (light) ⊹ ࣪ ˖ 
 */
 
 
+/* active hover state */
+.theme-light.ulu-adaptive .workspace-split.mod-root .workspace-tab-header.is-active:hover .workspace-tab-header-inner {
+    background: linear-gradient(
+        180deg, 
+        rgb(from var(--color-accent) r g b / 0.3) 0%, 
+        rgb(from var(--color-accent) r g b / 0.1) 60%,
+        transparent 100%
+    ) !important;
+    
+    box-shadow: 
+        inset 0 1px 0 0 rgb(from var(--color-accent) r g b / 0.8),
+        inset 0 0 20px rgb(from var(--color-accent) r g b / 0.2) !important;
+
+    border-radius: 50px !important;
+}
+
+/* .𖥔 ݁ ˖  control islands (light) ⊹ ࣪ ˖ 
+*/
+body.theme-light.ulu-adaptive .mod-root .workspace-tab-header-tab-list,
+body.theme-light.ulu-adaptive .mod-root .workspace-tab-header-new-tab,
+body.theme-light.ulu-adaptive .mod-root .sidebar-toggle-button {
+    background-color: rgb(from var(--color-accent) r g b / 0.1) !important;
+    
+    /* darker borders for contrast . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+    border-top: 1px solid rgb(from var(--color-accent) r g b / 0.2) !important;
+    border-bottom: 1px solid rgb(from var(--color-accent) r g b / 0.2) !important;
+}
+
+/* fix left/right borders */
+body.theme-light.ulu-adaptive .mod-root .workspace-tab-header-tab-list,
+body.theme-light.ulu-adaptive .mod-root .sidebar-toggle-button {
+    border-left-color: rgb(from var(--color-accent) r g b / 0.2) !important;
+    border-right-color: rgb(from var(--color-accent) r g b / 0.2) !important;
+}
+
+/* hover states */
+.theme-light.ulu-adaptive .mod-root .workspace-tab-header-tab-list:hover,
+.theme-light.ulu-adaptive .mod-root .workspace-tab-header-new-tab:hover,
+.theme-light.ulu-adaptive .mod-root .sidebar-toggle-button:hover,
+.theme-light.ulu-adaptive .mod-root .workspace-tab-header-new-tab:has(.clickable-icon:hover) {
+    background-color: rgb(from var(--color-accent) r g b / 0.2) !important;
+}
+
+/* inner separators */
+body.theme-light.ulu-adaptive .mod-root .workspace-tab-header-tab-list {
+    box-shadow: inset -1px 0 0 rgb(from var(--color-accent) r g b / 0.15) !important;
+}
+body.theme-light.ulu-adaptive .mod-root .workspace-tab-header-new-tab {
+    box-shadow: inset -1px 0 0 rgb(from var(--color-accent) r g b / 0.15) !important;
+}
+
+/* .𖥔 ݁ ˖  fix glass chevrons ⊹ ࣪ ˖ 
+*/
+.theme-light.ulu-adaptive .tree-item-self .tree-item-icon {
+    background-color: rgb(from var(--mono-rgb-100) r g b / 0.2) !important;
+
+    box-shadow: 
+        inset 1px 1px 3px 0 rgb(from var(--mono-rgb-0) r g b / 0.25),
+        inset -1px -1px 3px 0 rgb(from var(--mono-rgb-100) r g b / 0.5),
+        0 2px 5px rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
+}
+
+.theme-light.ulu-adaptive .tree-item-self .tree-item-icon:hover {
+    background-color: rgb(from var(--mono-rgb-100) r g b / 0.05) !important;
+    
+    box-shadow: 
+        inset 1px 1px 3px 0 rgb(from var(--mono-rgb-100) r g b / 0.45),
+        inset -1px -1px 3px 0 rgb(from var(--mono-rgb-0) r g b / 0.6),
+        0 4px 8px rgb(from var(--mono-rgb-0) r g b / 0.3) !important;
+}
+
+/* .𖥔 ݁ ˖  fix folder shelf gradients ⊹ ࣪ ˖ 
+*/
+.theme-light.ulu-adaptive .nav-folder-title .nav-folder-title-content {
+    background: linear-gradient(
+        90deg, 
+        rgb(from var(--mono-rgb-0) r g b / 0.04) 0%, 
+        rgb(from var(--mono-rgb-100) r g b / 0.01) 60%,
+        transparent 100%
+    ) !important;
+}
+
+/* hover state fix . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+.theme-light.ulu-adaptive .nav-folder-title:hover .nav-folder-title-content {
+    background: linear-gradient(
+        90deg, 
+        rgb(from var(--mono-rgb-0) r g b / 0.08) 0%, 
+        rgb(from var(--mono-rgb-0) r g b / 0.02) 80%,
+        transparent 100%
+    ) !important;
+    
+    box-shadow: -16px 0 15px rgb(from var(--mono-rgb-100) r g b / 0.1) !important;
+    border-left: 1px solid rgb(from var(--mono-rgb-0) r g b / 0.2) !important;
+}
+
+/* open state fix . ݁₊ ✶. ݁ ˖ˎˊ˗ */
+.theme-light.ulu-adaptive .nav-folder:not(.is-collapsed) > .nav-folder-title .nav-folder-title-content {
+    background: linear-gradient(
+        90deg,
+        rgb(from var(--mono-rgb-0) r g b / 0.1) 0%, 
+        rgb(from var(--mono-rgb-100) r g b / 0.01) 60%,
+        transparent 100%
+    ) !important;
+    
+    border-left: 1px solid rgb(from var(--mono-rgb-0) r g b / 0.13) !important;
+}
 
 
 
