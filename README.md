@@ -1,114 +1,213 @@
-# due to declining mental health i have been unable to update and support this theme.
-## i am working on a successor with cleaner code (but it will have stylistic differences), but do not have time or mental bandwidth to give this theme the love it deserves
-### i will get around to it eventually, hopefully, but am also open to pull requests if anyone else has time (and the courage) to delve into these cursed depths (the code sucks)
+```
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣶⣶⣦⠀⠀
+⠀⠀⣠⣤⣤⣄⣀⣾⣿⠟⠛⠻⢿⣷⠀
+⢰⣿⡿⠛⠙⠻⣿⣿⠁⠀⠀⠀⣶⢿⡇
+⢿⣿⣇⠀⠀⠀⠈⠏⠀⠀⠀ ultra lobster
+⠀⠻⣿⣷⣦⣤⣀⠀⠀⠀⠀⣾⡿⠃⠀
+⠀⠀⠀⠀⠉⠉⠻⣿⣄⣴⣿⠟⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⡿⠟⠁⠀⠀⠀⠀
+```
+# hi
+this is ultra lobster.. idk what this theme is anymore 😭
 
-# 📝 intro
-ultra lobster, a~~n intentional~~ writing experience.
+<img width="1920" height="597" alt="ul5" src="https://github.com/user-attachments/assets/eaf973d4-9f94-4450-90c4-d19db82d48b7" />
 
-![light2](https://github.com/7368697661/Ultra-Lobster/assets/87339163/6c9ff476-54e5-4172-b6ea-90c3e967b1a9)
+<img width="1710" height="1067" alt="image" src="https://github.com/user-attachments/assets/43be71ba-0d60-4a6b-905b-25c0ec73b9b9" />
 
-i started working on ultra lobster for two reasons: 
-- one, was that no themes currently on the market fit my _exact_ needs. 
-- two, i wanted to push obsidian as far as possible.`*`
-`*` namely by changing the ui to a card layout that is currently trending.
+‘ultra lobster’ is the culmination of all the css i have written for obsidian. i wanted a theme that pushed obsidian's UI as far as possible (via card layouts, glassmorphism, and deep customization) without losing the core utility of a note-taking app.
 
-![dark2](https://github.com/7368697661/Ultra-Lobster/assets/87339163/12521af1-5d62-4c50-978f-08f342f14040)
+the result is a rather large theme that offers plenty of options without being too overwhelming. because at the end of the day, i simply want to make a theme that makes taking notes more pleasant.
 
-that being said, ‘ultra lobster: unity’ is the culmination of all the css i have written for obsidian. i tried to include all the snippets, options, and even themes i have been working on over the past year. the result is a rather large theme that should offer plenty of options without being too overwhelming. because at the end of the day, i simply want to make a theme that makes taking notes more pleasant.
+```
+/*
+╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
+  section: flagship features
+╰──────────────────────────────╯
+*/
+```
 
-## ⚒ styling changes
+### ✨ standout features
+ultra lobster comes packed with massive visual overhauls, most notably through way to many colorschemes/subthemes, two of which make massive mechanical changes to the ui:
 
-### 🃏 card ui
+### 🌋 flagship subthemes
+while there are dozens of subthemes available, two stand out as the definitive ultra lobster experience:
 
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/ae258856-ff32-4482-bb38-fdc050cc18d6)
+🪟 abaddon glass: a dark, moody theme that applies heavy frosted glass (backdrop-filter) to the main reading view and floating headers. it allows custom backgrounds to shine through :3
+<img width="1710" height="1070" alt="image" src="https://github.com/user-attachments/assets/ce7541bb-5415-450c-bd3d-3441a5fd7e18" />
 
-the base ultra lobster ui features a card with subtle border and shadow (both toggleable via style settings). additionally, most borders have been disabled or altered. finally, each workspace leaf and the workspace background have faint gradients applied as backgrounds to add polish.
+🦎 chameleon: an adaptive subtheme that dynamically shifts its entire color palette based on your chosen accent color.
+<img width="1920" height="1205" alt="ul-cham-light" src="https://github.com/user-attachments/assets/7b661a32-d63a-402f-b5c4-c892715661fc" />
+<img width="1920" height="1202" alt="ul-cham-dark" src="https://github.com/user-attachments/assets/c3e959de-69e5-41f4-aa84-a1feb7c75241" />
 
-### 📁 file explorer
+### 🖼️ custom workspace backgrounds
+when using the abaddon glass subtheme, you can paste a direct image url into Style Settings to set a custom wallpaper that displays behind your notes, visible through the frosted glass UI.
+<img width="1920" height="1205" alt="ul-ab-glass" src="https://github.com/user-attachments/assets/e7045f40-107a-4391-9ee5-a4ed2b13aa87" />
+(**!! image url MUST be surrounded by url("url-here")**)
 
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/8c1f6aed-dbc0-40ac-a3e7-20bdf13cf798)
+### 💫 halo gradient animation
+a toggleable, infinite-expanding accent ring background feature. it creates a slow, rhythmic, pulsating gradient behind your workspace that is both visually stunning and unobtrusive.
 
-the file explorer features small changes to items and highlights. i didn’t like the way obsidian showed the highlighted file as taking up the entire line. taking up the line lead to overlapping the indentation line on the left side, and i felt that some small changes would make it more seamless. it’s not a perfect solution, but works well enough for my liking.
+### 🎨 massive subtheme library
+not into glass? no worries. there are dozens of finely-tuned subthemes for both light and dark mode, including:
+Demon Queen, Succubus, Sorcery, Megalodon, Timberwolf, Shadow, Blahaj, Gruvbox, Solarized, and many more!
+<img width="1920" height="1203" alt="ul-light" src="https://github.com/user-attachments/assets/95ac60e4-4586-4cd8-8d2c-ac7ae18bee45" />
+<img width="1920" height="1204" alt="ul-dark" src="https://github.com/user-attachments/assets/7be27104-db21-45c6-9dc7-0c74a6235057" />
+
+```
+/*
+╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
+  section: workspace ui
+╰──────────────────────────────╯
+*/
+```
+
+### 🪟 workspace ui
+<img width="1710" height="1075" alt="image" src="https://github.com/user-attachments/assets/ee779372-a378-47a0-aeb8-acb7213eafaf" />
+
+### 🃏 floating card ui
+with base ultra lobster ui i ditch rigid panels for a floating card layout. the tab bars, breadcrumbs, and window controls have been consolidated into sleek "pill" designs with subtle outer shadows. i did heavy and intense ui resets so i could rebuild the ui the way i want it. because of the approach i took with this theme, it remains extremely performant despite its size.
+
+###📁 refined file explorer
+the file explorer has gradients for open folders, cleaner highlights for active files that don't overlap indentation lines, and a highlight feature that shows which folders the open file sit in.
+
+### Ⓜ glass menus & modals
+command palettes, settings menus, tooltips, and context menus have all been redone with altered borders, custom shadows, and heavy blurred glass effects (that can be toggled).
+
+### 🫓 flat mode
+with the move towards blur and (complex) borders (loosely inspired by glassmorphism) i understand some might miss the old ultra lobster with its abstract 'flat' ui. because of that, i spent way too much time making a 'flat' mode that strips the intricate borders and shadows in favor of a level ui. milage may very, open an issue if you find something please :)
+
+```
+/*
+╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
+  section: markdown elements
+╰──────────────────────────────╯
+*/
+```
+
+### 📝 note elements
+<img width="1710" height="1077" alt="image" src="https://github.com/user-attachments/assets/c97bcaa2-b77b-487a-88cd-2fe6c73848d8" />
+<img width="1710" height="1073" alt="image" src="https://github.com/user-attachments/assets/507fb4fd-d439-4ec3-a5a0-8880b5e570b9" />
 
 ### 🗣 blockquotes
+blockquotes have been stripped of bulky styling in live view, and feature a clean shadow and outer-border system in reading view without rendering artifacts. they also support the citation syntax from eleanor konik’s wonderful palatinate theme.
+<img width="727" height="440" alt="image" src="https://github.com/user-attachments/assets/9e69fa58-4537-4ea6-9da8-d76fb115be4c" />
+(use <cite>text</cite>)
 
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/c6659f55-b9f8-4ecd-a9ba-d7efff2c001a)
-
-blockquotes have been stripped of styling in live view, and feature a shadow and border in reading view. they also support the citation syntax from eleanor konik’s wonderful palatinate theme.
-
-### ❗ callouts
-
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/28ecf572-b835-42ce-907d-320f5d048eec)
-
-for callouts, i kept it simple for defaults. however, with style settings, i offer a view different versions:
-- gummy | the callouts from my gummy theme
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/beb8efcd-5cf4-44ae-80ca-c997dfb1a27f)
-- notyoutube | callouts inspired/color matched to youtubes new cards.
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/754f6ed4-a8d4-40a9-835f-777f09f0780a)
-- brutal | heavy border, drop shadow creates paper effect (WIP).
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/1aec133b-574b-4f36-b136-706a1a9519fa)
-- soft | no border, darker tone on top to give depth.
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/3324203c-b131-4f66-9992-77a51f0c71b6)
-- working edits mk3 | the glowing callouts from my working edits (we) tweaks.
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/629ed047-682d-4273-863b-44faf361eae7)
-- line (WIP).
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/a4ba69d0-ecee-4a20-ad50-a5d780733b06)
-
-### 🖼 canvas
-
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/6af9ca46-1a44-4d15-84ed-5bfefa3146b9)
-
-gods… so much here. there are, idk, like over 2k`*` lines of just canvas stuff. there are multiple options per card, from several themes & snippets; along with the option to disable borders per card.
-`*` citation needed.
+❗ callouts
+<img width="732" height="399" alt="image" src="https://github.com/user-attachments/assets/25646ef9-bfdb-46ce-b876-25941c3e4bfe" />
+(default callouts)
+for callouts, i kept it simple for defaults. however, with style settings, i offer a few different versions:
+- gummy: callouts from my gummy theme
+- notyoutube: callouts inspired/color matched to youtube's cards
+- brutal: heavy border, drop shadow creates paper effect
+- soft: no border, darker tone on top to give depth (currently broken)
+- working edits mk3: glowing callouts from my working edits (we) tweaks
+- line: minimal side-line styling
 
 ### 🖥 codeblocks
-code blocks, by default are very minimal in both live edit and reading mode. they have slight animations, and a small gradient. additionally, with style settings, there are multiple alternative options:
-- gummy | codeblocks from my gummy theme with accent colors and dynamic glow (only in reading mode).
-	- ![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/ff0fd5d8-511d-442f-bbfc-87f30598a026)
-- notosx | terminal windows style blocks by zamsyt#4459 💖 (only works in live preview mode).
-	- ![[Pasted image 20240201135737.png]]
+code blocks by default are very minimal. they have slight animations, and a small gradient. additionally, with style settings, there are alternative options:
+- gummy: codeblocks from my gummy theme with accent colors and dynamic glow.
+- notosx: terminal mac style blocks by zamsyt#4459 💖.
 
-## 📍 other
+### ❓ custom checkboxes
+with ultra lobster, i added several custom checkboxes that can be used with the following operators:
+```
+- [!] (important)
+- [?] (question)
+- [i] (info)
+- [*] (star)
+- [+] (plus/add)
+- [-] (minus/remove)
+- [b] (bookmark)
+- ["] (quote)
+- [l] (location)
+```
 
-### Ⓜ menus & prompts
+```
+/*
+╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
+  section: canvas
+╰──────────────────────────────╯
+*/
+```
 
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/5cebacdf-3f48-4509-8b98-92b900b5ecf6)
-![image](https://github.com/7368697661/Ultra-Lobster/assets/87339163/d5fce76c-f057-4fd4-859d-bd3e0c91f3f4)
+### 🖼️ canvas
+<img width="1007" height="805" alt="image" src="https://github.com/user-attachments/assets/d034a541-8215-469c-b087-267f464bd528" />
 
-menus, prompts, tooltips, notices, and modals have all been redone with altered borders, shadows, and gradients.
+gods… so much here. there are thousands of lines of just canvas stuff. 
+- cards feature heavy rounding (28px) to match the ui.
+- by default cards have heavy blur. idk, i think its pwetty :p
+- control groups and menus have been themed as floating glass pills.
+- multiple color options per card from several themes & snippets.
+    - canvas cards feature per color style settings options for different gradients or colorways.
+- ! performance toggle: a new toggle to disable the heavy canvas blur effects if you prefer solid colors or need better performance.
 
-### ⚙ alt-themes
-the name “ultra lobster: unity” comes from the fact that i have combined origami, gummy, and all of my working edits`*` into one theme. 
+### .𖥔 ݁ ˖ mobile support ⊹ ࣪ ˖
+ultra lobster is fully responsive and tailored for obsidian mobile (ios tested, if there are android issues lmk <3). 
+- phone & tablet ready: workspace elements, side docks, and menus scale elegantly to fit your screen.
+- feature parity: all custom styles, from canvas edges to custom checkboxes, work just as well on mobile.
+- style settings: fully compatible with the style settings plugin on mobile, so you can tweak your theme on the go.
+<img width="368" height="733" alt="image" src="https://github.com/user-attachments/assets/3196f4f2-bc1e-43aa-b02f-e0681c548686" />
 
-it is, effectively, three themes in a trench-coat.
-`*` we 1-2 are still wip.
 
-### 🎨 color schemes
+```
+/*
+╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
+  section: style settings
+╰──────────────────────────────╯
+*/
+```
 
-![light](https://github.com/7368697661/Ultra-Lobster/assets/87339163/d99611d4-eb32-4ab8-bc8b-020952dc72ba)
-![dark](https://github.com/7368697661/Ultra-Lobster/assets/87339163/53ce1e25-628f-4697-8df4-9c60a62b684f)
+### ⚙️ style settings stuff
+ultra lobster is built to be tweaked. i highly recommended you install the style settings plugin.
+through style settings, you can completely change the vibe of the theme:
+- toggles: disable callout blurs, mobile nav blurs, popup menu blurs, header underlines, and canvas blurs.
+- custom Backgrounds: input a direct image URL to theme the Abaddon Glass subtheme.
+- granular typography: absolute control over editor fonts, title fonts, and inline titles.
+- header customization: choose exact hex colors, typefaces, font weights, and underline styles for every individual header level (h1-h6).
+- animations: enable the wip halo gradient background:
+https://github.com/user-attachments/assets/e37d6aee-c113-49d9-84a5-22cd136080a3
 
-there are many themes, both for light and dark mode, that can be selected separately. there are also several dark-mode-only themes. there are quite a few options, from popular schemes to collabs and many of my own design. below you can see a library of previews:
+```
+/*
+╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
+  section: plugins & credits
+╰──────────────────────────────╯
+*/
+```
 
-### ⌨ type options
-ultra lobster offeres a fairly wide range of font options with style settings. serifs, sans-serifs, and monospace all have options, along with titles and headers. headers also have several options.
+🔌 supported plugins
+style Settings: REQUIRED for accessing subthemes, customizing colors, enabling the custom background, and adjusting typography.
+there is loose support for the following plugins:
+- Better Command Palette
+- cMenu Toolbar
+- Calendar
+- Loomsidian
+- Kanban
+- Omnisearch
+- Tag Navigator
+- Style Settings
+- Dataview (Tables & Lists)
+- Tasks
+- Excalidraw
 
-## ❓ is this theme missing something?
+❓ is this theme missing something?
 open a ticket! I can't promise I will always be the fastest, but i'll try to add support and push fixes as quickly as I can.
 
-## 💕credits
--  🖥️ **lukemt** for their smooth live headers and continued help!
-- - 💭 the wonderful lyt theme by nick milo!
--  💎 **obsidian**, for the amazing program to theme
--  ⌨️ the amazing **plugin** developers, for their time
--  🎨 the gifted **theme** community, for their inspiration
--  📌 **pinterest** for offering far too many designs to look at
--  👯 countless members of **the community**, for helping me test things
--  😈 myself, for writing all of this
--  🎡 john wheeler, for still having a really cool name
--  💖 you**, for reading this & trying my theme
+💕 credits
+- 🖤 data for their support
+- 🖥️ lukemt for their smooth live headers and continued help!
+- 💭 the wonderful lyt theme by nick milo!
+- 💎 obsidian, for the amazing program to theme
+- ⌨️ the amazing plugin developers, for their time
+- 🎨 the gifted theme community, for their inspiration
+- 📌 pinterest for offering far too many designs to look at
+- 👯 countless members of the community, for helping me test things
+- 😈 myself, for writing all of this
+- 🎡 john wheeler, for still having a really cool name
+- 💖 you, for reading this & trying my theme!
 
-## ⚖️ Licensing
-Ultra Lobster is licensed under the [MIT License](https://opensource.org/licenses/MIT), which means that it is free to use, modify, and distribute for personal or commercial use. I encourage users to customize and edit the theme to create their own unique versions. Please keep in mind that any modifications or distributions of the theme must retain the original MIT License and credit to the original author (*me*) and anyone else who’s code is used in those snippets :)
+⚖️ Licensing
+ultra Lobster is licensed under the mit License, which means that it is free to use, modify, and distribute for personal or commercial use. i encourage users to customize and edit the theme to create their own unique versions. please keep in mind that any modifications or distributions of the theme must retain the original mit License and credit to the original author (me) and anyone else who’s code is used in those snippets :)
 
-I hope that this theme serves as a helpful and flexible starting point for your own customization and development. If you have any questions or need further information, please don't hesitate to ask.
+i hope that this theme serves as a helpful and flexible starting point for your own customization and development. if you have any questions or need further information, please don't hesitate to ask. my discord is moka.bbg :)
