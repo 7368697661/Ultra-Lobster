@@ -1,12 +1,5 @@
-```
-⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣶⣶⣦⠀⠀
-⠀⠀⣠⣤⣤⣄⣀⣾⣿⠟⠛⠻⢿⣷⠀
-⢰⣿⡿⠛⠙⠻⣿⣿⠁⠀⠀⠀⣶⢿⡇
-⢿⣿⣇⠀⠀⠀⠈⠏⠀⠀⠀ ultra lobster
-⠀⠻⣿⣷⣦⣤⣀⠀⠀⠀⠀⣾⡿⠃⠀
-⠀⠀⠀⠀⠉⠉⠻⣿⣄⣴⣿⠟⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⣿⡿⠟⠁⠀⠀⠀⠀
-```
+<img width="1920" height="1080" alt="preview_thumb" src="https://github.com/user-attachments/assets/58147806-bd64-4fbb-9d19-5ce72457770d" />
+
 # hi
 this is ultra lobster.. idk what this theme is anymore 😭
 
@@ -213,3 +206,13 @@ open a ticket! I can't promise I will always be the fastest, but i'll try to add
 ultra Lobster is licensed under the mit License, which means that it is free to use, modify, and distribute for personal or commercial use. i encourage users to customize and edit the theme to create their own unique versions. please keep in mind that any modifications or distributions of the theme must retain the original mit License and credit to the original author (me) and anyone else who’s code is used in those snippets :)
 
 i hope that this theme serves as a helpful and flexible starting point for your own customization and development. if you have any questions or need further information, please don't hesitate to ask. my discord is moka.bbg :)
+
+```
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣶⣶⣦⠀⠀
+⠀⠀⣠⣤⣤⣄⣀⣾⣿⠟⠛⠻⢿⣷⠀
+⢰⣿⡿⠛⠙⠻⣿⣿⠁⠀⠀⠀⣶⢿⡇
+⢿⣿⣇⠀⠀⠀⠈⠏⠀⠀⠀ ultra lobster
+⠀⠻⣿⣷⣦⣤⣀⠀⠀⠀⠀⣾⡿⠃⠀
+⠀⠀⠀⠀⠉⠉⠻⣿⣄⣴⣿⠟⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⣿⡿⠟⠁⠀⠀⠀⠀
+```
