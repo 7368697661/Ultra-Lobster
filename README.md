@@ -91,7 +91,7 @@ with the move towards blur and (complex) borders (loosely inspired by glassmorph
 ### 🗣 blockquotes
 blockquotes have been stripped of bulky styling in live view, and feature a clean shadow and outer-border system in reading view without rendering artifacts. they also support the citation syntax from eleanor konik’s wonderful palatinate theme.
 <img width="727" height="440" alt="image" src="https://github.com/user-attachments/assets/9e69fa58-4537-4ea6-9da8-d76fb115be4c" />
-(use <cite>text</cite>)
+(use `<cite>text</cite>`)
 
 ❗ callouts
 <img width="732" height="399" alt="image" src="https://github.com/user-attachments/assets/25646ef9-bfdb-46ce-b876-25941c3e4bfe" />
@@ -166,7 +166,9 @@ through style settings, you can completely change the vibe of the theme:
 - granular typography: absolute control over editor fonts, title fonts, and inline titles.
 - header customization: choose exact hex colors, typefaces, font weights, and underline styles for every individual header level (h1-h6).
 - animations: enable the wip halo gradient background:
-https://github.com/user-attachments/assets/e37d6aee-c113-49d9-84a5-22cd136080a3
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e37d6aee-c113-49d9-84a5-22cd136080a3" />
+
+
 
 ```
 /*
