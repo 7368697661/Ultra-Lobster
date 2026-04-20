@@ -46,6 +46,44 @@ Demon Queen, Succubus, Sorcery, Megalodon, Timberwolf, Shadow, Blahaj, Gruvbox, 
 <img width="1920" height="1203" alt="ul-light" src="https://github.com/user-attachments/assets/95ac60e4-4586-4cd8-8d2c-ac7ae18bee45" />
 <img width="1920" height="1204" alt="ul-dark" src="https://github.com/user-attachments/assets/7be27104-db21-45c6-9dc7-0c74a6235057" />
 
+**color schemes:**
+:sunny: **light themes:**
+- :lizard: chameleon: automatically adapts to your accent color
+- :heart: sorcery: warm, blush-toned theme with soft reds and creamy backgrounds
+- :green_heart: eidolon: soothing and botanical with muted sage greens
+- :blue_heart: shadow: cool and airy with soft icy blues and crisp whites
+- :purple_heart: umbra: a gentle floral theme with light lavender undertones
+- :sunrise: creation: parchment-inspired with warm ivory, cream, and beige
+- :classical_building: architect: structured and concrete-inspired with cool neutral greys
+- :transgender_flag: blahaj: bright and playful with vivid candy-pink gradients
+- :sunny: solarized: a classic low-contrast warm yellow-beige for reading comfort
+- :package: gruvbox: retro-inspired with warm earthy sand and tan colors
+- :lobster: lobster-time: vibrant and aquatic with bright sky blues
+- :wolf: timberwolf: high-contrast with a sharp greyscale palette
+- :shark: megalodon: deep-sea inspired with slate greys and washed-out blues
+
+:crescent_moon: **dark themes:**
+- :lizard: chameleon: automatically adapts to your accent color
+- :heart: sorcery: deep and rich with blood red and burgundy gradients
+- :green_heart: eidolon: calm and forest-inspired with deep emerald greens
+- :blue_heart: shadow: moody and midnight-blue with cool indigo tones
+- :purple_heart: umbra: mystical with deep plum, amethyst, and violet gradients
+- :coat: soft: comfortable and low-contrast using smooth charcoal greys
+- :rotating_light: control: brutalist and high-tech with sharp concrete greys
+- :construction: blueprint: technical and deep grid-blue, like drafting paper
+- :classical_building: architect: structured and stone-inspired with dark slate greys
+- :transgender_flag: blahaj: deep soft blues contrasted with vivid neon pinks
+- :sunny: solarized: classic teal-toned deep grey designed to lower eye strain
+- :package: gruvbox: warm and retro with rich espresso browns and earthy accents
+- :lobster: lobster-time: deep-sea vibes with very dark, rich ocean blues
+- :bat: dracula: high-contrast and vibrant with a deep purple-grey background
+- :thought_balloon: linking your thinking: a focused theme collab with deep navy and warm accents
+- :volcano: abaddon: ultra-dark with near-black backgrounds and intense borders
+- :window: abaddon glass: a variant of abaddon that lets you put a custom image behind frosted glass
+- :wine_glass: succubus: sensual and velvety with rich burgundy and deep wine reds
+- :crown: demon queen: regal and intense with dark violet and deep crimson tones
+- :rabbit: bunny: cozy and soft with warm chocolate browns and gentle earthy tones
+
 ```
 /*
 ╭── . ݁₊ ✶ ──────────── ✶ ₊ ݁ . ──╮
