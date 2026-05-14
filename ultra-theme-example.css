@@ -1,0 +1,245 @@
+/* .𖥔 ݁ ˖  creation / paperlike (light only) ⊹ ࣪ ˖ */
+
+/*
+ * snippet example that mirrors my ultra lobster light 'creation' token set from scss,
+ * rewritten for clarity.
+ *
+ * how to use
+ * - rename the selector (or fold these vars under `body.theme-light`) so either rename .ulu-example-l to .your-snippet-name-l or fold these vars under `body.theme-light`.
+ * - edit the style settings snippet to add your *exact* selector (look at existing selectors in the list for examples)to the list of selectors that will have these vars applied.
+ * - to make things esaier to see, you can set each hex color as a bright neon color to see what colors are used where.
+ *
+ * mono-rgb-0 / mono-rgb-100
+ * - must be full `#hex` colors. ultra lobster builds via
+ *   `rgb(from var(--hex-variable) r g b / opacity)` in file-tree rows, sidebar folders,
+ *   icons, link cards, tooltips, numbered list callouts, status bar rims, breadcrumbs,
+ *   command palette rows, scrollbar tracks, kanban slabs, metadata cards, settings
+ *   toggles, graph connectors, etc.
+ * - light mode shorthand: mono-rgb-0 reads as lifted paper highlights; mono-rgb-100
+ *   reads as ink for soft borders layered on pale fields. 
+ * - dark mode shorthand: mono-rgb-0 reads as pure black; mono-rgb-100 reads as pure white.
+ *
+ * canvas-color
+ * - comma-separated integers `r, g, b`, no `rgb()` wrapper because `_canvas.scss`
+ *   uses it as `rgba(var(--canvas-color), opacity)` for strokes, rims, tinted cards.
+ *
+ * proxy-00→20 vs color-base-*
+ * - proxies seed `--color-base-00`, `-10`, `-20` unless you 
+ *   unlink them inside the ramp by defining your own values.
+ * - ultra lobster binds additional meaning per item directly in selectors.
+ *
+ * gradients
+ * - `--gradient-bg-primary` paints pane styles in (`_style-settings-optionals.scss`, plus
+ *   nested settings lists in `_settings-pane-stuff.scss`).
+ * - `--gradient-bg-secondary` backs main workspace background for rebuilds
+ * - after `_resets.scss` resets.
+ *
+ * border-alt + glass-border-*
+ * - `--background-modifier-border-alt` mixed into tabs with `_tabs.scss`. not used much.
+ * - `--glass-border-light` / `--glass-border-dark` survive as legacy variables; main glass math
+ *   works off mono + base ramps via new `--ulu-glass-*` in `_tokens.scss`.
+ *
+ * hue triplets (--color-<name>, -rgb, -hsl)
+ * - `-rgb` powers alpha blends (`_properties.scss`, etc.).
+ * - `-hsl` feeds `_accent-colors.scss` mappings into `--color-accent` / buttons /
+ *   plugin glows keyed on `--color-accent-hsl`. keep hex, rgb tuples, and hsl triplets
+ *   aligned to the same values.
+ */
+
+.ulu-example-l.theme-light {
+    /* monochrome anchors serving rgb(from…) stacks */
+    --mono-rgb-0: #ffffff;
+    --mono-rgb-100: #433c34;
+
+    /* canvas board strokes + default card stroke tints fed through rgba(var(--canvas-color),…) */
+    --canvas-color: 229, 227, 216;
+
+    /* we use proxies to workaround mobile variables */
+    --proxy-00: #fdfdfc;
+    --proxy-10: #f7f6f2;
+    --proxy-20: #f2f0ea;
+
+    /*
+     * mono ramp (`--color-base-00 to --color-base-100`)
+     *
+     * 00
+     * - `.theme.light` wires `--background-modifier-form-field` and `--interactive-normal`
+     *   to this ramp step inside `partials/subthemes/_base.scss`.
+     * - ultra lobster paints it into some of these places:
+     *   translucent stuff (`--color-base-00` with alpha in `_style-settings-optionals.scss`, `_inputs.scss`), 
+     *   canvas infill washes (`_canvas.scss`),
+     *   typography code rulers `_typography.scss`,
+     *   tab ghost fades (`_tabs.scss`),
+     *   tooltip gradients (`_tooltips.scss`),
+     *   settings overlay tints (`_settings-pane-stuff.scss`),
+     *   graph/menu backdrop stacks (`_graph-embeds.scss` / `_plugin-support.scss`),
+     *   and several `_mobile.scss` full-bleed fixes.
+     *
+     * 05
+     * - `.theme.light` binds `--background-secondary-alt` → `var(--color-base-05)` in `_base.scss`
+     * - hardly ever used.
+     *
+     * 10
+     * - `.theme.light` sets `--interactive-hover` → base-10 in `_base.scss`.
+     * - directly used for inactive tab washes, translucent headers, outbound-link card
+     *   sheets, split-pane, settings row alternation (`_tabs.scss`, `_links.scss`,
+     *   `_settings-pane-stuff.scss`, `_plugin-support.scss`).
+     *
+     * 20
+     * - `.theme.dark` maps `--interactive-normal` here (`_base.scss`); `.theme.light` keeps
+     *   `-20` for depth (`partials/subthemes/_light-l.scss`).
+     * - ultra lobster uses it for:
+     *   status bar (`_status-bar.scss`),
+     *   stacked tab wells,
+     *   gradients that separate panes (`_settings-pane-stuff.scss`, `_tabs.scss`),
+     *   breadcrumb/tab backgrounds (`_mobile.scss`),
+     *   and additional plugin surfaces (`_canvas.scss`, `_plugin-support.scss`).
+     *
+     * 25
+     * - `.theme.light` sets `--ulu-tab-active-bg` to base-25 in `_base.scss`; many subthemes
+     *   repoint `--ulu-tab-active-bg` dedicated variables, but the default stuff still works off `-25`.
+     * - `_tokens.scss` declares `--ulu-card-bg: var(--color-base-25)` for style-settings slabs.
+     * - `_resets.scss` floods desktop `.view-content` main cards with `--color-base-25` beneath the
+     *   glass; asymmetric + full gradients start from a `-25` solid fill.
+     * - `_menu.scss`,
+     *   property cards (`_properties.scss`),
+     *   plugin style borders `_plugin-support.scss`,
+     *   muted buttons (`_buttons.scss`),
+     *   plus file-tree indentation guides `_file-tree.scss`,
+     *   and tooltip fades (`_tooltips.scss`).
+     *
+     * 30
+     * - `.theme.dark` sets `--background-secondary-alt` → base-30; `.theme.dark` also maps
+     *   interactive surfaces through combinations of `-20`, `-35`, `-30` (`_base.scss`).
+     * - everywhere borders need legibility ultra lobster mixes rgba from `-30`:
+     *   dormant tabs/resets/menus/nav guides:
+     *   - (`_tabs.scss`,
+     *   - `_resets.scss`,
+     *   - `_menu.scss`,
+     *   - `_breadcrumbs.scss`),
+     *   style-settings scaffolding (`_style-settings-optionals.scss`),
+     *   pomegranate dark (`partials/subthemes/_pomegranate-d.scss`),
+     *   plugins (`_plugin-support.scss`),
+     *   plus many other places.
+     *
+     * 35
+     * - `.theme.dark` gets `--interactive-hover` here (`_base.scss`).
+     * - light theme uses it for:
+     *   hovered settings toggles,
+     *   outbound link bezels,
+     *   tab highlight rails,
+     *   segmented control interiors:
+     *   - (`_settings-pane-stuff.scss`,
+     *   - `_links.scss`,
+     *   - `_tabs.scss`,
+     *   - `_style-settings-optionals.scss`).
+     *
+     * 40
+     * - `_base.scss` used for:
+     *   outbound link rims,
+     *   muted button strokes:
+     *   - (`_links.scss`,
+     *   `_buttons.scss`),
+     *   darker tab layouts (`_tabs.scss`), 
+     *   and whichever dark subtheme's `--ulu-tab-active-bg` points at `-40`.
+     *
+     * 50
+     * - `_body-vars.scss` sets `--text-muted` → `var(--color-base-50)` for subdued letters.
+     * - `_tokens.scss` builds `--ulu-glass-ring-light` using `rgb(from var(--color-base-50) r g b / opacity)`.
+     * - overlays on dormant tabs/settings/resets soften using translucent mixes off `-50`:
+     *   - (`_tabs.scss`,
+     *   - `_resets.scss`,
+     *   - `_style-settings-optionals.scss`).
+     *
+     * 60
+     * - `_body-vars.scss` sets `--text-faint` → base-60 for: 
+     *   - placeholders,
+     *   - disabled affordances,
+     *   - text that must sit quieter than `--text-muted`: (`--text-faint` in `_body-vars.scss`).
+     *
+     * 70
+     * - `_body-vars.scss` maps `--text-normal` → base-70 (primary reading text).
+     * - supplemental component-level recolors occasionally reference `-70`:
+     *   (`partials/subthemes/_meg-l.scss`, `_twolf-l.scss`, `_arch.scss`).
+     *
+     * 100
+     * - `_body-vars.scss` maps `--inline-title-color` → base-100; subthemes often align it with
+     *   primary headings + highest-contrast.
+     * - ultra lobster uses translucent mixes off `--color-base-100` inside glass-highlight gradients on `-25` in:
+     *   - (`_resets.scss`,
+     *   - `_menu.scss`,
+     *   - `_properties.scss`).
+     * - checklist mask fill targets base-100 to style the svg: (`_list-checkbox.scss`).
+     *
+     * (for dark themes, invert this ramp so that lightest shade replaces `-100` and darkest replaces `-00`)
+     */
+    --color-base-00: var(--proxy-00);
+    --color-base-05: #ffffff;
+    --color-base-10: var(--proxy-10);
+    --color-base-20: var(--proxy-20);
+    --color-base-25: #eceae1;
+    --color-base-30: #e5e3d8;
+    --color-base-35: #dedbce;
+    --color-base-40: #d8d4c5;
+    --color-base-50: #b5b2a5;
+    --color-base-60: #939086;
+    --color-base-70: #716f66;
+    --color-base-100: #433c34;
+
+    /* stacked pane paint: primary hull + secondary trays */
+    --gradient-bg-primary: linear-gradient(
+        135deg,
+        #e3e1d2 1.62%,
+        #e6e5da 50.72%
+    ) !important;
+    --gradient-bg-secondary: linear-gradient(
+        135deg,
+        #edebeb 1.62%,
+        #e5e3d8 50.72%
+    ) !important;
+
+    /* obsidian modifier feeding tab composites */
+    --background-modifier-border-alt: #eceae1 !important;
+
+    /*
+     * glass-border pair retained for compat snippets; brighten the light lip, deepen
+     * the shadow jaw roughly one notch past `--color-base-30` for rims that read tactile.
+     */
+    --glass-border-light: #ffffff;
+    --glass-border-dark: #e5e3d8;
+
+    /*
+     * accent primitives — `_accent-colors.scss` maps user accent picks onto these hues.
+     */
+    --color-red: #ef796a;
+    --color-red-rgb: 239, 121, 106;
+    --color-red-hsl: 7, 81%, 68%;
+
+    --color-green: #8cb369;
+    --color-green-rgb: 140, 179, 105;
+    --color-green-hsl: 92, 33%, 56%;
+
+    --color-orange: #ff7f51;
+    --color-orange-rgb: 255, 127, 81;
+    --color-orange-hsl: 16, 100%, 66%;
+
+    --color-yellow: #edae49;
+    --color-yellow-rgb: 237, 174, 73;
+    --color-yellow-hsl: 37, 82%, 61%;
+
+    --color-cyan: #0fbda8;
+    --color-cyan-rgb: 15, 189, 168;
+    --color-cyan-hsl: 173, 85%, 40%;
+
+    --color-blue: #788bff;
+    --color-blue-rgb: 120, 139, 255;
+    --color-blue-hsl: 232, 100%, 74%;
+
+    --color-purple: #9381ff;
+    --color-purple-rgb: 147, 129, 255;
+    --color-purple-hsl: 249, 100%, 75%;
+
+    --color-pink: #fb6376;
+    --color-pink-rgb: 251, 99, 118;
+    --color-pink-hsl: 349, 94%, 69%;
+}

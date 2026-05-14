@@ -1,0 +1,135 @@
+/*
+ * ultra lobster // style settings theme picker injection
+ *
+ * drop this into .obsidian/snippets/ and enable it.
+ * requires the style settings plugin.
+ *
+ * this snippet exposes the ultra lobster light + dark theme dropdowns in
+ * style settings without needing to edit the full theme file.
+ *
+ * to add your own custom theme class to the list:
+ *   1. build your palette in a separate snippet (such as `ultra-theme-example.css`).
+ *   2. add an entry to the options list below using your selector (selector is the name you gave your
+ *      element in the snippet) as the value,
+ *      example using the sister snippet `ultra-theme-example.css`:  
+ *             - label: my theme
+ *               value: ulu-example-l
+ *             *or* for dark mode:
+ *             - label: my dark theme
+ *               value: ulu-example-d
+ *       2a. the syntax is super picky, to make it easier copy an existing entry and edit it.
+ *           ‼️ BE VERY CAREFUL WITH THE SYNTAX/SPACING/INDENTATION/etc.
+ *       2b. the label is the name you want to appear in the style settings dropdown.
+ *       2c. the value is the selector you gave your element in the snippet.
+ *       2d. themes are split into light and dark, so you need to add an entry 
+ *           for each (see example file for naming conventions).
+ *   3. save and reload style settings if needed (or toggle the snippet off/on)
+ */
+
+/* @settings
+name: "｡ ₊°༺ ultra lobster — themes ༻°₊ ｡"
+id: ulu-snippet-theme-picker
+settings:
+  - id: ulu-theme-light
+    title: Light Theme
+    type: class-select
+    allowempty: true
+    default: ''
+    options:
+      - label: 🍎 pomegranate
+        value: ulu-pomegranate-l
+      - label: 🧭 obsidian+ cool
+        value: ulu-obsidianplus-cool-l
+      - label: 🧭 obsidian+ warm
+        value: ulu-obsidianplus-warm-l
+      - label: 🦎 chameleon
+        value: ulu-adaptive-lt
+      - label: ❤️ sorcery
+        value: ulu-red-l
+      - label: 💚 eidolon
+        value: ulu-green-l
+      - label: 💙 shadow
+        value: ulu-blue-l
+      - label: 💜 umbra
+        value: ulu-purple-l
+      - label: 🌅 creation
+        value: ulu-light-l
+      - label: 🏛️ architect
+        value: ulu-arch-l
+      - label: 🏳️‍⚧️ blahaj
+        value: ulu-shark-l
+      - label: ☀️ solarized
+        value: ulu-solar-lt
+      - label: 📦 gruvbox
+        value: ulu-gruvbox-lt
+      - label: 🦞 lobster-time
+        value: ulu-lobstertime-lt
+      - label: 🐺 timberwolf
+        value: ulu-twolf-l
+      - label: 🦈 megalodon
+        value: ulu-meg-l
+      - label: 🌾 linen
+        value: ulu-linen-l
+      - label: 🎨 custom
+        value: ulu-custom-l
+      - label: 🎨 test
+        value: ulu-example-l
+  - id: ulu-theme-dark
+    title: Dark Theme
+    type: class-select
+    allowempty: true
+    default: ''
+    options:
+      - label: 🍎 pomegranate
+        value: ulu-pomegranate-d
+      - label: 🧭 obsidian+ cool
+        value: ulu-obsidianplus-cool-d
+      - label: 🧭 obsidian+ warm
+        value: ulu-obsidianplus-warm-d
+      - label: 🦎 chameleon
+        value: ulu-adaptive-dt
+      - label: ❤️ sorcery
+        value: ulu-red-d
+      - label: 💚 eidolon
+        value: ulu-green-d
+      - label: 💙 shadow
+        value: ulu-blue-d
+      - label: 💜 umbra
+        value: ulu-purple-d
+      - label: 🧥 soft
+        value: ulu-soft-dt
+      - label: 🚨 control
+        value: ulu-control-d
+      - label: 🚧 blueprint
+        value: ulu-blueprint-d
+      - label: 🏛️ architect
+        value: ulu-arch-d
+      - label: 🏳️‍⚧️ blahaj
+        value: ulu-shark-d
+      - label: ☀️ solarized
+        value: ulu-solar-dt
+      - label: 📦 gruvbox
+        value: ulu-gruvbox-dt
+      - label: 🦞 lobster-time
+        value: ulu-lobstertime-dt
+      - label: 🦇 dracula
+        value: ulu-dracula-dt
+      - label: 💭 linking your thinking
+        value: ulu-lyt-dt
+      - label: 🌋 abaddon
+        value: ulu-abaddon-d
+      - label: 🪟 abaddon glass
+        value: ulu-abaddon-glass-d
+      - label: 🔦 spotlight
+        value: ulu-spotlight-dt
+      - label: 🌌 end
+        value: ulu-end-d
+      - label: 🍷 succubus
+        value: ulu-succ-d
+      - label: 👑 demon queen
+        value: ulu-queen-d
+      - label: 🐰 bunny
+        value: ulu-bunny-d
+      - label: 🎨 custom
+        value: ulu-custom-d
+*/
