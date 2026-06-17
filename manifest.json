@@ -1,7 +1,6 @@
 {
 	"name": "Ultra Lobster",
-	"version": "3.1.4",
+	"version": "3.1.5",
 	"minAppVersion": "1.0.0",
-	"author": "kneecaps",
-	"lapisConfig": "https://raw.githubusercontent.com/7368697661/Ultra-Lobster/refs/heads/main/theme.config.json"
+	"author": "kneecaps"
 }
