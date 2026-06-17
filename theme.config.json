@@ -1,0 +1,4034 @@
+{
+  "lapis": "0.1",
+  "theme": {
+    "id": "Ultra Lobster Rev2 - alpha",
+    "name": "｡ ₊°༺ ultra lobster ༻°₊ ｡",
+    "styleSettingsId": "ulu-theme-settings"
+  },
+  "settings": [
+    {
+      "type": "info",
+      "id": "theme-info",
+      "title": "An Intentional Writing Space",
+      "description": "see an issue? want to suggest a feature? visit us on github: <https://github.com/7368697061/ultra-lobster> this theme was made with 💖 by kneecaps.\n",
+      "level": 0,
+      "markdown": true
+    },
+    {
+      "type": "group",
+      "id": "ulu-subtheme",
+      "title": "🆂 Subtheme & Accent",
+      "description": "Pick your light & dark subtheme and accent. start here.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "class-select",
+          "id": "ulu-color-accent",
+          "title": "Custom Accent",
+          "description": "select from hand-picked & theme-adjusted accent colors",
+          "default": "ulu-obsidian-accent",
+          "allowEmpty": true,
+          "options": [
+            {
+              "label": "🪨 obsidian (native accent)",
+              "value": "ulu-obsidian-accent"
+            },
+            {
+              "label": "❤️ red",
+              "value": "ulu-red"
+            },
+            {
+              "label": "💚 green",
+              "value": "ulu-green"
+            },
+            {
+              "label": "🧡 orange",
+              "value": "ulu-orange"
+            },
+            {
+              "label": "💛 yellow",
+              "value": "ulu-yellow"
+            },
+            {
+              "label": "🤍 cyan",
+              "value": "ulu-cyan"
+            },
+            {
+              "label": "💙 blue",
+              "value": "ulu-blue"
+            },
+            {
+              "label": "💜 purple",
+              "value": "ulu-purple"
+            },
+            {
+              "label": "💖 pink",
+              "value": "ulu-pink"
+            },
+            {
+              "label": "💖 white",
+              "value": "ulu-white"
+            }
+          ]
+        },
+        {
+          "type": "class-select",
+          "id": "ulu-theme-light",
+          "title": "Light Theme",
+          "default": "ulu-moka-soft-l",
+          "allowEmpty": true,
+          "options": [
+            {
+              "label": "🍎 pomegranate",
+              "value": "ulu-pomegranate-l"
+            },
+            {
+              "label": "🧭 obsidian+ grey",
+              "value": "ulu-obsidianplus-grey-l"
+            },
+            {
+              "label": "🧭 obsidian+ cool",
+              "value": "ulu-obsidianplus-cool-l"
+            },
+            {
+              "label": "🧭 obsidian+ warm",
+              "value": "ulu-obsidianplus-warm-l"
+            },
+            {
+              "label": "🦎 chameleon",
+              "value": "ulu-adaptive-lt"
+            },
+            {
+              "label": "❤️ sorcery",
+              "value": "ulu-red-l"
+            },
+            {
+              "label": "💚 eidolon",
+              "value": "ulu-green-l"
+            },
+            {
+              "label": "💙 shadow",
+              "value": "ulu-blue-l"
+            },
+            {
+              "label": "💜 umbra",
+              "value": "ulu-purple-l"
+            },
+            {
+              "label": "🌅 creation",
+              "value": "ulu-light-l"
+            },
+            {
+              "label": "🏛️ architect",
+              "value": "ulu-arch-l"
+            },
+            {
+              "label": "🏳️‍⚧️ blahaj",
+              "value": "ulu-shark-l"
+            },
+            {
+              "label": "☀️ solarized",
+              "value": "ulu-solar-lt"
+            },
+            {
+              "label": "📦 gruvbox",
+              "value": "ulu-gruvbox-lt"
+            },
+            {
+              "label": "🦞 lobster-time",
+              "value": "ulu-lobstertime-lt"
+            },
+            {
+              "label": "🌅 horizon",
+              "value": "ulu-horizon-lt"
+            },
+            {
+              "label": "🐺 timberwolf",
+              "value": "ulu-twolf-l"
+            },
+            {
+              "label": "🦈 megalodon",
+              "value": "ulu-meg-l"
+            },
+            {
+              "label": "🌾 linen",
+              "value": "ulu-linen-l"
+            },
+            {
+              "label": "✿ anthos",
+              "value": "ulu-anthos-l"
+            },
+            {
+              "label": "☁ nephele",
+              "value": "ulu-nephele-l"
+            },
+            {
+              "label": "▦ protos",
+              "value": "ulu-protos-l"
+            },
+            {
+              "label": "🌸 si",
+              "value": "ulu-si-l"
+            },
+            {
+              "label": "❄️ nord",
+              "value": "ulu-nord-l"
+            },
+            {
+              "label": "☕ moka soft",
+              "value": "ulu-moka-soft-l"
+            },
+            {
+              "label": "☕ moka hard",
+              "value": "ulu-moka-hard-l"
+            },
+            {
+              "label": "△ reader.sys",
+              "value": "ulu-reader-l"
+            },
+            {
+              "label": "🎨 custom",
+              "value": "ulu-custom-l"
+            }
+          ]
+        },
+        {
+          "type": "class-select",
+          "id": "ulu-theme-dark",
+          "title": "Dark Theme",
+          "default": "ulu-moka-soft-d",
+          "allowEmpty": true,
+          "options": [
+            {
+              "label": "🍎 pomegranate",
+              "value": "ulu-pomegranate-d"
+            },
+            {
+              "label": "🧭 obsidian+ grey",
+              "value": "ulu-obsidianplus-grey-d"
+            },
+            {
+              "label": "🧭 obsidian+ cool",
+              "value": "ulu-obsidianplus-cool-d"
+            },
+            {
+              "label": "🧭 obsidian+ warm",
+              "value": "ulu-obsidianplus-warm-d"
+            },
+            {
+              "label": "🦎 chameleon",
+              "value": "ulu-adaptive-dt"
+            },
+            {
+              "label": "❤️ sorcery",
+              "value": "ulu-red-d"
+            },
+            {
+              "label": "💚 eidolon",
+              "value": "ulu-green-d"
+            },
+            {
+              "label": "💙 shadow",
+              "value": "ulu-blue-d"
+            },
+            {
+              "label": "💜 umbra",
+              "value": "ulu-purple-d"
+            },
+            {
+              "label": "🧥 soft",
+              "value": "ulu-soft-dt"
+            },
+            {
+              "label": "🚨 control",
+              "value": "ulu-control-d"
+            },
+            {
+              "label": "🚧 blueprint",
+              "value": "ulu-blueprint-d"
+            },
+            {
+              "label": "🏛️ architect",
+              "value": "ulu-arch-d"
+            },
+            {
+              "label": "🏳️‍⚧️ blahaj",
+              "value": "ulu-shark-d"
+            },
+            {
+              "label": "☀️ solarized",
+              "value": "ulu-solar-dt"
+            },
+            {
+              "label": "📦 gruvbox",
+              "value": "ulu-gruvbox-dt"
+            },
+            {
+              "label": "🦞 lobster-time",
+              "value": "ulu-lobstertime-dt"
+            },
+            {
+              "label": "🌅 horizon",
+              "value": "ulu-horizon-dt"
+            },
+            {
+              "label": "🦇 dracula",
+              "value": "ulu-dracula-dt"
+            },
+            {
+              "label": "💭 linking your thinking",
+              "value": "ulu-lyt-dt"
+            },
+            {
+              "label": "🌋 abaddon",
+              "value": "ulu-abaddon-d"
+            },
+            {
+              "label": "🪟 abaddon glass",
+              "value": "ulu-abaddon-glass-d"
+            },
+            {
+              "label": "🔦 spotlight",
+              "value": "ulu-spotlight-dt"
+            },
+            {
+              "label": "🌌 end",
+              "value": "ulu-end-d"
+            },
+            {
+              "label": "🍷 succubus",
+              "value": "ulu-succ-d"
+            },
+            {
+              "label": "🌸 si",
+              "value": "ulu-si-d"
+            },
+            {
+              "label": "👑 demon queen",
+              "value": "ulu-queen-d"
+            },
+            {
+              "label": "🐰 bunny",
+              "value": "ulu-bunny-d"
+            },
+            {
+              "label": "τ tau",
+              "value": "ulu-tau-d"
+            },
+            {
+              "label": "▦ protos",
+              "value": "ulu-protos-d"
+            },
+            {
+              "label": "✟ styx (intended for red accent)",
+              "value": "ulu-styx-d"
+            },
+            {
+              "label": "❄️ nord",
+              "value": "ulu-nord-d"
+            },
+            {
+              "label": "☕ moka soft",
+              "value": "ulu-moka-soft-d"
+            },
+            {
+              "label": "☕ moka hard",
+              "value": "ulu-moka-hard-d"
+            },
+            {
+              "label": "△ reader.sys",
+              "value": "ulu-reader-d"
+            },
+            {
+              "label": "🎨 custom",
+              "value": "ulu-custom-d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-typography",
+      "title": "🆃 Typography",
+      "description": "Fonts, headings, links, and text rendering.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "var-select",
+          "id": "ulu-font-general",
+          "title": "Editor Font",
+          "default": "Newsreader",
+          "cssVar": "--ulu-font-general",
+          "options": [
+            {
+              "label": "aspekta ࣪ ִֶָ☾.sans",
+              "value": "aspekta"
+            },
+            {
+              "label": "inter ࣪ ִֶָ☾.sans",
+              "value": "inter"
+            },
+            {
+              "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+              "value": "IBM Plex Sans"
+            },
+            {
+              "label": "space grotesk ࣪𐫰 grotesk",
+              "value": "space grotesk"
+            },
+            {
+              "label": "lexend ࣪ ִֶָ☾.sans",
+              "value": "lexend"
+            },
+            {
+              "label": "dobbintextsf-roman ࣪✦ serif",
+              "value": "dobbintextsf-roman"
+            },
+            {
+              "label": "tiny5 ⌗ pixel",
+              "value": "Tiny5"
+            },
+            {
+              "label": "fraunces ✦ serif",
+              "value": "fraunces"
+            },
+            {
+              "label": "nightingale ✦ serif",
+              "value": "nightingale"
+            },
+            {
+              "label": "instrument  ࣪ ִֶָ☾.sans",
+              "value": "instrument"
+            },
+            {
+              "label": "newsreader ✦ serif",
+              "value": "Newsreader"
+            },
+            {
+              "label": "monaspace ‪‪❤︎‬ mono",
+              "value": "monaspace"
+            },
+            {
+              "label": "iawriter ‪‪❤︎‬ mono",
+              "value": "iawriter"
+            },
+            {
+              "label": "martian mono ‪‪❤︎‬ mono",
+              "value": "martian mono"
+            },
+            {
+              "label": "departure mono ‪‪❤︎‬ mono",
+              "value": "departure mono"
+            },
+            {
+              "label": "lilex ‪‪❤︎‬ mono",
+              "value": "Lilex"
+            },
+            {
+              "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+              "value": "Authentic Sans"
+            },
+            {
+              "label": "Format 1452 ࣪ ִֶָ☾.sans",
+              "value": "Format 1452"
+            },
+            {
+              "label": "playwrite ✍ handwriting",
+              "value": "Playwrite US Modern Guides"
+            },
+            {
+              "label": "stack sans notch ࣪ ִֶָ☾.sans",
+              "value": "Stack Sans Notch"
+            }
+          ]
+        },
+        {
+          "type": "var-select",
+          "id": "ulu-font-title",
+          "title": "Title Typeface",
+          "default": "monaspace",
+          "cssVar": "--ulu-font-title",
+          "options": [
+            {
+              "label": "getai ࣪ ִֶָ☾.sans",
+              "value": "getai"
+            },
+            {
+              "label": "aspekta ࣪ ִֶָ☾.sans",
+              "value": "aspekta"
+            },
+            {
+              "label": "inter ࣪ ִֶָ☾.sans",
+              "value": "inter"
+            },
+            {
+              "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+              "value": "IBM Plex Sans"
+            },
+            {
+              "label": "space grotesk ࣪𐫰 grotesk",
+              "value": "space grotesk"
+            },
+            {
+              "label": "lexend ࣪ ִֶָ☾.sans",
+              "value": "lexend"
+            },
+            {
+              "label": "dobbintextsf-roman ࣪✦ serif",
+              "value": "dobbintextsf-roman"
+            },
+            {
+              "label": "tiny5 ⌗ pixel",
+              "value": "Tiny5"
+            },
+            {
+              "label": "fraunces ✦ serif",
+              "value": "fraunces"
+            },
+            {
+              "label": "nightingale ✦ serif",
+              "value": "nightingale"
+            },
+            {
+              "label": "instrument  ࣪ ִֶָ☾.sans",
+              "value": "instrument"
+            },
+            {
+              "label": "newsreader ✦ serif",
+              "value": "Newsreader"
+            },
+            {
+              "label": "manufacturing consent ✶ display",
+              "value": "Manufacturing Consent"
+            },
+            {
+              "label": "monaspace ‪‪❤︎‬ mono",
+              "value": "monaspace"
+            },
+            {
+              "label": "iawriter ‪‪❤︎‬ mono",
+              "value": "iawriter"
+            },
+            {
+              "label": "martian mono ‪‪❤︎‬ mono",
+              "value": "martian mono"
+            },
+            {
+              "label": "departure mono ‪‪❤︎‬ mono",
+              "value": "departure mono"
+            },
+            {
+              "label": "lilex ‪‪❤︎‬ mono",
+              "value": "Lilex"
+            },
+            {
+              "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+              "value": "Authentic Sans"
+            },
+            {
+              "label": "Format 1452 ࣪ ִֶָ☾.sans",
+              "value": "Format 1452"
+            },
+            {
+              "label": "Hyperscript ✦ script",
+              "value": "Hyperscript"
+            },
+            {
+              "label": "sekuya ✶ display",
+              "value": "Sekuya"
+            },
+            {
+              "label": "bbh bartle ✶ display",
+              "value": "BBH Bartle"
+            },
+            {
+              "label": "stack sans notch ࣪ ִֶָ☾.sans",
+              "value": "Stack Sans Notch"
+            }
+          ]
+        },
+        {
+          "type": "var-select",
+          "id": "ulu-font-ui",
+          "title": "UI Font",
+          "description": "interface font: tabs, sidebars, menus, status bar. defaults to IBM Plex Sans. a system/interface font loaded in Appearance still overrides this.",
+          "default": "IBM Plex Sans",
+          "cssVar": "--ulu-font-ui",
+          "options": [
+            {
+              "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+              "value": "IBM Plex Sans"
+            },
+            {
+              "label": "aspekta ࣪ ִֶָ☾.sans",
+              "value": "aspekta"
+            },
+            {
+              "label": "inter ࣪ ִֶָ☾.sans",
+              "value": "inter"
+            },
+            {
+              "label": "space grotesk ࣪𐫰 grotesk",
+              "value": "space grotesk"
+            },
+            {
+              "label": "lexend ࣪ ִֶָ☾.sans",
+              "value": "lexend"
+            },
+            {
+              "label": "instrument  ࣪ ִֶָ☾.sans",
+              "value": "instrument"
+            },
+            {
+              "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+              "value": "Authentic Sans"
+            },
+            {
+              "label": "Format 1452 ࣪ ִֶָ☾.sans",
+              "value": "Format 1452"
+            },
+            {
+              "label": "monaspace ‪‪❤︎‬ mono",
+              "value": "monaspace"
+            },
+            {
+              "label": "iawriter ‪‪❤︎‬ mono",
+              "value": "iawriter"
+            },
+            {
+              "label": "martian mono ‪‪❤︎‬ mono",
+              "value": "martian mono"
+            },
+            {
+              "label": "departure mono ‪‪❤︎‬ mono",
+              "value": "departure mono"
+            },
+            {
+              "label": "lilex ‪‪❤︎‬ mono",
+              "value": "Lilex"
+            }
+          ]
+        },
+        {
+          "type": "var-select",
+          "id": "ulu-font-folder",
+          "title": "Folder Font",
+          "description": "typeface for folder names in the file explorer. leave empty to inherit the UI font.",
+          "default": "",
+          "allowEmpty": true,
+          "cssVar": "--ulu-font-folder",
+          "options": [
+            {
+              "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+              "value": "IBM Plex Sans"
+            },
+            {
+              "label": "aspekta ࣪ ִֶָ☾.sans",
+              "value": "aspekta"
+            },
+            {
+              "label": "inter ࣪ ִֶָ☾.sans",
+              "value": "inter"
+            },
+            {
+              "label": "space grotesk ࣪𐫰 grotesk",
+              "value": "space grotesk"
+            },
+            {
+              "label": "lexend ࣪ ִֶָ☾.sans",
+              "value": "lexend"
+            },
+            {
+              "label": "instrument  ࣪ ִֶָ☾.sans",
+              "value": "instrument"
+            },
+            {
+              "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+              "value": "Authentic Sans"
+            },
+            {
+              "label": "Format 1452 ࣪ ִֶָ☾.sans",
+              "value": "Format 1452"
+            },
+            {
+              "label": "fraunces ✦ serif",
+              "value": "fraunces"
+            },
+            {
+              "label": "newsreader ✦ serif",
+              "value": "Newsreader"
+            },
+            {
+              "label": "monaspace ‪‪❤︎‬ mono",
+              "value": "monaspace"
+            },
+            {
+              "label": "iawriter ‪‪❤︎‬ mono",
+              "value": "iawriter"
+            },
+            {
+              "label": "Hyperscript ✦ script",
+              "value": "Hyperscript"
+            }
+          ]
+        },
+        {
+          "type": "number",
+          "id": "responsive-text",
+          "title": "Text Scale",
+          "description": "🚨 must be a whole / decimal number such as 1 or 1.1. further scale can be changed via slider in appearance",
+          "default": 1,
+          "unit": "em",
+          "cssVar": "--responsive-text"
+        },
+        {
+          "type": "toggle",
+          "id": "ulu-accent-bold-italic",
+          "title": "Accent Bold & Italic",
+          "description": "applies distinct accent colors to bold and italic text",
+          "default": false
+        },
+        {
+          "type": "toggle",
+          "id": "ulu-serif-italic",
+          "title": "Serif Italic",
+          "description": "renders italic text in a serif typeface",
+          "default": false
+        },
+        {
+          "type": "var-select",
+          "id": "ulu-italic-font",
+          "title": "Italic Font",
+          "description": "typeface used for em / italic text when Serif Italic is on (falls back to --font-serif if empty)",
+          "default": "",
+          "allowEmpty": true,
+          "cssVar": "--ulu-italic-font",
+          "options": [
+            {
+              "label": "fraunces ✦ serif",
+              "value": "fraunces"
+            },
+            {
+              "label": "newsreader ✦ serif",
+              "value": "Newsreader"
+            },
+            {
+              "label": "nightingale ✦ serif",
+              "value": "nightingale"
+            },
+            {
+              "label": "manufacturing consent ✶ display",
+              "value": "Manufacturing Consent"
+            },
+            {
+              "label": "dobbintextsf-roman ✦ sans-serif",
+              "value": "dobbintextsf-roman"
+            },
+            {
+              "label": "iawriter ‪‪❤︎‬ mono",
+              "value": "iawriter"
+            }
+          ]
+        },
+        {
+          "type": "toggle",
+          "id": "ulu-duo-tag",
+          "title": "Split Tags",
+          "default": false
+        },
+        {
+          "type": "toggle",
+          "id": "ulu-no-hyphenate",
+          "title": "Disable Auto-Hyphenation",
+          "description": "turns off automatic hyphenation on paragraphs (on by default)",
+          "default": false
+        },
+        {
+          "type": "toggle",
+          "id": "ulu-print-link-urls",
+          "title": "Print / PDF: Show Link URLs",
+          "description": "when printing or exporting to PDF, append the URL after external links",
+          "default": false
+        },
+        {
+          "type": "group",
+          "id": "ulu-inline-title-heading",
+          "title": "📝 Inline Title",
+          "description": "the note title shown above the editor.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "var-select",
+              "id": "ulu-inline-title-font",
+              "title": "Font",
+              "default": "",
+              "allowEmpty": true,
+              "cssVar": "--ulu-inline-title-font",
+              "options": [
+                {
+                  "label": "getai ࣪ ִֶָ☾.sans",
+                  "value": "getai"
+                },
+                {
+                  "label": "aspekta ࣪ ִֶָ☾.sans",
+                  "value": "aspekta"
+                },
+                {
+                  "label": "inter ࣪ ִֶָ☾.sans",
+                  "value": "inter"
+                },
+                {
+                  "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                  "value": "IBM Plex Sans"
+                },
+                {
+                  "label": "space grotesk ࣪𐫰 grotesk",
+                  "value": "space grotesk"
+                },
+                {
+                  "label": "lexend ࣪ ִֶָ☾.sans",
+                  "value": "lexend"
+                },
+                {
+                  "label": "dobbintextsf-roman ࣪✦ serif",
+                  "value": "dobbintextsf-roman"
+                },
+                {
+                  "label": "tiny5 ⌗ pixel",
+                  "value": "Tiny5"
+                },
+                {
+                  "label": "fraunces ✦ serif",
+                  "value": "fraunces"
+                },
+                {
+                  "label": "nightingale ✦ serif",
+                  "value": "nightingale"
+                },
+                {
+                  "label": "instrument  ࣪ ִֶָ☾.sans",
+                  "value": "instrument"
+                },
+                {
+                  "label": "newsreader ✦ serif",
+                  "value": "Newsreader"
+                },
+                {
+                  "label": "manufacturing consent ✶ display",
+                  "value": "Manufacturing Consent"
+                },
+                {
+                  "label": "monaspace ‪‪❤︎‬ mono",
+                  "value": "monaspace"
+                },
+                {
+                  "label": "iawriter ‪‪❤︎‬ mono",
+                  "value": "iawriter"
+                },
+                {
+                  "label": "martian mono ‪‪❤︎‬ mono",
+                  "value": "martian mono"
+                },
+                {
+                  "label": "departure mono ‪‪❤︎‬ mono",
+                  "value": "departure mono"
+                },
+                {
+                  "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+                  "value": "Authentic Sans"
+                },
+                {
+                  "label": "Format 1452 ࣪ ִֶָ☾.sans",
+                  "value": "Format 1452"
+                },
+                {
+                  "label": "Hyperscript ✦ script",
+                  "value": "Hyperscript"
+                }
+              ]
+            },
+            {
+              "type": "number",
+              "id": "ulu-inline-title-size",
+              "title": "Size",
+              "description": "in em",
+              "default": 2.5,
+              "unit": "em",
+              "cssVar": "--ulu-inline-title-size"
+            },
+            {
+              "type": "slider",
+              "id": "ulu-inline-title-weight",
+              "title": "Weight",
+              "default": 500,
+              "min": 100,
+              "max": 900,
+              "step": 25,
+              "cssVar": "--ulu-inline-title-weight"
+            },
+            {
+              "type": "var-select",
+              "id": "ulu-inline-title-color",
+              "title": "Color",
+              "default": "",
+              "allowEmpty": true,
+              "cssVar": "--ulu-inline-title-color",
+              "options": [
+                {
+                  "label": "accent",
+                  "value": "var(--color-accent)"
+                },
+                {
+                  "label": "muted",
+                  "value": "var(--text-muted)"
+                },
+                {
+                  "label": "normal",
+                  "value": "var(--text-normal)"
+                },
+                {
+                  "label": "red",
+                  "value": "var(--color-red)"
+                },
+                {
+                  "label": "orange",
+                  "value": "var(--color-orange)"
+                },
+                {
+                  "label": "yellow",
+                  "value": "var(--color-yellow)"
+                },
+                {
+                  "label": "green",
+                  "value": "var(--color-green)"
+                },
+                {
+                  "label": "cyan",
+                  "value": "var(--color-cyan)"
+                },
+                {
+                  "label": "blue",
+                  "value": "var(--color-blue)"
+                },
+                {
+                  "label": "purple",
+                  "value": "var(--color-purple)"
+                },
+                {
+                  "label": "pink",
+                  "value": "var(--color-pink)"
+                }
+              ]
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-title-underline",
+              "title": "Underline",
+              "default": false
+            },
+            {
+              "type": "var-select",
+              "id": "ulu-title-underline-color",
+              "title": "Underline Color",
+              "default": "",
+              "allowEmpty": true,
+              "cssVar": "--ulu-title-underline-color",
+              "options": [
+                {
+                  "label": "accent",
+                  "value": "var(--color-accent)"
+                },
+                {
+                  "label": "muted",
+                  "value": "var(--text-muted)"
+                },
+                {
+                  "label": "red",
+                  "value": "var(--color-red)"
+                },
+                {
+                  "label": "orange",
+                  "value": "var(--color-orange)"
+                },
+                {
+                  "label": "yellow",
+                  "value": "var(--color-yellow)"
+                },
+                {
+                  "label": "green",
+                  "value": "var(--color-green)"
+                },
+                {
+                  "label": "cyan",
+                  "value": "var(--color-cyan)"
+                },
+                {
+                  "label": "blue",
+                  "value": "var(--color-blue)"
+                },
+                {
+                  "label": "purple",
+                  "value": "var(--color-purple)"
+                },
+                {
+                  "label": "pink",
+                  "value": "var(--color-pink)"
+                }
+              ]
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-shimmer-title",
+              "title": "Shimmer",
+              "description": "animates the note title with a flowing accent-colour shimmer gradient",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-text-rendering-heading",
+          "title": "🔡 Text Rendering",
+          "description": "ligatures, small caps, superscript, and other OpenType features.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-tabular-nums",
+              "title": "Tabular Numbers",
+              "description": "all digits use tabular (monospace) figures across the whole note, good for data-heavy vaults",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-stylistic-alts",
+              "title": "Stylistic Alternates",
+              "description": "enables font-feature-settings: \"ss01\" for fonts that ship optical variants (Inter, Recursive, Fraunces)",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-disable-ligatures",
+              "title": "Disable Ligatures",
+              "description": "turns off common and contextual ligatures for maximum readability on dense code-heavy notes",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-lilex-features",
+              "title": "Lilex Code Features",
+              "description": "for code regions when the monospace font is Lilex: turns on coding ligatures (calt) + character variants (ss01, cv01, cv09, cv11, cv13). other mono fonts ignore variants they don't ship.",
+              "default": true
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-superscript-footnotes",
+              "title": "OpenType Superscript Footnotes",
+              "description": "uses font-feature-settings: \"sups\" for native superscript numerals on footnote links",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-measure-heading",
+          "title": "📏 Measure & Line Width",
+          "description": "how wide the text column runs.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-custom-measure",
+              "title": "Custom Line Width",
+              "description": "apply opinionated line widths: 80ch editor, 68ch reading. override below.",
+              "default": false
+            },
+            {
+              "type": "slider",
+              "id": "ulu-edit-line-width",
+              "title": "Editor Line Width",
+              "default": 80,
+              "min": 40,
+              "max": 120,
+              "step": 2,
+              "unit": "ch",
+              "cssVar": "--ulu-edit-line-width"
+            },
+            {
+              "type": "slider",
+              "id": "ulu-reading-line-width",
+              "title": "Reading Line Width",
+              "default": 68,
+              "min": 40,
+              "max": 120,
+              "step": 2,
+              "unit": "ch",
+              "cssVar": "--ulu-reading-line-width"
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-custom-body-weight",
+              "title": "Custom Body Weight",
+              "description": "enable body font weight control (uses the slider below)",
+              "default": false
+            },
+            {
+              "type": "slider",
+              "id": "ulu-body-weight",
+              "title": "Body Font Weight",
+              "default": 400,
+              "min": 300,
+              "max": 600,
+              "step": 50,
+              "cssVar": "--ulu-body-weight"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-links-heading",
+          "title": "🔗 Link Styles",
+          "description": "how internal and external links look.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-internal-link-style",
+              "title": "Internal Link Style",
+              "description": "chip (default portal pill), underline, minimal (accent only), or dot-morph (accent dot → chip on hover)",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "underline",
+                  "value": "ulu-internal-link-underline"
+                },
+                {
+                  "label": "minimal",
+                  "value": "ulu-internal-link-minimal"
+                },
+                {
+                  "label": "dot-morph",
+                  "value": "ulu-internal-link-dot-morph"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-external-link-style",
+              "title": "External Link Style",
+              "description": "underline (default), chip (dimmer tint than internal), minimal (accent only), or dot-morph",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "chip",
+                  "value": "ulu-external-link-chip"
+                },
+                {
+                  "label": "minimal",
+                  "value": "ulu-external-link-minimal"
+                },
+                {
+                  "label": "dot-morph",
+                  "value": "ulu-external-link-dot-morph"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-headings",
+          "title": "⌨️ Headings",
+          "description": "fonts, sizes, colours, underlines, markers, and folding for H1-H6.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "group",
+              "id": "ulu-heading-fonts-group",
+              "title": "🔤 Heading Fonts",
+              "description": "per-level typefaces, lc required for h2 to h6",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "var-select",
+                  "id": "ulu-header1-type",
+                  "title": "H1 Typeface",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-header1-type",
+                  "options": [
+                    {
+                      "label": "getai ࣪ ִֶָ☾.sans",
+                      "value": "\"getai\", serif"
+                    },
+                    {
+                      "label": "aspekta ࣪ ִֶָ☾.sans",
+                      "value": "\"aspekta\", sans-serif"
+                    },
+                    {
+                      "label": "inter ࣪ ִֶָ☾.sans",
+                      "value": "\"inter\", sans-serif"
+                    },
+                    {
+                      "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                      "value": "\"IBM Plex Sans\", sans-serif"
+                    },
+                    {
+                      "label": "space grotesk ࣪𐫰 grotesk",
+                      "value": "\"space grotesk\", sans-serif"
+                    },
+                    {
+                      "label": "lexend ࣪ ִֶָ☾.sans",
+                      "value": "\"lexend\", sans-serif"
+                    },
+                    {
+                      "label": "dobbintextsf-roman ࣪✦ serif",
+                      "value": "\"dobbintextsf-roman\", sans-serif"
+                    },
+                    {
+                      "label": "tiny5 ⌗ pixel",
+                      "value": "\"Tiny5\", sans-serif"
+                    },
+                    {
+                      "label": "fraunces ✦ serif",
+                      "value": "\"fraunces\", serif"
+                    },
+                    {
+                      "label": "nightingale ✦ serif",
+                      "value": "\"nightingale\", serif"
+                    },
+                    {
+                      "label": "manufacturing consent ✶ display",
+                      "value": "\"Manufacturing Consent\", serif"
+                    },
+                    {
+                      "label": "instrument  ࣪ ִֶָ☾.sans",
+                      "value": "\"instrument\", sans-serif"
+                    },
+                    {
+                      "label": "monaspace ‪‪❤︎‬ mono",
+                      "value": "\"monaspace\", monospace"
+                    },
+                    {
+                      "label": "iawriter ‪‪❤︎‬ mono",
+                      "value": "\"iawriter\", monospace"
+                    },
+                    {
+                      "label": "martian mono ‪‪❤︎‬ mono",
+                      "value": "\"martian mono\", monospace"
+                    },
+                    {
+                      "label": "departure mono ‪‪❤︎‬ mono",
+                      "value": "\"departure mono\", monospace"
+                    },
+                    {
+                      "label": "lilex ‪‪❤︎‬ mono",
+                      "value": "\"Lilex\", monospace"
+                    },
+                    {
+                      "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+                      "value": "\"Authentic Sans\", sans-serif"
+                    },
+                    {
+                      "label": "Hyperscript ✦ script",
+                      "value": "\"Hyperscript\", cursive"
+                    },
+                    {
+                      "label": "sekuya ✶ display",
+                      "value": "\"Sekuya\", sans-serif"
+                    },
+                    {
+                      "label": "bbh bartle ✶ display",
+                      "value": "\"BBH Bartle\", sans-serif"
+                    },
+                    {
+                      "label": "stack sans notch ࣪ ִֶָ☾.sans",
+                      "value": "\"Stack Sans Notch\", sans-serif"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-header2-type",
+                  "title": "H2 Typeface",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-header2-type",
+                  "options": [
+                    {
+                      "label": "getai ࣪ ִֶָ☾.sans",
+                      "value": "\"getai\", serif"
+                    },
+                    {
+                      "label": "aspekta ࣪ ִֶָ☾.sans",
+                      "value": "\"aspekta\", sans-serif"
+                    },
+                    {
+                      "label": "inter ࣪ ִֶָ☾.sans",
+                      "value": "\"inter\", sans-serif"
+                    },
+                    {
+                      "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                      "value": "\"IBM Plex Sans\", sans-serif"
+                    },
+                    {
+                      "label": "space grotesk ࣪𐫰 grotesk",
+                      "value": "\"space grotesk\", sans-serif"
+                    },
+                    {
+                      "label": "lexend ࣪ ִֶָ☾.sans",
+                      "value": "\"lexend\", sans-serif"
+                    },
+                    {
+                      "label": "dobbintextsf-roman ࣪✦ serif",
+                      "value": "\"dobbintextsf-roman\", sans-serif"
+                    },
+                    {
+                      "label": "tiny5 ⌗ pixel",
+                      "value": "\"Tiny5\", sans-serif"
+                    },
+                    {
+                      "label": "fraunces ✦ serif",
+                      "value": "\"fraunces\", serif"
+                    },
+                    {
+                      "label": "nightingale ✦ serif",
+                      "value": "\"nightingale\", serif"
+                    },
+                    {
+                      "label": "manufacturing consent ✶ display",
+                      "value": "\"Manufacturing Consent\", serif"
+                    },
+                    {
+                      "label": "instrument  ࣪ ִֶָ☾.sans",
+                      "value": "\"instrument\", sans-serif"
+                    },
+                    {
+                      "label": "monaspace ‪‪❤︎‬ mono",
+                      "value": "\"monaspace\", monospace"
+                    },
+                    {
+                      "label": "iawriter ‪‪❤︎‬ mono",
+                      "value": "\"iawriter\", monospace"
+                    },
+                    {
+                      "label": "martian mono ‪‪❤︎‬ mono",
+                      "value": "\"martian mono\", monospace"
+                    },
+                    {
+                      "label": "departure mono ‪‪❤︎‬ mono",
+                      "value": "\"departure mono\", monospace"
+                    },
+                    {
+                      "label": "lilex ‪‪❤︎‬ mono",
+                      "value": "\"Lilex\", monospace"
+                    },
+                    {
+                      "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+                      "value": "\"Authentic Sans\", sans-serif"
+                    },
+                    {
+                      "label": "Hyperscript ✦ script",
+                      "value": "\"Hyperscript\", cursive"
+                    },
+                    {
+                      "label": "sekuya ✶ display",
+                      "value": "\"Sekuya\", sans-serif"
+                    },
+                    {
+                      "label": "bbh bartle ✶ display",
+                      "value": "\"BBH Bartle\", sans-serif"
+                    },
+                    {
+                      "label": "stack sans notch ࣪ ִֶָ☾.sans",
+                      "value": "\"Stack Sans Notch\", sans-serif"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-header3-type",
+                  "title": "H3 Typeface",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-header3-type",
+                  "options": [
+                    {
+                      "label": "getai ࣪ ִֶָ☾.sans",
+                      "value": "\"getai\", serif"
+                    },
+                    {
+                      "label": "aspekta ࣪ ִֶָ☾.sans",
+                      "value": "\"aspekta\", sans-serif"
+                    },
+                    {
+                      "label": "inter ࣪ ִֶָ☾.sans",
+                      "value": "\"inter\", sans-serif"
+                    },
+                    {
+                      "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                      "value": "\"IBM Plex Sans\", sans-serif"
+                    },
+                    {
+                      "label": "space grotesk ࣪𐫰 grotesk",
+                      "value": "\"space grotesk\", sans-serif"
+                    },
+                    {
+                      "label": "lexend ࣪ ִֶָ☾.sans",
+                      "value": "\"lexend\", sans-serif"
+                    },
+                    {
+                      "label": "dobbintextsf-roman ࣪✦ serif",
+                      "value": "\"dobbintextsf-roman\", sans-serif"
+                    },
+                    {
+                      "label": "tiny5 ⌗ pixel",
+                      "value": "\"Tiny5\", sans-serif"
+                    },
+                    {
+                      "label": "fraunces ✦ serif",
+                      "value": "\"fraunces\", serif"
+                    },
+                    {
+                      "label": "nightingale ✦ serif",
+                      "value": "\"nightingale\", serif"
+                    },
+                    {
+                      "label": "manufacturing consent ✶ display",
+                      "value": "\"Manufacturing Consent\", serif"
+                    },
+                    {
+                      "label": "instrument  ࣪ ִֶָ☾.sans",
+                      "value": "\"instrument\", sans-serif"
+                    },
+                    {
+                      "label": "monaspace ‪‪❤︎‬ mono",
+                      "value": "\"monaspace\", monospace"
+                    },
+                    {
+                      "label": "iawriter ‪‪❤︎‬ mono",
+                      "value": "\"iawriter\", monospace"
+                    },
+                    {
+                      "label": "martian mono ‪‪❤︎‬ mono",
+                      "value": "\"martian mono\", monospace"
+                    },
+                    {
+                      "label": "departure mono ‪‪❤︎‬ mono",
+                      "value": "\"departure mono\", monospace"
+                    },
+                    {
+                      "label": "lilex ‪‪❤︎‬ mono",
+                      "value": "\"Lilex\", monospace"
+                    },
+                    {
+                      "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+                      "value": "\"Authentic Sans\", sans-serif"
+                    },
+                    {
+                      "label": "Hyperscript ✦ script",
+                      "value": "\"Hyperscript\", cursive"
+                    },
+                    {
+                      "label": "sekuya ✶ display",
+                      "value": "\"Sekuya\", sans-serif"
+                    },
+                    {
+                      "label": "bbh bartle ✶ display",
+                      "value": "\"BBH Bartle\", sans-serif"
+                    },
+                    {
+                      "label": "stack sans notch ࣪ ִֶָ☾.sans",
+                      "value": "\"Stack Sans Notch\", sans-serif"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-header4-type",
+                  "title": "H4 Typeface",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-header4-type",
+                  "options": [
+                    {
+                      "label": "getai ࣪ ִֶָ☾.sans",
+                      "value": "\"getai\", serif"
+                    },
+                    {
+                      "label": "aspekta ࣪ ִֶָ☾.sans",
+                      "value": "\"aspekta\", sans-serif"
+                    },
+                    {
+                      "label": "inter ࣪ ִֶָ☾.sans",
+                      "value": "\"inter\", sans-serif"
+                    },
+                    {
+                      "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                      "value": "\"IBM Plex Sans\", sans-serif"
+                    },
+                    {
+                      "label": "space grotesk ࣪𐫰 grotesk",
+                      "value": "\"space grotesk\", sans-serif"
+                    },
+                    {
+                      "label": "lexend ࣪ ִֶָ☾.sans",
+                      "value": "\"lexend\", sans-serif"
+                    },
+                    {
+                      "label": "dobbintextsf-roman ࣪✦ serif",
+                      "value": "\"dobbintextsf-roman\", sans-serif"
+                    },
+                    {
+                      "label": "tiny5 ⌗ pixel",
+                      "value": "\"Tiny5\", sans-serif"
+                    },
+                    {
+                      "label": "fraunces ✦ serif",
+                      "value": "\"fraunces\", serif"
+                    },
+                    {
+                      "label": "nightingale ✦ serif",
+                      "value": "\"nightingale\", serif"
+                    },
+                    {
+                      "label": "manufacturing consent ✶ display",
+                      "value": "\"Manufacturing Consent\", serif"
+                    },
+                    {
+                      "label": "instrument  ࣪ ִֶָ☾.sans",
+                      "value": "\"instrument\", sans-serif"
+                    },
+                    {
+                      "label": "monaspace ‪‪❤︎‬ mono",
+                      "value": "\"monaspace\", monospace"
+                    },
+                    {
+                      "label": "iawriter ‪‪❤︎‬ mono",
+                      "value": "\"iawriter\", monospace"
+                    },
+                    {
+                      "label": "martian mono ‪‪❤︎‬ mono",
+                      "value": "\"martian mono\", monospace"
+                    },
+                    {
+                      "label": "departure mono ‪‪❤︎‬ mono",
+                      "value": "\"departure mono\", monospace"
+                    },
+                    {
+                      "label": "lilex ‪‪❤︎‬ mono",
+                      "value": "\"Lilex\", monospace"
+                    },
+                    {
+                      "label": "Authentic Sans ࣪ ִֶָ☾.sans",
+                      "value": "\"Authentic Sans\", sans-serif"
+                    },
+                    {
+                      "label": "Hyperscript ✦ script",
+                      "value": "\"Hyperscript\", cursive"
+                    },
+                    {
+                      "label": "sekuya ✶ display",
+                      "value": "\"Sekuya\", sans-serif"
+                    },
+                    {
+                      "label": "bbh bartle ✶ display",
+                      "value": "\"BBH Bartle\", sans-serif"
+                    },
+                    {
+                      "label": "stack sans notch ࣪ ִֶָ☾.sans",
+                      "value": "\"Stack Sans Notch\", sans-serif"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-header5-type",
+                  "title": "H5 Typeface",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-header5-type",
+                  "options": [
+                    {
+                      "label": "getai ࣪ ִֶָ☾.sans",
+                      "value": "\"getai\", serif"
+                    },
+                    {
+                      "label": "aspekta ࣪ ִֶָ☾.sans",
+                      "value": "\"aspekta\", sans-serif"
+                    },
+                    {
+                      "label": "inter ࣪ ִֶָ☾.sans",
+                      "value": "\"inter\", sans-serif"
+                    },
+                    {
+                      "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                      "value": "\"IBM Plex Sans\", sans-serif"
+                    },
+                    {
+                      "label": "space grotesk ࣪𐫰 grotesk",
+                      "value": "\"space grotesk\", sans-serif"
+                    },
+                    {
+                      "label": "lexend ࣪ ִֶָ☾.sans",
+                      "value": "\"lexend\", sans-serif"
+                    },
+                    {
+                      "label": "dobbintextsf-roman ࣪✦ serif",
+                      "value": "\"dobbintextsf-roman\", sans-serif"
+                    },
+                    {
+                      "label": "tiny5 ⌗ pixel",
+                      "value": "\"Tiny5\", sans-serif"
+                    },
+                    {
+                      "label": "fraunces ✦ serif",
+                      "value": "\"fraunces\", serif"
+                    },
+                    {
+                      "label": "nightingale ✦ serif",
+                      "value": "\"nightingale\", serif"
+                    },
+                    {
+                      "label": "manufacturing consent ✶ display",
+                      "value": "\"Manufacturing Consent\", serif"
+                    },
+                    {
+                      "label": "instrument  ࣪ ִֶָ☾.sans",
+                      "value": "\"instrument\", sans-serif"
+                    },
+                    {
+                      "label": "monaspace ‪‪❤︎‬ mono",
+                      "value": "\"monaspace\", monospace"
+                    },
+                    {
+                      "label": "iawriter ‪‪❤︎‬ mono",
+                      "value": "\"iawriter\", monospace"
+                    },
+                    {
+                      "label": "martian mono ‪‪❤︎‬ mono",
+                      "value": "\"martian mono\", monospace"
+                    },
+                    {
+                      "label": "departure mono ‪‪❤︎‬ mono",
+                      "value": "\"departure mono\", monospace"
+                    },
+                    {
+                      "label": "lilex ‪‪❤︎‬ mono",
+                      "value": "\"Lilex\", monospace"
+                    },
+                    {
+                      "label": "sekuya ✶ display",
+                      "value": "\"Sekuya\", sans-serif"
+                    },
+                    {
+                      "label": "bbh bartle ✶ display",
+                      "value": "\"BBH Bartle\", sans-serif"
+                    },
+                    {
+                      "label": "stack sans notch ࣪ ִֶָ☾.sans",
+                      "value": "\"Stack Sans Notch\", sans-serif"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-header6-type",
+                  "title": "H6 Typeface",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-header6-type",
+                  "options": [
+                    {
+                      "label": "getai ࣪ ִֶָ☾.sans",
+                      "value": "\"getai\", serif"
+                    },
+                    {
+                      "label": "aspekta ࣪ ִֶָ☾.sans",
+                      "value": "\"aspekta\", sans-serif"
+                    },
+                    {
+                      "label": "inter ࣪ ִֶָ☾.sans",
+                      "value": "\"inter\", sans-serif"
+                    },
+                    {
+                      "label": "ibm plex sans ࣪ ִֶָ☾.sans",
+                      "value": "\"IBM Plex Sans\", sans-serif"
+                    },
+                    {
+                      "label": "space grotesk ࣪𐫰 grotesk",
+                      "value": "\"space grotesk\", sans-serif"
+                    },
+                    {
+                      "label": "lexend ࣪ ִֶָ☾.sans",
+                      "value": "\"lexend\", sans-serif"
+                    },
+                    {
+                      "label": "dobbintextsf-roman ࣪✦ serif",
+                      "value": "\"dobbintextsf-roman\", sans-serif"
+                    },
+                    {
+                      "label": "tiny5 ⌗ pixel",
+                      "value": "\"Tiny5\", sans-serif"
+                    },
+                    {
+                      "label": "fraunces ✦ serif",
+                      "value": "\"fraunces\", serif"
+                    },
+                    {
+                      "label": "nightingale ✦ serif",
+                      "value": "\"nightingale\", serif"
+                    },
+                    {
+                      "label": "manufacturing consent ✶ display",
+                      "value": "\"Manufacturing Consent\", serif"
+                    },
+                    {
+                      "label": "instrument  ࣪ ִֶָ☾.sans",
+                      "value": "\"instrument\", sans-serif"
+                    },
+                    {
+                      "label": "monaspace ‪‪❤︎‬ mono",
+                      "value": "\"monaspace\", monospace"
+                    },
+                    {
+                      "label": "iawriter ‪‪❤︎‬ mono",
+                      "value": "\"iawriter\", monospace"
+                    },
+                    {
+                      "label": "martian mono ‪‪❤︎‬ mono",
+                      "value": "\"martian mono\", monospace"
+                    },
+                    {
+                      "label": "departure mono ‪‪❤︎‬ mono",
+                      "value": "\"departure mono\", monospace"
+                    },
+                    {
+                      "label": "lilex ‪‪❤︎‬ mono",
+                      "value": "\"Lilex\", monospace"
+                    },
+                    {
+                      "label": "sekuya ✶ display",
+                      "value": "\"Sekuya\", sans-serif"
+                    },
+                    {
+                      "label": "bbh bartle ✶ display",
+                      "value": "\"BBH Bartle\", sans-serif"
+                    },
+                    {
+                      "label": "stack sans notch ࣪ ִֶָ☾.sans",
+                      "value": "\"Stack Sans Notch\", sans-serif"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "ulu-heading-size-group",
+              "title": "📐 Size & Weight",
+              "description": "size preset, plus per-level sizes and font weights",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "class-select",
+                  "id": "ulu-header-size",
+                  "title": "Header Size Preset",
+                  "description": "size scale presets: opinionated uses a major-third scale, descending uses a minor-third, flat makes all headers the same size",
+                  "default": "",
+                  "allowEmpty": true,
+                  "options": [
+                    {
+                      "label": "opinionated",
+                      "value": "ulu-headings-opn"
+                    },
+                    {
+                      "label": "descending",
+                      "value": "ulu-headings-dec"
+                    },
+                    {
+                      "label": "flat",
+                      "value": "ulu-headings-flt"
+                    }
+                  ]
+                },
+                {
+                  "type": "number",
+                  "id": "h1-size",
+                  "title": "H1 Size (em)",
+                  "description": "custom size in em units; active preset overrides this; clear the preset above to use custom sizes",
+                  "default": 2,
+                  "unit": "em",
+                  "cssVar": "--h1-size"
+                },
+                {
+                  "type": "number",
+                  "id": "h2-size",
+                  "title": "H2 Size (em)",
+                  "default": 1.6,
+                  "unit": "em",
+                  "cssVar": "--h2-size"
+                },
+                {
+                  "type": "number",
+                  "id": "h3-size",
+                  "title": "H3 Size (em)",
+                  "default": 1.37,
+                  "unit": "em",
+                  "cssVar": "--h3-size"
+                },
+                {
+                  "type": "number",
+                  "id": "h4-size",
+                  "title": "H4 Size (em)",
+                  "default": 1.25,
+                  "unit": "em",
+                  "cssVar": "--h4-size"
+                },
+                {
+                  "type": "number",
+                  "id": "h5-size",
+                  "title": "H5 Size (em)",
+                  "default": 1.12,
+                  "unit": "em",
+                  "cssVar": "--h5-size"
+                },
+                {
+                  "type": "number",
+                  "id": "h6-size",
+                  "title": "H6 Size (em)",
+                  "default": 1,
+                  "unit": "em",
+                  "cssVar": "--h6-size"
+                },
+                {
+                  "type": "slider",
+                  "id": "ulu-h1-weight",
+                  "title": "H1 Weight",
+                  "description": "nightingale looks best at weight >500",
+                  "default": 900,
+                  "min": 100,
+                  "max": 900,
+                  "step": 25,
+                  "cssVar": "--ulu-h1-weight"
+                },
+                {
+                  "type": "slider",
+                  "id": "ulu-h2-weight",
+                  "title": "H2 Weight",
+                  "default": 800,
+                  "min": 100,
+                  "max": 900,
+                  "step": 25,
+                  "cssVar": "--ulu-h2-weight"
+                },
+                {
+                  "type": "slider",
+                  "id": "ulu-h3-weight",
+                  "title": "H3 Weight",
+                  "default": 700,
+                  "min": 100,
+                  "max": 900,
+                  "step": 25,
+                  "cssVar": "--ulu-h3-weight"
+                },
+                {
+                  "type": "slider",
+                  "id": "ulu-h4-weight",
+                  "title": "H4 Weight",
+                  "default": 700,
+                  "min": 100,
+                  "max": 900,
+                  "step": 25,
+                  "cssVar": "--ulu-h4-weight"
+                },
+                {
+                  "type": "slider",
+                  "id": "ulu-h5-weight",
+                  "title": "H5 Weight",
+                  "default": 600,
+                  "min": 100,
+                  "max": 900,
+                  "step": 25,
+                  "cssVar": "--ulu-h5-weight"
+                },
+                {
+                  "type": "slider",
+                  "id": "ulu-h6-weight",
+                  "title": "H6 Weight",
+                  "default": 600,
+                  "min": 100,
+                  "max": 900,
+                  "step": 25,
+                  "cssVar": "--ulu-h6-weight"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "ulu-heading-colors-group",
+              "title": "🎨 Colors",
+              "description": "rainbow headers and per-level text color",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "toggle",
+                  "id": "ulu-colorfo-headings",
+                  "title": "Rainbow Headers",
+                  "default": false
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h1-text-color",
+                  "title": "H1 Text Color",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-h1-text-color",
+                  "options": [
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h2-text-color",
+                  "title": "H2 Text Color",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-h2-text-color",
+                  "options": [
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h3-text-color",
+                  "title": "H3 Text Color",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-h3-text-color",
+                  "options": [
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h4-text-color",
+                  "title": "H4 Text Color",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-h4-text-color",
+                  "options": [
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h5-text-color",
+                  "title": "H5 Text Color",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-h5-text-color",
+                  "options": [
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h6-text-color",
+                  "title": "H6 Text Color",
+                  "default": "",
+                  "allowEmpty": true,
+                  "cssVar": "--ulu-h6-text-color",
+                  "options": [
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "ulu-heading-underlines-group",
+              "title": "〰️ Underlines",
+              "description": "global and per-level underline color, plus per-level on/off",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "var-select",
+                  "id": "ulu-header-line-accent",
+                  "title": "Header Underline Color (Global)",
+                  "default": "var(--background-modifier-border)",
+                  "cssVar": "--ulu-header-line-accent",
+                  "options": [
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    }
+                  ]
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-no-h2-line",
+                  "title": "Disable H2 Underline",
+                  "description": "removes the gradient underline from h2 headings",
+                  "default": false
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h1-line-color",
+                  "title": "H1 Underline Color",
+                  "default": "var(--ulu-header-line-accent, var(--background-modifier-border))",
+                  "cssVar": "--ulu-h1-line-color",
+                  "options": [
+                    {
+                      "label": "follow global underline",
+                      "value": "var(--ulu-header-line-accent, var(--background-modifier-border))"
+                    },
+                    {
+                      "label": "match header text color",
+                      "value": "var(--ulu-h1-text-color, var(--ulu-header-line-accent, var(--background-modifier-border)))"
+                    },
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h2-line-color",
+                  "title": "H2 Underline Color",
+                  "default": "var(--ulu-header-line-accent, var(--background-modifier-border))",
+                  "cssVar": "--ulu-h2-line-color",
+                  "options": [
+                    {
+                      "label": "follow global underline",
+                      "value": "var(--ulu-header-line-accent, var(--background-modifier-border))"
+                    },
+                    {
+                      "label": "match header text color",
+                      "value": "var(--ulu-h2-text-color, var(--ulu-header-line-accent, var(--background-modifier-border)))"
+                    },
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h3-line-color",
+                  "title": "H3 Underline Color",
+                  "default": "var(--ulu-header-line-accent, var(--background-modifier-border))",
+                  "cssVar": "--ulu-h3-line-color",
+                  "options": [
+                    {
+                      "label": "follow global underline",
+                      "value": "var(--ulu-header-line-accent, var(--background-modifier-border))"
+                    },
+                    {
+                      "label": "match header text color",
+                      "value": "var(--ulu-h3-text-color, var(--ulu-header-line-accent, var(--background-modifier-border)))"
+                    },
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h4-line-color",
+                  "title": "H4 Underline Color",
+                  "default": "var(--ulu-header-line-accent, var(--background-modifier-border))",
+                  "cssVar": "--ulu-h4-line-color",
+                  "options": [
+                    {
+                      "label": "follow global underline",
+                      "value": "var(--ulu-header-line-accent, var(--background-modifier-border))"
+                    },
+                    {
+                      "label": "match header text color",
+                      "value": "var(--ulu-h4-text-color, var(--ulu-header-line-accent, var(--background-modifier-border)))"
+                    },
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h5-line-color",
+                  "title": "H5 Underline Color",
+                  "default": "var(--ulu-header-line-accent, var(--background-modifier-border))",
+                  "cssVar": "--ulu-h5-line-color",
+                  "options": [
+                    {
+                      "label": "follow global underline",
+                      "value": "var(--ulu-header-line-accent, var(--background-modifier-border))"
+                    },
+                    {
+                      "label": "match header text color",
+                      "value": "var(--ulu-h5-text-color, var(--ulu-header-line-accent, var(--background-modifier-border)))"
+                    },
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "var-select",
+                  "id": "ulu-h6-line-color",
+                  "title": "H6 Underline Color",
+                  "default": "var(--ulu-header-line-accent, var(--background-modifier-border))",
+                  "cssVar": "--ulu-h6-line-color",
+                  "options": [
+                    {
+                      "label": "follow global underline",
+                      "value": "var(--ulu-header-line-accent, var(--background-modifier-border))"
+                    },
+                    {
+                      "label": "match header text color",
+                      "value": "var(--ulu-h6-text-color, var(--ulu-header-line-accent, var(--background-modifier-border)))"
+                    },
+                    {
+                      "label": "monochrome",
+                      "value": "var(--background-modifier-border)"
+                    },
+                    {
+                      "label": "accent",
+                      "value": "var(--color-accent)"
+                    },
+                    {
+                      "label": "red",
+                      "value": "var(--color-red)"
+                    },
+                    {
+                      "label": "orange",
+                      "value": "var(--color-orange)"
+                    },
+                    {
+                      "label": "yellow",
+                      "value": "var(--color-yellow)"
+                    },
+                    {
+                      "label": "green",
+                      "value": "var(--color-green)"
+                    },
+                    {
+                      "label": "cyan",
+                      "value": "var(--color-cyan)"
+                    },
+                    {
+                      "label": "blue",
+                      "value": "var(--color-blue)"
+                    },
+                    {
+                      "label": "purple",
+                      "value": "var(--color-purple)"
+                    },
+                    {
+                      "label": "pink",
+                      "value": "var(--color-pink)"
+                    }
+                  ]
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-header-line-h1",
+                  "title": "H1 Underline",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-header-line-h2",
+                  "title": "H2 Underline",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-header-line-h3",
+                  "title": "H3 Underline",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-header-line-h4",
+                  "title": "H4 Underline",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-header-line-h5",
+                  "title": "H5 Underline",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-header-line-h6",
+                  "title": "H6 Underline",
+                  "default": false
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "ulu-heading-markers-group",
+              "title": "🔖 Heading Markers",
+              "description": "leading glyph before H1, borrowed from a subtheme",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "class-select",
+                  "id": "ulu-header-icon",
+                  "title": "Leading Header Icon",
+                  "description": "adds a leading glyph before H1 headings, borrowed from an experimental subtheme. leave empty for none. anthos = flower, styx = star sigil, tau = hazard band",
+                  "default": "",
+                  "allowEmpty": true,
+                  "options": [
+                    {
+                      "label": "✿ anthos (flower)",
+                      "value": "ulu-hicon-anthos"
+                    },
+                    {
+                      "label": "✟ styx (star sigil)",
+                      "value": "ulu-hicon-styx"
+                    },
+                    {
+                      "label": "τ tau (hazard band)",
+                      "value": "ulu-hicon-tau"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "ulu-heading-fold-group",
+              "title": "📂 Fold & Wrap",
+              "description": "fold indicator style and the text-wrap escape hatch",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "toggle",
+                  "id": "ulu-teardrop-fold",
+                  "title": "Teardrop Fold Indicator",
+                  "description": "enables the animated water-drop / circle fold indicator for headings; teardrop hangs point-up (open), morphs to a circle on collapse with physics animation.",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-fold-hover",
+                  "title": "Fold Indicator: Hover to Reveal",
+                  "description": "hide the fold indicator until you hover over a heading; works with both teardrop and the native obsidian indicator",
+                  "default": false
+                },
+                {
+                  "type": "toggle",
+                  "id": "ulu-no-balance-headings",
+                  "title": "Disable Balanced Heading Wrap",
+                  "description": "turns off text-wrap balance on headings",
+                  "default": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-interface",
+      "title": "🅸 Interface & Style",
+      "description": "Window style: tabs, sidebar, status bar, and workspace.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "group",
+          "id": "ulu-iface-tabs",
+          "title": "🗂️ Tabs & Title Bar",
+          "description": "tab pills, active-tab style, and the floating view header",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-float-header",
+              "title": "Floating View Header",
+              "description": "the back/breadcrumb/action bar row floats over the note card instead of sitting above it, giving the note more vertical space",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-float-header-peek",
+              "title": "Floating Header // Hover to Reveal",
+              "description": "when floating header is enabled, hides the bar until you hover over the note card (requires floating view header to be on)",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-no-tab-pills",
+              "title": "Hide Tab Control Pill Borders",
+              "description": "removes borders and background from the new-tab, tab-list, and sidebar toggle buttons at the edge of the tab bar",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-tab-strip",
+              "title": "Stripped-Down Tab Bar",
+              "description": "removes the background, border, and shadow from the main tab bar and flattens the active tab",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-iface-sidebar",
+          "title": "🌳 Sidebar & File Tree",
+          "description": "folder icons and the file-tree collapse chevrons",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-folder-icon",
+              "title": "Folder Icons",
+              "description": "replaces the folder chevron with a custom folder glyph borrowed from one of the experimental subthemes. leave empty to keep the default chevron. when an experimental subtheme is active its own folder icons defer to your pick here",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "✿ anthos (sprout / flower)",
+                  "value": "ulu-folder-anthos"
+                },
+                {
+                  "label": "τ tau (eye)",
+                  "value": "ulu-folder-tau"
+                },
+                {
+                  "label": "☁ nephele (rounded folder)",
+                  "value": "ulu-folder-nephele"
+                },
+                {
+                  "label": "✟ styx (star sigils)",
+                  "value": "ulu-folder-styx"
+                },
+                {
+                  "label": "▦ protos (1-bit folder)",
+                  "value": "ulu-folder-protos"
+                }
+              ]
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-glass-chev",
+              "title": "Glass Chevrons",
+              "description": "replaces the default dot indicators with glass bubble chevrons",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-iface-status",
+          "title": "📍 Status Bar",
+          "description": "the bottom status bar: island pills, blur, and hover-to-reveal",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-status-pills",
+              "title": "Island Pill Status Bar",
+              "description": "separates statusbar items into pills",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-status-pills-blur",
+              "title": "Blur Status Bar Pills",
+              "description": "blurs the background of the statusbar pill option",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-peek-statusbar",
+              "title": "Status Bar: Hover to Reveal",
+              "description": "hides the status bar until you hover near the bottom of the window",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-iface-window",
+          "title": "🪟 Window & Workspace",
+          "description": "global style: card style, radius, backgrounds, overlay blur, and motion",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-subtheme-selection",
+              "title": "Flat Mode",
+              "description": "removes glass, shadows, and borders for a flat minimal look",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "flat (no glass, shadows, or borders)",
+                  "value": "ulu-flat"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-border-style",
+              "title": "Content Card Border Style",
+              "description": "border treatment for the main editor card: glass (default: solid background with inset bevel + ring like callout cards), asymmetric (the original gradient with two corners highlighted), or full border (symmetric highlight)",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "asymmetric (original)",
+                  "value": "ulu-asymmetric-border"
+                },
+                {
+                  "label": "full border",
+                  "value": "ulu-full-border"
+                }
+              ]
+            },
+            {
+              "type": "var-select",
+              "id": "ulu-radius",
+              "title": "Border Radius",
+              "default": "var(--radius-xl)",
+              "cssVar": "--ulu-radius",
+              "options": [
+                {
+                  "label": "none",
+                  "value": "0"
+                },
+                {
+                  "label": "small",
+                  "value": "var(--radius-s)"
+                },
+                {
+                  "label": "medium",
+                  "value": "var(--radius-m)"
+                },
+                {
+                  "label": "large",
+                  "value": "var(--radius-l)"
+                },
+                {
+                  "label": "xlarge",
+                  "value": "var(--radius-xl)"
+                }
+              ]
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-grad",
+              "title": "Halo Gradient",
+              "description": "enable a wip background animation inspired by soft grainy gradients and angel numbers",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-we1",
+              "title": "New-Tab Empty State (Gradient + Lobster)",
+              "description": "applies the \"working edits\" style empty state when no tabs are open",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-enable-custom-bg",
+              "title": "Enable Custom Workspace Background",
+              "description": "works on any subtheme. for a local image or base64: drop ultra-lobster-bg.css (from theme snippets/) + your image into your obsidian snippets folder and enable the snippet. for a web url: paste below. both can be active; url field takes priority. (the Lunar Calcium plugin adds a vault-file/URL picker for this.)",
+              "default": false
+            },
+            {
+              "type": "text",
+              "id": "ulu-custom-bg-url",
+              "title": "Custom Background Web URL",
+              "description": "takes priority over the snippet. paste a direct image link wrapped in url(\"https://...\"). leave as 'none' to use the snippet instead.",
+              "default": "none",
+              "cssVar": "--ulu-custom-bg-url"
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-no-motion",
+              "title": "Reduce Motion",
+              "description": "disables all animations and transitions, for accessibility or preference. the OS-level prefers-reduced-motion setting is also respected automatically without this toggle",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-blur-modal",
+              "title": "Blur Settings Pane Background",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-blur-prompt",
+              "title": "Blur Command Palette Background",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-blur-tooltip",
+              "title": "Blur Tooltip Background",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-blur-menu",
+              "title": "Blur Popup Menu",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-no-blur-mobile",
+              "title": "Disable Mobile Nav Blur",
+              "default": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-editor-reading",
+      "title": "🅴 Editor & Reading",
+      "description": "Editing & reading surfaces: active line, lists, callouts, properties, marks.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "group",
+          "id": "ulu-active-line-group",
+          "title": "✏️ Active Line",
+          "description": "active-line background, indicator, and popup",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-aline-bg",
+              "title": "Active Line Background",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "Gradient",
+                  "value": "ulu-aline-bg-gradient"
+                },
+                {
+                  "label": "Solid",
+                  "value": "ulu-aline-bg-solid"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-aline-ind",
+              "title": "Active Line Indicator",
+              "description": "Frame and Frame + Pluses use the HR Center Glyph (in the HR section) for their middle character",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "Bar",
+                  "value": "ulu-aline-bar"
+                },
+                {
+                  "label": "Arrow",
+                  "value": "ulu-aline-arrow"
+                },
+                {
+                  "label": "Arrows (top + bottom)",
+                  "value": "ulu-aline-arrows"
+                },
+                {
+                  "label": "Faded Bar + Dots",
+                  "value": "ulu-aline-bar-dots"
+                },
+                {
+                  "label": "Dashed + Dots",
+                  "value": "ulu-aline-dashed"
+                },
+                {
+                  "label": "Corner +",
+                  "value": "ulu-aline-corners"
+                },
+                {
+                  "label": "Frame",
+                  "value": "ulu-aline-frame"
+                },
+                {
+                  "label": "Frame + Pluses",
+                  "value": "ulu-aline-frame-plus"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-aline-color",
+              "title": "Indicator Color",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "Text Normal",
+                  "value": "ulu-aline-color-text"
+                },
+                {
+                  "label": "Custom",
+                  "value": "ulu-aline-color-custom"
+                }
+              ]
+            },
+            {
+              "type": "color",
+              "id": "ulu-aline-custom-color",
+              "title": "Custom Indicator Color",
+              "default": "#7c8ee8",
+              "format": "hex",
+              "cssVar": "--ulu-aline-custom-color"
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-active-line-pop",
+              "title": "Active Line Popup Animation",
+              "description": "adds a popup scale animation when switching lines (works with any active line highlight style)",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-lists-group",
+          "title": "📋 Lists",
+          "description": "bullet indicator and indent guides",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-list-bullet",
+              "title": "List Bullet Indicator",
+              "description": "shape of the unordered-list bullet. leave empty for the default glass pearl; other options borrow the protos square, styx tri-star, and anthos sprout (closed) / flower (open) folder glyphs",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "▦ square (protos)",
+                  "value": "ulu-bullet-square"
+                },
+                {
+                  "label": "✦ tri-star (styx)",
+                  "value": "ulu-bullet-tristar"
+                },
+                {
+                  "label": "🌱 sprout (anthos closed)",
+                  "value": "ulu-bullet-sprout"
+                },
+                {
+                  "label": "🌸 flower (anthos open)",
+                  "value": "ulu-bullet-flower"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-indent-guide-color",
+              "title": "List Indent Guide Color",
+              "description": "color of the vertical guide lines beside nested lists; applies in both reading and editing modes (default is theme-standard subtle border)",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "accent",
+                  "value": "ulu-indent-accent"
+                },
+                {
+                  "label": "high contrast",
+                  "value": "ulu-indent-contrast"
+                }
+              ]
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-indent-dashed",
+              "title": "Indent Guide: Dashed",
+              "description": "switch the indent guide line from solid to dashed in both reading and editing modes",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-callouts-code-group",
+          "title": "💬 Callouts & Code",
+          "description": "callout and code block styling",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-callouts",
+              "title": "Callout Style",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-callouts"
+                },
+                {
+                  "label": "notyoutube",
+                  "value": "ulu-nt-callouts"
+                },
+                {
+                  "label": "brutal",
+                  "value": "ulu-brutal-callouts"
+                },
+                {
+                  "label": "soft",
+                  "value": "ulu-soft-callouts"
+                },
+                {
+                  "label": "working edits (gradient callouts)",
+                  "value": "ulu-we1-callouts"
+                },
+                {
+                  "label": "line",
+                  "value": "ulu-line-callouts"
+                },
+                {
+                  "label": "styx (etched ink)",
+                  "value": "ulu-styx-callouts"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-codeblocks",
+              "title": "Codeblock Style",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-codeblock"
+                },
+                {
+                  "label": "notosx",
+                  "value": "ulu-ntosx-codeblock"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-properties-group",
+          "title": "🏷️ Properties",
+          "description": "properties card, key style, and tags",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-prop-card",
+              "title": "Properties Card",
+              "description": "wraps the frontmatter properties block in a glass slab with inset value wells (off by default for a minimal layout)",
+              "default": false
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-prop-style",
+              "title": "Properties Key Style",
+              "description": "key label treatment: blueprint is the minimal default (floating accent bar on hover), margin note adds a › pointer, underline reveal animates an accent line from center",
+              "default": "ulu-prop-blueprint",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "Blueprint (floating bar)",
+                  "value": "ulu-prop-blueprint"
+                },
+                {
+                  "label": "Margin Note (› pointer)",
+                  "value": "ulu-prop-margin"
+                },
+                {
+                  "label": "Underline Reveal (animated accent line)",
+                  "value": "ulu-prop-underline"
+                }
+              ]
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-title-above-props",
+              "title": "Inline Title Above Properties",
+              "description": "places the inline title above the properties block (Obsidian's native order). off by default, so the title sits below properties",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-neon-tags",
+              "title": "Neon Glass Property Tags",
+              "description": "restores the glowing accent-coloured pill style for multi-select property tags",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-inline-property-tags",
+              "title": "Inline Property Tags",
+              "description": "makes property tags look like standard inline wireframe tags",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-marks-group",
+          "title": "🖍️ Highlights & Marks",
+          "description": "highlight color and rough marker",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-rough-highlight",
+              "title": "Rough Marker Highlight",
+              "description": "gives ==highlighted== text an organic hand-drawn marker edge via SVG displacement",
+              "default": false
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-highlight-color",
+              "title": "Highlight Color",
+              "description": "color of ==highlighted== text; also applies to the rough marker when enabled",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "⬡ accent",
+                  "value": "ulu-highlight-accent"
+                },
+                {
+                  "label": "🌿 sage",
+                  "value": "ulu-highlight-sage"
+                },
+                {
+                  "label": "🌸 rose",
+                  "value": "ulu-highlight-rose"
+                },
+                {
+                  "label": "🩵 sky",
+                  "value": "ulu-highlight-sky"
+                },
+                {
+                  "label": "🪻 lavender",
+                  "value": "ulu-highlight-lavender"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-dividers-group",
+          "title": "➖ Dividers",
+          "description": "horizontal-rule glyph and color",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-hr-glyph",
+              "title": "HR Center Glyph",
+              "description": "preset glyphs, when one is selected it overrides the custom field below (lc required)",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "✦ star",
+                  "value": "ulu-hr-glyph-star"
+                },
+                {
+                  "label": "⬡ hex",
+                  "value": "ulu-hr-glyph-hex"
+                },
+                {
+                  "label": "⊕ crosshair",
+                  "value": "ulu-hr-glyph-cross"
+                },
+                {
+                  "label": "⟡ diamond",
+                  "value": "ulu-hr-glyph-diamond"
+                },
+                {
+                  "label": "⋆˙⟡ sparkle",
+                  "value": "ulu-hr-glyph-sparkle"
+                },
+                {
+                  "label": "⩇⩇:⩇⩇ clock",
+                  "value": "ulu-hr-glyph-clock"
+                },
+                {
+                  "label": "⚠︎ warning",
+                  "value": "ulu-hr-glyph-warn"
+                },
+                {
+                  "label": "⫘⫘⫘⫘⫘⫘ bars",
+                  "value": "ulu-hr-glyph-bars"
+                },
+                {
+                  "label": "𝄃𝄂𝄂𝄀𝄁𝄃𝄂𝄂𝄃 staff",
+                  "value": "ulu-hr-glyph-staff"
+                },
+                {
+                  "label": "⿻ mesh",
+                  "value": "ulu-hr-glyph-mesh"
+                },
+                {
+                  "label": "天で何かが待っている",
+                  "value": "ulu-hr-glyph-tenshi"
+                },
+                {
+                  "label": "plain (no glyph)",
+                  "value": "ulu-hr-plain"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "ulu-hr-custom-char",
+              "title": "Custom Glyph: type with quotes, e.g. \"x\" or \"✦\"",
+              "description": "the quotes are required CSS syntax: \"x\" renders x, bare x renders nothing. leave the preset above empty for this to take effect. for multi-character glyphs used with the active-line Frame + Pluses indicator, use \\A0 (CSS non-breaking space) instead of a regular space, e.g. \"⌞\\A0⌝\"",
+              "default": "\"⌞\\A0⌝\"",
+              "cssVar": "--ulu-hr-custom-char"
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-hr-color",
+              "title": "HR Color",
+              "description": "default is a slightly bumped contrast from the theme base",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "accent",
+                  "value": "ulu-hr-accent"
+                },
+                {
+                  "label": "high contrast",
+                  "value": "ulu-hr-contrast"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-canvas",
+      "title": "🅲 Canvas",
+      "description": "Canvas card styling and per-colour node looks.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "group",
+          "id": "ulu-canvas-cards",
+          "title": "🃏 Cards",
+          "description": "canvas card text alignment and blur",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-canvas-center",
+              "title": "Center Canvas Text",
+              "description": "center align text in canvas cards",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-no-blur-canvas",
+              "title": "Disable Canvas Blur",
+              "description": "removes the backdrop-filter blur effect from canvas nodes",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-canvas-colors",
+          "title": "🎨 Node Card Colors",
+          "description": "per-accent-color canvas card styles and their borders",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "class-select",
+              "id": "ulu-fancy-canvas-1",
+              "title": "Canvas Style: Red",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gradient",
+                  "value": "ulu-canvas-fancycolor10"
+                },
+                {
+                  "label": "swiss coffee & nlackcurrant damask",
+                  "value": "ulu-canvas-fancycolor20"
+                },
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-canvas1"
+                },
+                {
+                  "label": "gradient 2.0",
+                  "value": "ulu-gradient-canvas1"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-fancy-canvas-2",
+              "title": "Canvas Style: Orange",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gradient",
+                  "value": "ulu-canvas-fancycolor11"
+                },
+                {
+                  "label": "space equator & cloud burst",
+                  "value": "ulu-canvas-fancycolor21"
+                },
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-canvas2"
+                },
+                {
+                  "label": "gradient 2.0",
+                  "value": "ulu-gradient-canvas2"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-fancy-canvas-3",
+              "title": "Canvas Style: Yellow",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gradient",
+                  "value": "ulu-canvas-fancycolor12"
+                },
+                {
+                  "label": "laser & meteorite",
+                  "value": "ulu-canvas-fancycolor22"
+                },
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-canvas3"
+                },
+                {
+                  "label": "gradient 2.0",
+                  "value": "ulu-gradient-canvas3"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-fancy-canvas-4",
+              "title": "Canvas Style: Green",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gradient",
+                  "value": "ulu-canvas-fancycolor13"
+                },
+                {
+                  "label": "double green & lochinvar roy",
+                  "value": "ulu-canvas-fancycolor23"
+                },
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-canvas4"
+                },
+                {
+                  "label": "gradient 2.0",
+                  "value": "ulu-gradient-canvas4"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-fancy-canvas-5",
+              "title": "Canvas Style: Cyan",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gradient",
+                  "value": "ulu-canvas-fancycolor14"
+                },
+                {
+                  "label": "havelock & malibu fiord",
+                  "value": "ulu-canvas-fancycolor24"
+                },
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-canvas5"
+                },
+                {
+                  "label": "gradient 2.0",
+                  "value": "ulu-gradient-canvas5"
+                }
+              ]
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-fancy-canvas-6",
+              "title": "Canvas Style: Purple",
+              "default": "",
+              "allowEmpty": true,
+              "options": [
+                {
+                  "label": "gradient",
+                  "value": "ulu-canvas-fancycolor15"
+                },
+                {
+                  "label": "martinique & honey",
+                  "value": "ulu-canvas-fancycolor25"
+                },
+                {
+                  "label": "gummy",
+                  "value": "ulu-gummy-canvas6"
+                },
+                {
+                  "label": "gradient 2.0",
+                  "value": "ulu-gradient-canvas6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-plugins",
+      "title": "🅿 Plugins",
+      "description": "Styling for supported third-party plugins.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "class-select",
+          "id": "ulu-qa-input-style",
+          "title": "QuickAdd Input Style",
+          "description": "box (default): subtle filled pill. underline: bare bottom border only. underline + gradient: bottom border with an accent gradient wash on focus",
+          "default": "",
+          "allowEmpty": true,
+          "options": [
+            {
+              "label": "underline",
+              "value": "ulu-qa-underline"
+            },
+            {
+              "label": "underline + gradient",
+              "value": "ulu-qa-underline-gradient"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-subthemes-settings",
+      "title": "🅾 Subtheme Options",
+      "description": "Options that only apply when their matching subtheme is selected.",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "group",
+          "id": "ulu-custom-palette",
+          "title": "🎨 Custom Palette",
+          "description": "Active when the 🎨 custom dark or light subtheme is selected. All other subthemes ignore these settings.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "group",
+              "id": "ulu-custom-dark-heading",
+              "title": "✦ Dark",
+              "description": "dark-mode palette for the custom subtheme.",
+              "level": 3,
+              "children": [
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-bg-1",
+                  "title": "Background primary",
+                  "description": "Main workspace background",
+                  "default": "#1a1b26",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-bg-1"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-bg-2",
+                  "title": "Background secondary",
+                  "description": "Sidebar and secondary panels",
+                  "default": "#16161e",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-bg-2"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-text",
+                  "title": "Text color",
+                  "default": "#c0caf5",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-text"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-text-muted",
+                  "title": "Text: muted",
+                  "description": "Secondary text, captions, labels",
+                  "default": "#565f89",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-text-muted"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-text-faint",
+                  "title": "Text: faint",
+                  "description": "Very subdued text, placeholders, disabled",
+                  "default": "#3b4261",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-text-faint"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-red",
+                  "title": "Red",
+                  "default": "#f7768e",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-red"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-orange",
+                  "title": "Orange",
+                  "default": "#ff9e64",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-orange"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-yellow",
+                  "title": "Yellow",
+                  "default": "#e0af68",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-yellow"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-green",
+                  "title": "Green",
+                  "default": "#9ece6a",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-green"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-cyan",
+                  "title": "Cyan",
+                  "default": "#7dcfff",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-cyan"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-blue",
+                  "title": "Blue",
+                  "default": "#7aa2f7",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-blue"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-purple",
+                  "title": "Purple",
+                  "default": "#bb9af7",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-purple"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-d-pink",
+                  "title": "Pink",
+                  "default": "#f7768e",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-d-pink"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "id": "ulu-custom-light-heading",
+              "title": "✦ Light",
+              "description": "light-mode palette for the custom subtheme.",
+              "level": 3,
+              "collapsed": true,
+              "children": [
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-bg-1",
+                  "title": "Background primary",
+                  "description": "Main workspace background",
+                  "default": "#fafafa",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-bg-1"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-bg-2",
+                  "title": "Background secondary",
+                  "description": "Sidebar and secondary panels",
+                  "default": "#f0f0f0",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-bg-2"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-text",
+                  "title": "Text color",
+                  "default": "#383a42",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-text"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-text-muted",
+                  "title": "Text: muted",
+                  "description": "Secondary text, captions, labels",
+                  "default": "#696c77",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-text-muted"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-text-faint",
+                  "title": "Text: faint",
+                  "description": "Very subdued text, placeholders, disabled",
+                  "default": "#9a9b9c",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-text-faint"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-red",
+                  "title": "Red",
+                  "default": "#e45649",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-red"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-orange",
+                  "title": "Orange",
+                  "default": "#c18401",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-orange"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-yellow",
+                  "title": "Yellow",
+                  "default": "#986801",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-yellow"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-green",
+                  "title": "Green",
+                  "default": "#50a14f",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-green"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-cyan",
+                  "title": "Cyan",
+                  "default": "#0184bc",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-cyan"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-blue",
+                  "title": "Blue",
+                  "default": "#4078f2",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-blue"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-purple",
+                  "title": "Purple",
+                  "default": "#a626a4",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-purple"
+                },
+                {
+                  "type": "color",
+                  "id": "ulu-custom-l-pink",
+                  "title": "Pink",
+                  "default": "#ca1243",
+                  "format": "hex",
+                  "cssVar": "--ulu-custom-l-pink"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-tau-options",
+          "title": "τ Tau",
+          "description": "Active when the τ tau subtheme is selected.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-tau-motion",
+              "title": "Extra Motion",
+              "description": "animate H1-H4 hazard blocks, plus the hazard bands, chevron stack, and radar dial inside the empty-state HUD backdrop. ⚠️ adds continuous SMIL/CSS animation per visible heading + the empty-state pseudo; may noticeably slow scrolling in very long documents or on lower-power machines",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-anthos-options",
+          "title": "✿ Anthos",
+          "description": "Active when the ✿ anthos subtheme is selected.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-anthos-motion",
+              "title": "Extra Motion",
+              "description": "subtle bloom sway, dot-twinkle on the vine motifs, slow drift on the dot-scatter burst, per-block smil twinkle on heading/file-tree/view-header halftone scatters, and a stamp-fade pulse on the empty-state seal. ⚠️ adds continuous SMIL animation across leaf decoration + block-mask pseudos; may noticeably slow scrolling on lower-power machines",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-anthos-accent-tint",
+              "title": "Pastel Accent Tint",
+              "description": "washes every paper surface and chrome area with a soft tint of your accent colour; always stays pastel regardless of chosen hue",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-anthos-aline",
+              "title": "Custom Active Line",
+              "description": "draws the anthos wreath highlight on the active editor line. on by default; turn off (or pick a global Active Line option) to use a plain/standard active line instead",
+              "default": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-styx-options",
+          "title": "✟ Styx",
+          "description": "Active when the ✟ styx subtheme is selected.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-styx-motion",
+              "title": "Extra Motion",
+              "description": "subtle wing flutter on the corner centerpiece, sparkle twinkle on the y2k decals, slow scanline drift, bleed-pulse on the active line, and a stamp-fade on the empty-state seal. ⚠️ adds continuous CSS animation across multiple pseudos; may noticeably slow scrolling on lower-power machines",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-styx-aline",
+              "title": "Custom Active Line",
+              "description": "draws the styx corner-glyph highlight on the active editor line. on by default; turn off (or pick a global Active Line option) to use a plain/standard active line instead",
+              "default": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-nephele-options",
+          "title": "☁ Nephele",
+          "description": "Active when the ☁ nephele subtheme is selected.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-nephele-motion",
+              "title": "Extra Motion",
+              "description": "(reserved: motion choreography is deferred to a later phase) gel-shimmer sweeps on aqua buttons, breathing aqua-glaze on the active line, slow pinstripe drift on the view header, and press-flip on button :active. ⚠️ will add continuous CSS animation across multiple surfaces once enabled; may slow scrolling on lower-power machines",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-nephele-accent-chrome",
+              "title": "Accent Chrome",
+              "description": "tint the active tabs, status bar, and vault switcher shelf in your accent colour (aqua gel) instead of porcelain grey",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-nephele-retro-tree",
+              "title": "Start Menu Sidedock",
+              "description": "restyle the entire left sidedock as an XP-style Start Menu: unified rounded card, gradient header strip, flat white body with bold application-launcher folders + gel pill hover/active, gradient footer strip across the vault profile. independent of Accent Chrome.",
+              "default": false
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "id": "ulu-protos-options",
+          "title": "▦ Protos",
+          "description": "Active when the ▦ protos subtheme is selected.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "toggle",
+              "id": "ulu-protos-accent",
+              "title": "Accent Surfaces",
+              "description": "tint the fully-inked surfaces (active tab, selection wash, primary button, active file pill, links) with your accent colour instead of pure ink. dither tiles, strokes, and Chicago body text always stay 1-bit; the accent threads through binary call-outs only, never the bitmap layer. off by default to preserve the pure b/w signature.",
+              "default": false
+            },
+            {
+              "type": "toggle",
+              "id": "ulu-protos-aline",
+              "title": "Custom Active Line",
+              "description": "draws the protos etched highlight on the active editor line. on by default; turn off (or pick a global Active Line option) to use a plain/standard active line instead",
+              "default": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "id": "ulu-ref-heading",
+      "title": "❔ Help & Reference",
+      "description": "quick reference for spans, per-note classes, callouts, and task icons",
+      "level": 1,
+      "collapsed": true,
+      "children": [
+        {
+          "type": "info",
+          "id": "ulu-ref-spans",
+          "title": "Inline Spans & Marks",
+          "description": "Use `<span>` or `<mark>` directly in note body (works in reading view):\n\n`<span class=\"drop-cap\">full paragraph text here</span>`\n→ large drop cap on the first letter; remaining text flows normally\n\n`<span class=\"smcp\">text</span>`\n→ small caps (requires a font with OpenType `smcp` glyphs)\n\n`<span class=\"spoiler\">hidden text</span>`\n→ hidden behind a bar until hovered; works across multiple lines\n\n`==highlighted text==` uses the global highlight color set in Style Settings.\nFor per-mark color overrides use `<mark class=\"ulu-X\">text</mark>`:\n`ulu-r` red &nbsp; `ulu-g` green &nbsp; `ulu-b` blue &nbsp; `ulu-p` purple &nbsp; `ulu-o` orange &nbsp; `ulu-y` yellow\n",
+          "level": 2,
+          "markdown": true
+        },
+        {
+          "type": "info",
+          "id": "ulu-ref-note-classes",
+          "title": "Per-note CSS Classes",
+          "description": "Add to a note's frontmatter to apply only to that note:\n```\n---\ncssclasses: [ulu-justify, ulu-accent-title]\n---\n```\n`ulu-justify`: justified paragraph text with auto-hyphenation\n\n`ulu-accent-title`: accent-coloured inline note title\n\n`ulu-minimal-properties`: strips slab/border/shadow from the properties block\n",
+          "level": 2,
+          "markdown": true
+        },
+        {
+          "type": "info",
+          "id": "ulu-ref-callouts",
+          "title": "Callouts",
+          "description": "**Multi-column layout**: use `[!col]` with `>>` nested callouts as columns:\n```\n> [!col]\n>> First column content here.\n>\n>> Second column content here.\n```\nUse `[!col-strip]` as a column type to remove all chrome from its contents.\n",
+          "level": 2,
+          "markdown": true
+        },
+        {
+          "type": "info",
+          "id": "ulu-ref-tasks",
+          "title": "Task List Icons",
+          "description": "Custom task types replace the standard checkbox with a coloured icon:\n\n`- [!]` red alert &nbsp; `- [?]` orange question &nbsp; `- [i]` blue info\n`- [*]` purple star &nbsp; `- [+]` green add &nbsp; `- [-]` grey cancelled\n`- [b]` orange bookmark &nbsp; `- [\"]` grey quote &nbsp; `- [l]` red pin\n",
+          "level": 2,
+          "markdown": true
+        },
+        {
+          "type": "group",
+          "id": "ulu-col-heading",
+          "title": "⬡ Multi-column",
+          "description": "Use [!col] with nested >> callouts as columns. Use [!col-strip] as a column to remove chrome from its contents.",
+          "level": 2,
+          "collapsed": true,
+          "children": [
+            {
+              "type": "slider",
+              "id": "ulu-col-gap",
+              "title": "Column gap",
+              "default": 16,
+              "min": 0,
+              "max": 48,
+              "step": 4,
+              "unit": "px",
+              "cssVar": "--ulu-col-gap"
+            },
+            {
+              "type": "class-select",
+              "id": "ulu-col-count",
+              "title": "Max columns per row",
+              "default": "ulu-col-2",
+              "options": [
+                {
+                  "label": "2 columns",
+                  "value": "ulu-col-2"
+                },
+                {
+                  "label": "3 columns",
+                  "value": "ulu-col-3"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
