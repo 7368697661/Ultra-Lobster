@@ -2554,7 +2554,7 @@ settings:
     --accent-l: 63%; /* accent lightness override */
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #1a0f0f; /* deep red-black anchor for text */
-    --canvas-color: 236, 204, 206; /* canvas node border colour */
+    --canvas-color: rgb(236, 204, 206); /* canvas node border colour */
     --proxy-00: #fdf5f5; /* raw blush-white lightest surface */
     --proxy-10: #f9ebeb; /* raw light rose surface */
     --proxy-20: #f5e0e0; /* raw dusty rose secondary surface */
@@ -2619,7 +2619,7 @@ settings:
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #d5a6a6; /* muted rose-white anchor for text */
     --ulu-tab-active-bg: var(--color-base-40); /* active tab pill background */
-    --canvas-color: 66, 53, 53; /* canvas node border colour */
+    --canvas-color: rgb(66, 53, 53); /* canvas node border colour */
     --proxy-00: #171212; /* raw deep burgundy surface */
     --proxy-10: #2e2424; /* raw mid burgundy surface */
     --proxy-20: #110e0e; /* raw near-black void surface */
@@ -2679,7 +2679,7 @@ settings:
     --highlight-mix-blend-mode: darken;
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #0d1a0d; /* deep forest-black anchor for text */
-    --canvas-color: 218, 229, 214; /* canvas node border colour */
+    --canvas-color: rgb(218, 229, 214); /* canvas node border colour */
     --proxy-00: #f6faf5; /* raw pale sage lightest surface */
     --proxy-10: #f0f5ed; /* raw light sage surface */
     --proxy-20: #e9f0e6; /* raw secondary sage surface */
@@ -2740,7 +2740,7 @@ settings:
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #bcc7a9; /* muted sage-white anchor for text */
     --ulu-tab-active-bg: var(--color-base-40); /* active tab pill background */
-    --canvas-color: 39, 53, 46; /* canvas node border colour */
+    --canvas-color: rgb(39, 53, 46); /* canvas node border colour */
     --proxy-00: #121715; /* raw deep forest surface */
     --proxy-10: #1a231f; /* raw mid forest surface */
     --proxy-20: #0e1110; /* raw near-black surface */
@@ -2801,7 +2801,7 @@ settings:
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #09121a; /* deep navy anchor for text */
     --ulu-tab-active-bg: var(--color-base-30); /* active tab pill background */
-    --canvas-color: 219, 228, 237; /* canvas node border colour */
+    --canvas-color: rgb(219, 228, 237); /* canvas node border colour */
     --proxy-00: #f7fafd; /* raw lightest blue-white surface */
     --proxy-10: #f1f6fa; /* raw light steel-blue surface */
     --proxy-20: #eaeff5; /* raw secondary blue-grey surface */
@@ -2838,7 +2838,7 @@ settings:
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #bdc4ce; /* cool blue-grey anchor for text */
     --ulu-tab-active-bg: var(--color-base-40); /* active tab pill background */
-    --canvas-color: 54, 56, 65; /* canvas node border colour */
+    --canvas-color: rgb(54, 56, 65); /* canvas node border colour */
     --proxy-00: #121517; /* raw deep charcoal-blue surface */
     --proxy-10: #1a1c21; /* raw mid charcoal surface */
     --proxy-20: #0e1011; /* raw near-black surface */
@@ -2898,7 +2898,7 @@ settings:
     --highlight-mix-blend-mode: darken;
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #12091a; /* deep violet-black anchor for text */
-    --canvas-color: 224, 213, 235; /* canvas node border colour */
+    --canvas-color: rgb(224, 213, 235); /* canvas node border colour */
     --proxy-00: #fbf9fd; /* raw near-white lavender lightest surface */
     --proxy-10: #f6f1f9; /* raw light lavender surface */
     --proxy-20: #f0eaf5; /* raw secondary lavender surface */
@@ -2935,7 +2935,7 @@ settings:
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #c4b0cf; /* muted mauve-white anchor for text */
     --ulu-tab-active-bg: var(--color-base-40); /* active tab pill background */
-    --canvas-color: 60, 52, 75; /* canvas node border colour */
+    --canvas-color: rgb(60, 52, 75); /* canvas node border colour */
     --proxy-00: #141217; /* raw deep violet-black surface */
     --proxy-10: #211a23; /* raw mid deep purple surface */
     --proxy-20: #100e11; /* raw near-black surface */
@@ -2998,7 +2998,7 @@ settings:
     --accent-l: 39.8% !important; /* accent lightness override */
     --mono-rgb-0: #fffcf4; /* warm near-white anchor for fills */
     --mono-rgb-100: #433c34; /* solarized base01 anchor for text */
-    --canvas-color: 243, 237, 215; /* canvas node border colour */
+    --canvas-color: rgb(243, 237, 215); /* canvas node border colour */
     --proxy-00: #fdf6e3; /* raw solarized base3 (lightest bg) */
     --proxy-10: #fffaeb; /* raw warm off-white surface */
     --proxy-20: #eee8d5; /* raw solarized base2 surface */
@@ -3066,7 +3066,7 @@ settings:
     --mono-rgb-0: #002b36; /* solarized base03 anchor for fills */
     --mono-rgb-100: #adc0c0; /* desaturated solarized base1 anchor for text */
     --ulu-tab-active-bg: #1d5a6a; /* active tab pill background */
-    --canvas-color: 14, 75, 90; /* canvas node border colour */
+    --canvas-color: rgb(14, 75, 90); /* canvas node border colour */
     --proxy-00: #073642; /* raw solarized base02 surface */
     --proxy-10: #08404e; /* raw slightly lighter base02 surface */
     --proxy-20: #002b36; /* raw solarized base03 (darkest) surface */
@@ -3127,7 +3127,7 @@ settings:
     --accent-l: 63%; /* accent lightness override */
     --mono-rgb-0: #f2e5bc; /* gruvbox hard-light anchor for fills */
     --mono-rgb-100: #3c3836; /* gruvbox fg0 anchor for text */
-    --canvas-color: 226, 207, 173; /* canvas node border colour */
+    --canvas-color: rgb(226, 207, 173); /* canvas node border colour */
     --proxy-00: #f9f5d7; /* raw hard-light bg0 surface */
     --proxy-10: #f2e5bc; /* raw bg1 surface */
     --proxy-20: #ebdbb2; /* raw bg2 surface */
@@ -3195,7 +3195,7 @@ body.theme-light.ulu-gruvbox-lt .tree-item-self .tree-item-icon {
     --mono-rgb-100: #fbf1c7; /* gruvbox fg0 (hard light) anchor for text */
     --mono-rgb-0: #696969; /* neutral grey anchor for shadows */
     --ulu-tab-active-bg: #5a5048; /* active tab pill background */
-    --canvas-color: 80, 73, 69; /* canvas node border colour */
+    --canvas-color: rgb(80, 73, 69); /* canvas node border colour */
     --proxy-00: #282828; /* raw bg0 surface */
     --proxy-10: #1d2021; /* raw bg0_h (hard) surface */
     --proxy-20: #32302f; /* raw bg0_s (soft) surface */
@@ -3253,7 +3253,7 @@ body.theme-light.ulu-gruvbox-lt .tree-item-self .tree-item-icon {
 .ulu-light-l.theme-light {
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #433c34; /* warm brown anchor for text */
-    --canvas-color: 229, 227, 216; /* canvas node border colour */
+    --canvas-color: rgb(229, 227, 216); /* canvas node border colour */
     --proxy-00: #fdfdfc; /* raw near-pure white surface */
     --proxy-10: #f7f6f2; /* raw warm off-white surface */
     --proxy-20: #f2f0ea; /* raw warm secondary surface */
@@ -3315,7 +3315,7 @@ body.theme-light.ulu-gruvbox-lt .tree-item-self .tree-item-icon {
     --accent-l: 25% !important; /* accent lightness override */
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #433c34; /* warm brown anchor for text */
-    --canvas-color: 213, 207, 187; /* canvas node border colour */
+    --canvas-color: rgb(213, 207, 187); /* canvas node border colour */
     --code-background: #eae9e0; /* code block / inline code background */
     --proxy-00: #fdf6e3; /* raw warm cream lightest surface */
     --proxy-10: #fffaeb; /* raw near-white warm surface */
@@ -3463,7 +3463,7 @@ body.ulu-twolf-l.theme-light:not(.is-mobile)
     --accent-l: 25% !important; /* accent lightness override — darker than solarized */
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #343943; /* slate-navy anchor for text */
-    --canvas-color: 178, 200, 225; /* canvas node border colour */
+    --canvas-color: rgb(178, 200, 225); /* canvas node border colour */
     --code-background: #d8e4f5; /* code block / inline code background */
     --proxy-00: #e3ecfd; /* raw periwinkle-blue lightest surface */
     --proxy-10: #ebf3ff; /* raw near-white blue surface */
@@ -3595,7 +3595,7 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
     --highlight-mix-blend-mode: darken;
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #131313; /* near-black anchor for text */
-    --canvas-color: 214, 212, 202; /* canvas node border colour */
+    --canvas-color: rgb(214, 212, 202); /* canvas node border colour */
     --proxy-00: #f2f1ed; /* raw warmest off-white surface */
     --proxy-10: #ebeae5; /* raw mid-warm surface */
     --proxy-20: #e4e3dc; /* raw secondary warm surface */
@@ -3664,7 +3664,7 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-35) r g b / 0.1
     ); /* tab strip background, 10% of base-35 */
-    --canvas-color: 49, 49, 49; /* canvas node border colour */
+    --canvas-color: rgb(49, 49, 49); /* canvas node border colour */
     --proxy-00: #1b1b1b; /* raw darkest surface before semantic mapping */
     --proxy-10: #242424; /* raw mid-dark surface before semantic mapping */
     --proxy-20: #232323; /* raw secondary surface before semantic mapping */
@@ -3726,7 +3726,7 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #1a1a2e; /* deep navy-black anchor for text */
     --ulu-tab-active-bg: var(--color-base-20); /* active tab pill background */
-    --canvas-color: 248, 225, 236; /* canvas node border colour */
+    --canvas-color: rgb(248, 225, 236); /* canvas node border colour */
     --proxy-00: #ffffff; /* raw pure white surface */
     --proxy-10: #f5fafd; /* raw cool-white surface with slight blue tint */
     --proxy-20: #fcecf2; /* raw blush-pink secondary surface */
@@ -3798,7 +3798,7 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #fefefe; /* near-pure white anchor for text */
     --ulu-tab-active-bg: var(--color-base-30); /* active tab pill background */
-    --canvas-color: 63, 58, 69; /* canvas node border colour */
+    --canvas-color: rgb(63, 58, 69); /* canvas node border colour */
     --proxy-00: #38333d; /* raw dark plum surface */
     --proxy-10: #47414e; /* raw mid plum surface */
     --proxy-20: #252228; /* raw deep void surface */
@@ -3883,7 +3883,7 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
     --accent-l: 63%; /* accent lightness override */
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #0a192f; /* deep navy anchor for text */
-    --canvas-color: 150, 214, 243; /* canvas node border colour */
+    --canvas-color: rgb(150, 214, 243); /* canvas node border colour */
     --proxy-00: #e0f2fe; /* raw sky-blue lightest surface */
     --proxy-10: #f0f9ff; /* raw near-white sky surface */
     --proxy-20: #bae6fd; /* raw mid sky-blue secondary surface */
@@ -3945,7 +3945,7 @@ body.ulu-meg-l.theme-light:not(.is-mobile)
     --mono-rgb-0: #0a1128; /* deep navy-black anchor for fills */
     --mono-rgb-100: #e6e9f0; /* cool off-white anchor for text */
     --ulu-tab-active-bg: var(--color-base-30); /* active tab pill background */
-    --canvas-color: 42, 59, 110; /* canvas node border colour */
+    --canvas-color: rgb(42, 59, 110); /* canvas node border colour */
     --proxy-00: #0a1128; /* raw deepest navy surface */
     --proxy-10: #121c3b; /* raw mid-navy surface */
     --proxy-20: #1c2a52; /* raw secondary navy-indigo surface */
@@ -4107,7 +4107,7 @@ body:not(.ulu-flat).theme-dark.ulu-adaptive-dt .suggestion-container {
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-10) r g b / 0.13
     ); /* tab strip background, 13% of base-10 */
-    --canvas-color: 76, 72, 67; /* canvas node border colour */
+    --canvas-color: rgb(76, 72, 67); /* canvas node border colour */
     --proxy-00: #33302e; /* raw warm dark brown surface */
     --proxy-10: #242424; /* raw neutral charcoal surface */
     --proxy-20: #393633; /* raw secondary warm brown surface */
@@ -4178,7 +4178,7 @@ body:not(.ulu-flat).theme-dark.ulu-adaptive-dt .suggestion-container {
     --code-background: #393e48; /* code block / inline code background */
     --mono-rgb-100: #ffffff; /* pure white anchor for text */
     --mono-rgb-0: #000000; /* pure black anchor for fills */
-    --canvas-color: 18, 25, 36; /* canvas node border colour */
+    --canvas-color: rgb(18, 25, 36); /* canvas node border colour */
     --proxy-00: #212733; /* raw dark blue-grey surface */
     --proxy-10: #272c36; /* raw mid blue-grey surface */
     --proxy-20: #1a1f28; /* raw deep navy-slate surface */
@@ -4280,7 +4280,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: #002244; /* deep navy anchor for fills */
     --mono-rgb-100: #ffffff; /* pure white anchor for text */
-    --canvas-color: 0, 74, 128; /* canvas node border colour */
+    --canvas-color: rgb(0, 74, 128); /* canvas node border colour */
     --proxy-00: #0069aa; /* raw blueprint mid-blue surface */
     --proxy-10: #03193f; /* raw deep navy surface */
     --proxy-20: #00396d; /* raw secondary navy-blue surface */
@@ -4352,7 +4352,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-10) r g b / 0.27
     ); /* tab strip background, 27% of base-10 */
-    --canvas-color: 44, 47, 54; /* canvas node border colour */
+    --canvas-color: rgb(44, 47, 54); /* canvas node border colour */
     --proxy-00: #1e2126; /* raw deep blue-grey surface */
     --proxy-10: #16181c; /* raw darkest blue-grey surface */
     --proxy-20: #262a30; /* raw secondary blue-grey surface */
@@ -4428,7 +4428,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: #4f4d4d; /* dark charcoal anchor for fills (not pure black) */
     --mono-rgb-100: #ffffff; /* pure white anchor for text */
-    --canvas-color: 18, 18, 18; /* canvas node border colour */
+    --canvas-color: rgb(18, 18, 18); /* canvas node border colour */
     --proxy-00: #0d0d0d; /* raw near-black surface */
     --proxy-10: #1f1f1f; /* raw dark grey surface */
     --proxy-20: #1a1a1a; /* raw secondary dark surface */
@@ -4475,7 +4475,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --mono-rgb-0: #282a36; /* dracula background anchor for fills */
     --mono-rgb-100: #f8f8f2; /* dracula foreground anchor for text */
     --ulu-tab-active-bg: var(--color-base-30); /* active tab pill background */
-    --canvas-color: 68, 71, 90; /* canvas node border colour */
+    --canvas-color: rgb(68, 71, 90); /* canvas node border colour */
     --proxy-00: #282a36; /* raw dracula background surface */
     --proxy-10: #44475a; /* raw dracula current-line surface */
     --proxy-20: #1a1e24; /* raw deeper void surface */
@@ -4546,7 +4546,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-10) r g b / 0.15
     ); /* tab strip background, 15% of base-10 */
-    --canvas-color: 40, 38, 77; /* canvas node border colour */
+    --canvas-color: rgb(40, 38, 77); /* canvas node border colour */
     --proxy-00: #2a2754; /* raw deep indigo-purple surface */
     --proxy-10: #222047; /* raw mid indigo surface */
     --proxy-20: #222047; /* raw secondary surface (matches proxy-10) */
@@ -4617,7 +4617,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-10) r g b / 0.15
     ); /* tab strip background, 15% of base-10 */
-    --canvas-color: 77, 38, 38; /* canvas node border colour */
+    --canvas-color: rgb(77, 38, 38); /* canvas node border colour */
     --proxy-00: #542727; /* raw deep crimson surface */
     --proxy-10: #472020; /* raw mid crimson surface */
     --proxy-20: #472020; /* raw secondary surface (matches proxy-10) */
@@ -4688,7 +4688,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-10) r g b / 0.25
     ); /* tab strip background, 25% of base-10 */
-    --canvas-color: 42, 44, 51; /* canvas node border colour */
+    --canvas-color: rgb(42, 44, 51); /* canvas node border colour */
     --proxy-00: #23242a; /* raw dark blue-grey surface */
     --proxy-10: #1e1f24; /* raw mid deep-navy surface */
     --proxy-20: #2d3039; /* raw secondary blue-slate surface */
@@ -4756,7 +4756,7 @@ body.theme-dark.ulu-spotlight-dt:not(.is-mobile)
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-10) r g b / 0.15
     ); /* tab strip background, 15% of base-10 */
-    --canvas-color: 31, 31, 31; /* canvas node border colour */
+    --canvas-color: rgb(31, 31, 31); /* canvas node border colour */
     --proxy-00: #0b0b0b; /* raw darkest surface before semantic mapping */
     --proxy-10: #191919; /* raw mid-dark surface before semantic mapping */
     --proxy-20: #000000; /* raw deepest void, used for content well */
@@ -4825,7 +4825,7 @@ body.theme-dark.ulu-abaddon-d:not(.is-mobile)
     --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #ffffff; /* pure white anchor for text and highlights */
-    --canvas-color: 31, 31, 31; /* canvas node border colour */
+    --canvas-color: rgb(31, 31, 31); /* canvas node border colour */
     --proxy-00: #0b0b0b; /* raw darkest surface before semantic mapping */
     --proxy-10: #191919; /* raw mid-dark surface before semantic mapping */
     --proxy-20: #000000; /* raw deepest void — used as content-well bg */
@@ -5265,7 +5265,7 @@ body.theme-dark.ulu-abaddon-glass-d .nav-file-title-content {
     --ulu-tab-bar-bg: rgb(
         from var(--color-base-25) r g b / 0.35
     ); /* tab strip background, 35% of base-25 */
-    --canvas-color: 54, 41, 34; /* canvas node border colour */
+    --canvas-color: rgb(54, 41, 34); /* canvas node border colour */
     --proxy-00: #3b2c24; /* raw mid warm-brown surface */
     --proxy-10: #30241d; /* raw darker warm-brown surface */
     --proxy-20: #30241d; /* raw secondary surface (matches proxy-10 for depth) */
@@ -5307,7 +5307,7 @@ body.theme-dark.ulu-abaddon-glass-d .nav-file-title-content {
 .theme-light.ulu-linen-l {
     color-scheme: light;
     --highlight-mix-blend-mode: darken;
-    --canvas-color: 222, 218, 212;
+    --canvas-color: rgb(222, 218, 212);
     --mono-rgb-0: #faf8f5;
     --mono-rgb-100: #312e28;
     /* .𖥔 ݁ ˖  background scale ⊹ ࣪ ˖ */
@@ -5375,7 +5375,7 @@ body.theme-dark.ulu-abaddon-glass-d .nav-file-title-content {
     --mono-rgb-0: #eceff4; /* nord6 — snow storm bright (light anchor) */
     --mono-rgb-100: #2e3440; /* nord0 — polar night base (dark anchor) */
     --ulu-tab-active-bg: #bfc6d1; /* between base-30 and base-35 */
-    --canvas-color: 216, 222, 233; /* nord4 rgb */
+    --canvas-color: rgb(216, 222, 233); /* nord4 rgb */
     /* .𖥔 ݁ ˖  surface scale — snow storm palette descending ⊹ ࣪ ˖
   */
     --proxy-00: #eceff4; /* nord6 — primary background */
@@ -5473,7 +5473,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --mono-rgb-0: #2e3440; /* nord0 — polar night base */
     --mono-rgb-100: #eceff4; /* nord6 — snow storm bright */
     --ulu-tab-active-bg: var(--color-base-30);
-    --canvas-color: 59, 66, 82; /* nord1 rgb */
+    --canvas-color: rgb(59, 66, 82); /* nord1 rgb */
     /* .𖥔 ݁ ˖  surface scale ⊹ ࣪ ˖
   */
     --proxy-00: #252b36; /* deepest void — interpolated below nord0 */
@@ -5645,7 +5645,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --color-pink: #ff2d55;
     --color-pink-rgb: 255, 45, 85;
     --color-pink-hsl: 348, 100%, 59%;
-    --canvas-color: 200, 207, 219; /* canvas node border colour */
+    --canvas-color: rgb(200, 207, 219); /* canvas node border colour */
     --glass-border-light: #ffffff; /* light highlight edge of glass borders */
     --glass-border-dark: #c8cfdb; /* dark shadow edge of glass borders */
 }
@@ -5751,7 +5751,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --color-pink: #ff2d55;
     --color-pink-rgb: 255, 45, 85;
     --color-pink-hsl: 348, 100%, 59%;
-    --canvas-color: 207, 200, 186; /* canvas node border colour */
+    --canvas-color: rgb(207, 200, 186); /* canvas node border colour */
     --glass-border-light: #ffffff; /* light highlight edge of glass borders */
     --glass-border-dark: #cfc8ba; /* dark shadow edge of glass borders */
 }
@@ -5858,7 +5858,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --color-pink-rgb: 255, 55, 95;
     --color-pink-hsl: 348, 100%, 61%;
     --ulu-tab-active-bg: var(--color-base-30); /* active tab pill background */
-    --canvas-color: 44, 50, 63; /* canvas node border colour */
+    --canvas-color: rgb(44, 50, 63); /* canvas node border colour */
 }
 
 .theme-dark.ulu-obsidianplus-warm-d {
@@ -5963,7 +5963,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --color-pink-rgb: 255, 55, 95;
     --color-pink-hsl: 348, 100%, 61%;
     --ulu-tab-active-bg: var(--color-base-30); /* active tab pill background */
-    --canvas-color: 50, 48, 48; /* canvas node border colour */
+    --canvas-color: rgb(50, 48, 48); /* canvas node border colour */
     --ulu-indent-guide-opacity: 0.18; /* warm dark surfaces are low-contrast */
 }
 
@@ -5982,7 +5982,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --highlight-mix-blend-mode: darken;
     --mono-rgb-0: #ffffff; /* pure white anchor for fills */
     --mono-rgb-100: #1c1c1e; /* iOS darkest grey anchor for text */
-    --canvas-color: 199, 199, 204; /* canvas node border colour */
+    --canvas-color: rgb(199, 199, 204); /* canvas node border colour */
     --proxy-00: #ffffff; /* raw pure white surface */
     --proxy-10: #f2f2f7; /* raw iOS system grey 6 (light) surface */
     --proxy-20: #e5e5ea; /* raw iOS system grey 5 (light) surface */
@@ -6099,7 +6099,7 @@ body:not(.is-mobile).ulu-nord-l.theme-light .nav-folder > .nav-folder-children {
     --highlight-mix-blend-mode: lighten;
     --mono-rgb-0: #000000; /* pure black anchor for fills and shadows */
     --mono-rgb-100: #e5e5ea; /* iOS light-grey anchor for text and highlights */
-    --canvas-color: 72, 72, 74; /* canvas node border colour */
+    --canvas-color: rgb(72, 72, 74); /* canvas node border colour */
     --proxy-00: #000000; /* raw pure black surface */
     --proxy-10: #28282a; /* raw iOS system grey 6 surface */
     --proxy-20: #2c2c2e; /* raw iOS system grey 5 surface */
@@ -15118,31 +15118,31 @@ body.ulu-no-blur-canvas .canvas-node:not(.is-themed) .canvas-node-container {
 }
 
 .canvas-node.is-themed .canvas-node-container {
-    background-color: rgba(var(--canvas-color), 0.05) !important;
+    background-color: color-mix(in srgb, var(--canvas-color) 5%, transparent) !important;
     border-radius: var(--ulu-r-3xl) !important;
     box-shadow:
-        0 12px 24px -6px rgba(var(--canvas-color), 0.15),
-        0 4px 12px -2px rgba(var(--canvas-color), 0.1),
+        0 12px 24px -6px color-mix(in srgb, var(--canvas-color) 15%, transparent),
+        0 4px 12px -2px color-mix(in srgb, var(--canvas-color) 10%, transparent),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.25),
-        0 0 0 1px rgba(var(--canvas-color), 0.4) !important;
+        inset -1px -1px 0 0 color-mix(in srgb, var(--canvas-color) 25%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--canvas-color) 40%, transparent) !important;
 }
 
 body.ulu-no-blur-canvas .canvas-node.is-themed .canvas-node-container {
     background-image: linear-gradient(
-        rgba(var(--canvas-color), 0.1),
-        rgba(var(--canvas-color), 0.1)
+        color-mix(in srgb, var(--canvas-color) 10%, transparent),
+        color-mix(in srgb, var(--canvas-color) 10%, transparent)
     );
     background-color: var(--color-base-00) !important;
 }
 
 .theme-light .canvas-node.is-themed .canvas-node-container {
     box-shadow:
-        0 12px 24px -6px rgba(var(--canvas-color), 0.15),
-        0 4px 12px -2px rgba(var(--canvas-color), 0.15),
+        0 12px 24px -6px color-mix(in srgb, var(--canvas-color) 15%, transparent),
+        0 4px 12px -2px color-mix(in srgb, var(--canvas-color) 15%, transparent),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),
-        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.25),
-        0 0 0 1px rgba(var(--canvas-color), 0.4) !important;
+        inset -1px -1px 0 0 color-mix(in srgb, var(--canvas-color) 25%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--canvas-color) 40%, transparent) !important;
 }
 
 body:not(.ulu-no-blur-canvas) .canvas-node-container {
@@ -15189,21 +15189,21 @@ body:not(.ulu-no-blur-canvas) .canvas-node-container {
 .canvas-node.is-themed.is-selected .canvas-node-container,
 .canvas-node.is-themed.is-focused .canvas-node-container {
     box-shadow:
-        0 16px 36px -10px rgba(var(--canvas-color), 0.35),
-        0 8px 16px -4px rgba(var(--canvas-color), 0.2),
+        0 16px 36px -10px color-mix(in srgb, var(--canvas-color) 35%, transparent),
+        0 8px 16px -4px color-mix(in srgb, var(--canvas-color) 20%, transparent),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.3),
-        0 0 0 1px rgba(var(--canvas-color), 0.5) !important;
+        inset -1px -1px 0 0 color-mix(in srgb, var(--canvas-color) 30%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--canvas-color) 50%, transparent) !important;
 }
 
 .theme-light .canvas-node.is-themed.is-selected .canvas-node-container,
 .theme-light .canvas-node.is-themed.is-focused .canvas-node-container {
     box-shadow:
-        0 16px 36px -10px rgba(var(--canvas-color), 0.25),
-        0 8px 16px -4px rgba(var(--canvas-color), 0.15),
+        0 16px 36px -10px color-mix(in srgb, var(--canvas-color) 25%, transparent),
+        0 8px 16px -4px color-mix(in srgb, var(--canvas-color) 15%, transparent),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgba(var(--canvas-color), 0.3),
-        0 0 0 1px rgba(var(--canvas-color), 0.5) !important;
+        inset -1px -1px 0 0 color-mix(in srgb, var(--canvas-color) 30%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--canvas-color) 50%, transparent) !important;
 }
 
 .canvas-node.is-selected .canvas-node-container,
@@ -15958,25 +15958,25 @@ body:not(.ulu-no-blur-canvas) .canvas-node-container {
 .canvas-color-picker-item {
     border: 1px solid var(--background-modifier-border) !important;
     border-radius: 50% !important;
-    background-color: rgb(var(--canvas-color)) !important;
+    background-color: var(--canvas-color) !important;
 }
 
 /* .𖥔 ݁ ˖  arrowhead colors ⊹ ࣪ ˖ */
 .canvas-edges marker * {
     fill: var(--canvas-color) !important;
-    fill: rgb(var(--canvas-color)) !important;
+    fill: var(--canvas-color) !important;
 }
 
 .canvas-edges polygon.canvas-path-end {
-    stroke: rgb(var(--canvas-color)) !important;
-    fill: rgb(var(--canvas-color)) !important;
+    stroke: var(--canvas-color) !important;
+    fill: var(--canvas-color) !important;
 }
 
 /* .𖥔 ݁ ˖  edges — stroke color + weight (arrows / lines) ⊹ ࣪ ˖ */
 .canvas-edges path,
 .canvas-edges line,
 .canvas-edges polyline {
-    stroke: rgb(var(--canvas-color)) !important;
+    stroke: var(--canvas-color) !important;
 
     stroke-width: 2px !important;
 }
