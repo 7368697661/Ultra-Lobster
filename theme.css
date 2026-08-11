@@ -6948,7 +6948,7 @@ body.ulu-flat .callout:hover {
     transform: none;
 
     background-image: none;
-    background-color: rgba(var(--callout-color), 0.08);
+    background-color: color-mix(in srgb, var(--callout-color) 8%, transparent);
     border: none;
     box-shadow: none;
 }
@@ -13293,12 +13293,12 @@ pre.language-java::before {
 body:not(.ulu-flat) .callout {
     background: transparent !important;
     border: none !important;
-    background-color: rgba(var(--callout-color), 0.05) !important;
+    background-color: color-mix(in srgb, var(--callout-color) 5%, transparent) !important;
     box-shadow:
         0 8px 24px -6px rgb(from var(--mono-rgb-0) r g b/0.15),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),
-        inset -1px -1px 0 0 rgba(var(--callout-color), 0.15),
-        0 0 0 1px rgba(var(--callout-color), 0.1) !important;
+        inset -1px -1px 0 0 color-mix(in srgb, var(--callout-color) 15%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 10%, transparent) !important;
 }
 
 body:not(.ulu-flat):not(.ulu-no-blur-callouts) .callout {
@@ -13318,8 +13318,8 @@ body:not(.ulu-flat) .callout:hover {
     box-shadow:
         0 14px 36px -10px rgb(from var(--mono-rgb-0) r g b/0.3),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.25),
-        inset -1px -1px 0 0 rgba(var(--callout-color), 0.25),
-        0 0 0 1px rgba(var(--callout-color), 0.25) !important;
+        inset -1px -1px 0 0 color-mix(in srgb, var(--callout-color) 25%, transparent),
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 25%, transparent) !important;
 }
 
 /* ────୨ৎ──── */
@@ -13329,7 +13329,7 @@ body:not(.ulu-flat).theme-light .callout {
         0 8px 24px -6px rgb(from var(--mono-rgb-100) r g b/0.05),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.6),
         inset -1px -1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.1),
-        0 0 0 1px rgba(var(--callout-color), 0.1) !important;
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 10%, transparent) !important;
 }
 
 body:not(.ulu-flat).theme-light .callout:hover {
@@ -13337,7 +13337,7 @@ body:not(.ulu-flat).theme-light .callout:hover {
         0 14px 36px -10px rgb(from var(--mono-rgb-100) r g b/0.1),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.8),
         inset -1px -1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.15),
-        0 0 0 1px rgba(var(--callout-color), 0.25) !important;
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 25%, transparent) !important;
 }
 
 body:not(.ulu-flat).theme-light.ulu-adaptive-lt .callout {
@@ -13345,7 +13345,7 @@ body:not(.ulu-flat).theme-light.ulu-adaptive-lt .callout {
         0 8px 24px -6px rgb(from var(--mono-rgb-0) r g b/0.1),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.65),
         inset -1px -1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.06),
-        0 0 0 1px rgba(var(--callout-color), 0.1) !important;
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 10%, transparent) !important;
 }
 
 body:not(.ulu-flat).theme-light.ulu-adaptive-lt .callout:hover {
@@ -13353,7 +13353,7 @@ body:not(.ulu-flat).theme-light.ulu-adaptive-lt .callout:hover {
         0 14px 36px -10px rgb(from var(--mono-rgb-0) r g b/0.15),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.8),
         inset -1px -1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.08),
-        0 0 0 1px rgba(var(--callout-color), 0.25) !important;
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 25%, transparent) !important;
 }
 
 /* ────୨ৎ──── */
@@ -13365,7 +13365,7 @@ body:not(.ulu-flat).theme-light.ulu-gruvbox-lt .callout {
         0 8px 24px -6px rgb(from var(--mono-rgb-100) r g b/0.15),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.7),
         inset -1px -1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.2),
-        0 0 0 1px rgba(var(--callout-color), 0.28) !important;
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 28%, transparent) !important;
 }
 
 body:not(.ulu-flat).theme-light.ulu-gruvbox-lt .callout:hover {
@@ -13373,7 +13373,7 @@ body:not(.ulu-flat).theme-light.ulu-gruvbox-lt .callout:hover {
         0 14px 36px -10px rgb(from var(--mono-rgb-100) r g b/0.22),
         inset 1px 1px 0 0 rgb(from var(--mono-rgb-0) r g b/0.9),
         inset -1px -1px 0 0 rgb(from var(--mono-rgb-100) r g b/0.3),
-        0 0 0 1px rgba(var(--callout-color), 0.45) !important;
+        0 0 0 1px color-mix(in srgb, var(--callout-color) 45%, transparent) !important;
 }
 
 /* .𖥔 ݁ ˖  gruvbox light glass border — use mono-rgb-100 (warm brown) for a crisper ring ⊹ ࣪ ˖
@@ -13399,7 +13399,7 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 
     padding: 12px 18px !important;
 
-    color: rgba(var(--callout-color), 1) !important;
+    color: color-mix(in srgb, var(--callout-color) 100%, transparent) !important;
     font-weight: 600;
     letter-spacing: 0.01em;
 
@@ -13422,7 +13422,7 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
     background: linear-gradient(
         90deg,
         transparent 0%,
-        rgba(var(--callout-color), 0.3) 50%,
+        color-mix(in srgb, var(--callout-color) 30%, transparent) 50%,
         transparent 100%
     );
 }
@@ -13432,9 +13432,9 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 .callout-icon {
     margin-right: 10px !important;
 
-    filter: drop-shadow(0 0 6px rgba(var(--callout-color), 0.5));
+    filter: drop-shadow(0 0 6px color-mix(in srgb, var(--callout-color) 50%, transparent));
 
-    --icon-color: rgba(var(--callout-color), 1);
+    --icon-color: color-mix(in srgb, var(--callout-color) 100%, transparent);
 }
 
 .callout-icon svg {
@@ -13470,7 +13470,7 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 .callout-fold {
     margin-right: 8px;
 
-    color: rgba(var(--callout-color), 0.6);
+    color: color-mix(in srgb, var(--callout-color) 60%, transparent);
 
     transition:
         color var(--ulu-dur-base) var(--ulu-ease-std),
@@ -13479,9 +13479,9 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 }
 
 .callout-fold:hover {
-    color: rgba(var(--callout-color), 1);
+    color: color-mix(in srgb, var(--callout-color) 100%, transparent);
 
-    background-color: rgba(var(--callout-color), 0.1);
+    background-color: color-mix(in srgb, var(--callout-color) 10%, transparent);
     border-radius: var(--ulu-r-sm);
 }
 
@@ -13527,19 +13527,19 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 .ulu-gummy-callouts .callout {
     background: linear-gradient(
         135deg,
-        rgba(var(--callout-color), 0.05),
+        color-mix(in srgb, var(--callout-color) 5%, transparent),
         var(--background-primary)
     ) !important;
 
     position: relative;
 
-    border: 1px solid rgba(var(--callout-color), 0.4) !important;
+    border: 1px solid color-mix(in srgb, var(--callout-color) 40%, transparent) !important;
     box-shadow: none !important;
     border-radius: var(--ulu-r-lg) !important;
 }
 
 .ulu-gummy-callouts .callout:hover {
-    border: 1px solid rgb(var(--callout-color)) !important;
+    border: 1px solid var(--callout-color) !important;
 }
 
 .ulu-gummy-callouts .callout-title-inner {
@@ -13564,7 +13564,7 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 .ulu-line-callouts .callout::after {
     content: "";
 
-    background: rgba(var(--callout-color), 0.3) !important;
+    background: color-mix(in srgb, var(--callout-color) 30%, transparent) !important;
 
     position: absolute;
     left: -3px;
@@ -13584,14 +13584,14 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 
     position: relative;
 
-    box-shadow: 0px 0px 0px 0px rgba(var(--callout-color), 0.5) !important;
+    box-shadow: 0px 0px 0px 0px color-mix(in srgb, var(--callout-color) 50%, transparent) !important;
     border-radius: var(--ulu-r-0) !important;
 }
 
 .ulu-line-callouts .callout::before {
     content: "";
 
-    background: rgba(var(--callout-color), 0.3) !important;
+    background: color-mix(in srgb, var(--callout-color) 30%, transparent) !important;
 
     position: absolute;
     left: 0px;
@@ -13600,8 +13600,8 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
 
     top: 0px;
 
-    border-left: 3px solid rgb(var(--callout-color)) !important;
-    box-shadow: 0px 0px 34px 16px rgba(var(--callout-color), 0.5) !important;
+    border-left: 3px solid var(--callout-color) !important;
+    box-shadow: 0px 0px 34px 16px color-mix(in srgb, var(--callout-color) 50%, transparent) !important;
     border-radius: var(--ulu-r-0) !important;
 }
 
@@ -13800,13 +13800,13 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
     background: var(--background-primary) !important;
     box-shadow:
         8px 8px 0 -2.5px var(--background-primary),
-        8px 8px 0 0 rgb(var(--callout-color)) !important;
-    border: 2.5px solid rgb(var(--callout-color)) !important;
+        8px 8px 0 0 var(--callout-color) !important;
+    border: 2.5px solid var(--callout-color) !important;
     border-radius: var(--ulu-r-0) !important;
 }
 
 .ulu-brutal-callouts .callout:before {
-    background: rgb(var(--callout-color)) !important;
+    background: var(--callout-color) !important;
 
     content: "";
 
@@ -13830,13 +13830,13 @@ body.theme-light.ulu-gruvbox-lt:not(.is-mobile):not(.ulu-asymmetric-border):not(
     overflow: hidden;
 
     background: var(--background-primary) !important;
-    border: 1px solid rgba(var(--callout-color), 0.3) !important;
+    border: 1px solid color-mix(in srgb, var(--callout-color) 30%, transparent) !important;
     border-radius: var(--ulu-r-md) !important;
     box-shadow: none !important;
 }
 
 .ulu-soft-callouts .callout:before {
-    background: rgb(var(--callout-color)) !important;
+    background: var(--callout-color) !important;
 
     content: "";
 
@@ -21747,7 +21747,7 @@ body.theme-light.is-mobile .mobile-navbar-action .clickable-icon {
     .callout {
         background-color: #f9f9f9 !important;
         border: 1px solid #ddd !important;
-        border-left: 4px solid rgba(var(--callout-color), 0.85) !important;
+        border-left: 4px solid color-mix(in srgb, var(--callout-color) 85%, transparent) !important;
 
         break-inside: avoid;
     }
